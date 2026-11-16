@@ -1,0 +1,135 @@
+{
+  "sha": "b2f21e66c46c4b864a409123ddfaf6a3a946d74b",
+  "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/trees/b2f21e66c46c4b864a409123ddfaf6a3a946d74b",
+  "tree": [
+    {
+      "path": "2D_Image.zip.001",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e6dbb06789c6c7936eb26aa6819aae91a2c55e",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/38e6dbb06789c6c7936eb26aa6819aae91a2c55e"
+    },
+    {
+      "path": "2D_Image.zip.002",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f52650bf0e0f2bfa4e416af51758404598d328f7",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/f52650bf0e0f2bfa4e416af51758404598d328f7"
+    },
+    {
+      "path": "2D_Image.zip.003",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e06fb1bf99d78d9b02235f65643ef6ad3ff0cf",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/f5e06fb1bf99d78d9b02235f65643ef6ad3ff0cf"
+    },
+    {
+      "path": "2D_Image.zip.004",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbee6027cf1e425b64b0f8f209293c6196904070",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/fbee6027cf1e425b64b0f8f209293c6196904070"
+    },
+    {
+      "path": "2D_Image.zip.005",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c245f4f8f99029ee99a0a39709b2e87ca36aef34",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/c245f4f8f99029ee99a0a39709b2e87ca36aef34"
+    },
+    {
+      "path": "2D_Image.zip.006",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "286cba187e3700293fb9cb6b5c5d8e21b18148f0",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/286cba187e3700293fb9cb6b5c5d8e21b18148f0"
+    },
+    {
+      "path": "2D_Image.zip.007",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6007894ce8bf02bbfcf78878da23c42935b44ae",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/c6007894ce8bf02bbfcf78878da23c42935b44ae"
+    },
+    {
+      "path": "2D_Image.zip.008",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "385c05324f518cf13b43e5b9e5cba7d467877662",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/385c05324f518cf13b43e5b9e5cba7d467877662"
+    },
+    {
+      "path": "2D_Image.zip.009",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c426b5f29e7aac7691a41d6e8fc50e42d80c54bc",
+      "size": 10246362,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/c426b5f29e7aac7691a41d6e8fc50e42d80c54bc"
+    },
+    {
+      "path": "Depthmap.zip.001",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be03899d3f7ad344c98823f721139f464b4588ed",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/be03899d3f7ad344c98823f721139f464b4588ed"
+    },
+    {
+      "path": "Depthmap.zip.002",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6462cff8dc92da154c1b998d85b9d491de3cb9",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/7d6462cff8dc92da154c1b998d85b9d491de3cb9"
+    },
+    {
+      "path": "Depthmap.zip.003",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c3cdab365d74b7f299278fef61c1c13ca8cb135",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/1c3cdab365d74b7f299278fef61c1c13ca8cb135"
+    },
+    {
+      "path": "Depthmap.zip.004",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c89d5e48e0c8d667b24d87e8037df9b5af570b8e",
+      "size": 26214400,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/c89d5e48e0c8d667b24d87e8037df9b5af570b8e"
+    },
+    {
+      "path": "Depthmap.zip.005",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb5345d0bab9fe0be7c4f9ca53a013556461bb0",
+      "size": 4210026,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/7bb5345d0bab9fe0be7c4f9ca53a013556461bb0"
+    },
+    {
+      "path": "Ground Truth.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "110e0ba88244b481455cf6a65c90da97a89b12af",
+      "size": 293788,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/110e0ba88244b481455cf6a65c90da97a89b12af"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b35f8945c47cfef65d0fe2aa802e9dcaa87414b",
+      "size": 835,
+      "url": "https://api.github.com/repos/neu-rail-rsdds/rsdds/git/blobs/4b35f8945c47cfef65d0fe2aa802e9dcaa87414b"
+    }
+  ],
+  "truncated": false
+}

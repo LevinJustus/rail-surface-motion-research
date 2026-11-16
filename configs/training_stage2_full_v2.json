@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "plan_id": "full_stage2_recipe_v2",
+  "mode": "full_baseline",
+  "status": "planned_not_started",
+  "scope": "Step10 full1396/400 baseline; three fresh seeds; validation-only model selection; no heldout test",
+  "model_config": "configs/baseline.json",
+  "model_config_sha256": "ca73c0e387b33e5486d883495039c6ca40d148522d3b257ff970eb02d5e4bf57",
+  "source_split": "data/splits/conservative_group_v1.json",
+  "source_split_sha256": "c65f8c439ac3f245541a6678f3fe937bd3dcf7136584f088fd90eae1609270a6",
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0003,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon": 1e-08,
+    "learning_rate_schedule": "piecewise_epoch_factors",
+    "weight_decay": 0.0,
+    "gradient_clipping": "global_L2_norm",
+    "max_gradient_norm": 1.0
+  },
+  "loss": {
+    "name": "masked_BCE_softDice",
+    "bce_weight_positive_target": 0.5,
+    "dice_weight_positive_target": 0.5,
+    "empty_target": "BCE only at weight1.0",
+    "bce_numerics": "stable log-softmax from two pre-softmax logits; no second sigmoid",
+    "dice_smoothing": 1e-06,
+    "spatial_reduction": "valid pixels per image",
+    "batch_reduction": "mean of per-image loss",
+    "empty_valid_region": "error, never silently skip"
+  },
+  "jpeg_label_threshold": 128,
+  "output_channel_order": [
+    "background",
+    "defect"
+  ],
+  "execution_environment": "cpu",
+  "precision": "single",
+  "augmentation": "none",
+  "normalization": "uint8 to single/255 once; no dataset-fitted statistics",
+  "image_preprocessing": "existing aspect-preserving downsampling and valid-mask padding",
+  "batch_size": 8,
+  "allow_smaller_last_batch": true,
+  "training_images": 1396,
+  "training_proxy_groups": 45,
+  "validation_images": 400,
+  "validation_proxy_groups": 15,
+  "max_epochs": 20,
+  "initialization_seeds": [
+    20261114,
+    20261115,
+    20261116
+  ],
+  "fresh_initialization_per_seed": true,
+  "order_seed": 20261114,
+  "validation_epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "learning_rate_factors": [
+    1.0,
+    1.0,
+    1.0,
+    0.3,
+    0.3,
+    0.3,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "learning_rate_rule": "base*factor[epoch-1]; no automatic batch-size LR scaling",
+  "early_stopping": {
+    "enabled": true,
+    "min_epochs": 8,
+    "patience": 4,
+    "min_delta": 0.0001,
+    "monitor": "validation_micro_foreground_IoU",
+    "mode": "max",
+    "rule": "Initialize significant-improvement anchor from epoch0; track patience from epoch1; reset only if current IoU > anchor+min_delta; allow stopping only after epoch>=min_epochs and patience consecutive non-improving epochs. A valid NaN IoU does not improve. Numerical prediction/loss errors stop as failures.",
+    "separate_from_best_checkpoint": true
+  },
+  "batch_schedule": "data/splits/full_stage2_schedule_v1.json",
+  "batch_schedule_sha256": "d47db8743fcdbb488157caeed7f495e504b0531319f9528d71396c7d20ef011d",
+  "fixed_train_ids": [
+    "training/s0000595b_2_3",
+    "training/s0000571b_5_1",
+    "artificial_test/s0000516b_4_3",
+    "training/s0000533b_2_0",
+    "artificial_test/s0000515b_0_4",
+    "training/s0000546b_1_4",
+    "validation/s0000541b_2_0",
+    "training/s0000579b_0_0"
+  ],
+  "fixed_validation_ids": [
+    "artificial_test/s0000519b_0_0",
+    "artificial_test/s0000519b_0_1",
+    "artificial_test/s0000519b_0_2",
+    "artificial_test/s0000519b_0_3",
+    "artificial_test/s0000519b_0_4",
+    "artificial_test/s0000519b_1_0",
+    "artificial_test/s0000519b_1_1",
+    "artificial_test/s0000519b_1_3"
+  ],
+  "fixed_validation_rule": "first8 complete-validation IDs sorted lexicographically before full training",
+  "foreground_threshold": 0.5,
+  "postprocessing": "none",
+  "prediction_reload_max_abs_error": 1e-06,
+  "checkpoint_rule": "initial, every completed epoch, actual last, validation best, consistent interrupted state",
+  "best_rule": "highest validation micro foreground IoU; tie lower valid loss; then earlier epoch; includes epoch0",
+  "undefined_best": "skip legal NaN IoU; if all undefined record best_unavailable and keep last",
+  "primary_report": "all three seeds, per-seed best and actual last plus complete curves; no best-seed cherry-picking",
+  "repeat_rule": "execute all three predeclared seeds sequentially; no performance-triggered seed replacement",
+  "metadata": {
+    "supersedes_unexecuted_config": {
+      "file": "configs/training_stage2_full_v1.json",
+      "sha256": "94c7629e60cbf7c68de6efe3035959cb01f1172a6996b00460aeacb57f1d0d2d"
+    },
+    "reason": "pre-run metadata correction only; no training executed under v1",
+    "parent_stage1_config": {
+      "file": "configs/training_stage1_v1.json",
+      "sha256": "191c2cd0b248ff984afed85d8c611a957a6690f566116a70222aecea06937156"
+    },
+    "parent_stage1_subsets_sha256": "6b5065f42dc7ead59366e64b08ec3d3c648118868d16718f0037db245b0e2ead",
+    "parent_stage1_schedule_sha256": "9fff9a8ed3edca8f5d66f9ef3ce5135561c6113b7decc1407cc0cc4ee247d00e",
+    "diagnostic_candidates": [
+      {
+        "learning_rate": 0.0003,
+        "last_update": 192,
+        "last_validation_micro_IoU": 0.24643102498093777,
+        "last_validation_loss": 0.5061932485550642,
+        "run_id": "lr3e4_stage2_v1_01",
+        "training_config_sha256": "c60fdb0a2fa4114180f9220661a83097586d86d69d4414bba2554fa8ac8a62af",
+        "summary": {
+          "file": "docs/evidence/step10/lr3e4/summary.json",
+          "sha256": "30ab7a322db761704ed6df9f215813f2f35fff285c2af173be497917a8785c6a"
+        }
+      },
+      {
+        "learning_rate": 0.0001,
+        "last_update": 192,
+        "last_validation_micro_IoU": 0.0015654396466091155,
+        "last_validation_loss": 0.5324182724580169,
+        "run_id": "lr1e4_stage2_v1_01",
+        "training_config_sha256": "a615903360199a81f69f2639d9e5bfa201943be5412361070e5b458f7b805d82",
+        "summary": {
+          "file": "docs/evidence/step10/lr1e4/summary.json",
+          "sha256": "347b36c7b24145176ef1e42332278b77719e8f3d8407b6c7a1bcefa249fa83de"
+        }
+      },
+      {
+        "learning_rate": 0.001,
+        "last_update": 192,
+        "last_validation_micro_IoU": 0.16620350890926347,
+        "last_validation_loss": 0.6500441497191787,
+        "run_id": "pilot_stage1_v1_01",
+        "training_config_sha256": "191c2cd0b248ff984afed85d8c611a957a6690f566116a70222aecea06937156",
+        "summary": {
+          "file": "docs/evidence/step09/summary.json",
+          "sha256": "05c8a8e0b4349d3d36aec8eb16477b5a9153fe8a2e5ebad1be7d6ecdb3cfb66d"
+        }
+      }
+    ],
+    "learning_rate_selection_rule": "last192 validation micro IoU descending, valid loss ascending, fixed order [3e-4,1e-4,1e-3]",
+    "selected_learning_rate": 0.0003,
+    "batch_benchmark": {
+      "file": "docs/evidence/step10/benchmark/batch_benchmark.json",
+      "sha256": "0e01c02c30a0ab7ef5f4baebc235757ebbd0aae491b4c519648ca6afba5d44d6"
+    },
+    "batch_benchmark_candidates": [
+      {
+        "batch_size": 2,
+        "status": "PASS",
+        "warmup_time_s": 3.0660688,
+        "measured_update_times_s": [
+          0.7342989,
+          0.4395852,
+          0.4973717
+        ],
+        "median_update_time_s": 0.4973717,
+        "median_images_per_s": 4.0211375114426495
+      },
+      {
+        "batch_size": 4,
+        "status": "PASS",
+        "warmup_time_s": 1.980521,
+        "measured_update_times_s": [
+          0.6327959,
+          0.6282405,
+          0.6067631
+        ],
+        "median_update_time_s": 0.6282405,
+        "median_images_per_s": 6.36698843834487
+      },
+      {
+        "batch_size": 8,
+        "status": "PASS",
+        "warmup_time_s": 3.2911044,
+        "measured_update_times_s": [
+          1.1657416,
+          1.1865723,
+          1.177163
+        ],
+        "median_update_time_s": 1.177163,
+        "median_images_per_s": 6.796000214074007
+      }
+    ],
+    "batch_selection_rule": "PASS candidate highest median_images_per_s; tie smaller batch; no model metric used",
+    "selected_batch_size": 8,
+    "maximum_training_images_per_seed": 27920,
+    "maximum_optimizer_updates_per_seed": 3500,
+    "estimated_max_training_seconds_per_seed": 4108.29887,
+    "estimate_scope": "computational benchmark extrapolation for training only; validation/loading/checkpoints/plots extra; not a guarantee",
+    "raw_images_opened_by_plan": 0,
+    "training_started_by_plan": false
+  }
+}

@@ -1,0 +1,1742 @@
+{
+  "protocol": "stage1_epoch_v1",
+  "seed": 20261114,
+  "subset_sha256": "6b5065f42dc7ead59366e64b08ec3d3c648118868d16718f0037db245b0e2ead",
+  "ordering_key": "SHA256(seed|stage1_epoch_v1|profile|epoch|id)",
+  "replacement": false,
+  "batch_size": 2,
+  "smoke": [
+    {
+      "update": 1,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000579b_0_0",
+        "artificial_test/s0000515b_0_4"
+      ]
+    },
+    {
+      "update": 2,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000533b_2_0",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 3,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000595b_2_3",
+        "validation/s0000541b_2_0"
+      ]
+    },
+    {
+      "update": 4,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000571b_5_1",
+        "artificial_test/s0000516b_4_3"
+      ]
+    },
+    {
+      "update": 5,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000595b_2_3",
+        "training/s0000579b_0_0"
+      ]
+    },
+    {
+      "update": 6,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000571b_5_1",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 7,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000533b_2_0",
+        "artificial_test/s0000515b_0_4"
+      ]
+    },
+    {
+      "update": 8,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000541b_2_0",
+        "artificial_test/s0000516b_4_3"
+      ]
+    },
+    {
+      "update": 9,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000595b_2_3",
+        "training/s0000571b_5_1"
+      ]
+    },
+    {
+      "update": 10,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000579b_0_0",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 11,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000516b_4_3",
+        "validation/s0000541b_2_0"
+      ]
+    },
+    {
+      "update": 12,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000515b_0_4",
+        "training/s0000533b_2_0"
+      ]
+    },
+    {
+      "update": 13,
+      "epoch": 4,
+      "sample_ids": [
+        "training/s0000595b_2_3",
+        "validation/s0000541b_2_0"
+      ]
+    },
+    {
+      "update": 14,
+      "epoch": 4,
+      "sample_ids": [
+        "training/s0000533b_2_0",
+        "training/s0000571b_5_1"
+      ]
+    },
+    {
+      "update": 15,
+      "epoch": 4,
+      "sample_ids": [
+        "training/s0000546b_1_4",
+        "artificial_test/s0000515b_0_4"
+      ]
+    },
+    {
+      "update": 16,
+      "epoch": 4,
+      "sample_ids": [
+        "artificial_test/s0000516b_4_3",
+        "training/s0000579b_0_0"
+      ]
+    }
+  ],
+  "pilot": [
+    {
+      "update": 1,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000581b_2_4",
+        "training/s0000578b_4_2"
+      ]
+    },
+    {
+      "update": 2,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000512b_0_1",
+        "artificial_test/s0000532b_2_2"
+      ]
+    },
+    {
+      "update": 3,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000515b_0_0",
+        "validation/s0000507b_3_3"
+      ]
+    },
+    {
+      "update": 4,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000530b_2_1",
+        "training/s0000601b_0_2"
+      ]
+    },
+    {
+      "update": 5,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000539b_8_4",
+        "artificial_test/s0000510b_2_3"
+      ]
+    },
+    {
+      "update": 6,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000520b_2_0",
+        "training/s0000579b_1_1"
+      ]
+    },
+    {
+      "update": 7,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000576b_5_1",
+        "artificial_test/s0000515b_1_3"
+      ]
+    },
+    {
+      "update": 8,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000591b_1_0",
+        "training/s0000579b_0_2"
+      ]
+    },
+    {
+      "update": 9,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000591b_2_0",
+        "validation/s0000507b_2_2"
+      ]
+    },
+    {
+      "update": 10,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000516b_3_1",
+        "training/s0000551b_1_3"
+      ]
+    },
+    {
+      "update": 11,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000611b_4_0",
+        "training/s0000529b_2_1"
+      ]
+    },
+    {
+      "update": 12,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000525b_1_0",
+        "training/s0000581b_2_3"
+      ]
+    },
+    {
+      "update": 13,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000601b_2_1",
+        "artificial_test/s0000565b_2_4"
+      ]
+    },
+    {
+      "update": 14,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000624b_7_3",
+        "training/s0000611b_2_2"
+      ]
+    },
+    {
+      "update": 15,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000539b_6_4",
+        "training/s0000583b_3_4"
+      ]
+    },
+    {
+      "update": 16,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000591b_2_1",
+        "training/s0000543b_12_0"
+      ]
+    },
+    {
+      "update": 17,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000534b_2_0",
+        "artificial_test/s0000587b_3_1"
+      ]
+    },
+    {
+      "update": 18,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000532b_2_3",
+        "validation/s0000552b_0_1"
+      ]
+    },
+    {
+      "update": 19,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000539b_5_2",
+        "training/s0000617b_0_4"
+      ]
+    },
+    {
+      "update": 20,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000510b_2_2",
+        "artificial_test/s0000544b_9_3"
+      ]
+    },
+    {
+      "update": 21,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000569b_17_0",
+        "training/s0000581b_3_3"
+      ]
+    },
+    {
+      "update": 22,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000523b_0_2",
+        "validation/s0000520b_0_4"
+      ]
+    },
+    {
+      "update": 23,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000534b_0_3",
+        "training/s0000595b_1_0"
+      ]
+    },
+    {
+      "update": 24,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000624b_7_4",
+        "training/s0000617b_1_1"
+      ]
+    },
+    {
+      "update": 25,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000541b_2_0",
+        "training/s0000593b_0_3"
+      ]
+    },
+    {
+      "update": 26,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000587b_2_1",
+        "training/s0000534b_0_2"
+      ]
+    },
+    {
+      "update": 27,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000548b_0_1",
+        "artificial_test/s0000586b_3_1"
+      ]
+    },
+    {
+      "update": 28,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000507b_1_3",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 29,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000510b_2_1",
+        "training/s0000579b_0_0"
+      ]
+    },
+    {
+      "update": 30,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000569b_5_3",
+        "training/s0000588b_3_1"
+      ]
+    },
+    {
+      "update": 31,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000552b_3_1",
+        "artificial_test/s0000518b_1_2"
+      ]
+    },
+    {
+      "update": 32,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000523b_1_4",
+        "training/s0000551b_2_4"
+      ]
+    },
+    {
+      "update": 33,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000570b_4_1",
+        "artificial_test/s0000573b_1_0"
+      ]
+    },
+    {
+      "update": 34,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000533b_1_2",
+        "validation/s0000543b_0_4"
+      ]
+    },
+    {
+      "update": 35,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000525b_2_1",
+        "validation/s0000523b_2_3"
+      ]
+    },
+    {
+      "update": 36,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000583b_3_1",
+        "validation/s0000543b_1_3"
+      ]
+    },
+    {
+      "update": 37,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000573b_1_4",
+        "training/s0000533b_2_3"
+      ]
+    },
+    {
+      "update": 38,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000618b_10_0",
+        "artificial_test/s0000587b_2_0"
+      ]
+    },
+    {
+      "update": 39,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000569b_15_3",
+        "training/s0000528b_7_4"
+      ]
+    },
+    {
+      "update": 40,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000570b_5_3",
+        "validation/s0000611b_19_1"
+      ]
+    },
+    {
+      "update": 41,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000551b_1_0",
+        "artificial_test/s0000545b_5_2"
+      ]
+    },
+    {
+      "update": 42,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000586b_2_0",
+        "training/s0000595b_2_3"
+      ]
+    },
+    {
+      "update": 43,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000588b_0_3",
+        "artificial_test/s0000516b_2_4"
+      ]
+    },
+    {
+      "update": 44,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000590b_2_0",
+        "artificial_test/s0000512b_0_3"
+      ]
+    },
+    {
+      "update": 45,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000593b_5_3",
+        "artificial_test/s0000576b_10_4"
+      ]
+    },
+    {
+      "update": 46,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000532b_2_1",
+        "training/s0000593b_4_3"
+      ]
+    },
+    {
+      "update": 47,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000595b_0_1",
+        "training/s0000518b_2_0"
+      ]
+    },
+    {
+      "update": 48,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000571b_0_1",
+        "artificial_test/s0000573b_1_2"
+      ]
+    },
+    {
+      "update": 49,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000529b_0_4",
+        "artificial_test/s0000531b_1_3"
+      ]
+    },
+    {
+      "update": 50,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000541b_3_4",
+        "training/s0000583b_5_4"
+      ]
+    },
+    {
+      "update": 51,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000618b_9_4",
+        "training/s0000533b_2_0"
+      ]
+    },
+    {
+      "update": 52,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000617b_2_2",
+        "training/s0000571b_5_1"
+      ]
+    },
+    {
+      "update": 53,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000546b_1_3",
+        "artificial_test/s0000515b_0_4"
+      ]
+    },
+    {
+      "update": 54,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000586b_7_0",
+        "training/s0000570b_2_0"
+      ]
+    },
+    {
+      "update": 55,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000528b_8_4",
+        "artificial_test/s0000511b_0_2"
+      ]
+    },
+    {
+      "update": 56,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000511b_0_3",
+        "artificial_test/s0000511b_0_1"
+      ]
+    },
+    {
+      "update": 57,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000544b_2_3",
+        "validation/s0000525b_1_3"
+      ]
+    },
+    {
+      "update": 58,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000571b_8_4",
+        "training/s0000528b_5_0"
+      ]
+    },
+    {
+      "update": 59,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000529b_0_3",
+        "training/s0000548b_0_2"
+      ]
+    },
+    {
+      "update": 60,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000548b_0_3",
+        "artificial_test/s0000565b_4_4"
+      ]
+    },
+    {
+      "update": 61,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000546b_9_4",
+        "training/s0000565b_5_1"
+      ]
+    },
+    {
+      "update": 62,
+      "epoch": 1,
+      "sample_ids": [
+        "training/s0000590b_1_2",
+        "training/s0000601b_2_4"
+      ]
+    },
+    {
+      "update": 63,
+      "epoch": 1,
+      "sample_ids": [
+        "artificial_test/s0000516b_4_3",
+        "training/s0000618b_5_0"
+      ]
+    },
+    {
+      "update": 64,
+      "epoch": 1,
+      "sample_ids": [
+        "validation/s0000541b_4_0",
+        "artificial_test/s0000531b_1_1"
+      ]
+    },
+    {
+      "update": 65,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000544b_2_3",
+        "training/s0000618b_10_0"
+      ]
+    },
+    {
+      "update": 66,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000579b_0_2",
+        "validation/s0000523b_0_2"
+      ]
+    },
+    {
+      "update": 67,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000511b_0_2",
+        "validation/s0000507b_1_3"
+      ]
+    },
+    {
+      "update": 68,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000516b_2_4",
+        "training/s0000581b_2_3"
+      ]
+    },
+    {
+      "update": 69,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000601b_2_4",
+        "artificial_test/s0000511b_0_1"
+      ]
+    },
+    {
+      "update": 70,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000545b_5_2",
+        "validation/s0000525b_1_0"
+      ]
+    },
+    {
+      "update": 71,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000520b_2_0",
+        "artificial_test/s0000512b_0_1"
+      ]
+    },
+    {
+      "update": 72,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000548b_0_1",
+        "artificial_test/s0000532b_2_3"
+      ]
+    },
+    {
+      "update": 73,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000569b_5_3",
+        "training/s0000590b_1_2"
+      ]
+    },
+    {
+      "update": 74,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000593b_0_3",
+        "artificial_test/s0000576b_5_1"
+      ]
+    },
+    {
+      "update": 75,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000552b_3_1",
+        "artificial_test/s0000531b_1_3"
+      ]
+    },
+    {
+      "update": 76,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000573b_1_4",
+        "training/s0000595b_2_3"
+      ]
+    },
+    {
+      "update": 77,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000507b_2_2",
+        "training/s0000588b_3_1"
+      ]
+    },
+    {
+      "update": 78,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000520b_0_4",
+        "training/s0000533b_2_0"
+      ]
+    },
+    {
+      "update": 79,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000578b_4_2",
+        "training/s0000591b_2_1"
+      ]
+    },
+    {
+      "update": 80,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000587b_2_0",
+        "training/s0000528b_8_4"
+      ]
+    },
+    {
+      "update": 81,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000595b_0_1",
+        "artificial_test/s0000587b_3_1"
+      ]
+    },
+    {
+      "update": 82,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000551b_1_0",
+        "training/s0000534b_2_0"
+      ]
+    },
+    {
+      "update": 83,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000611b_2_2",
+        "training/s0000546b_1_3"
+      ]
+    },
+    {
+      "update": 84,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000518b_2_0",
+        "training/s0000583b_3_1"
+      ]
+    },
+    {
+      "update": 85,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000516b_3_1",
+        "training/s0000570b_4_1"
+      ]
+    },
+    {
+      "update": 86,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000546b_9_4",
+        "validation/s0000569b_15_3"
+      ]
+    },
+    {
+      "update": 87,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000515b_0_4",
+        "artificial_test/s0000586b_2_0"
+      ]
+    },
+    {
+      "update": 88,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000581b_2_4",
+        "validation/s0000552b_0_1"
+      ]
+    },
+    {
+      "update": 89,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000548b_0_3",
+        "artificial_test/s0000539b_5_2"
+      ]
+    },
+    {
+      "update": 90,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000565b_4_4",
+        "training/s0000591b_1_0"
+      ]
+    },
+    {
+      "update": 91,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000529b_2_1",
+        "training/s0000611b_4_0"
+      ]
+    },
+    {
+      "update": 92,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000515b_1_3",
+        "artificial_test/s0000510b_2_2"
+      ]
+    },
+    {
+      "update": 93,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000534b_0_3",
+        "training/s0000539b_8_4"
+      ]
+    },
+    {
+      "update": 94,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000583b_3_4",
+        "training/s0000528b_5_0"
+      ]
+    },
+    {
+      "update": 95,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000510b_2_1",
+        "training/s0000530b_2_1"
+      ]
+    },
+    {
+      "update": 96,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000532b_2_2",
+        "artificial_test/s0000531b_1_1"
+      ]
+    },
+    {
+      "update": 97,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000579b_1_1",
+        "training/s0000529b_0_4"
+      ]
+    },
+    {
+      "update": 98,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000565b_5_1",
+        "training/s0000533b_1_2"
+      ]
+    },
+    {
+      "update": 99,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000569b_17_0",
+        "artificial_test/s0000510b_2_3"
+      ]
+    },
+    {
+      "update": 100,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000515b_0_0",
+        "training/s0000581b_3_3"
+      ]
+    },
+    {
+      "update": 101,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000541b_4_0",
+        "artificial_test/s0000518b_1_2"
+      ]
+    },
+    {
+      "update": 102,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000617b_1_1",
+        "validation/s0000523b_2_3"
+      ]
+    },
+    {
+      "update": 103,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000511b_0_3",
+        "training/s0000591b_2_0"
+      ]
+    },
+    {
+      "update": 104,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000565b_2_4",
+        "training/s0000593b_4_3"
+      ]
+    },
+    {
+      "update": 105,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000551b_2_4",
+        "artificial_test/s0000587b_2_1"
+      ]
+    },
+    {
+      "update": 106,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000512b_0_3",
+        "training/s0000571b_0_1"
+      ]
+    },
+    {
+      "update": 107,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000570b_5_3",
+        "training/s0000595b_1_0"
+      ]
+    },
+    {
+      "update": 108,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000525b_2_1",
+        "training/s0000593b_5_3"
+      ]
+    },
+    {
+      "update": 109,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000586b_7_0",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 110,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000525b_1_3",
+        "artificial_test/s0000573b_1_2"
+      ]
+    },
+    {
+      "update": 111,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000507b_3_3",
+        "artificial_test/s0000573b_1_0"
+      ]
+    },
+    {
+      "update": 112,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000541b_2_0",
+        "validation/s0000523b_1_4"
+      ]
+    },
+    {
+      "update": 113,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000534b_0_2",
+        "validation/s0000611b_19_1"
+      ]
+    },
+    {
+      "update": 114,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000516b_4_3",
+        "artificial_test/s0000586b_3_1"
+      ]
+    },
+    {
+      "update": 115,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000617b_0_4",
+        "training/s0000533b_2_3"
+      ]
+    },
+    {
+      "update": 116,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000532b_2_1",
+        "training/s0000583b_5_4"
+      ]
+    },
+    {
+      "update": 117,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000601b_2_1",
+        "training/s0000590b_2_0"
+      ]
+    },
+    {
+      "update": 118,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000544b_9_3",
+        "training/s0000570b_2_0"
+      ]
+    },
+    {
+      "update": 119,
+      "epoch": 2,
+      "sample_ids": [
+        "artificial_test/s0000539b_6_4",
+        "training/s0000548b_0_2"
+      ]
+    },
+    {
+      "update": 120,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000579b_0_0",
+        "artificial_test/s0000624b_7_4"
+      ]
+    },
+    {
+      "update": 121,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000588b_0_3",
+        "training/s0000551b_1_3"
+      ]
+    },
+    {
+      "update": 122,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000618b_5_0",
+        "validation/s0000543b_1_3"
+      ]
+    },
+    {
+      "update": 123,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000541b_3_4",
+        "training/s0000571b_5_1"
+      ]
+    },
+    {
+      "update": 124,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000601b_0_2",
+        "artificial_test/s0000576b_10_4"
+      ]
+    },
+    {
+      "update": 125,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000529b_0_3",
+        "training/s0000618b_9_4"
+      ]
+    },
+    {
+      "update": 126,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000528b_7_4",
+        "artificial_test/s0000624b_7_3"
+      ]
+    },
+    {
+      "update": 127,
+      "epoch": 2,
+      "sample_ids": [
+        "training/s0000617b_2_2",
+        "training/s0000571b_8_4"
+      ]
+    },
+    {
+      "update": 128,
+      "epoch": 2,
+      "sample_ids": [
+        "validation/s0000543b_0_4",
+        "training/s0000543b_12_0"
+      ]
+    },
+    {
+      "update": 129,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000586b_7_0",
+        "training/s0000588b_0_3"
+      ]
+    },
+    {
+      "update": 130,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000573b_1_4",
+        "training/s0000546b_1_4"
+      ]
+    },
+    {
+      "update": 131,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000617b_2_2",
+        "training/s0000546b_1_3"
+      ]
+    },
+    {
+      "update": 132,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000590b_2_0",
+        "artificial_test/s0000576b_10_4"
+      ]
+    },
+    {
+      "update": 133,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000591b_2_0",
+        "training/s0000571b_0_1"
+      ]
+    },
+    {
+      "update": 134,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000523b_1_4",
+        "training/s0000534b_2_0"
+      ]
+    },
+    {
+      "update": 135,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000551b_2_4",
+        "artificial_test/s0000515b_0_0"
+      ]
+    },
+    {
+      "update": 136,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000529b_2_1",
+        "artificial_test/s0000531b_1_3"
+      ]
+    },
+    {
+      "update": 137,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000541b_2_0",
+        "training/s0000543b_12_0"
+      ]
+    },
+    {
+      "update": 138,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000595b_1_0",
+        "training/s0000579b_0_0"
+      ]
+    },
+    {
+      "update": 139,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000539b_6_4",
+        "training/s0000548b_0_1"
+      ]
+    },
+    {
+      "update": 140,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000579b_0_2",
+        "validation/s0000507b_2_2"
+      ]
+    },
+    {
+      "update": 141,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000507b_1_3",
+        "artificial_test/s0000587b_2_0"
+      ]
+    },
+    {
+      "update": 142,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000544b_2_3",
+        "validation/s0000541b_3_4"
+      ]
+    },
+    {
+      "update": 143,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000518b_1_2",
+        "artificial_test/s0000565b_4_4"
+      ]
+    },
+    {
+      "update": 144,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000565b_2_4",
+        "artificial_test/s0000539b_5_2"
+      ]
+    },
+    {
+      "update": 145,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000586b_2_0",
+        "validation/s0000523b_0_2"
+      ]
+    },
+    {
+      "update": 146,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000618b_9_4",
+        "training/s0000595b_2_3"
+      ]
+    },
+    {
+      "update": 147,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000565b_5_1",
+        "artificial_test/s0000532b_2_1"
+      ]
+    },
+    {
+      "update": 148,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000515b_0_4",
+        "training/s0000571b_8_4"
+      ]
+    },
+    {
+      "update": 149,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000534b_0_3",
+        "training/s0000588b_3_1"
+      ]
+    },
+    {
+      "update": 150,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000525b_2_1",
+        "training/s0000533b_2_3"
+      ]
+    },
+    {
+      "update": 151,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000529b_0_3",
+        "artificial_test/s0000515b_1_3"
+      ]
+    },
+    {
+      "update": 152,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000529b_0_4",
+        "artificial_test/s0000531b_1_1"
+      ]
+    },
+    {
+      "update": 153,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000512b_0_3",
+        "training/s0000552b_3_1"
+      ]
+    },
+    {
+      "update": 154,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000576b_5_1",
+        "training/s0000518b_2_0"
+      ]
+    },
+    {
+      "update": 155,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000525b_1_0",
+        "validation/s0000569b_15_3"
+      ]
+    },
+    {
+      "update": 156,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000510b_2_2",
+        "training/s0000593b_4_3"
+      ]
+    },
+    {
+      "update": 157,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000516b_3_1",
+        "artificial_test/s0000544b_9_3"
+      ]
+    },
+    {
+      "update": 158,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000533b_1_2",
+        "artificial_test/s0000573b_1_0"
+      ]
+    },
+    {
+      "update": 159,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000591b_1_0",
+        "training/s0000601b_0_2"
+      ]
+    },
+    {
+      "update": 160,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000510b_2_1",
+        "training/s0000528b_5_0"
+      ]
+    },
+    {
+      "update": 161,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000528b_8_4",
+        "training/s0000611b_4_0"
+      ]
+    },
+    {
+      "update": 162,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000611b_19_1",
+        "training/s0000539b_8_4"
+      ]
+    },
+    {
+      "update": 163,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000581b_3_3",
+        "training/s0000548b_0_2"
+      ]
+    },
+    {
+      "update": 164,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000593b_5_3",
+        "artificial_test/s0000511b_0_1"
+      ]
+    },
+    {
+      "update": 165,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000583b_5_4",
+        "artificial_test/s0000624b_7_4"
+      ]
+    },
+    {
+      "update": 166,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000586b_3_1",
+        "artificial_test/s0000512b_0_1"
+      ]
+    },
+    {
+      "update": 167,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000618b_5_0",
+        "training/s0000579b_1_1"
+      ]
+    },
+    {
+      "update": 168,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000569b_17_0",
+        "validation/s0000520b_0_4"
+      ]
+    },
+    {
+      "update": 169,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000581b_2_3",
+        "artificial_test/s0000516b_4_3"
+      ]
+    },
+    {
+      "update": 170,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000617b_1_1",
+        "training/s0000583b_3_1"
+      ]
+    },
+    {
+      "update": 171,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000611b_2_2",
+        "artificial_test/s0000511b_0_3"
+      ]
+    },
+    {
+      "update": 172,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000525b_1_3",
+        "training/s0000533b_2_0"
+      ]
+    },
+    {
+      "update": 173,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000551b_1_3",
+        "training/s0000593b_0_3"
+      ]
+    },
+    {
+      "update": 174,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000583b_3_4",
+        "training/s0000534b_0_2"
+      ]
+    },
+    {
+      "update": 175,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000587b_3_1",
+        "training/s0000618b_10_0"
+      ]
+    },
+    {
+      "update": 176,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000581b_2_4",
+        "training/s0000528b_7_4"
+      ]
+    },
+    {
+      "update": 177,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000545b_5_2",
+        "validation/s0000543b_1_3"
+      ]
+    },
+    {
+      "update": 178,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000587b_2_1",
+        "training/s0000546b_9_4"
+      ]
+    },
+    {
+      "update": 179,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000511b_0_2",
+        "training/s0000591b_2_1"
+      ]
+    },
+    {
+      "update": 180,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000552b_0_1",
+        "training/s0000570b_4_1"
+      ]
+    },
+    {
+      "update": 181,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000590b_1_2",
+        "artificial_test/s0000569b_5_3"
+      ]
+    },
+    {
+      "update": 182,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000516b_2_4",
+        "training/s0000570b_5_3"
+      ]
+    },
+    {
+      "update": 183,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000595b_0_1",
+        "training/s0000601b_2_1"
+      ]
+    },
+    {
+      "update": 184,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000541b_4_0",
+        "artificial_test/s0000510b_2_3"
+      ]
+    },
+    {
+      "update": 185,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000570b_2_0",
+        "artificial_test/s0000532b_2_2"
+      ]
+    },
+    {
+      "update": 186,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000507b_3_3",
+        "training/s0000571b_5_1"
+      ]
+    },
+    {
+      "update": 187,
+      "epoch": 3,
+      "sample_ids": [
+        "artificial_test/s0000573b_1_2",
+        "validation/s0000520b_2_0"
+      ]
+    },
+    {
+      "update": 188,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000551b_1_0",
+        "artificial_test/s0000532b_2_3"
+      ]
+    },
+    {
+      "update": 189,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000530b_2_1",
+        "training/s0000548b_0_3"
+      ]
+    },
+    {
+      "update": 190,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000543b_0_4",
+        "artificial_test/s0000624b_7_3"
+      ]
+    },
+    {
+      "update": 191,
+      "epoch": 3,
+      "sample_ids": [
+        "validation/s0000523b_2_3",
+        "training/s0000578b_4_2"
+      ]
+    },
+    {
+      "update": 192,
+      "epoch": 3,
+      "sample_ids": [
+        "training/s0000601b_2_4",
+        "training/s0000617b_0_4"
+      ]
+    }
+  ],
+  "validation_order": [
+    "training/s0000547b_5_4",
+    "validation/s0000522b_3_4",
+    "validation/s0000608b_14_2",
+    "training/s0000572b_5_4",
+    "artificial_test/s0000559b_2_3",
+    "artificial_test/s0000596b_1_0",
+    "training/s0000553b_5_0",
+    "training/s0000592b_7_4",
+    "validation/s0000521b_1_3",
+    "training/s0000599b_5_1",
+    "training/s0000557b_0_0",
+    "validation/s0000505b_4_3",
+    "training/s0000566b_10_1",
+    "training/s0000582b_3_0",
+    "artificial_test/s0000519b_0_1",
+    "training/s0000547b_8_4",
+    "validation/s0000522b_2_1",
+    "validation/s0000608b_2_2",
+    "training/s0000572b_2_3",
+    "artificial_test/s0000559b_0_3",
+    "artificial_test/s0000596b_4_1",
+    "artificial_test/s0000553b_8_1",
+    "artificial_test/s0000592b_1_4",
+    "validation/s0000521b_5_0",
+    "training/s0000599b_0_4",
+    "validation/s0000557b_1_0",
+    "validation/s0000505b_4_0",
+    "artificial_test/s0000566b_3_1",
+    "training/s0000582b_3_2",
+    "artificial_test/s0000519b_2_4",
+    "training/s0000547b_3_0",
+    "validation/s0000522b_1_1",
+    "validation/s0000608b_2_4",
+    "training/s0000572b_4_1",
+    "artificial_test/s0000559b_2_2",
+    "artificial_test/s0000596b_4_0",
+    "artificial_test/s0000553b_6_4",
+    "training/s0000592b_3_0",
+    "validation/s0000521b_4_1",
+    "training/s0000599b_5_3",
+    "validation/s0000557b_3_3",
+    "validation/s0000505b_3_2",
+    "artificial_test/s0000566b_1_1",
+    "training/s0000582b_1_3",
+    "artificial_test/s0000519b_1_0",
+    "training/s0000547b_9_0",
+    "validation/s0000522b_0_3",
+    "training/s0000608b_15_0",
+    "training/s0000572b_2_4",
+    "artificial_test/s0000559b_3_2",
+    "artificial_test/s0000596b_4_2",
+    "artificial_test/s0000553b_9_0",
+    "artificial_test/s0000592b_4_1",
+    "validation/s0000521b_0_1",
+    "training/s0000599b_5_0",
+    "validation/s0000557b_1_2",
+    "validation/s0000505b_0_3",
+    "training/s0000566b_8_4",
+    "training/s0000582b_4_2",
+    "artificial_test/s0000519b_0_4",
+    "training/s0000547b_3_2",
+    "validation/s0000522b_1_0",
+    "validation/s0000608b_2_1",
+    "training/s0000572b_4_2"
+  ]
+}

@@ -1,2 +1,71 @@
-# rail-surface-motion-research
-Rail surface defect segmentation in MATLAB: reproducible baselines, controlled motion sequences, and motion compensation research.
+# Rail Surface Motion
+
+**基于轻量化深度学习与运动补偿的钢轨表面缺陷实时检测方法研究**
+
+我在这个项目中研究钢轨表面缺陷分割，以及运动信息如何帮助提高连续观测的稳定性。我已实现数据审计、分割模型训练与评价、受控运动输入生成，接下来将验证运动先验配准和可靠多帧融合。当前开发版本 v0.2.0。
+
+我已完成小型U-Net与MobileNetV2–DeepLabv3+的三种子对照，并构建了受控运动序列。运动先验辅助配准、可靠多帧融合、最终测试和实时性仍在后续研究范围内。
+
+## 已有结果
+
+我固定了1396张训练图、400张验证图及共同训练配方，按验证IoU选择检查点。下表为三个预定初始化运行的均值±样本标准差，不是置信区间或最终测试成绩。
+
+| 模型 | 参数量 | 缺陷IoU | 缺陷Dice | Precision | Recall |
+|---|---:|---:|---:|---:|---:|
+| 小型U-Net | 482050 | 0.4524±0.0364 | 0.6224±0.0342 | 0.5451±0.0973 | 0.7464±0.0713 |
+| MobileNetV2–DeepLabv3+项目实现 | 2740082 | 0.4408±0.0200 | 0.6117±0.0194 | 0.6314±0.0189 | 0.5933±0.0214 |
+
+成熟结构精确率较高、召回率较低；验证选点与实际末轮的比较方向不同。完整保留各个种子及best/last，不将共同配方结果解释为整个模型家族排名。详见[单帧完整结果](docs/step10_full_results.md)、[成熟结构比较](docs/step11_mature_results.md)。
+
+受控序列使用45个训练来源代理组和15个验证来源代理组，各选一幅原图，12种固定条件共720条序列、6480帧。几何、标签、模拟里程及输入隔离通过核查；保留600个空前景帧、48条全空序列与180条里程缺测。它们是60幅源图的关联派生输入，尚无序列分割或融合成绩，详见[序列方法](docs/step12_sequence_protocol.md)及[实际验收](docs/step12_sequence_results.md)。
+
+## 研究进度
+
+- [公开进度与下一步](docs/PROGRESS.md)
+- [版本变更](CHANGELOG.md)与[公开材料范围](docs/PUBLICATION_POLICY.md)
+
+我下一步会分析验证集中的误检、漏检、概率与阈值，再开展使用同一分割器的配准和融合消融。每次版本更新都附变更记录和验证情况。
+
+## 目录与运行
+
+```text
+matlab/          分割模型、训练、评价与受控输入生成
+tools/           数据获取、审计、配置准备与研究结果比较
+configs/         冻结模型、训练和运动序列配置
+data/manifests/  数据来源、版本、文件与标签审计
+data/splits/     保守来源分区、批次顺序与序列源名单
+docs/            公开实验方案、结果摘要与进度
+results/         同口径逐种子及统计CSV
+```
+
+MATLAB部分使用R2024b及Computer Vision、Image Processing和Deep Learning Toolbox。两个网络均从头训练，不需要预训练权重；成熟结构由公共层构造。Python工具按各脚本说明准备NumPy、Pillow、SciPy。请通过Git克隆仓库，运行器会记录Git提交并要求正式训练开始时工作树干净；直接解压ZIP不是完整的训练工作区。
+
+数据需从[MCnet作者仓库](https://github.com/zdfcvsn/MCnet)独立获取，按[基线准备记录](docs/baseline_preparation.md)验证文件与冻结分区。下载器的新增元数据写入本机忽略目录，例如`--metadata-out runs/download_metadata`，不要覆盖已冻结的`data/manifests`。原作者目录名不决定修订后的分区；不将自然保留测试用于调参。复现无需重新随机分区或改写原审计。先导计划的安全认证可在本机重建：
+
+```text
+python tools/prepare_stage1_plan.py
+```
+
+它只校验固定名单并在被忽略的本机证据目录保存认证，不启动训练。MATLAB入口示例：
+
+```matlab
+addpath('matlab');
+check_data_contract;
+check_baseline_environment;
+generate_controlled_sequences(DATA_ROOT, ...
+    'configs/motion_sequences_v2.json', 'step12_NEW_UNIQUE_RUN', 'full');
+```
+
+生成器要求新运行目录，拒绝覆盖。不要把准确几何、中心标签或评价目录传入后续待测算法。重新训练和完整实验请先阅读相应冻结协议，不能将前向检查或输入生成当作检测收益。
+
+## 数据与结论边界
+
+原始图像、标签、下载分卷、模型权重、生成序列及含原图的面板不随本仓库分发。带本机路径的完整训练/渲染日志、内部协作信息和本机Git历史也不公开。公开报告是注明范围的派生摘要，原始字节证据在本机保存；其SHA不能误当成公开派生文档的SHA。第三方数据的许可独立于本项目代码，见[第三方说明](THIRD_PARTY_NOTICES.md)。
+
+安全的冻结数据元信息、配置和划分保留原字节，以维持SHA检查链。个别公开代码若仅对CPU环境探测增加容错，会在公开来源记录中列明；这不代表重新训练或新增性能结果。每次更新先检查公开材料，再以版本号与提交记录保存；无内容变化不制造空提交。
+
+当前没有真实运动视频、实际编码器、毫米定位、内部伤损、K230板端或端到端实时性能结果。标题中的运动补偿和实时性是待验证研究目标，不提前写作已经达到的应用能力。
+
+## 开发与版本
+
+我按功能和实验阶段维护版本，使用提交记录、CHANGELOG和固定配置追踪变化。结果有改善或退化都如实记录。当前仓库提供研究实现与复现说明，论文正文及源稿不在仓库中发布。原创代码许可证尚待确定，第三方材料遵循各自授权。

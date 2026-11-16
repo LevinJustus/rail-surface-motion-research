@@ -1,0 +1,84 @@
+{
+  "repo": "neu-rail-rsdds/rsdds",
+  "commit": "b2f21e66c46c4b864a409123ddfaf6a3a946d74b",
+  "scope": "RGB images, masks, author README only; depth not downloaded",
+  "files": [
+    {
+      "file": "2D_Image.zip.001",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.001",
+      "git_blob_sha1": "38e6dbb06789c6c7936eb26aa6819aae91a2c55e",
+      "sha256": "597df0bedbfeae682590e603d3c290bc13777f7f6bf356d0aa7b2de2d0ab6658"
+    },
+    {
+      "file": "2D_Image.zip.002",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.002",
+      "git_blob_sha1": "f52650bf0e0f2bfa4e416af51758404598d328f7",
+      "sha256": "b52e4bf3a9ecbb8e9c57f7371c0a355cbc0843a995817c3995dfc9cb970e5ffe"
+    },
+    {
+      "file": "2D_Image.zip.003",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.003",
+      "git_blob_sha1": "f5e06fb1bf99d78d9b02235f65643ef6ad3ff0cf",
+      "sha256": "373d7d78cf77981cc6b6deaa9c5b62396988ecb2b643aee3f71a85dcec315ed0"
+    },
+    {
+      "file": "2D_Image.zip.004",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.004",
+      "git_blob_sha1": "fbee6027cf1e425b64b0f8f209293c6196904070",
+      "sha256": "99ede697f5a5d8d4cd715cf727f853047f25401dfac083695b5c4245df3b3afc"
+    },
+    {
+      "file": "2D_Image.zip.005",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.005",
+      "git_blob_sha1": "c245f4f8f99029ee99a0a39709b2e87ca36aef34",
+      "sha256": "f03ef2a104a303030cb5049a930c786c3d41e9f206c18bc64f2a60c3e2f918b8"
+    },
+    {
+      "file": "2D_Image.zip.006",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.006",
+      "git_blob_sha1": "286cba187e3700293fb9cb6b5c5d8e21b18148f0",
+      "sha256": "bce797a770e8188a6d4f94eb7381cd5617d01d263af0e93a47dec1e6d468c8aa"
+    },
+    {
+      "file": "2D_Image.zip.007",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.007",
+      "git_blob_sha1": "c6007894ce8bf02bbfcf78878da23c42935b44ae",
+      "sha256": "cb49c8c3da5e07923941781ac0e8267fb6b88a6829d714e6998a5d9d30a3c13b"
+    },
+    {
+      "file": "2D_Image.zip.008",
+      "bytes": 26214400,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.008",
+      "git_blob_sha1": "385c05324f518cf13b43e5b9e5cba7d467877662",
+      "sha256": "4d6bf0276a3d3f0c825051b3c8cc96ebd9d10b9bd38fca3553bebce63a8383a3"
+    },
+    {
+      "file": "2D_Image.zip.009",
+      "bytes": 10246362,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.009",
+      "git_blob_sha1": "c426b5f29e7aac7691a41d6e8fc50e42d80c54bc",
+      "sha256": "45ea9e4a0620e2b92a3fd95733d465774200fd38d3a0f195af86e02bf6d1be91"
+    },
+    {
+      "file": "Ground Truth.zip",
+      "bytes": 293788,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/Ground%20Truth.zip",
+      "git_blob_sha1": "110e0ba88244b481455cf6a65c90da97a89b12af",
+      "sha256": "c69424faac2a8468644dd7dde3fdfa9edcd2b34ec9bf7076a113b5b3ea0b3f5d"
+    },
+    {
+      "file": "README.md",
+      "bytes": 835,
+      "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/README.md",
+      "git_blob_sha1": "4b35f8945c47cfef65d0fe2aa802e9dcaa87414b",
+      "sha256": "c2d6cdb3123cf34f5ed012cfbc7bed2234b47e6a646c18fec96e7582644744c8"
+    }
+  ]
+}

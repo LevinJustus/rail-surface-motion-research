@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "plan_id": "stage2_lr_diagnostic_1e4_v1",
+  "status": "planned_not_started",
+  "scope": "Step10 finite learning-rate diagnostic only; same fixed128/64, 192 updates, initialization, sample order and dropout as stage1 pilot",
+  "model_config": "configs/baseline.json",
+  "model_config_sha256": "ca73c0e387b33e5486d883495039c6ca40d148522d3b257ff970eb02d5e4bf57",
+  "source_split": "data/splits/conservative_group_v1.json",
+  "source_split_sha256": "c65f8c439ac3f245541a6678f3fe937bd3dcf7136584f088fd90eae1609270a6",
+  "subsets": "data/splits/pilot_subset_v1.json",
+  "subsets_sha256": "6b5065f42dc7ead59366e64b08ec3d3c648118868d16718f0037db245b0e2ead",
+  "batch_schedule": "data/splits/stage1_batch_schedule_v1.json",
+  "batch_schedule_sha256": "9fff9a8ed3edca8f5d66f9ef3ce5135561c6113b7decc1407cc0cc4ee247d00e",
+  "execution_environment": "cpu",
+  "precision": "single",
+  "fresh_initialization_per_profile": true,
+  "model_initialization_seed": 20261114,
+  "selection_and_order_seed": 20261114,
+  "augmentation": "none",
+  "image_preprocessing": "existing aspect-preserving downsampling and valid-mask padding",
+  "normalization": "uint8 to single/255 once; no dataset-fitted statistics",
+  "jpeg_label_threshold": 128,
+  "output_channel_order": [
+    "background",
+    "defect"
+  ],
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0001,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon": 1e-08,
+    "learning_rate_schedule": "constant",
+    "weight_decay": 0.0,
+    "gradient_clipping": "global_L2_norm",
+    "max_gradient_norm": 1.0
+  },
+  "loss": {
+    "name": "masked_BCE_softDice",
+    "bce_weight_positive_target": 0.5,
+    "dice_weight_positive_target": 0.5,
+    "empty_target": "BCE only at weight1.0",
+    "bce_numerics": "stable log-softmax from two pre-softmax logits; no second sigmoid",
+    "dice_smoothing": 1e-06,
+    "spatial_reduction": "valid pixels per image",
+    "batch_reduction": "mean of per-image loss",
+    "empty_valid_region": "error, never silently skip"
+  },
+  "profiles": {
+    "smoke": {
+      "training_subset": "smoke_train",
+      "unique_train_images": 8,
+      "batch_size": 2,
+      "passes": 4,
+      "target_optimizer_updates": 16,
+      "validation": "training set diagnostics only",
+      "evaluation_updates": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "checkpoint_updates": [
+        0,
+        8,
+        16
+      ],
+      "require_generalization_score": false,
+      "require_dice_threshold": false
+    },
+    "pilot": {
+      "training_subset": "pilot_train",
+      "validation_subset": "pilot_validation",
+      "unique_train_images": 128,
+      "unique_validation_images": 64,
+      "batch_size": 2,
+      "passes": 3,
+      "target_optimizer_updates": 192,
+      "validation_updates": [
+        0,
+        64,
+        128,
+        192
+      ],
+      "checkpoint_every_updates": 32,
+      "save_initial": true,
+      "save_final": true,
+      "early_stopping": false,
+      "primary_report": "last checkpoint plus complete validation history",
+      "save_best_validation": true,
+      "best_rule": "highest micro foreground IoU; tie lower valid loss; then earlier update"
+    }
+  },
+  "metrics": {
+    "foreground_threshold": 0.5,
+    "threshold_comparison": ">=",
+    "postprocessing": "none",
+    "padding": "excluded from all confusion counts",
+    "required": [
+      "micro_foreground_IoU",
+      "micro_foreground_Dice",
+      "micro_precision",
+      "micro_recall",
+      "macro_image_foreground_IoU",
+      "macro_group_foreground_IoU",
+      "predicted_foreground_fraction",
+      "target_foreground_fraction",
+      "per_image_TP_FP_FN_TN"
+    ],
+    "zero_denominator": "NaN, report denominator and undefined count; never silently convert to1",
+    "all_background_prediction": "Report explicitly; not hidden by pixel accuracy",
+    "validation_statistics": "descriptive only; pilot not final test or significance evidence"
+  },
+  "visualization": {
+    "fixed_train_ids": [
+      "training/s0000595b_2_3",
+      "training/s0000571b_5_1",
+      "artificial_test/s0000516b_4_3",
+      "training/s0000533b_2_0",
+      "artificial_test/s0000515b_0_4",
+      "training/s0000546b_1_4",
+      "validation/s0000541b_2_0",
+      "training/s0000579b_0_0"
+    ],
+    "fixed_validation_ids": [
+      "training/s0000547b_5_4",
+      "validation/s0000522b_3_4",
+      "validation/s0000608b_14_2",
+      "training/s0000572b_5_4",
+      "artificial_test/s0000559b_2_3",
+      "artificial_test/s0000596b_1_0",
+      "training/s0000553b_5_0",
+      "training/s0000592b_7_4"
+    ],
+    "panels": [
+      "input",
+      "ground_truth",
+      "defect_probability",
+      "thresholded_prediction"
+    ],
+    "selection": "fixed before training; no best-looking sample selection"
+  },
+  "checkpoints": {
+    "directory": "runs/<run_id>/checkpoints",
+    "required": [
+      "network_learnables_and_state",
+      "optimizer_first_and_second_moments",
+      "global_update",
+      "epoch",
+      "next_schedule_position",
+      "rng_state",
+      "model_config_and_hash",
+      "training_config_and_hash",
+      "subset_and_schedule_hash",
+      "source_split_hash",
+      "git_commit",
+      "MATLAB_environment",
+      "class_channel_order",
+      "elapsed_time"
+    ],
+    "resume": "same profile/config/hash only; retain optimizer iteration and next batch",
+    "prediction_reload_max_abs_error": 1e-06
+  },
+  "logging": {
+    "per_update": [
+      "total_loss",
+      "BCE_component",
+      "Dice_component",
+      "unclipped_global_gradient_norm",
+      "clip_factor",
+      "update_time_s",
+      "sample_ids",
+      "valid_pixel_count"
+    ],
+    "per_validation": [
+      "full fixed64 metrics",
+      "per-image confusion counts",
+      "validation_time_s"
+    ],
+    "training_data_access": "training subset only; validation inference only; no heldout test access"
+  },
+  "failure_policy": {
+    "nonfinite_loss_or_gradient": "stop and record failed update; never count a failed update as success",
+    "data_or_hash_mismatch": "stop before training",
+    "interrupted_run": "save last consistent checkpoint; do not mark step complete",
+    "slow_CPU": "time smoke first, record pilot estimate before starting; any budget change requires new config version",
+    "poor_learning": "diagnose with training/validation only; retain this version and create a new plan for changed hyperparameters"
+  },
+  "mode": "lr_diagnostic",
+  "parent_stage1_config": "configs/training_stage1_v1.json",
+  "parent_stage1_config_sha256": "191c2cd0b248ff984afed85d8c611a957a6690f566116a70222aecea06937156",
+  "diagnostic_profile": "pilot",
+  "learning_rate_only_change": true
+}

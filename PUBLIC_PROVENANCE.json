@@ -1,0 +1,770 @@
+{
+  "schema_version": 1,
+  "release_version": "0.2.0",
+  "scope": "Clean allowlisted public export, not the canonical Git history or a new experiment.",
+  "canonical_originals_unchanged": true,
+  "historical_raw_evidence": "Retained locally; omitted from public export.",
+  "new_model_results": false,
+  "local_git_history_uploaded": false,
+  "publication_boundary": "Research code/configurations/protocols/results only; manuscripts, manuscript sources, bibliography, Word/PDF and manuscript builders remain local and are excluded.",
+  "files": [
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "public byte-preservation policy, independent of canonical history/evidence rules",
+      "path": ".gitattributes",
+      "public_sha256": "d18bfb7278bece4fb778ebc695db63d89c693c88274a2febd59b806f47e0f094"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "public ignore policy; original local-workflow ignore file is not copied",
+      "path": ".gitignore",
+      "public_sha256": "4b2eeba081d9e9a951ac549f20b03c5aab6db61abe9f7b9f000089f03ab04e33"
+    },
+    {
+      "src_relpath": "docs/public_CHANGELOG.md",
+      "src_sha256": "b226c72b325898dd0ff16dd917c45234dd337a761b24c10ff3b9b5dc2bd91f60",
+      "derivation": "byte-identical allowlisted source",
+      "path": "CHANGELOG.md",
+      "public_sha256": "b226c72b325898dd0ff16dd917c45234dd337a761b24c10ff3b9b5dc2bd91f60"
+    },
+    {
+      "src_relpath": "docs/github_readme.md",
+      "src_sha256": "5fe6b2d8c665da175d7107cc70ce7019d77110b6318db69d589f51f589f16ec6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "README.md",
+      "public_sha256": "5fe6b2d8c665da175d7107cc70ce7019d77110b6318db69d589f51f589f16ec6"
+    },
+    {
+      "src_relpath": "THIRD_PARTY_NOTICES.md",
+      "src_sha256": "a2c0692107a2ec8998bd3c7c3abcdf538adf54176e68fd89faf6a187d60ccb6b",
+      "derivation": "short public third-party notice replacing local pre-publication workflow text",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "public_sha256": "d6d25525e78a296f53295dda2615496160676314abce3dc18896af4774eea536"
+    },
+    {
+      "src_relpath": "PUBLIC_VERSION",
+      "src_sha256": "c58a749f70f5e1ba5394ebcdbfcfa02fa938c4a173d8e41e6c476a7c8b2acddd",
+      "derivation": "release version rendered from --version; no experiment rerun",
+      "path": "VERSION",
+      "public_sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+    },
+    {
+      "src_relpath": "configs/baseline.json",
+      "src_sha256": "ca73c0e387b33e5486d883495039c6ca40d148522d3b257ff970eb02d5e4bf57",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/baseline.json",
+      "public_sha256": "ca73c0e387b33e5486d883495039c6ca40d148522d3b257ff970eb02d5e4bf57"
+    },
+    {
+      "src_relpath": "configs/mobilenet_deeplab_scratch_v1.json",
+      "src_sha256": "22b7f339617b77dd2f62cd0c888c6ff81391d0b1e30b73dd8ab0bd3f15821435",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/mobilenet_deeplab_scratch_v1.json",
+      "public_sha256": "22b7f339617b77dd2f62cd0c888c6ff81391d0b1e30b73dd8ab0bd3f15821435"
+    },
+    {
+      "src_relpath": "configs/motion_sequences_v1.json",
+      "src_sha256": "03fe30642d2b01f97f1ea2c0a176b0c1c75a29cb3c64640be65b0b01ca6458bf",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/motion_sequences_v1.json",
+      "public_sha256": "03fe30642d2b01f97f1ea2c0a176b0c1c75a29cb3c64640be65b0b01ca6458bf"
+    },
+    {
+      "src_relpath": "configs/motion_sequences_v1.sha256",
+      "src_sha256": "c99c0233869ccd7cdd65637d45c24abb63605ee5ac34c225c7fcf505ecb8f5e5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/motion_sequences_v1.sha256",
+      "public_sha256": "c99c0233869ccd7cdd65637d45c24abb63605ee5ac34c225c7fcf505ecb8f5e5"
+    },
+    {
+      "src_relpath": "configs/motion_sequences_v2.json",
+      "src_sha256": "33fe958c3f68e6a415679ead76853b8991a1758a7c7b312fdbfae8f06271b172",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/motion_sequences_v2.json",
+      "public_sha256": "33fe958c3f68e6a415679ead76853b8991a1758a7c7b312fdbfae8f06271b172"
+    },
+    {
+      "src_relpath": "configs/motion_sequences_v2.sha256",
+      "src_sha256": "20f4e6612bdceb705e743c655f55371085d14b1117e6b93710d3d64df6d51c7c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/motion_sequences_v2.sha256",
+      "public_sha256": "20f4e6612bdceb705e743c655f55371085d14b1117e6b93710d3d64df6d51c7c"
+    },
+    {
+      "src_relpath": "configs/training_stage1_v1.json",
+      "src_sha256": "191c2cd0b248ff984afed85d8c611a957a6690f566116a70222aecea06937156",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage1_v1.json",
+      "public_sha256": "191c2cd0b248ff984afed85d8c611a957a6690f566116a70222aecea06937156"
+    },
+    {
+      "src_relpath": "configs/training_stage1_v1.sha256",
+      "src_sha256": "ce576baf19601259389da06f45e7fbf4d31af0b6bc2fc3a9c18bb44a9a490827",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage1_v1.sha256",
+      "public_sha256": "ce576baf19601259389da06f45e7fbf4d31af0b6bc2fc3a9c18bb44a9a490827"
+    },
+    {
+      "src_relpath": "configs/training_stage2_full_v1.json",
+      "src_sha256": "94c7629e60cbf7c68de6efe3035959cb01f1172a6996b00460aeacb57f1d0d2d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_full_v1.json",
+      "public_sha256": "94c7629e60cbf7c68de6efe3035959cb01f1172a6996b00460aeacb57f1d0d2d"
+    },
+    {
+      "src_relpath": "configs/training_stage2_full_v1.sha256",
+      "src_sha256": "340f9ed87b1a5882af51fb49754930f29de439d9288c37384f844a8ec8550d24",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_full_v1.sha256",
+      "public_sha256": "340f9ed87b1a5882af51fb49754930f29de439d9288c37384f844a8ec8550d24"
+    },
+    {
+      "src_relpath": "configs/training_stage2_full_v2.json",
+      "src_sha256": "297b004f03b52d03f670c416f0a01a2a612e186e322fa8ead57ef3feacf46610",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_full_v2.json",
+      "public_sha256": "297b004f03b52d03f670c416f0a01a2a612e186e322fa8ead57ef3feacf46610"
+    },
+    {
+      "src_relpath": "configs/training_stage2_full_v2.sha256",
+      "src_sha256": "19c3a911a5e465a0de35fb71c98085abaf2220c47984915d562b40914c9df2d1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_full_v2.sha256",
+      "public_sha256": "19c3a911a5e465a0de35fb71c98085abaf2220c47984915d562b40914c9df2d1"
+    },
+    {
+      "src_relpath": "configs/training_stage2_lr1e4_v1.json",
+      "src_sha256": "a615903360199a81f69f2639d9e5bfa201943be5412361070e5b458f7b805d82",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_lr1e4_v1.json",
+      "public_sha256": "a615903360199a81f69f2639d9e5bfa201943be5412361070e5b458f7b805d82"
+    },
+    {
+      "src_relpath": "configs/training_stage2_lr1e4_v1.sha256",
+      "src_sha256": "b2e7cbffd02c814a19ab4af9eca879f0bde6752f22eb1d4202f19da48b1951d5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_lr1e4_v1.sha256",
+      "public_sha256": "b2e7cbffd02c814a19ab4af9eca879f0bde6752f22eb1d4202f19da48b1951d5"
+    },
+    {
+      "src_relpath": "configs/training_stage2_lr3e4_v1.json",
+      "src_sha256": "c60fdb0a2fa4114180f9220661a83097586d86d69d4414bba2554fa8ac8a62af",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_lr3e4_v1.json",
+      "public_sha256": "c60fdb0a2fa4114180f9220661a83097586d86d69d4414bba2554fa8ac8a62af"
+    },
+    {
+      "src_relpath": "configs/training_stage2_lr3e4_v1.sha256",
+      "src_sha256": "0150048a5c7e45f0bfaac336f4ba342e12e5705fc53deb006e4da965ca9ed3b1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage2_lr3e4_v1.sha256",
+      "public_sha256": "0150048a5c7e45f0bfaac336f4ba342e12e5705fc53deb006e4da965ca9ed3b1"
+    },
+    {
+      "src_relpath": "configs/training_stage3_mature_v1.json",
+      "src_sha256": "c3ff8352fb68ec10ba5096d63b100f5ed5d14be26c4f5551f7f515512179006c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage3_mature_v1.json",
+      "public_sha256": "c3ff8352fb68ec10ba5096d63b100f5ed5d14be26c4f5551f7f515512179006c"
+    },
+    {
+      "src_relpath": "configs/training_stage3_mature_v1.sha256",
+      "src_sha256": "f42ae16c170c8881cf2a398494d61c96dcf14e07580c6535ec7f20028fd70e5c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/training_stage3_mature_v1.sha256",
+      "public_sha256": "f42ae16c170c8881cf2a398494d61c96dcf14e07580c6535ec7f20028fd70e5c"
+    },
+    {
+      "src_relpath": "data/manifests/mcnet_audit.json",
+      "src_sha256": "6295cf96db89e8c6a62a019ffe7596f4cbdc4b344be6f8cd70e57876f7e29a33",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/manifests/mcnet_audit.json",
+      "public_sha256": "6295cf96db89e8c6a62a019ffe7596f4cbdc4b344be6f8cd70e57876f7e29a33"
+    },
+    {
+      "src_relpath": "data/manifests/mcnet_download_manifest.json",
+      "src_sha256": "046b40ec05e21e5bd013e64acbbd9dc7c392dc83c1e5284ffb731e17066cf55a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/manifests/mcnet_download_manifest.json",
+      "public_sha256": "046b40ec05e21e5bd013e64acbbd9dc7c392dc83c1e5284ffb731e17066cf55a"
+    },
+    {
+      "src_relpath": "data/manifests/neu_download_manifest.json",
+      "src_sha256": "215b999512503befcc2908669047616876a016bfa3923d48a1bf17ff58a9b581",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/manifests/neu_download_manifest.json",
+      "public_sha256": "215b999512503befcc2908669047616876a016bfa3923d48a1bf17ff58a9b581"
+    },
+    {
+      "src_relpath": "data/manifests/neu_initial_audit.json",
+      "src_sha256": "c8504771481f8522bb2d1a0246ca9076a1a45dd873b40420cf097b741dd3d203",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/manifests/neu_initial_audit.json",
+      "public_sha256": "c8504771481f8522bb2d1a0246ca9076a1a45dd873b40420cf097b741dd3d203"
+    },
+    {
+      "src_relpath": "data/manifests/neu_tree.json",
+      "src_sha256": "fd28d6b8cb49512b312a0021ca207ac8080ea8bdd420100f0b1e2bcb7d204e76",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/manifests/neu_tree.json",
+      "public_sha256": "fd28d6b8cb49512b312a0021ca207ac8080ea8bdd420100f0b1e2bcb7d204e76"
+    },
+    {
+      "src_relpath": "data/splits/conservative_group_v1.json",
+      "src_sha256": "c65f8c439ac3f245541a6678f3fe937bd3dcf7136584f088fd90eae1609270a6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/conservative_group_v1.json",
+      "public_sha256": "c65f8c439ac3f245541a6678f3fe937bd3dcf7136584f088fd90eae1609270a6"
+    },
+    {
+      "src_relpath": "data/splits/conservative_group_v1.sha256",
+      "src_sha256": "2bee8f11e33bde26c1fd46db7871449dd2ba7e7b0cde8055f3191fb7e3c32905",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/conservative_group_v1.sha256",
+      "public_sha256": "2bee8f11e33bde26c1fd46db7871449dd2ba7e7b0cde8055f3191fb7e3c32905"
+    },
+    {
+      "src_relpath": "data/splits/full_stage2_schedule_v1.json",
+      "src_sha256": "d47db8743fcdbb488157caeed7f495e504b0531319f9528d71396c7d20ef011d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/full_stage2_schedule_v1.json",
+      "public_sha256": "d47db8743fcdbb488157caeed7f495e504b0531319f9528d71396c7d20ef011d"
+    },
+    {
+      "src_relpath": "data/splits/full_stage2_schedule_v1.sha256",
+      "src_sha256": "54aca9f0e65d12fab31d91588167b6a8bed8c3a38b1589b4736110cba287cd4f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/full_stage2_schedule_v1.sha256",
+      "public_sha256": "54aca9f0e65d12fab31d91588167b6a8bed8c3a38b1589b4736110cba287cd4f"
+    },
+    {
+      "src_relpath": "data/splits/pilot_subset_v1.json",
+      "src_sha256": "6b5065f42dc7ead59366e64b08ec3d3c648118868d16718f0037db245b0e2ead",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/pilot_subset_v1.json",
+      "public_sha256": "6b5065f42dc7ead59366e64b08ec3d3c648118868d16718f0037db245b0e2ead"
+    },
+    {
+      "src_relpath": "data/splits/pilot_subset_v1.sha256",
+      "src_sha256": "09b095cfba81512d5430e0b1fce60dfbc34785da72e35856d430da2f750ccf83",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/pilot_subset_v1.sha256",
+      "public_sha256": "09b095cfba81512d5430e0b1fce60dfbc34785da72e35856d430da2f750ccf83"
+    },
+    {
+      "src_relpath": "data/splits/stage1_batch_schedule_v1.json",
+      "src_sha256": "9fff9a8ed3edca8f5d66f9ef3ce5135561c6113b7decc1407cc0cc4ee247d00e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/stage1_batch_schedule_v1.json",
+      "public_sha256": "9fff9a8ed3edca8f5d66f9ef3ce5135561c6113b7decc1407cc0cc4ee247d00e"
+    },
+    {
+      "src_relpath": "data/splits/stage1_batch_schedule_v1.sha256",
+      "src_sha256": "3f5b0bac9319b658f8d2a44cfa7555e0c3a9bab708e188ceb4ab7a92afd40abc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/stage1_batch_schedule_v1.sha256",
+      "public_sha256": "3f5b0bac9319b658f8d2a44cfa7555e0c3a9bab708e188ceb4ab7a92afd40abc"
+    },
+    {
+      "src_relpath": "data/splits/step12_sources_v1.json",
+      "src_sha256": "2819fd7af8557e715d6d0a730638350f8afa88e452351d5e97d71cf00060b44f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/step12_sources_v1.json",
+      "public_sha256": "2819fd7af8557e715d6d0a730638350f8afa88e452351d5e97d71cf00060b44f"
+    },
+    {
+      "src_relpath": "data/splits/step12_sources_v1.sha256",
+      "src_sha256": "7aa4df0e1dccf642b45f6c08b623b248c2c534be1ae02f1686e9bebf6d4cfc33",
+      "derivation": "byte-identical allowlisted source",
+      "path": "data/splits/step12_sources_v1.sha256",
+      "public_sha256": "7aa4df0e1dccf642b45f6c08b623b248c2c534be1ae02f1686e9bebf6d4cfc33"
+    },
+    {
+      "src_relpath": "docs/public_PROGRESS.md",
+      "src_sha256": "804b22437f3c3145d1dd6871014a8334287b6678538489e965e7e2efb1c103dc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/PROGRESS.md",
+      "public_sha256": "804b22437f3c3145d1dd6871014a8334287b6678538489e965e7e2efb1c103dc"
+    },
+    {
+      "src_relpath": "docs/PUBLICATION_POLICY.md",
+      "src_sha256": "355978d2c6144aba6e00a9e3dbc1c855bb66ee11ccfa754add330d04f43f124f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/PUBLICATION_POLICY.md",
+      "public_sha256": "355978d2c6144aba6e00a9e3dbc1c855bb66ee11ccfa754add330d04f43f124f"
+    },
+    {
+      "src_relpath": "docs/baseline_preparation.md",
+      "src_sha256": "780f4c6fb3ffd8a47c8adee7f5f2d454a0429a5c35d07f80be58592f65e97277",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/baseline_preparation.md",
+      "public_sha256": "c231149502332a7fc928404827c8a610b6ecd255a0217558a2624391f7474d50"
+    },
+    {
+      "src_relpath": "docs/experiment_protocol.md",
+      "src_sha256": "83eeb7429cb6309b24233cbdc538f44ea5119e0e244bd4f8b8f14b0747e78b46",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/experiment_protocol.md",
+      "public_sha256": "f624db2ed14e95ced16bad9084e8684dee7290df8f40e5f1e593aa6b3cbe2084"
+    },
+    {
+      "src_relpath": "docs/stage1_training_plan.md",
+      "src_sha256": "ee16270f3c2917492a569705fe82338dfb34eaa867896abd10b9207634925db0",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/stage1_training_plan.md",
+      "public_sha256": "0ab6832ac4e1a752643e7e9a8b864f50cf40069193e1ad19ef63f65b070ac40a"
+    },
+    {
+      "src_relpath": "docs/step08_smoke_results.md",
+      "src_sha256": "9f630d771df595ae61e536f35a0a14067aa96282dad0abe95af551c78ecdd634",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 12,
+      "path": "docs/step08_smoke_results.md",
+      "public_sha256": "50b7e7eb095b32c28a446021f153947c2758e607575d13903a2bb377351cfac5"
+    },
+    {
+      "src_relpath": "docs/step09_pilot_results.md",
+      "src_sha256": "b26dd1b4b8b75cfcf0c277bc2a204dd42f39a225a1ec938321c37570307e7dd0",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 11,
+      "path": "docs/step09_pilot_results.md",
+      "public_sha256": "78f3c4a155d0030056aecc61e5d0b2ca6502fb357ce9698f312ccb4e23a44721"
+    },
+    {
+      "src_relpath": "docs/step10_full_results.md",
+      "src_sha256": "4e744e8b733e6e7336d333f83e145b3c381d157f0173908c0313eaa8ce43dbdf",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 6,
+      "path": "docs/step10_full_results.md",
+      "public_sha256": "5db4697fd5d96212d5ada9dfb5ec909168ebca0cf335e0634bb75a41ada7b5c2"
+    },
+    {
+      "src_relpath": "docs/step11_execution_plan.md",
+      "src_sha256": "aba645597a61951bc5f7c9edbe6b01154b03a5e75e16671fd687caf138600449",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 1,
+      "path": "docs/step11_execution_plan.md",
+      "public_sha256": "0cfd1c04ccbb60c7797b839f1dea42ed81c6e1039673dc99111333a7816b813a"
+    },
+    {
+      "src_relpath": "docs/step11_mature_results.md",
+      "src_sha256": "2e0e564524ba28db4d962cc7da12756ec7ed43cb4de7b91fb64f2c21e42eed9d",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 11,
+      "path": "docs/step11_mature_results.md",
+      "public_sha256": "9abb739c4d493b4e73114c9241a16f12d5e04e9a50d1591bb65a6e6807417f1a"
+    },
+    {
+      "src_relpath": "docs/step12_sequence_protocol.md",
+      "src_sha256": "a1f666836f4dd8a9fe72d93bd0063f5b437516fce968b03c0266dcf5a71dfc8d",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step12_sequence_protocol.md",
+      "public_sha256": "9a61e3b1b1e26bbc63553e540c5e08df1d98896d49423da9160061e6040b7ae7"
+    },
+    {
+      "src_relpath": "docs/step12_sequence_results.md",
+      "src_sha256": "628ccd2669c5ecc2fa0b7ec8ca592e5bb18a5e4fc1f56b1f901e568125c6b4c2",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step12_sequence_results.md",
+      "public_sha256": "5431d84db1b267245445703427856a037d810b71771f7ca0ed5fe48cc9a1edda"
+    },
+    {
+      "src_relpath": "matlab/benchmark_training_batches.m",
+      "src_sha256": "bc0214878e06d454f47a402a4136135448bf5aca1abd63e58611bfc2413f7326",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/benchmark_training_batches.m",
+      "public_sha256": "bc0214878e06d454f47a402a4136135448bf5aca1abd63e58611bfc2413f7326"
+    },
+    {
+      "src_relpath": "matlab/build_baseline.m",
+      "src_sha256": "cafdfbf73cd87021a3acb0858bb9f760287288bcd84329bb3327493e9705d39b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/build_baseline.m",
+      "public_sha256": "cafdfbf73cd87021a3acb0858bb9f760287288bcd84329bb3327493e9705d39b"
+    },
+    {
+      "src_relpath": "matlab/build_mobilenet_deeplab.m",
+      "src_sha256": "93236a25ea1139fc827e920a5e1aebbb11ecfd011d22d197171b6f2dde25e32e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/build_mobilenet_deeplab.m",
+      "public_sha256": "93236a25ea1139fc827e920a5e1aebbb11ecfd011d22d197171b6f2dde25e32e"
+    },
+    {
+      "src_relpath": "matlab/build_seeded_baseline.m",
+      "src_sha256": "4d349051b2b99a7a9f5e0f43e1f26407af4df028c5f5c979ace345060d9c2acc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/build_seeded_baseline.m",
+      "public_sha256": "4d349051b2b99a7a9f5e0f43e1f26407af4df028c5f5c979ace345060d9c2acc"
+    },
+    {
+      "src_relpath": "matlab/build_seeded_mature_baseline.m",
+      "src_sha256": "2fcd3e896094408d3aec4eb0e34267fd9840e98b364fcec13d29e06de324ec65",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/build_seeded_mature_baseline.m",
+      "public_sha256": "2fcd3e896094408d3aec4eb0e34267fd9840e98b364fcec13d29e06de324ec65"
+    },
+    {
+      "src_relpath": "matlab/check_baseline_environment.m",
+      "src_sha256": "7821ccad21b8a868b165a86f22a0ed916d1948f5d992a8ba3237d6038c549d3a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_baseline_environment.m",
+      "public_sha256": "7821ccad21b8a868b165a86f22a0ed916d1948f5d992a8ba3237d6038c549d3a"
+    },
+    {
+      "src_relpath": "matlab/check_data_contract.m",
+      "src_sha256": "a24b767f4a40ee4acbf0308546c23c639d1fc13c4d70d948424e555d84667bb6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_data_contract.m",
+      "public_sha256": "a24b767f4a40ee4acbf0308546c23c639d1fc13c4d70d948424e555d84667bb6"
+    },
+    {
+      "src_relpath": "matlab/check_masked_segmentation_loss.m",
+      "src_sha256": "5cd981b47d0ae44754de86a5891b84e51506373c0f7f641a9b399d9454aa9259",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_masked_segmentation_loss.m",
+      "public_sha256": "5cd981b47d0ae44754de86a5891b84e51506373c0f7f641a9b399d9454aa9259"
+    },
+    {
+      "src_relpath": "matlab/check_mature_baseline_contract.m",
+      "src_sha256": "8f8eca5931a9b4bd461a1ffe1315e4ef667084c38a43c9b8aa41c68e80c2cfb0",
+      "derivation": "public-copy-only optional GPU environment-query guard; network/training mathematics unchanged; not rerun",
+      "exact_unified_diff": "--- canonical/matlab/check_mature_baseline_contract.m\n+++ public/matlab/check_mature_baseline_contract.m\n@@ -11,7 +11,7 @@\n report.validation_images_opened=0;report.heldout_test_images_opened=0;clock=tic;\n try\n     report.matlab_version=version;report.execution_environment='CPU';report.precision='single';\n-    report.max_computational_threads=maxNumCompThreads;report.gpu_count=gpuDeviceCount;\n+    report.max_computational_threads=maxNumCompThreads;[report.gpu_count,report.gpu_query_available]=publicOptionalGpuCount();\n     report.parent_model_sha256=file_sha256(modelPath);\n     mkdir(fullfile(out,'source_snapshot'));files=dir(fullfile(root,'matlab','*.m'));\n     for k=1:numel(files)\n@@ -145,3 +145,13 @@\n fid=fopen(path,'w','n','UTF-8');assert(fid>=0);cleanup=onCleanup(@()fclose(fid)); %#ok<NASGU>\n fprintf(fid,'%s\\n',jsonencode(value,PrettyPrint=true));\n end\n+\n+function [count,available]=publicOptionalGpuCount()\n+% Public-export adapter: optional environment logging; CPU math is unchanged.\n+count=0;available=false;\n+try\n+    count=gpuDeviceCount;\n+    available=true;\n+catch\n+end\n+end\n",
+      "path": "matlab/check_mature_baseline_contract.m",
+      "public_sha256": "9edbb5a4f9f97f8c6c9a3e87796372fa71b86b94c5d6a223aeccfa53d949bd93"
+    },
+    {
+      "src_relpath": "matlab/check_pilot_evaluation.m",
+      "src_sha256": "799870ca219b24093b93b2832d1296aa878ff8c7e887fe82037da841983eec25",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_pilot_evaluation.m",
+      "public_sha256": "799870ca219b24093b93b2832d1296aa878ff8c7e887fe82037da841983eec25"
+    },
+    {
+      "src_relpath": "matlab/check_prepared_data.m",
+      "src_sha256": "7c4b83a270efedd2d4ebf2cfc9ca10e31504b1fe9c3b217212f4cda848b4cdd4",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_prepared_data.m",
+      "public_sha256": "7c4b83a270efedd2d4ebf2cfc9ca10e31504b1fe9c3b217212f4cda848b4cdd4"
+    },
+    {
+      "src_relpath": "matlab/check_seed_initialization.m",
+      "src_sha256": "015f0f34edef80ec0e11a12c63266ebab04e475cf07d78dff6e2a3d552ea1e3c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_seed_initialization.m",
+      "public_sha256": "015f0f34edef80ec0e11a12c63266ebab04e475cf07d78dff6e2a3d552ea1e3c"
+    },
+    {
+      "src_relpath": "matlab/evaluate_pilot.m",
+      "src_sha256": "9faca7b6cb18c1b65f0a7e8386155b0b825418ee06ee75f4392809e1f5e0b07a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/evaluate_pilot.m",
+      "public_sha256": "9faca7b6cb18c1b65f0a7e8386155b0b825418ee06ee75f4392809e1f5e0b07a"
+    },
+    {
+      "src_relpath": "matlab/evaluate_smoke.m",
+      "src_sha256": "b99abfe27733d4a8bb02162fb50898662bf0c5bee3b4ad47a4613069ef25e635",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/evaluate_smoke.m",
+      "public_sha256": "b99abfe27733d4a8bb02162fb50898662bf0c5bee3b4ad47a4613069ef25e635"
+    },
+    {
+      "src_relpath": "matlab/file_sha256.m",
+      "src_sha256": "8c8078d442ece3a8e916f9843d8778afe48cf2997d4f5956ec215421f8824121",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/file_sha256.m",
+      "public_sha256": "8c8078d442ece3a8e916f9843d8778afe48cf2997d4f5956ec215421f8824121"
+    },
+    {
+      "src_relpath": "matlab/generate_controlled_sequences.m",
+      "src_sha256": "532b747e894ade84ed86182c50858d2e430b89bf2f4fd7d8095dc4fc23d6d0d8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/generate_controlled_sequences.m",
+      "public_sha256": "532b747e894ade84ed86182c50858d2e430b89bf2f4fd7d8095dc4fc23d6d0d8"
+    },
+    {
+      "src_relpath": "matlab/generate_sequence_demo.m",
+      "src_sha256": "5725196c2d76914ef72e0dbc593e7ec76320ed1ed56ccc7684844da8ad8e6b6e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/generate_sequence_demo.m",
+      "public_sha256": "5725196c2d76914ef72e0dbc593e7ec76320ed1ed56ccc7684844da8ad8e6b6e"
+    },
+    {
+      "src_relpath": "matlab/load_full_inputs.m",
+      "src_sha256": "fa17ff30c7bf615a78ea82d4e2162eafe7d855636353a1756c68bc8f58a45c6e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/load_full_inputs.m",
+      "public_sha256": "fa17ff30c7bf615a78ea82d4e2162eafe7d855636353a1756c68bc8f58a45c6e"
+    },
+    {
+      "src_relpath": "matlab/load_pilot_inputs.m",
+      "src_sha256": "954d62d0aec6a58c909d5e249e51a1872e7ef3b870d8fcd70d665a68251f485b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/load_pilot_inputs.m",
+      "public_sha256": "954d62d0aec6a58c909d5e249e51a1872e7ef3b870d8fcd70d665a68251f485b"
+    },
+    {
+      "src_relpath": "matlab/load_smoke_inputs.m",
+      "src_sha256": "a47b5ae1f6baf8f38756b38dc7fea5d1d7283075e87dafc34a4c9132a74dc902",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/load_smoke_inputs.m",
+      "public_sha256": "a47b5ae1f6baf8f38756b38dc7fea5d1d7283075e87dafc34a4c9132a74dc902"
+    },
+    {
+      "src_relpath": "matlab/masked_segmentation_loss.m",
+      "src_sha256": "e47bb12303ae074b33302f596f9556b1e6bb1fc81d921849140da4c74cdb7fca",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/masked_segmentation_loss.m",
+      "public_sha256": "e47bb12303ae074b33302f596f9556b1e6bb1fc81d921849140da4c74cdb7fca"
+    },
+    {
+      "src_relpath": "matlab/network_parameter_sha256.m",
+      "src_sha256": "c94425663cae12653bf04d8673c2fea3ff5ded8d8f3803628cee91f52a479c1a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/network_parameter_sha256.m",
+      "public_sha256": "c94425663cae12653bf04d8673c2fea3ff5ded8d8f3803628cee91f52a479c1a"
+    },
+    {
+      "src_relpath": "matlab/pilot_is_better.m",
+      "src_sha256": "638638a9593841ab731f249a37cb0ed9de08694928dc98aa88dd642f6142b614",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/pilot_is_better.m",
+      "public_sha256": "638638a9593841ab731f249a37cb0ed9de08694928dc98aa88dd642f6142b614"
+    },
+    {
+      "src_relpath": "matlab/plot_full_run.m",
+      "src_sha256": "33ac3202e31d3a6176c60c173b52f117f33748efb1d908a7a31dbf4a302a4ee7",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_full_run.m",
+      "public_sha256": "33ac3202e31d3a6176c60c173b52f117f33748efb1d908a7a31dbf4a302a4ee7"
+    },
+    {
+      "src_relpath": "matlab/plot_mature_comparison.m",
+      "src_sha256": "63c3f15a069739de29bc1f77b6bc9fc997aafbd39be71c2f560ed9e0b5779d0a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_mature_comparison.m",
+      "public_sha256": "63c3f15a069739de29bc1f77b6bc9fc997aafbd39be71c2f560ed9e0b5779d0a"
+    },
+    {
+      "src_relpath": "matlab/plot_pilot_run.m",
+      "src_sha256": "b19b7d9c673d8e5ed26169f40dae1c9edc082fb4baaee40149c97a5e62b148fc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_pilot_run.m",
+      "public_sha256": "b19b7d9c673d8e5ed26169f40dae1c9edc082fb4baaee40149c97a5e62b148fc"
+    },
+    {
+      "src_relpath": "matlab/plot_repeat_summary.m",
+      "src_sha256": "1516194ec1a1af24c8d9167f28c9d2d7482e66d0ff756c8b4eaff8b15288ca93",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_repeat_summary.m",
+      "public_sha256": "1516194ec1a1af24c8d9167f28c9d2d7482e66d0ff756c8b4eaff8b15288ca93"
+    },
+    {
+      "src_relpath": "matlab/plot_smoke_run.m",
+      "src_sha256": "5db194422e037cb6e5a4fc203ff0c638e3f241b7fa5d8dcfe0dd43b62e79b692",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_smoke_run.m",
+      "public_sha256": "5db194422e037cb6e5a4fc203ff0c638e3f241b7fa5d8dcfe0dd43b62e79b692"
+    },
+    {
+      "src_relpath": "matlab/probe_lightweight_dependencies.m",
+      "src_sha256": "e9629deb4487c4e52066e88635d5047fa7391c1dd25fd6385edeec4659161b44",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/probe_lightweight_dependencies.m",
+      "public_sha256": "e9629deb4487c4e52066e88635d5047fa7391c1dd25fd6385edeec4659161b44"
+    },
+    {
+      "src_relpath": "matlab/read_segmentation_sample.m",
+      "src_sha256": "67e3b8712772700c170441fb91683f4c7bf079a0b95b7b37438426538cdd05e9",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/read_segmentation_sample.m",
+      "public_sha256": "67e3b8712772700c170441fb91683f4c7bf079a0b95b7b37438426538cdd05e9"
+    },
+    {
+      "src_relpath": "matlab/segmentation_train_step.m",
+      "src_sha256": "4c895aea88163921c31eaa255001bcb46ec76e63fe9a934229f88b69c377a1ff",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/segmentation_train_step.m",
+      "public_sha256": "4c895aea88163921c31eaa255001bcb46ec76e63fe9a934229f88b69c377a1ff"
+    },
+    {
+      "src_relpath": "matlab/train_full_baseline.m",
+      "src_sha256": "60a875a866309932e58e5d1945adca8373958c83a661025248e9a2356457accd",
+      "derivation": "public-copy-only optional GPU environment-query guard; network/training mathematics unchanged; not rerun",
+      "exact_unified_diff": "--- canonical/matlab/train_full_baseline.m\n+++ public/matlab/train_full_baseline.m\n@@ -34,7 +34,7 @@\n     environment.matlab_version=version;environment.computer=computer;\n     environment.cpu_identifier=getenv('PROCESSOR_IDENTIFIER');\n     environment.execution_environment='CPU';environment.precision='single';\n-    environment.max_computational_threads=maxNumCompThreads;environment.gpu_count=gpuDeviceCount;\n+    environment.max_computational_threads=maxNumCompThreads;[environment.gpu_count,environment.gpu_query_available]=publicOptionalGpuCount();\n     environment.products=ver;\n     [status,revision]=system(sprintf('git -C \"%s\" rev-parse HEAD',root));assert(status==0);\n     [status,dirty]=system(sprintf('git -C \"%s\" status --porcelain',root));assert(status==0);\n@@ -267,3 +267,13 @@\n function writeJson(path,value)\n fid=fopen(path,'w','n','UTF-8');assert(fid>=0);c=onCleanup(@()fclose(fid));fprintf(fid,'%s\\n',jsonencode(value,PrettyPrint=true));\n end\n+\n+function [count,available]=publicOptionalGpuCount()\n+% Public-export adapter: optional environment logging; CPU math is unchanged.\n+count=0;available=false;\n+try\n+    count=gpuDeviceCount;\n+    available=true;\n+catch\n+end\n+end\n",
+      "path": "matlab/train_full_baseline.m",
+      "public_sha256": "b5bbf9d10c6add775663be119ca392d63e490d2f2f4213a318867c5e24ad9cc9"
+    },
+    {
+      "src_relpath": "matlab/train_lr_diagnostic.m",
+      "src_sha256": "f4fd34fef9be99cf7dd5e28412633499c87c9431ff6d0452fae58c713a31924d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/train_lr_diagnostic.m",
+      "public_sha256": "f4fd34fef9be99cf7dd5e28412633499c87c9431ff6d0452fae58c713a31924d"
+    },
+    {
+      "src_relpath": "matlab/train_mature_comparison.m",
+      "src_sha256": "ce54807eed8485f1accafaa33c421d7957a74be596f5a0473c0bfe00137e1d96",
+      "derivation": "public-copy-only optional GPU environment-query guard; network/training mathematics unchanged; not rerun",
+      "exact_unified_diff": "--- canonical/matlab/train_mature_comparison.m\n+++ public/matlab/train_mature_comparison.m\n@@ -36,7 +36,7 @@\n     environment.matlab_version=version;environment.computer=computer;\n     environment.cpu_identifier=getenv('PROCESSOR_IDENTIFIER');\n     environment.execution_environment='CPU';environment.precision='single';\n-    environment.max_computational_threads=maxNumCompThreads;environment.gpu_count=gpuDeviceCount;\n+    environment.max_computational_threads=maxNumCompThreads;[environment.gpu_count,environment.gpu_query_available]=publicOptionalGpuCount();\n     environment.products=ver;\n     [status,revision]=system(sprintf('git -C \"%s\" rev-parse HEAD',root));assert(status==0);\n     [status,dirty]=system(sprintf('git -C \"%s\" status --porcelain',root));assert(status==0);\n@@ -368,3 +368,13 @@\n function writeJson(path,value)\n fid=fopen(path,'w','n','UTF-8');assert(fid>=0);c=onCleanup(@()fclose(fid));fprintf(fid,'%s\\n',jsonencode(value,PrettyPrint=true));\n end\n+\n+function [count,available]=publicOptionalGpuCount()\n+% Public-export adapter: optional environment logging; CPU math is unchanged.\n+count=0;available=false;\n+try\n+    count=gpuDeviceCount;\n+    available=true;\n+catch\n+end\n+end\n",
+      "path": "matlab/train_mature_comparison.m",
+      "public_sha256": "b06766343ce777b3eb26b266b1ec318a2ccafb5424e998adabb8b2b77ac7a8cb"
+    },
+    {
+      "src_relpath": "matlab/train_pilot.m",
+      "src_sha256": "e0760c6a9a7cd167201ce8a218474307b13ba8f1dabe23798a0e386ae655dc06",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/train_pilot.m",
+      "public_sha256": "e0760c6a9a7cd167201ce8a218474307b13ba8f1dabe23798a0e386ae655dc06"
+    },
+    {
+      "src_relpath": "matlab/train_smoke.m",
+      "src_sha256": "dfbc5c4ae7d7d37724e3030382cfa0d6289596dc010f52c3dbb814c48b18dce2",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/train_smoke.m",
+      "public_sha256": "dfbc5c4ae7d7d37724e3030382cfa0d6289596dc010f52c3dbb814c48b18dce2"
+    },
+    {
+      "src_relpath": "matlab/verify_mature_preflight_checkpoint.m",
+      "src_sha256": "9f9f80d2c02e398bfe3944f578209db53210b5f7f39bd4ccfef9347029ff6529",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/verify_mature_preflight_checkpoint.m",
+      "public_sha256": "9f9f80d2c02e398bfe3944f578209db53210b5f7f39bd4ccfef9347029ff6529"
+    },
+    {
+      "src_relpath": "docs/evidence/step11/comparison/paired_delta_statistics.csv",
+      "src_sha256": "f0c601755d39f8eccc7b78a5f9f1d6e4a4cd7a36d3395b66b20505bb192f83a5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/paired_delta_statistics.csv",
+      "public_sha256": "f0c601755d39f8eccc7b78a5f9f1d6e4a4cd7a36d3395b66b20505bb192f83a5"
+    },
+    {
+      "src_relpath": "docs/evidence/step11/comparison/paired_seed_deltas.csv",
+      "src_sha256": "f461970a6d4db45095d721cc8c24751e5ff4414aeb751bf5daeba59d1e0b8a28",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/paired_seed_deltas.csv",
+      "public_sha256": "f461970a6d4db45095d721cc8c24751e5ff4414aeb751bf5daeba59d1e0b8a28"
+    },
+    {
+      "src_relpath": "docs/evidence/step11/comparison/per_seed.csv",
+      "src_sha256": "ff8d9fb06546da700d3554776d0ccbbc9ef02501e044a8b7ac4ba67c27c5f7ac",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/per_seed.csv",
+      "public_sha256": "ff8d9fb06546da700d3554776d0ccbbc9ef02501e044a8b7ac4ba67c27c5f7ac"
+    },
+    {
+      "src_relpath": "docs/evidence/step11/comparison/statistics.csv",
+      "src_sha256": "d0b773e76e801606ec93b75d9dc84ff6265f508aabfa857a74f103aef6cb948c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/statistics.csv",
+      "public_sha256": "d0b773e76e801606ec93b75d9dc84ff6265f508aabfa857a74f103aef6cb948c"
+    },
+    {
+      "src_relpath": "tools/audit_full_run.py",
+      "src_sha256": "d366d8b2feaf7f3faaac9e74443064220e9feab1a6b2ffd5d4db7fc63bf74ec8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_full_run.py",
+      "public_sha256": "d366d8b2feaf7f3faaac9e74443064220e9feab1a6b2ffd5d4db7fc63bf74ec8"
+    },
+    {
+      "src_relpath": "tools/audit_mature_comparison.py",
+      "src_sha256": "8258a0c07e0810a8a78a39c7b269b1dd237da9a5eee78cf6c0ad0837175f1a0d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_mature_comparison.py",
+      "public_sha256": "8258a0c07e0810a8a78a39c7b269b1dd237da9a5eee78cf6c0ad0837175f1a0d"
+    },
+    {
+      "src_relpath": "tools/audit_mcnet.py",
+      "src_sha256": "27929bd7f118992664123c98672bf7eed98f3cc5e09f8dca763f27961f1668d6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_mcnet.py",
+      "public_sha256": "27929bd7f118992664123c98672bf7eed98f3cc5e09f8dca763f27961f1668d6"
+    },
+    {
+      "src_relpath": "tools/audit_neu.py",
+      "src_sha256": "ab789d0600193b4b25e593bb7801fe34566bf32ce19a653d41546cefcc34fd24",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_neu.py",
+      "public_sha256": "ab789d0600193b4b25e593bb7801fe34566bf32ce19a653d41546cefcc34fd24"
+    },
+    {
+      "src_relpath": "tools/audit_sequence_replay.py",
+      "src_sha256": "55b0a40b61834d465289429f5b35dc3202e0dbd4cb1ef19064946320bf98651e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_sequence_replay.py",
+      "public_sha256": "55b0a40b61834d465289429f5b35dc3202e0dbd4cb1ef19064946320bf98651e"
+    },
+    {
+      "src_relpath": "tools/compare_mature_results.py",
+      "src_sha256": "400e2a51870218b4cfdf794b4495825614ffbaaf6436adb61d9008aa662e7468",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/compare_mature_results.py",
+      "public_sha256": "400e2a51870218b4cfdf794b4495825614ffbaaf6436adb61d9008aa662e7468"
+    },
+    {
+      "src_relpath": "tools/create_source_archive.py",
+      "src_sha256": "452b8273dcd684c647b2bf96b59866d19a0bd47da8cca7cc42305b2ab454dba2",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/create_source_archive.py",
+      "public_sha256": "452b8273dcd684c647b2bf96b59866d19a0bd47da8cca7cc42305b2ab454dba2"
+    },
+    {
+      "src_relpath": "tools/fetch_mcnet.py",
+      "src_sha256": "caa32312b00c2419bdf2a8f09e0694cea339940f17dd10bab77400b5927f3a45",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/fetch_mcnet.py",
+      "public_sha256": "caa32312b00c2419bdf2a8f09e0694cea339940f17dd10bab77400b5927f3a45"
+    },
+    {
+      "src_relpath": "tools/fetch_neu.py",
+      "src_sha256": "cadbba4c0df64f96a5125334d133931ea584c3ded99bfbff4af9d3f6ccc9205b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/fetch_neu.py",
+      "public_sha256": "cadbba4c0df64f96a5125334d133931ea584c3ded99bfbff4af9d3f6ccc9205b"
+    },
+    {
+      "src_relpath": "tools/prepare_stage1_plan.py",
+      "src_sha256": "9029a6bfa3e0fd0a49622a545ac8f2b549840127a46b64a43cd20e2714a0b3bc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/prepare_stage1_plan.py",
+      "public_sha256": "9029a6bfa3e0fd0a49622a545ac8f2b549840127a46b64a43cd20e2714a0b3bc"
+    },
+    {
+      "src_relpath": "tools/prepare_stage2_plan.py",
+      "src_sha256": "c88e9d446c96529a82a431b243fa72c19c78493ab90a111c93a2709d9116447c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/prepare_stage2_plan.py",
+      "public_sha256": "c88e9d446c96529a82a431b243fa72c19c78493ab90a111c93a2709d9116447c"
+    },
+    {
+      "src_relpath": "tools/prepare_stage3_plan.py",
+      "src_sha256": "ead7645f4b5928cc864d42f0ebe783108e334bc52b43753e22976f771b17d868",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/prepare_stage3_plan.py",
+      "public_sha256": "ead7645f4b5928cc864d42f0ebe783108e334bc52b43753e22976f771b17d868"
+    },
+    {
+      "src_relpath": "tools/prepare_step12_plan.py",
+      "src_sha256": "e8c3c130c4a89b0f939526c1e64f11891bdd2bb452ba36ea2d1a989d0cd71a94",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/prepare_step12_plan.py",
+      "public_sha256": "e8c3c130c4a89b0f939526c1e64f11891bdd2bb452ba36ea2d1a989d0cd71a94"
+    },
+    {
+      "src_relpath": "tools/revise_step12_config_v2.py",
+      "src_sha256": "e2d673dae4322cd52da0a2cdf320b65c3c4bc7c8902cd54f475d1b60bf668468",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/revise_step12_config_v2.py",
+      "public_sha256": "e2d673dae4322cd52da0a2cdf320b65c3c4bc7c8902cd54f475d1b60bf668468"
+    }
+  ],
+  "self_hash_policy": "This generated provenance file is hashed by the outer manifest; it does not recursively list itself.",
+  "compatibility_scope": "Three public-copy GPU-query guards are environment logging only, with exact diffs; no model run was performed.",
+  "reproduction_scope": "Formal recipes and controlled generation resolve without old logs. Optional stage1 certificates are regenerated locally; historical plan/comparison tools may require omitted local evidence."
+}

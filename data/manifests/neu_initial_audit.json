@@ -1,0 +1,2976 @@
+{
+  "summary": {
+    "dataset": "NEU RSDDS-113 RGB and pixel masks",
+    "task": "binary segmentation; not temporal ground truth",
+    "pairs": 113,
+    "unpaired": 0,
+    "shape_mismatches": 0,
+    "width_range": [
+      354,
+      2047
+    ],
+    "height_range": [
+      205,
+      3117
+    ],
+    "unique_dimensions": 112,
+    "mask_values_union": [
+      0,
+      255
+    ],
+    "all_background_masks": 0,
+    "all_foreground_masks": 0,
+    "foreground_fraction_min_median_max": [
+      0.013462982920218152,
+      0.06779205311049848,
+      0.38709517818521083
+    ],
+    "raw_mask_modes": [
+      "1"
+    ],
+    "exact_duplicate_rgb_groups": [
+      [
+        "36",
+        "37"
+      ]
+    ],
+    "conflicting_duplicate_annotations": [
+      {
+        "ids": [
+          "36",
+          "37"
+        ],
+        "differing_pixels": 3874,
+        "mask_iou": 0.8338551271604409,
+        "decision": "quarantine both pending independent annotation review"
+      }
+    ],
+    "quarantined_ids": [
+      "36",
+      "37"
+    ],
+    "remaining_structurally_valid_pairs": 111,
+    "near_duplicate_candidates": [
+      {
+        "id_a": "36",
+        "id_b": "37",
+        "phash_hamming63": 0
+      }
+    ],
+    "demo_eligible_count": 87,
+    "screening_caveat": "pHash checks only same-aspect appearance; does not establish physical-rail independence or eliminate cropped duplicates",
+    "split_status": "NOT ASSIGNED; physical source IDs not supplied; review near duplicates and source relationships first"
+  },
+  "provenance": {
+    "repo": "neu-rail-rsdds/rsdds",
+    "commit": "b2f21e66c46c4b864a409123ddfaf6a3a946d74b",
+    "scope": "RGB images, masks, author README only; depth not downloaded",
+    "files": [
+      {
+        "file": "2D_Image.zip.001",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.001",
+        "git_blob_sha1": "38e6dbb06789c6c7936eb26aa6819aae91a2c55e",
+        "sha256": "597df0bedbfeae682590e603d3c290bc13777f7f6bf356d0aa7b2de2d0ab6658"
+      },
+      {
+        "file": "2D_Image.zip.002",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.002",
+        "git_blob_sha1": "f52650bf0e0f2bfa4e416af51758404598d328f7",
+        "sha256": "b52e4bf3a9ecbb8e9c57f7371c0a355cbc0843a995817c3995dfc9cb970e5ffe"
+      },
+      {
+        "file": "2D_Image.zip.003",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.003",
+        "git_blob_sha1": "f5e06fb1bf99d78d9b02235f65643ef6ad3ff0cf",
+        "sha256": "373d7d78cf77981cc6b6deaa9c5b62396988ecb2b643aee3f71a85dcec315ed0"
+      },
+      {
+        "file": "2D_Image.zip.004",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.004",
+        "git_blob_sha1": "fbee6027cf1e425b64b0f8f209293c6196904070",
+        "sha256": "99ede697f5a5d8d4cd715cf727f853047f25401dfac083695b5c4245df3b3afc"
+      },
+      {
+        "file": "2D_Image.zip.005",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.005",
+        "git_blob_sha1": "c245f4f8f99029ee99a0a39709b2e87ca36aef34",
+        "sha256": "f03ef2a104a303030cb5049a930c786c3d41e9f206c18bc64f2a60c3e2f918b8"
+      },
+      {
+        "file": "2D_Image.zip.006",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.006",
+        "git_blob_sha1": "286cba187e3700293fb9cb6b5c5d8e21b18148f0",
+        "sha256": "bce797a770e8188a6d4f94eb7381cd5617d01d263af0e93a47dec1e6d468c8aa"
+      },
+      {
+        "file": "2D_Image.zip.007",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.007",
+        "git_blob_sha1": "c6007894ce8bf02bbfcf78878da23c42935b44ae",
+        "sha256": "cb49c8c3da5e07923941781ac0e8267fb6b88a6829d714e6998a5d9d30a3c13b"
+      },
+      {
+        "file": "2D_Image.zip.008",
+        "bytes": 26214400,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.008",
+        "git_blob_sha1": "385c05324f518cf13b43e5b9e5cba7d467877662",
+        "sha256": "4d6bf0276a3d3f0c825051b3c8cc96ebd9d10b9bd38fca3553bebce63a8383a3"
+      },
+      {
+        "file": "2D_Image.zip.009",
+        "bytes": 10246362,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/2D_Image.zip.009",
+        "git_blob_sha1": "c426b5f29e7aac7691a41d6e8fc50e42d80c54bc",
+        "sha256": "45ea9e4a0620e2b92a3fd95733d465774200fd38d3a0f195af86e02bf6d1be91"
+      },
+      {
+        "file": "Ground Truth.zip",
+        "bytes": 293788,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/Ground%20Truth.zip",
+        "git_blob_sha1": "110e0ba88244b481455cf6a65c90da97a89b12af",
+        "sha256": "c69424faac2a8468644dd7dde3fdfa9edcd2b34ec9bf7076a113b5b3ea0b3f5d"
+      },
+      {
+        "file": "README.md",
+        "bytes": 835,
+        "url": "https://raw.githubusercontent.com/neu-rail-rsdds/rsdds/b2f21e66c46c4b864a409123ddfaf6a3a946d74b/README.md",
+        "git_blob_sha1": "4b35f8945c47cfef65d0fe2aa802e9dcaa87414b",
+        "sha256": "c2d6cdb3123cf34f5ed012cfbc7bed2234b47e6a646c18fec96e7582644744c8"
+      }
+    ]
+  },
+  "records": [
+    {
+      "source_id": "1",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/1.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/1.png",
+      "width": 535,
+      "height": 252,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 6829,
+      "foreground_fraction": 0.05065272214804925,
+      "connected_components_8": 1,
+      "smallest_component_px": 6829,
+      "sha256_image_file": "8b9afccc929cb6c095cf0dae38f088cd94200bfd06acd1f86139d3597e070679",
+      "sha256_mask_file": "ddede8a398b38303ac58d578504552b3a35887ea671b418137b06d61c95f3065",
+      "sha256_rgb_pixels": "75d6c62a2484b2ed3a3ced2becdfecc49501b93a7618db635cd079e4d3c30c52",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "2",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/2.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/2.png",
+      "width": 910,
+      "height": 1321,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 41027,
+      "foreground_fraction": 0.034129156233622546,
+      "connected_components_8": 7,
+      "smallest_component_px": 1334,
+      "sha256_image_file": "084c11098ec55e111a00dc4f52d0f45817a40f9442e02af20ab57e194e59291f",
+      "sha256_mask_file": "964313f1ffc1bb12dc06a304e7c92138ea225be641ff3cd5137daf87050f7d93",
+      "sha256_rgb_pixels": "bc9c2011afbfce0393276f5c15ecc37ef0ac932d676dcd5e3688c4aae883165c",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "3",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/3.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/3.png",
+      "width": 1705,
+      "height": 410,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 65267,
+      "foreground_fraction": 0.09336528145340105,
+      "connected_components_8": 2,
+      "smallest_component_px": 22552,
+      "sha256_image_file": "0d220dbb449052fb4a369682787d68805c6a52cacfd9e062af9dc97d3b347a9a",
+      "sha256_mask_file": "153a339ab983fcb4037c553eb0f835126a4756caa79d2acd01c2608734923fa9",
+      "sha256_rgb_pixels": "35d176654a8cfaca2e9deb731ea18585407d97fb1c35d5e3f8b07b495c23ed67",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "4",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/4.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/4.png",
+      "width": 1569,
+      "height": 593,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 36110,
+      "foreground_fraction": 0.03881055483723965,
+      "connected_components_8": 6,
+      "smallest_component_px": 695,
+      "sha256_image_file": "355c582aeca9b100bef2ee7ca02158a9501122df249fc1da4891eaf70d964391",
+      "sha256_mask_file": "509665c4c5d3a3b2def73618162e2484965064579bceb9787304ea2ee936952d",
+      "sha256_rgb_pixels": "910629055e59b4e5ed81db1e7a8c4a77814c7fee97d59849016f10cd0d8218ac",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "5",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/5.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/5.png",
+      "width": 1695,
+      "height": 1414,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 103321,
+      "foreground_fraction": 0.043109152887475854,
+      "connected_components_8": 8,
+      "smallest_component_px": 3889,
+      "sha256_image_file": "d899b2098cbef43e0523fff4d9def36365e529a0bc32c401fde674ba30825c7f",
+      "sha256_mask_file": "4258f5dfdb830061b9c4c927554645170cc131946a4b81dc5d0c159a4666fef9",
+      "sha256_rgb_pixels": "cbb4eacaf7d14c15641f6d2440a04a46fb1a6d2c05b4bc6e7d4c42eb27012e12",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "6",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/6.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/6.png",
+      "width": 785,
+      "height": 346,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 39308,
+      "foreground_fraction": 0.1447222119951401,
+      "connected_components_8": 1,
+      "smallest_component_px": 39308,
+      "sha256_image_file": "9afd13283330151834f29b0d7b29ac9760f2eebbdc58f646a9b9acf93fe78fdc",
+      "sha256_mask_file": "c8b0fd558750962eea108315d930d89b0e8cd64b724e5a981dd1617c16541555",
+      "sha256_rgb_pixels": "8a5a63d1953ff3e5582415df8494b4eac7283edf58c88fbffc0b94d34f46dfaf",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "7",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/7.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/7.png",
+      "width": 842,
+      "height": 576,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 9886,
+      "foreground_fraction": 0.020383841382950647,
+      "connected_components_8": 2,
+      "smallest_component_px": 4138,
+      "sha256_image_file": "b792cad4d55223082613cf6ea864d11ca396f1dda01cf93dbc7af6284a5528a4",
+      "sha256_mask_file": "38a1dd634eeb8c9f0c9bd687192d7c6ba8a8f069142c6737b1c4c08da94da1bd",
+      "sha256_rgb_pixels": "5419c257d4d242971f0b75cd7978cdf5833de702f8f1cdd475d699eeae59773b",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "8",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/8.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/8.png",
+      "width": 979,
+      "height": 1263,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 37674,
+      "foreground_fraction": 0.03046882392474749,
+      "connected_components_8": 2,
+      "smallest_component_px": 2814,
+      "sha256_image_file": "bbe9a86b62e6f3fa40bea6d70bc7ed3d8e1d8cfe66e3acf98ed0b064f461b9e5",
+      "sha256_mask_file": "42317070162ce8c2587a02c14d8d58f35ce2a30cf7d4055809a976f9bd799e63",
+      "sha256_rgb_pixels": "79af760a5b78d6b7ac6f8efabd9722e9685b3a1ef988ce5d5b7d058530c64453",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "9",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/9.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/9.png",
+      "width": 467,
+      "height": 729,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 29250,
+      "foreground_fraction": 0.0859174663600074,
+      "connected_components_8": 1,
+      "smallest_component_px": 29250,
+      "sha256_image_file": "6e39be2111fe3265e1ddc85ca359285a251abedd92928d87c3c2e4a919721f48",
+      "sha256_mask_file": "2fd982595357bbabd29cf6cf02cd1e2d61355af85b7248d2922e151cf2e11dcc",
+      "sha256_rgb_pixels": "e0f24ab11a81fe13a2a288feaa52bdb9652951588c71cd09ebd44448512defcc",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "10",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/10.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/10.png",
+      "width": 695,
+      "height": 456,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 17723,
+      "foreground_fraction": 0.05592263031679919,
+      "connected_components_8": 1,
+      "smallest_component_px": 17723,
+      "sha256_image_file": "4aa244859eddb389813f39e60e6ce2e0ec4132acc5bf15694cb7e7da6f55d677",
+      "sha256_mask_file": "3450b6a7f15c295542b350eb3f08c12687c93b3310c0a30458b1f92dd1f32896",
+      "sha256_rgb_pixels": "b5e43a1b055a777af9ec8a7b9c73a962d30a9a1fc52439844c8465dcc4bf3707",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "11",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/11.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/11.png",
+      "width": 672,
+      "height": 352,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 14333,
+      "foreground_fraction": 0.06059337797619048,
+      "connected_components_8": 1,
+      "smallest_component_px": 14333,
+      "sha256_image_file": "c17b7f2919da3e68eced470d9313c1f94aafd34f2458f21d8f6ee536da05e2f5",
+      "sha256_mask_file": "36665075a73be425ab766aa06261327afbb6a242b3bc7052e326ead30a6b971f",
+      "sha256_rgb_pixels": "193b6be1669be9b7fd1fd4dec634eade67d6467a5d97988181d94214a3642c9a",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "12",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/12.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/12.png",
+      "width": 786,
+      "height": 446,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 22150,
+      "foreground_fraction": 0.06318533986010794,
+      "connected_components_8": 2,
+      "smallest_component_px": 10547,
+      "sha256_image_file": "3368710e52c6d78f3c82ebe0ed6461aceafdc8b6f645c0b65eaf3f623592290a",
+      "sha256_mask_file": "0ed9b6eed85243c3f566dafdb1646aba3369ee28f6e807e985d9ff367ebe7f38",
+      "sha256_rgb_pixels": "bd64e4f2a44ca4f82c924a380b51a1356bdec8c8fd6dd11a7d6b0c9fb39b3631",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "13",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/13.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/13.png",
+      "width": 830,
+      "height": 493,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 51453,
+      "foreground_fraction": 0.12574354211979766,
+      "connected_components_8": 1,
+      "smallest_component_px": 51453,
+      "sha256_image_file": "b172fc5fb5b66be73b09421c4d289fff0715a0e3aa21c7d350dfb79328691740",
+      "sha256_mask_file": "b1d3373caaef2a746c7d546f846a121e7e88990a2ff8ca548d2e91d6de55ffbe",
+      "sha256_rgb_pixels": "b4e61ae749ae69601f6316d620a6f0f29321d9ce7475f847d87a3c959db63d06",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "14",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/14.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/14.png",
+      "width": 1103,
+      "height": 692,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 19241,
+      "foreground_fraction": 0.025208443603624377,
+      "connected_components_8": 11,
+      "smallest_component_px": 1269,
+      "sha256_image_file": "c69d0f085c0ff93e0354322f4f98a2d5fee76ad2cf0951775d889d3fa6ea5b63",
+      "sha256_mask_file": "7327617c952cec901ac4089b3f24724b057accc6d1e6517d6a929641cf6a9cd5",
+      "sha256_rgb_pixels": "a4f9d79794853b3fdfc77f997329380d16a65ee735e84a9a60771a40f72284c2",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "15",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/15.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/15.png",
+      "width": 864,
+      "height": 378,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 25196,
+      "foreground_fraction": 0.07714824612972761,
+      "connected_components_8": 1,
+      "smallest_component_px": 25196,
+      "sha256_image_file": "b2b01777bf91aada4f544d8268debb4a4785b391bc885495ea557aa2d6aec35e",
+      "sha256_mask_file": "b768e1b95280d765686f473cc0cd05b5c52ed9f6c85fa158d6368ca91df0ff2a",
+      "sha256_rgb_pixels": "e798937b2d96d9c9f42411dafcd2545a34ded73620a94d8164778d67abcb02bf",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "16",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/16.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/16.png",
+      "width": 899,
+      "height": 551,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 27577,
+      "foreground_fraction": 0.05567185963835599,
+      "connected_components_8": 2,
+      "smallest_component_px": 11634,
+      "sha256_image_file": "cc9990fa1f45c123f73f224dc543823c24d11118881de9dd808632afb4a15227",
+      "sha256_mask_file": "1617410c9ceb0d01b3148b075e2056b66fb2efa10a6e216c36a30210ab72f163",
+      "sha256_rgb_pixels": "62b1eb59300d4d0964f7c3c39582837e094d79ff9987f0a82aa747733b35deea",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "17",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/17.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/17.png",
+      "width": 1479,
+      "height": 729,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 49920,
+      "foreground_fraction": 0.04629977434424884,
+      "connected_components_8": 5,
+      "smallest_component_px": 4074,
+      "sha256_image_file": "a71cade52215bd1c25087737bbcd2e0e7bcedea31ee3dbea57d414b324c6e6d9",
+      "sha256_mask_file": "8b19a78ebe316719b0e121460ff8cf5cc71f454ef708ac311b312970be7207f7",
+      "sha256_rgb_pixels": "2b43a6cdae42205e8bea4da8289c0eab4c0f600268151e45c4e43640d6a8acbf",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "18",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/18.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/18.png",
+      "width": 978,
+      "height": 466,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 21235,
+      "foreground_fraction": 0.04659373162361656,
+      "connected_components_8": 1,
+      "smallest_component_px": 21235,
+      "sha256_image_file": "bd9004dd2ebf3f428334c26b171f2a9ae09571ab488c56a7458cc22caff56121",
+      "sha256_mask_file": "a49bc1d758565cbb2fa5ab0104f1f6933e0b2e9ed3c419af18dc1128a3a66b14",
+      "sha256_rgb_pixels": "e13bcf715d0cf0e9006880e4340cca45393445439bdde8adb02b6ae2731ccbdd",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "19",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/19.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/19.png",
+      "width": 990,
+      "height": 849,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 38865,
+      "foreground_fraction": 0.046239782988899594,
+      "connected_components_8": 2,
+      "smallest_component_px": 4984,
+      "sha256_image_file": "5d98c6a86ee1b9b1f3ee53d4b14a501c7c119e30564c6dc9c03e5c89e93dbc14",
+      "sha256_mask_file": "eecb8d80fd94b0c5d198ed5120618130c7fe10b95af8f402fcba328d0d86c9dd",
+      "sha256_rgb_pixels": "de2aad3aa5c4313dd1e7d1dd57125bc19362fc381580fa1f1d716e315c31973c",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "20",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/20.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/20.png",
+      "width": 774,
+      "height": 373,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 22700,
+      "foreground_fraction": 0.07862778920824934,
+      "connected_components_8": 1,
+      "smallest_component_px": 22700,
+      "sha256_image_file": "60cb90e320b70578ab5558f1f1478bc0c896c8f3e182ebad47f7708013f2ffad",
+      "sha256_mask_file": "e2a42c2c51322ee7f77d0742ddeb1706f4222941d401eb7c903b616688bca2de",
+      "sha256_rgb_pixels": "8e164296f1c250dc1a0bdffb41047cba1a9d6052754a11d5abc4eedffeff9b75",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "21",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/21.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/21.png",
+      "width": 581,
+      "height": 425,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 37774,
+      "foreground_fraction": 0.1529776247848537,
+      "connected_components_8": 1,
+      "smallest_component_px": 37774,
+      "sha256_image_file": "be04cfb0c38b74153bb4bfae86c61fc9787c3bc6e766bc5c38b580434ad0d079",
+      "sha256_mask_file": "28f915c526b346eac13c446a9e1c412fa57e89cddf88ee1cfe12cc1d803ce76f",
+      "sha256_rgb_pixels": "0912a322c5accf8517c8550ac1a61251e9ed6f8993713f9bf83644246e02a918",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "22",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/22.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/22.png",
+      "width": 979,
+      "height": 508,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 63303,
+      "foreground_fraction": 0.12728519379408523,
+      "connected_components_8": 3,
+      "smallest_component_px": 4006,
+      "sha256_image_file": "9033a9b906e51add04b1df4e9e3b89e03da70e217773651a749ab0c7712e8835",
+      "sha256_mask_file": "8606ebd5e49e8c213a0c3be2a8e05794e904782c8aa2d7246d6f9363ad2846b7",
+      "sha256_rgb_pixels": "202a83c9040e669a1407903bb3686bc8acbc5c57b9c9c20e2cfe8477584c1184",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "23",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/23.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/23.png",
+      "width": 626,
+      "height": 399,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 18386,
+      "foreground_fraction": 0.07361054393171428,
+      "connected_components_8": 1,
+      "smallest_component_px": 18386,
+      "sha256_image_file": "51276fb3dedf20244ea67d6af166486ac11bce7997b91ca01ec52818dced75fa",
+      "sha256_mask_file": "11b87c05f89e280dacef4e5abf7574d37eba4144770df7e8b0ed7486980dfd5e",
+      "sha256_rgb_pixels": "28b2b25fb2fe970ef84473fcd8e87b6329d1485d5d629d23c890b541ce348adf",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "24",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/24.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/24.png",
+      "width": 876,
+      "height": 508,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 25620,
+      "foreground_fraction": 0.057571998705641246,
+      "connected_components_8": 3,
+      "smallest_component_px": 8215,
+      "sha256_image_file": "8209f1f8e980e7a16937758a1981b99bd451eb8b7de6f1f9a383658c2df73668",
+      "sha256_mask_file": "215ff9eaa62b212d851ae35137f097b9df80c80a0de80fdc38ce455b442fa321",
+      "sha256_rgb_pixels": "3ffac043ffed90c2091183ed41066403fb44d602335ff393f34500cbfd3b97e6",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "25",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/25.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/25.png",
+      "width": 706,
+      "height": 269,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 11787,
+      "foreground_fraction": 0.06206493465463315,
+      "connected_components_8": 1,
+      "smallest_component_px": 11787,
+      "sha256_image_file": "ce6af6971e1a0d2cf65d728799ff90030c48e25e5598b2b53190b71b083b6025",
+      "sha256_mask_file": "a0d36da78be09e6026e7e47a9eed2e7a95d1e2b2444096b0841c4568e27fc6c8",
+      "sha256_rgb_pixels": "8de7c0b45769f2967cb13962fe9d8c579677a74b2a7435ccc92a4d0e3f262536",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "26",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/26.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/26.png",
+      "width": 512,
+      "height": 216,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 4986,
+      "foreground_fraction": 0.045084635416666664,
+      "connected_components_8": 2,
+      "smallest_component_px": 533,
+      "sha256_image_file": "acb19761a47c5cd7bc080bb26538a26a04bd7c2726b40c12ba8133116e964ff5",
+      "sha256_mask_file": "c9b3980eb55f9937b1c19022f0281377e17e960744b02a6809774ab310749b16",
+      "sha256_rgb_pixels": "2924cfe08bfb73cc59860961afb475f349d06a31a4107181f3bc3fd786b0c777",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "27",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/27.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/27.png",
+      "width": 467,
+      "height": 205,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 4429,
+      "foreground_fraction": 0.046263122160129524,
+      "connected_components_8": 1,
+      "smallest_component_px": 4429,
+      "sha256_image_file": "bd1133b629e8f42796abf7db25b5cb969e3c52d8810dc076100d301bec9e4225",
+      "sha256_mask_file": "8757b95ea3d29e9add32a46128bf8a1ea083d65e84d84afa3047e47238260d82",
+      "sha256_rgb_pixels": "88075245088311e5e9d0d784ee3c27adc4fa1e4d3d4cef3e3537a899716895c2",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "28",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/28.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/28.png",
+      "width": 604,
+      "height": 346,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 35069,
+      "foreground_fraction": 0.16780710485013206,
+      "connected_components_8": 8,
+      "smallest_component_px": 384,
+      "sha256_image_file": "5ec2a2e0b28fee171873797139a12edc94c05d7244dad58301e86e81adab2e20",
+      "sha256_mask_file": "03c747e1327e1e1dc3e9b1468bce1d9fa6686c99a9091f4fd61365422bd56e51",
+      "sha256_rgb_pixels": "7d937ecdf445eac4a2799d4944e0a7f72dbb917afcef7efdbca8907ce519f468",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "29",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/29.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/29.png",
+      "width": 638,
+      "height": 351,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 5049,
+      "foreground_fraction": 0.022546419098143235,
+      "connected_components_8": 1,
+      "smallest_component_px": 5049,
+      "sha256_image_file": "1c02edc8fb392ae0f8c0317d8c8dbeee833dc3f58e7f4d97f1e3c61d7efbb85e",
+      "sha256_mask_file": "bbeb98d4f5de70f146e2683e33d28a25a80b83bac7b7ce35dd1a01436f395a54",
+      "sha256_rgb_pixels": "e8b3f03dee60cfddb0045173b00779783760fc34ddda17f349ce773f53863e5e",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "30",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/30.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/30.png",
+      "width": 649,
+      "height": 436,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 109534,
+      "foreground_fraction": 0.38709517818521083,
+      "connected_components_8": 1,
+      "smallest_component_px": 109534,
+      "sha256_image_file": "0de16a5cf705dad7af4164fd01dfc017f83d1da0f8c9b66601ed0d5b864ceb68",
+      "sha256_mask_file": "1ee25c21006e698d61eff288e628e8ed661868f9c2e3bb241ca9934060826511",
+      "sha256_rgb_pixels": "2837fd35a1e5cc83760cd452d960380ec6a4be838ffe2c7ea763625f77a3f72a",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "31",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/31.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/31.png",
+      "width": 888,
+      "height": 3117,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 243639,
+      "foreground_fraction": 0.08802317717139661,
+      "connected_components_8": 11,
+      "smallest_component_px": 2624,
+      "sha256_image_file": "56ba95eb8c999daa1889c2cde719e4ce49a8ee422d7fd57baad8e27fa921d563",
+      "sha256_mask_file": "c15d2d5ff1d4cb3d72006e0be965891b22de9772162984f053d4055be9d8a887",
+      "sha256_rgb_pixels": "5a678d88e997846c610795df3d2bc4615c62de22c101908d7fd14a0890bd0977",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "32",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/32.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/32.png",
+      "width": 944,
+      "height": 519,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 6596,
+      "foreground_fraction": 0.013462982920218152,
+      "connected_components_8": 1,
+      "smallest_component_px": 6596,
+      "sha256_image_file": "f71a7ea31159354ce4cfb358bedc7eb6eaac678b4a7391eb8c87bd73801976a3",
+      "sha256_mask_file": "fc0d8ac90694245e1826a13e03324c06cb8631f217139589966bf52fdbfd4c55",
+      "sha256_rgb_pixels": "93efb1e884d50779676be61b42137ba61866ce56804ec2f674a3fa12affe5323",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "33",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/33.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/33.png",
+      "width": 1137,
+      "height": 419,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 18463,
+      "foreground_fraction": 0.03875500364187463,
+      "connected_components_8": 12,
+      "smallest_component_px": 1109,
+      "sha256_image_file": "19f0e6aa00f75b5f445f9bb985bc2825832a72d0bb7873d48229aec3798c15db",
+      "sha256_mask_file": "e61257b231129bf3a7cc3c3a3b25bed58eeb303a8576413a27392cdba9387ab9",
+      "sha256_rgb_pixels": "45161373868b1303a6ef33907728d7e6372aba905765fd3259d0c2aa884987ca",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "34",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/34.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/34.png",
+      "width": 944,
+      "height": 577,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 36177,
+      "foreground_fraction": 0.06641783920336046,
+      "connected_components_8": 3,
+      "smallest_component_px": 8170,
+      "sha256_image_file": "693efb0cdaa4ef7d1428611c62b6fc54ff65b26c11a4162c22db2dae6a46d153",
+      "sha256_mask_file": "147eca78723ec050a37ad20acefab71f348da44ecdc556e69a9fea41b9267b35",
+      "sha256_rgb_pixels": "b0047896d72d7962fd9cb373233388ae8c7dac3d70e45d2aaba3dbe5a1fbf3b7",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "35",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/35.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/35.png",
+      "width": 831,
+      "height": 535,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 27259,
+      "foreground_fraction": 0.06131335965001068,
+      "connected_components_8": 6,
+      "smallest_component_px": 2342,
+      "sha256_image_file": "6ef01f435699fe955715a380bb3552316d12f8b9a442d66197457472a7d90a62",
+      "sha256_mask_file": "e0ac5f7d831ac3ce7e356232ae35b6b20ce49c4689de91724f78b67681c1faf0",
+      "sha256_rgb_pixels": "8a7d5abd20bdaa77cef3af07fa2ec0b77aa6643a8fa07b35003512ef2977984b",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "36",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/36.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/36.png",
+      "width": 876,
+      "height": 368,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 20528,
+      "foreground_fraction": 0.06367877704983124,
+      "connected_components_8": 1,
+      "smallest_component_px": 20528,
+      "sha256_image_file": "3741b02c41ed14670f95e4f5ef1934fe7f8c4d1c935932575207ce849565766a",
+      "sha256_mask_file": "728e8f13c0bf5df75d12efa5d30458ecd43ef8c4d2dea319b343e18a846d3621",
+      "sha256_rgb_pixels": "a85cdb8c2042fde6cbf5b193f8ff2ce339887da8eb912cc54d135d45269f8d2c",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": true
+    },
+    {
+      "source_id": "37",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/37.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/37.png",
+      "width": 876,
+      "height": 368,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 22232,
+      "foreground_fraction": 0.06896466150486401,
+      "connected_components_8": 1,
+      "smallest_component_px": 22232,
+      "sha256_image_file": "3741b02c41ed14670f95e4f5ef1934fe7f8c4d1c935932575207ce849565766a",
+      "sha256_mask_file": "7ace596b62da3e6f43b41c7fffb6fcc3a17d111bddd82e271e00234dc644387b",
+      "sha256_rgb_pixels": "a85cdb8c2042fde6cbf5b193f8ff2ce339887da8eb912cc54d135d45269f8d2c",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": true
+    },
+    {
+      "source_id": "38",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/38.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/38.png",
+      "width": 1001,
+      "height": 708,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 67704,
+      "foreground_fraction": 0.09553158705701079,
+      "connected_components_8": 1,
+      "smallest_component_px": 67704,
+      "sha256_image_file": "89f1167ff7c4449fa84979bdb9fcd7217e48ea217bfa1a57229a437c5b4d0a93",
+      "sha256_mask_file": "b8c8c177256f40cafb744e364169fdd18e305ecd6d7ef9eeae9a078eeca3e6f1",
+      "sha256_rgb_pixels": "dc9729b9fbe1f9af51d86765aeebb766baa6b373633abaec246b476728056673",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "39",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/39.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/39.png",
+      "width": 1127,
+      "height": 996,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 146944,
+      "foreground_fraction": 0.13090872808002196,
+      "connected_components_8": 3,
+      "smallest_component_px": 9231,
+      "sha256_image_file": "cc0416bf03eee0f1da19ca3923cd020081f2af308ccc3ddcec97f2a0aa013059",
+      "sha256_mask_file": "e9cd746c08afc3c68db3b3a2a2bac7f5e8516ed342efc8345ef04fe6e1b54421",
+      "sha256_rgb_pixels": "37f551c42e338a7190ba9de510ea42785b80fa59baa6cfcbf25732ffc99729b3",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "40",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/40.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/40.png",
+      "width": 1058,
+      "height": 383,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 42379,
+      "foreground_fraction": 0.10458424437457739,
+      "connected_components_8": 1,
+      "smallest_component_px": 42379,
+      "sha256_image_file": "fec6bf095db94940572be258590f517e714c9e85cf23189c6319043be840668d",
+      "sha256_mask_file": "0cca1296d5699256752de933fd9158532b3b37335332984a28419d0cbb140008",
+      "sha256_rgb_pixels": "3c720b7adf6963b9aac0fcb311de6245f496f81e349bf13f18a320f4fa64206c",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "41",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/41.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/41.png",
+      "width": 888,
+      "height": 571,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 29523,
+      "foreground_fraction": 0.05822525678042315,
+      "connected_components_8": 1,
+      "smallest_component_px": 29523,
+      "sha256_image_file": "d0be913baceae8cdf4534289bae67380e2f6a0f2f7bc620cba2d6bebceea3eaa",
+      "sha256_mask_file": "39ad44fb4dd0e1af7b07f1a1fcf1fe94b3afbd1477dbcaead552fd2065a6c82c",
+      "sha256_rgb_pixels": "243d0eb47e1c6d26bc444f51ab677234aa32e3e44527f6f66255baf86c0e9b0e",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "42",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/42.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/42.png",
+      "width": 2047,
+      "height": 2164,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 300299,
+      "foreground_fraction": 0.06779205311049848,
+      "connected_components_8": 6,
+      "smallest_component_px": 18048,
+      "sha256_image_file": "0fb472aa2e9f1ac990324240a02fb3c35145e2a215425c68bfdd1c444f7c9bc9",
+      "sha256_mask_file": "880ccc51135a9c7891fd738217e893e7a4750a13d5fdb595705e4589c0453181",
+      "sha256_rgb_pixels": "acc4c94e19bedb29f6dbf2f28f83c0ecbc705868d7bc75b7f9de69d039203e4e",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "43",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/43.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/43.png",
+      "width": 535,
+      "height": 739,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 69563,
+      "foreground_fraction": 0.17594627749042024,
+      "connected_components_8": 1,
+      "smallest_component_px": 69563,
+      "sha256_image_file": "831797539887fa119d012003cff93184f4bb0792002109c7b53365336f64614b",
+      "sha256_mask_file": "58cd8dcd8be688b1c646da93d280f643343da3c084fe470c8cd6b66962e6b406",
+      "sha256_rgb_pixels": "bc5a3add3908db32f44b61ac577d7f48e7375837ebe861fa9875520c529aecf1",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "44",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/44.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/44.png",
+      "width": 853,
+      "height": 561,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 157683,
+      "foreground_fraction": 0.3295133250998364,
+      "connected_components_8": 1,
+      "smallest_component_px": 157683,
+      "sha256_image_file": "cdcebca5bbcf1afb62b8a7be74d2ef2211194ab224758962b77ec0bb2229996c",
+      "sha256_mask_file": "df43b2c65668a5b623a5b930b9152236ee5052dbf278141cb8edf1a85266bbbc",
+      "sha256_rgb_pixels": "ab283279ed2e1131eced1e4d65920266e1d62d835cafbda2b1e1601dfad082d2",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "45",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/45.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/45.png",
+      "width": 819,
+      "height": 2231,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 332526,
+      "foreground_fraction": 0.1819877418263792,
+      "connected_components_8": 3,
+      "smallest_component_px": 68049,
+      "sha256_image_file": "6519eb995aeaf95262f8581155f81bbf2be3a99f8fe1b446d53a6b905190885b",
+      "sha256_mask_file": "edc2c4c704ca01e184942c5cfd1550e7886649d9b40ebc1740339d48cee07f4e",
+      "sha256_rgb_pixels": "fcbafe0ff116f2756ae36984a66f0a288ccc5fc90f8931c34046891acac9e297",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "46",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/46.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/46.png",
+      "width": 865,
+      "height": 671,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 39766,
+      "foreground_fraction": 0.06851304669934444,
+      "connected_components_8": 3,
+      "smallest_component_px": 3173,
+      "sha256_image_file": "2832668b8b536115a65ecda863d794345d3b49b142412360367c75b97b57323b",
+      "sha256_mask_file": "a0f93ee9c26d2b3c5c1880e877a09d25998f68daace3ccd63cef1f09695f1c00",
+      "sha256_rgb_pixels": "04f87e14ba78d661edb996cdb5af3cf844af123610daa29ff7c4b390023b1874",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "47",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/47.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/47.png",
+      "width": 808,
+      "height": 582,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 16556,
+      "foreground_fraction": 0.0352063556871151,
+      "connected_components_8": 2,
+      "smallest_component_px": 6842,
+      "sha256_image_file": "438e0aa5c7a95cc0f0203efd3d779fd2c37f5ddec83f967e8f4dea499eafe54b",
+      "sha256_mask_file": "50a0b947415dbff0ea5b35a2c09a954879a74e75cce1eb7601b8d1e8eeaa95a3",
+      "sha256_rgb_pixels": "8cc8470b96cc69ec6571ccd76f9b8e119820350d1f84debfcbe4c9fe55283d68",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "48",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/48.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/48.png",
+      "width": 1161,
+      "height": 603,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 21609,
+      "foreground_fraction": 0.030866340133955544,
+      "connected_components_8": 3,
+      "smallest_component_px": 4906,
+      "sha256_image_file": "b66a1efa37b14e4513a109ac94a4579d2d63a7338f13f9562a649d549445a3d1",
+      "sha256_mask_file": "f13319f35aaf445355e1ea0ae8de8c100506110f7a75ec732c80c44db7c405b0",
+      "sha256_rgb_pixels": "83e7144cfc66e75b5961312a383bb5665e35f378beeb93433113aeb6949004a6",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "49",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/49.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/49.png",
+      "width": 762,
+      "height": 650,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 44631,
+      "foreground_fraction": 0.09010902483343428,
+      "connected_components_8": 1,
+      "smallest_component_px": 44631,
+      "sha256_image_file": "e04b0f38d2204edea3157397a197d350179a8c929e844204707e3b01ddb1badd",
+      "sha256_mask_file": "6de5c4320a868f4e1dccff2e3774c665ff3838ea5d57e0dabef22d8d1aab92e2",
+      "sha256_rgb_pixels": "1a510ba68609fce28eb171075878fb0ae9057528fae3a7dd98de3766453d4a40",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "50",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/50.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/50.png",
+      "width": 581,
+      "height": 263,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 4921,
+      "foreground_fraction": 0.03220486508772734,
+      "connected_components_8": 1,
+      "smallest_component_px": 4921,
+      "sha256_image_file": "f415a8cb2893d260455200e9b05a9dfe8b420eee36a4687c28680e9f05d83c7f",
+      "sha256_mask_file": "0e2a7df10f13c2b92314dfbfd9ae0ca5df461b36e763e34abe24373230873753",
+      "sha256_rgb_pixels": "e42428fd9f9a7a579f60510ef552b1b9a2282d359a0ce7ecdfc866638ec31dc4",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "51",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/51.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/51.png",
+      "width": 854,
+      "height": 1656,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 264807,
+      "foreground_fraction": 0.18724544343753183,
+      "connected_components_8": 2,
+      "smallest_component_px": 6526,
+      "sha256_image_file": "75c29cdf4c86bbf825296fffadc409109fa661440a19cfe692b41355ec9d1a0e",
+      "sha256_mask_file": "6af1b8e889413624e88cff7d0f7b31e45e2ff19904b02604421ceab711995e83",
+      "sha256_rgb_pixels": "692584a8f0d70e4f6c13de4118799ba9871cbf474dd88dd81a78e0b2cbfa5cce",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "52",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/52.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/52.png",
+      "width": 978,
+      "height": 740,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 33785,
+      "foreground_fraction": 0.046682418614933954,
+      "connected_components_8": 1,
+      "smallest_component_px": 33785,
+      "sha256_image_file": "4bd9bc2d8b990841179bec57cccced37f30f85d3dc26bda6a2477d65edadfdb0",
+      "sha256_mask_file": "f481400b456a5b511fb3a2d75b29672d0f570532a9d1f7a2aac4b09a73eb37e7",
+      "sha256_rgb_pixels": "3c10682f23629f2117ca00a2df5d52e1e82960ab7c162c21ff6929711ea082c2",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "53",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/53.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/53.png",
+      "width": 751,
+      "height": 740,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 22702,
+      "foreground_fraction": 0.040850037787454566,
+      "connected_components_8": 1,
+      "smallest_component_px": 22702,
+      "sha256_image_file": "ac9dfa3d64b490c358ab29bf36927677df4252e1146b35d5dc524ad367817a8a",
+      "sha256_mask_file": "d0a126d81f6c89e7f5c7a94dd6c0d6d25b146937a2c353097393842feafe0ac2",
+      "sha256_rgb_pixels": "904539b2494f12a58e298aa8ea49bb84847322c1c95fd89c2b8b50a08f4279a9",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "54",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/54.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/54.png",
+      "width": 524,
+      "height": 645,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 33816,
+      "foreground_fraction": 0.10005325758920647,
+      "connected_components_8": 1,
+      "smallest_component_px": 33816,
+      "sha256_image_file": "ed7eccda20fb9003e117b1ff308d769338660f8a7d9b9422ce823b8ddcf68320",
+      "sha256_mask_file": "711e1cdc09097c08b3bf9f844d0b42fea23dc26c391b3b81a4f8d52ca3a871e9",
+      "sha256_rgb_pixels": "c96ffe9beb14e980e1ef4e3508c96f3a6ade5fe8cd5a825c7fb2a77fa3a958c5",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "55",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/55.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/55.png",
+      "width": 876,
+      "height": 604,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 133092,
+      "foreground_fraction": 0.251542229882972,
+      "connected_components_8": 2,
+      "smallest_component_px": 1,
+      "sha256_image_file": "987f7574ff3b1889ec8ade1bf40aea90f50b456438fd50a33930578d9e75bb38",
+      "sha256_mask_file": "beacceaea106f1f0c3a706163b2093b26b7929548a6a40e70f7935902f1ef569",
+      "sha256_rgb_pixels": "e017caad2b8ad5a1410effbcb34cd5fb59877a7d82c056a3b6456c26d2ae2d54",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "56",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/56.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/56.png",
+      "width": 660,
+      "height": 613,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 10168,
+      "foreground_fraction": 0.025132235898956943,
+      "connected_components_8": 1,
+      "smallest_component_px": 10168,
+      "sha256_image_file": "4ebe9d85524f8b3780ed8a94b76ff660b62fef66130a72c018961030cbedf19c",
+      "sha256_mask_file": "a99da04c7d20d32b0d202ee977d0d0e69cf67bbff3b29d366e4487ffc58f005b",
+      "sha256_rgb_pixels": "9dfcaff30176e96d14b55e9c2b4bb0fccb46336a49706c9f3533f2fd04e3fd08",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "57",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/57.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/57.png",
+      "width": 592,
+      "height": 740,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 17736,
+      "foreground_fraction": 0.04048575602629657,
+      "connected_components_8": 1,
+      "smallest_component_px": 17736,
+      "sha256_image_file": "77e4248daca6246b7eb4348d6022778064fff473a68a98218d01ba08b44aed1c",
+      "sha256_mask_file": "0b1e08249bcc8de8c23b77adff1bec4051ad88e5c282711b5b62d47ad59dc542",
+      "sha256_rgb_pixels": "63d49ac550bda1a6f86e8905a9c394dfc2460db2f6bf972be3c05c2033aee13b",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "58",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/58.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/58.png",
+      "width": 661,
+      "height": 399,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 34369,
+      "foreground_fraction": 0.13031443965435524,
+      "connected_components_8": 1,
+      "smallest_component_px": 34369,
+      "sha256_image_file": "c5301a65864daaddb70bce5dd1459a24795bae555f324476c57cf58c0dffd32b",
+      "sha256_mask_file": "c2ff196e4c777ca2d73e54cde75ff034e337f5461d4407410a1630b4f54180fc",
+      "sha256_rgb_pixels": "e21be405f44c3a923a36db22730e1435fffd1d58718cc1da47b6a8b5af240804",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "59",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/59.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/59.png",
+      "width": 774,
+      "height": 608,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 18027,
+      "foreground_fraction": 0.03830706854345165,
+      "connected_components_8": 2,
+      "smallest_component_px": 7887,
+      "sha256_image_file": "93b36ac780e3e8f597be2245b637ae422f6946c4cfe8ac7124e91192e254a501",
+      "sha256_mask_file": "259d9587fd603cd54b63fdbc6b3b7b2eea8c8c04f806d29e3dade68aef24fe45",
+      "sha256_rgb_pixels": "31517a1b511e682027091e997e6fb34a5f05ffef51813f8dea143be89c3a9c29",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "60",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/60.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/60.png",
+      "width": 1047,
+      "height": 583,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 25824,
+      "foreground_fraction": 0.0423066148318892,
+      "connected_components_8": 3,
+      "smallest_component_px": 6811,
+      "sha256_image_file": "abf45e3ad0f31171228c4a22843ac2080726e8d539470d8024b674ffc68bb707",
+      "sha256_mask_file": "dde8ae2818aebb6b0218e11a26adf19290f772db12abe61f1e04c805daac122c",
+      "sha256_rgb_pixels": "1ae054b86993ce9a81b0fd473fa7064d15a2547c1b5dd80bd4100f7f08fd5baa",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "61",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/61.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/61.png",
+      "width": 1183,
+      "height": 2326,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 237847,
+      "foreground_fraction": 0.08643770410421645,
+      "connected_components_8": 9,
+      "smallest_component_px": 5176,
+      "sha256_image_file": "1d92795cbf623fc1acab27e8de439b1c708cca0770825328d26af55568a6119f",
+      "sha256_mask_file": "8fbc0167f1bd7c953aa08d56da1a05a25cb01dea4adf37307bf0b28d8923439b",
+      "sha256_rgb_pixels": "6deaf017d28a346b936791e6f87aac3a779dd1fbdddb85c4f818ecc5cb6b7763",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "62",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/62.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/62.png",
+      "width": 1285,
+      "height": 886,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 191077,
+      "foreground_fraction": 0.16783076125813565,
+      "connected_components_8": 1,
+      "smallest_component_px": 191077,
+      "sha256_image_file": "3bd4e8c9b9462082faa427ffd7022e0e22688c1afde793db6872087cdd324a13",
+      "sha256_mask_file": "f3b9da59e2f7681db189a5d2a96fc5ab501a0a0c2cd5c6485ce97e32a8aceef8",
+      "sha256_rgb_pixels": "015e2eaa498cce1ab44d1a7ba12e1ca0a2107c75db669db25e138495d9f56804",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "63",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/63.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/63.png",
+      "width": 762,
+      "height": 535,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 48678,
+      "foreground_fraction": 0.11940540142762529,
+      "connected_components_8": 1,
+      "smallest_component_px": 48678,
+      "sha256_image_file": "2308d963cbe1632f2cea9c06f74f9678b217f33dcf8128015190c34cb6e671b3",
+      "sha256_mask_file": "0f698bbb349988001a5da90e64e1dda99718fe978a97383bca4bd8f374ad14f9",
+      "sha256_rgb_pixels": "5a93261563cce7075a3e8e55bda20bba4fb80fba4d60c9acb3d487907ae4808a",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "64",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/64.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/64.png",
+      "width": 797,
+      "height": 698,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 93778,
+      "foreground_fraction": 0.16857269200763608,
+      "connected_components_8": 2,
+      "smallest_component_px": 7067,
+      "sha256_image_file": "800b9af5fc000a1fbe7b96d8f491322089fd6aa3c0496638bb90860fa1e52a79",
+      "sha256_mask_file": "27247928f63734b655478cba1551219877db4f3645e8e0255e082eb800978431",
+      "sha256_rgb_pixels": "d9aa0df900347275586995d156e23d80e1009e65ccae05063ddf9f93f6e17c82",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "65",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/65.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/65.png",
+      "width": 1490,
+      "height": 2351,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 329003,
+      "foreground_fraction": 0.09392062209712275,
+      "connected_components_8": 4,
+      "smallest_component_px": 6345,
+      "sha256_image_file": "5a946377703d2f1b45cd2603caf8ae3e06b014a9e6b44eb7ad58f91dbf625dfb",
+      "sha256_mask_file": "f20ea5f64172fa2da503d4f058c4f0e9a595ab5b7d34b3964e7a308eb7e5af52",
+      "sha256_rgb_pixels": "d91578301715baf0c4ad6a293ff58489c4bdf1acccbc0731ac27f9c7f8627258",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "66",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/66.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/66.png",
+      "width": 1365,
+      "height": 1430,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 242725,
+      "foreground_fraction": 0.12435000896539358,
+      "connected_components_8": 2,
+      "smallest_component_px": 45839,
+      "sha256_image_file": "976059505d35ab801ff3de649f4e356a059c0de566268a294351484d2a3b0fdb",
+      "sha256_mask_file": "5f13cf0fc2a2fd6b58265a640f605f8ff15ce0591fd982723fadbd5cf58f21e0",
+      "sha256_rgb_pixels": "ce12d87f44cc8d91a695a935880ea9449578eeb3ada4181aac2617ae04927973",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "67",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/67.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/67.png",
+      "width": 819,
+      "height": 373,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 7454,
+      "foreground_fraction": 0.02440038364971341,
+      "connected_components_8": 2,
+      "smallest_component_px": 2451,
+      "sha256_image_file": "2b202ffd5b67d6f90072ed5a5a004063226d81aeb22c37f5d3d5aed47e9a75fa",
+      "sha256_mask_file": "5e023b0bbf69ecfcf72f7343c31b595e8226b8b03627059c6b89bcd177b3d988",
+      "sha256_rgb_pixels": "ab63e980a099a6e99ecaf36379f180abf130ef41d56a19e40ffaab7d4351efb4",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "68",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/68.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/68.png",
+      "width": 490,
+      "height": 294,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 4403,
+      "foreground_fraction": 0.030563654033041787,
+      "connected_components_8": 1,
+      "smallest_component_px": 4403,
+      "sha256_image_file": "83836eb4bd50b015870a3a302dc8adbc67c845b3ca691f813ba94065d705f3f6",
+      "sha256_mask_file": "8a30b08ab45190c7b82fed69bbfb0b39798c756ca0e4c1fddd8da086e0e5409f",
+      "sha256_rgb_pixels": "ae8f1fe6cba1609c66962b3bc20965c569fda9644dacf82f5672e48ed7b9f1df",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "69",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/69.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/69.png",
+      "width": 512,
+      "height": 289,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 11364,
+      "foreground_fraction": 0.0768003892733564,
+      "connected_components_8": 1,
+      "smallest_component_px": 11364,
+      "sha256_image_file": "9c496d6570fcf83f9b9bf273d4a7c557dc1ec50ed4de21ccb716f5b50c67dfec",
+      "sha256_mask_file": "f37fb5860a962b10877a95b673f8320ba8eaaa71b6f58846115ded7565a3540b",
+      "sha256_rgb_pixels": "caa862d64d2530b33baed8a1943c4559c166216123a0f3836ff01cd6c477cb00",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "70",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/70.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/70.png",
+      "width": 535,
+      "height": 577,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 50027,
+      "foreground_fraction": 0.1620596381541651,
+      "connected_components_8": 6,
+      "smallest_component_px": 878,
+      "sha256_image_file": "691d77e1826d73e91acca5ea38a170bc973c6188155cce2a90bb82eaa83ea648",
+      "sha256_mask_file": "6888e2a04744252e1d3a99f333414572fcdfd86206b1be15f8a20bd6252bc16b",
+      "sha256_rgb_pixels": "5c1d9758dd8548677de3ebc73a78ae5e39911de3a1a69c778c400322a9f15164",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "71",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/71.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/71.png",
+      "width": 570,
+      "height": 1713,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 70233,
+      "foreground_fraction": 0.07192982456140351,
+      "connected_components_8": 6,
+      "smallest_component_px": 588,
+      "sha256_image_file": "597f35f66a4b6783c47470c9a5474b8f527f65be8a2d53bae04c2f6492006fe4",
+      "sha256_mask_file": "e8e3b627e9a14950ba76872e6b17e75b00e636b3b88a98e67b2f4827a068e89e",
+      "sha256_rgb_pixels": "e74f7e47e70731c497269c3f2396a45c25e68c87598fcf36795a889f7439c4dd",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "72",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/72.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/72.png",
+      "width": 1786,
+      "height": 331,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 13047,
+      "foreground_fraction": 0.022069943129340998,
+      "connected_components_8": 2,
+      "smallest_component_px": 6416,
+      "sha256_image_file": "36811bb2fae21e778283682e4c84ccc877e305fe3f0cae80f517b1858b9ff4eb",
+      "sha256_mask_file": "6f9c7faf147735d89e8be7392001663924464be07d049e6085379f3161b4cc9a",
+      "sha256_rgb_pixels": "2fd14b626028cdeabeec0e17b5ff88d623c800823910e349bc34e450d17bcd4e",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "73",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/73.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/73.png",
+      "width": 1285,
+      "height": 849,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 52419,
+      "foreground_fraction": 0.04804828752526433,
+      "connected_components_8": 3,
+      "smallest_component_px": 5362,
+      "sha256_image_file": "1a4cc3468bcda472bb2767d41a6f00cf2e996576b650fb2c9cd28104d930bf87",
+      "sha256_mask_file": "e378e7a97d44f4b2024740f04cc4b5ab2cfb3e7b031527dad45356629cd1f9ba",
+      "sha256_rgb_pixels": "0bed73fbecf16586aa1aa04b08458c48e5f54d1a54b290a9f88f1bbd11cc1b28",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "74",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/74.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/74.png",
+      "width": 1536,
+      "height": 540,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 31537,
+      "foreground_fraction": 0.03802203896604938,
+      "connected_components_8": 6,
+      "smallest_component_px": 1291,
+      "sha256_image_file": "cd469af1be8f304109ffac4df279cc6fdc5a65a825614e3b36274dd65864343b",
+      "sha256_mask_file": "6551f5b57472af41532c238db6c1909c3b8accb900a936e23bd69a3ae197bb16",
+      "sha256_rgb_pixels": "1b680315d552907f6f2932b7576144fe7606866d533ecba6f8225cab60655499",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "75",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/75.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/75.png",
+      "width": 1786,
+      "height": 2007,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 116675,
+      "foreground_fraction": 0.03254984932356015,
+      "connected_components_8": 15,
+      "smallest_component_px": 1151,
+      "sha256_image_file": "120d4bf563e638a113d0505a30c03abf251a0e77ccee6bded3c5ebf589dd508a",
+      "sha256_mask_file": "831d37c8e510792c9e252a792f1c1a74b221bd91b300e1c70b298b67e6a40995",
+      "sha256_rgb_pixels": "f48e0fea622223b02c3efb0df28700a364ab4f76bfdb39d9c1f75e344a015fbe",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "76",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/76.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/76.png",
+      "width": 717,
+      "height": 451,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 69947,
+      "foreground_fraction": 0.21630840500112875,
+      "connected_components_8": 2,
+      "smallest_component_px": 1499,
+      "sha256_image_file": "cb753c771a33f5f519dbb19c45c4675e9ef55fa05ed0da4e9ee26f155f43f361",
+      "sha256_mask_file": "b86b97950c6fd34b34b610f1f32e18f9cdf9e0fa8f00c162325be0d5578db31e",
+      "sha256_rgb_pixels": "837b1b3c02f28fc61361c6323363bf2b21f8135d80de43b46cbaeae7a13dbd17",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "77",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/77.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/77.png",
+      "width": 740,
+      "height": 425,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 39356,
+      "foreground_fraction": 0.1251383147853736,
+      "connected_components_8": 1,
+      "smallest_component_px": 39356,
+      "sha256_image_file": "036485b0a30734fd23d9a6ee3b294e3b02f3d38eec8fe1a29c58fa81b2a95626",
+      "sha256_mask_file": "2d374d6043be3736715ed7d9f54b9c3b5dd930a9a9b6f64917d0dc8c6c820e62",
+      "sha256_rgb_pixels": "2e38998b242beb5fe7ab6d8abcaa70db096ca4b2abe3c3e5fec4f8d88285bbe9",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "78",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/78.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/78.png",
+      "width": 808,
+      "height": 524,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 76190,
+      "foreground_fraction": 0.1799514398004686,
+      "connected_components_8": 1,
+      "smallest_component_px": 76190,
+      "sha256_image_file": "e6f7ac6915ccf0f80939395894048e84944ec4b3aee453400f35e5fe4011de1b",
+      "sha256_mask_file": "eda166fbed43c96f74b75894b9d84b159b3a2958e704c8b194bb43d2393a36b0",
+      "sha256_rgb_pixels": "4fe4b5f8920e10d49026685b44355e1999f6a0a812faeec9b55e523c8fab2351",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "79",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/79.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/79.png",
+      "width": 922,
+      "height": 436,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 13397,
+      "foreground_fraction": 0.033326533861370376,
+      "connected_components_8": 5,
+      "smallest_component_px": 1818,
+      "sha256_image_file": "90c29dae62a67ed6e8659a6704e50ef758480fc2bf1c89cf99e267e91d085f3c",
+      "sha256_mask_file": "a03999016e0abf5c3e9d546d5f451e7fd90aef7cf4575b4e241f6eb94b15f608",
+      "sha256_rgb_pixels": "078ec8563a7c6e99125f04cc68d37f43b08f4dc92b02c75fc665245804e14cbb",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "80",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/80.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/80.png",
+      "width": 797,
+      "height": 1812,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 204869,
+      "foreground_fraction": 0.1418599272658784,
+      "connected_components_8": 3,
+      "smallest_component_px": 44110,
+      "sha256_image_file": "c12387fb2cc772e119e3b7a2a2ffb54bf7b99e8f5507372e8b6edbf767de4b25",
+      "sha256_mask_file": "714973a28069acf25bccd05f7480818b9b979a7f367fe3ce56d9a4203efec163",
+      "sha256_rgb_pixels": "1fe177abaf50b7c7ed96ec889a570901e11bb0d21b4a68ea0d8ce9473a22aa5b",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "81",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/81.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/81.png",
+      "width": 944,
+      "height": 540,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 46723,
+      "foreground_fraction": 0.09165685812931576,
+      "connected_components_8": 1,
+      "smallest_component_px": 46723,
+      "sha256_image_file": "fd78a84d7cacf41ec08874ff86c05eeafd411615e53df02c704676e039312150",
+      "sha256_mask_file": "5c41b6b96ea960c76181f875d9825587f207f3b544ef947384fc7d83e627d570",
+      "sha256_rgb_pixels": "6814bd16b01997d32043aff982f937938b59e0139dd9ee6215e2ca4c3e9968e3",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "82",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/82.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/82.png",
+      "width": 831,
+      "height": 415,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 32074,
+      "foreground_fraction": 0.09300450901077233,
+      "connected_components_8": 1,
+      "smallest_component_px": 32074,
+      "sha256_image_file": "ebba6676ad903e6e607c02021ededc2a4b07ac2fe14a76b916a66f33fe7d7a24",
+      "sha256_mask_file": "0a8ad6884f48b6583788cda0756f123fc48e4f42367d6bc4570c5b54cddf0823",
+      "sha256_rgb_pixels": "a2db23a553f08d9612f085fe74b794187ec34969eb9e3a293fc02fc5ad6db2ba",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "83",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/83.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/83.png",
+      "width": 910,
+      "height": 509,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 84639,
+      "foreground_fraction": 0.18273062889958763,
+      "connected_components_8": 1,
+      "smallest_component_px": 84639,
+      "sha256_image_file": "63cc5f2a1b5cf5f7955777be2428b54b1e5927e70d676cf2289f92da505119be",
+      "sha256_mask_file": "2cc5ed6b9bcb4959be181aa4fa1ca51e2110a93b69f95e40c37a29107af193d9",
+      "sha256_rgb_pixels": "0f03e7997f9974a22b4fc2a6cb7240d6405002e138048d1e00fca0d1e47c6392",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "84",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/84.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/84.png",
+      "width": 1933,
+      "height": 1498,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 231724,
+      "foreground_fraction": 0.08002530706574104,
+      "connected_components_8": 4,
+      "smallest_component_px": 3931,
+      "sha256_image_file": "7775669843724b1e7943fe835f6ab71c203e61dee6c801813dab2fc798cfef20",
+      "sha256_mask_file": "f7e6c767d70c48e638e5bc9bfffcd3ad3c5f24fbf5341756fbad055ba14dab31",
+      "sha256_rgb_pixels": "728907544f3ef0cfaed2bfae1c4845d043f0f197a9e4dfda46bfed7f32b8705e",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "85",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/85.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/85.png",
+      "width": 592,
+      "height": 535,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 23791,
+      "foreground_fraction": 0.07511682242990654,
+      "connected_components_8": 1,
+      "smallest_component_px": 23791,
+      "sha256_image_file": "e429dff5b5590231122511ca496fd3da56ae6218a6f6a51b1bae62380268a4c6",
+      "sha256_mask_file": "e6c6be56d3da0396876ff544695cc939443d84bf23e289bd0096efa5899af7ed",
+      "sha256_rgb_pixels": "c5bc750151bec5278da4a8674cf3ae5f5bd67abbddd5145877ea271f17351f79",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "86",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/86.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/86.png",
+      "width": 1035,
+      "height": 1478,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 43558,
+      "foreground_fraction": 0.028474305923267506,
+      "connected_components_8": 2,
+      "smallest_component_px": 19232,
+      "sha256_image_file": "d82af6c9ccca4d33904e8e0e8221d17ce56d1d1bacd2a7fd1b2c5c78ad4ccd97",
+      "sha256_mask_file": "594f093e42629b79d3cc8cc971379681c82b177add25a1cc888b22851f57bae8",
+      "sha256_rgb_pixels": "1262ef3e33c49b3ba593319a5ea6afe0d774e397f32d20636e7907ca712dfc51",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "87",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/87.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/87.png",
+      "width": 807,
+      "height": 425,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 8504,
+      "foreground_fraction": 0.024794810117355494,
+      "connected_components_8": 2,
+      "smallest_component_px": 3052,
+      "sha256_image_file": "a00154e9015b0eb36a0caaf6f1f65a03aabb52c7326c48ee2121431b30efeac6",
+      "sha256_mask_file": "b27158289aa980c1485cc01c979a9ed732d52fe54f4808cebe6a5238b092c38d",
+      "sha256_rgb_pixels": "dab8715e32adb204c32ceec6d894c84180eff0bb7406d94ff00e82aed056d12a",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "88",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/88.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/88.png",
+      "width": 1092,
+      "height": 577,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 29713,
+      "foreground_fraction": 0.0471572044362339,
+      "connected_components_8": 1,
+      "smallest_component_px": 29713,
+      "sha256_image_file": "00654c73410a861c0bab62bcd777970ed53621737a536e65c5bdf394233bcbc2",
+      "sha256_mask_file": "034334c36bffb50601f9d26ad0af86eae6aeb4e2ae41f4590cd6eb4b0704f28b",
+      "sha256_rgb_pixels": "c8a090f50470242b68cc2d02f8ee3eb6dbca2941a941677a2a6be078aad98c4d",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "89",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/89.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/89.png",
+      "width": 1365,
+      "height": 728,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 73102,
+      "foreground_fraction": 0.07356398180574004,
+      "connected_components_8": 1,
+      "smallest_component_px": 73102,
+      "sha256_image_file": "bcc1878ad5ce7d53cda1cecb3ad2b7469b1bc1d58ebf4742e26ce136d04cb8f2",
+      "sha256_mask_file": "ccc2174dd6810a49b05c89035702b48ab54d6bce2c9976a116d9f265020af9eb",
+      "sha256_rgb_pixels": "3573e98f4be1fbd1c729b919f4586cbb99a39ebf92811288b9bee0eb6176c7e3",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "90",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/90.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/90.png",
+      "width": 1183,
+      "height": 939,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 62198,
+      "foreground_fraction": 0.05599201322966376,
+      "connected_components_8": 2,
+      "smallest_component_px": 8991,
+      "sha256_image_file": "5eb1417c1f5e203b742a19555f5b9c1ff77daa5ceb078a105becdfb978114ac0",
+      "sha256_mask_file": "385687c18cc41449c4eb3137de3cedc7011f70a7ba1033167d5358798e80fe61",
+      "sha256_rgb_pixels": "cb17f572596b750fc05e2417ef80494af040d01d0d5c752be85149e296a42242",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "91",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/91.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/91.png",
+      "width": 945,
+      "height": 613,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 79491,
+      "foreground_fraction": 0.1372226106320723,
+      "connected_components_8": 8,
+      "smallest_component_px": 2234,
+      "sha256_image_file": "5f3e6b25ce1e11ab006f1f3d0f396dc85de2f743099bfd6104da86feea459080",
+      "sha256_mask_file": "be719dabb7dcd618b723c4d291c6c903a93bba27ee2632f00c6c7dba2e988d84",
+      "sha256_rgb_pixels": "fd3cac201c7b1ebe64b5fc02c96e2e1732efcdf9bf0b725ac1fe2c786a0b7769",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "92",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/92.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/92.png",
+      "width": 1024,
+      "height": 394,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 20334,
+      "foreground_fraction": 0.05039954790609137,
+      "connected_components_8": 4,
+      "smallest_component_px": 1110,
+      "sha256_image_file": "9d901995adda712466b1436aa3ca858d9ea4f95e1aa5dcad27a16f00330477bb",
+      "sha256_mask_file": "5d30abf99193a2bf73f0a49175a149554e79f45d7f06d3d5cd801583f556989f",
+      "sha256_rgb_pixels": "37eb17d83a039ee1fc794e38f30768c3eb02d5c079df0078170d15b5ea9ec011",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "93",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/93.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/93.png",
+      "width": 1182,
+      "height": 1891,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 137358,
+      "foreground_fraction": 0.0614532637902756,
+      "connected_components_8": 17,
+      "smallest_component_px": 1229,
+      "sha256_image_file": "c4187268eec2cb4f813e0d1a306d85f0067623c5807096174a32c5d6181c7e06",
+      "sha256_mask_file": "9ce7118da98ccfeade9cee7fc03d86d0be800ef95ea7bbc869f5e3266786a175",
+      "sha256_rgb_pixels": "07eaec2816511c7e6874660df6381c90029501c978ff5141e3f67c1995e322d0",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "94",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/94.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/94.png",
+      "width": 1285,
+      "height": 1106,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 153640,
+      "foreground_fraction": 0.10810506540201659,
+      "connected_components_8": 6,
+      "smallest_component_px": 1556,
+      "sha256_image_file": "0fa7f328101f28cb777fec611b7c1d4e6498a21894a6fd066c4bd3e1dd9a48a1",
+      "sha256_mask_file": "9e2f96b96eda446c85502e27414904808fe425b7fc412602bc47bb8d58de61a7",
+      "sha256_rgb_pixels": "4ca4a7dc49fe235a81efdd0f26a24a8e9d5421a84c693f4bf189a4ac94162e64",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "95",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/95.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/95.png",
+      "width": 695,
+      "height": 452,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 24247,
+      "foreground_fraction": 0.07718533138091296,
+      "connected_components_8": 1,
+      "smallest_component_px": 24247,
+      "sha256_image_file": "09925c4eb71dc7a6bdfd3ca9b367552ea2b8f43f016b23e725a9f68152d97939",
+      "sha256_mask_file": "1944d40ad5aa65e7ea13b367a640c37a790facb6c2f74ab8a516ee3ca7445938",
+      "sha256_rgb_pixels": "a9e66c076b651ab518f1bc160b7bec98bd8ce44d7b3bfff6e83aa88c424bf4b4",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "96",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/96.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/96.png",
+      "width": 1228,
+      "height": 2571,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 250220,
+      "foreground_fraction": 0.07925407039428757,
+      "connected_components_8": 6,
+      "smallest_component_px": 1017,
+      "sha256_image_file": "1bd3c25639d8258d60699f0b43fc7f03ddae10a66db23d2da26e1d97d6438ba6",
+      "sha256_mask_file": "dc3766ccf303ae05d2f72e8f8877d53cb6b0a4955938eb77749ae7119067b0da",
+      "sha256_rgb_pixels": "718120cfd854bf6da9626202a8961152427d12ed310708deaef64af364592c10",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "97",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/97.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/97.png",
+      "width": 637,
+      "height": 1011,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 47085,
+      "foreground_fraction": 0.07311255933553518,
+      "connected_components_8": 3,
+      "smallest_component_px": 737,
+      "sha256_image_file": "8bb16e6fdd30a05be132c042ca1777e52a7bc01c4bfa9ee21ec4b6d8ac94b776",
+      "sha256_mask_file": "2783412749f3cfb8a795eab5d529534c31758be0526ba1c2564750b280003c7e",
+      "sha256_rgb_pixels": "519ed7f85afdde482e37615b33859efe9c244617acefba3d02fb14bdd9a5b61a",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "98",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/98.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/98.png",
+      "width": 898,
+      "height": 728,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 17628,
+      "foreground_fraction": 0.02696468342348075,
+      "connected_components_8": 1,
+      "smallest_component_px": 17628,
+      "sha256_image_file": "ed8adf6cde977c77b5f765ba578496d4285a4db3fe73f8e52d0d498f0711384f",
+      "sha256_mask_file": "1d112a935f0417d093e5bc191ed6801fb6b363dd429f9994473c71de8dd2a4ff",
+      "sha256_rgb_pixels": "2e6cbdf664dab979f226015bd17a1ac83354aee0ac96adfc260667829f068b6d",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "99",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/99.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/99.png",
+      "width": 978,
+      "height": 1027,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 49787,
+      "foreground_fraction": 0.049568600745117014,
+      "connected_components_8": 1,
+      "smallest_component_px": 49787,
+      "sha256_image_file": "538ead4321ab42dec677178a0e87fce4e2cb3ce7f86516d4cbd9479a7c516d85",
+      "sha256_mask_file": "c35401852d0ff02edb988e35f2fb560e941b3aa61005fd79cc2f1270f6f9879c",
+      "sha256_rgb_pixels": "f056f09ac721ec9a3e4afddc6a4c3c1b511d382596041f2748b502b71a3462bb",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "100",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/100.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/100.png",
+      "width": 478,
+      "height": 603,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 30877,
+      "foreground_fraction": 0.10712476668262592,
+      "connected_components_8": 3,
+      "smallest_component_px": 379,
+      "sha256_image_file": "88e7676fdff19bb95caeb2c8e325b3f481aab87780fba9fc6bcd8c42507ff39e",
+      "sha256_mask_file": "97ab1660a6efff2a8029f7f9bd3e4f9f75f80547ae65c5d5d889324006a989c7",
+      "sha256_rgb_pixels": "f26abf30b7eda48aa683f29f359b1b396da94814299497c2d69d23328a498863",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "101",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/101.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/101.png",
+      "width": 546,
+      "height": 373,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 21023,
+      "foreground_fraction": 0.10322697856209921,
+      "connected_components_8": 1,
+      "smallest_component_px": 21023,
+      "sha256_image_file": "a760a96acf2a9fd4c7d3ee8fd46b91be67aea037073bf495f8b5598026751f3d",
+      "sha256_mask_file": "8edf4920714b04c44cc5b588ca8f0e8846537478296dca775b174bc11f3ce00f",
+      "sha256_rgb_pixels": "7444e0b1f972e3362e19ff0069fc9275f19e5cbb66a06f2cf5cad654e61debce",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "102",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/102.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/102.png",
+      "width": 921,
+      "height": 2404,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 196062,
+      "foreground_fraction": 0.0885521958516479,
+      "connected_components_8": 9,
+      "smallest_component_px": 364,
+      "sha256_image_file": "f31e3639d6fdb5ebea320e813f28c89994af378de644f19c41934917e9588827",
+      "sha256_mask_file": "8a20de0ff5780481c978ad747dc4bf94bcf545595fc43757d2ab43e4e425ab51",
+      "sha256_rgb_pixels": "55a61f34dfd7c1ecb72b7d50f8e489460fe887a1d702a642e8c93a711e548f1f",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "103",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/103.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/103.png",
+      "width": 1955,
+      "height": 729,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 96398,
+      "foreground_fraction": 0.06763846350850235,
+      "connected_components_8": 2,
+      "smallest_component_px": 38567,
+      "sha256_image_file": "06f52fadd311509d84b2657d251e6d3065e6b4488166d973213fb0487c986c72",
+      "sha256_mask_file": "549e4ae10158a074edfbe498b1e39e8e8cd5eb46f42bb1aea839faedb50a8e43",
+      "sha256_rgb_pixels": "04d288f514b303597ac7e66359bb6d984462eac25b65e0fb719d1ef2fbd9f92a",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "104",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/104.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/104.png",
+      "width": 1286,
+      "height": 550,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 22798,
+      "foreground_fraction": 0.03223243319666337,
+      "connected_components_8": 1,
+      "smallest_component_px": 22798,
+      "sha256_image_file": "28b5ea73d91b59e0b2b37da772b29423d16ee827c19649208ed0e3b8226da5fa",
+      "sha256_mask_file": "d448493f5d916bbe4c09e8eb9847007c209eb5332d57a3e8f8a431e3d89d98c7",
+      "sha256_rgb_pixels": "80fc7f34f0621e5fe913298573886dde3d64dc0919da81a421b60ae7e569b703",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "105",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/105.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/105.png",
+      "width": 1535,
+      "height": 614,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 114380,
+      "foreground_fraction": 0.1213593778183323,
+      "connected_components_8": 2,
+      "smallest_component_px": 46086,
+      "sha256_image_file": "2c15d2a395f15f136f8abd4c53a9b4b7f226ea509835d8bd151c43c4c69698e5",
+      "sha256_mask_file": "0201c8f326a6d87272b4b22a0db1ca9b669764af864acad415915850614fb8bd",
+      "sha256_rgb_pixels": "60abfe7bfc93f5d4c19011ea791ff15aa8c89e29219da2906105eb00fd64885d",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "106",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/106.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/106.png",
+      "width": 1887,
+      "height": 2284,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 243806,
+      "foreground_fraction": 0.056568724900856356,
+      "connected_components_8": 5,
+      "smallest_component_px": 24816,
+      "sha256_image_file": "51a856edd67e0c2086af756d5eb565aa2b3ebb5df5de9b40ca353e96bca76512",
+      "sha256_mask_file": "0f5aeca20931b58cf7494c232037d0aa1b21d07fcdeef811b6da9eb7e7dfe84f",
+      "sha256_rgb_pixels": "e46db0a39dd32c5ebf4932bd1a98757afb6f2e2326bc0c165f65f695980e9bb2",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "107",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/107.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/107.png",
+      "width": 558,
+      "height": 320,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 7078,
+      "foreground_fraction": 0.039639336917562724,
+      "connected_components_8": 4,
+      "smallest_component_px": 1582,
+      "sha256_image_file": "75a304414c957c78873494a465e95f542ca2e9ea78bc2bfcc4af851536d378c3",
+      "sha256_mask_file": "8b0d1ac0aa2ae9847f943c26aadca6298faaa0696cad5ac00e1bb9a1740d2c39",
+      "sha256_rgb_pixels": "7fb6e2209d4aafaaebdde8458a81924c1066d025a69628ab122331577ba971f6",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "108",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/108.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/108.png",
+      "width": 830,
+      "height": 409,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 15841,
+      "foreground_fraction": 0.04666391728282322,
+      "connected_components_8": 2,
+      "smallest_component_px": 5795,
+      "sha256_image_file": "f5feec744f061256a9dbc6e52b6c0a7080868db072b5d7842083399deeafc71f",
+      "sha256_mask_file": "60bd364140b455ba50adf1a770df25b14fb560e3ae2d6501c021920a83595ddd",
+      "sha256_rgb_pixels": "994a0ffbf03d8705018e15e9a4642674ab54b7ed01fca7b29e8789afee41382a",
+      "eligible_demo_256_5frames_step32_margin16": false,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "109",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/109.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/109.png",
+      "width": 740,
+      "height": 431,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 27073,
+      "foreground_fraction": 0.08488430425785415,
+      "connected_components_8": 1,
+      "smallest_component_px": 27073,
+      "sha256_image_file": "9a6e6fae1c97c504d1449b840a4d7e3a148f87052c10e3392b8d964558e28abd",
+      "sha256_mask_file": "99ae2d827f21d4512f96c8abc8cff5cf2ec71a07da0c8703aabdc462b0cf8859",
+      "sha256_rgb_pixels": "82b0be2445ac49a14132f4054146d504d5944a99c50db50a4664550057a9a3b2",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "110",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/110.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/110.png",
+      "width": 354,
+      "height": 662,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 4320,
+      "foreground_fraction": 0.018434123611039993,
+      "connected_components_8": 1,
+      "smallest_component_px": 4320,
+      "sha256_image_file": "83dd525b677ab61bccbe9b622b2904e6a8a4e1e09a2cf25142529033d49d6e11",
+      "sha256_mask_file": "0cd6f56abc0a31b4bcf1c5d1acbb88453a2c4331dd14f51419749b03ed461885",
+      "sha256_rgb_pixels": "3b7684ac83e2c85574ba0fcc56cf772582d3113412f64707e9dd78705dd9bcc5",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "111",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/111.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/111.png",
+      "width": 446,
+      "height": 678,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 16394,
+      "foreground_fraction": 0.0542151143563898,
+      "connected_components_8": 1,
+      "smallest_component_px": 16394,
+      "sha256_image_file": "a52a1595aff391ffe7c19f39a3e828d6957979c1aa3cf183a9d04c553d743afe",
+      "sha256_mask_file": "f334b3dca127a5b9fb66aefb2507f5f13e6f15a402e312387eba25962d94c335",
+      "sha256_rgb_pixels": "accecaa183465a89b56226e3d994a47399a9e89223e678b89ec268d479d11179",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "112",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/112.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/112.png",
+      "width": 811,
+      "height": 725,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 127052,
+      "foreground_fraction": 0.2160840171776011,
+      "connected_components_8": 2,
+      "smallest_component_px": 3277,
+      "sha256_image_file": "a8a0c3a32c28896c9898a53dcadab9236f826de844b0a6b2330e6c267e81e0cd",
+      "sha256_mask_file": "efe3a8829c3fec42c2c3c4469cf4193fc62c89baea37c7b07fac3dd547533eb0",
+      "sha256_rgb_pixels": "28ab541ec307b7ed515f916185a0abc65413c9d263d754ff7658ceb66a082fc4",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    },
+    {
+      "source_id": "113",
+      "image_file": "neu_rsdds/extracted/2D_Image/INPUT_IMG/113.bmp",
+      "mask_file": "neu_rsdds/extracted/Ground Truth/Ground Truth/113.png",
+      "width": 789,
+      "height": 1134,
+      "mask_values": [
+        0,
+        255
+      ],
+      "raw_mask_mode": "1",
+      "raw_mask_values": [
+        false,
+        true
+      ],
+      "foreground_pixels": 130440,
+      "foreground_fraction": 0.14578764895621676,
+      "connected_components_8": 1,
+      "smallest_component_px": 130440,
+      "sha256_image_file": "f6fe4462863e8328eb4a5ce865ce416bbeb015c832eed8036ec4733064b66b8a",
+      "sha256_mask_file": "aa738584b7c824010638cc4d271190461e6c82d497ac7e94e12ed2c16fd66839",
+      "sha256_rgb_pixels": "ce17ff32b8af3a570ae887c5828b4cf35a4828bc42134810d8b3ff9cb8c0d1da",
+      "eligible_demo_256_5frames_step32_margin16": true,
+      "quarantine_annotation_conflict": false
+    }
+  ],
+  "path_base": "local data-root; raw data excluded from Git"
+}

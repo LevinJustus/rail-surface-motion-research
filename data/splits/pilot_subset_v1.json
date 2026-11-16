@@ -1,0 +1,1415 @@
+{
+  "protocol": "pilot_subset_v1",
+  "selection_seed": 20261114,
+  "source_split_sha256": "c65f8c439ac3f245541a6678f3fe937bd3dcf7136584f088fd90eae1609270a6",
+  "selection_rule": "Hash-ranked groups and IDs, round robin without replacement; smoke is first8 of pilot training",
+  "group_rank_key": "SHA256(seed|pilot_subset_v1|split_sha|partition|group|group_id)",
+  "image_rank_key": "SHA256(seed|pilot_subset_v1|split_sha|partition|image|id)",
+  "image_access": "Metadata only; no image, mask or model output used for selection",
+  "smoke_train": [
+    {
+      "id": "training/s0000595b_2_3",
+      "group_id": "g_53a54c36f8ccd068",
+      "image": "mcnet/extracted/training/training/s0000595b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000595b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000571b_5_1",
+      "group_id": "g_5573e098e80f85f1",
+      "image": "mcnet/extracted/training/training/s0000571b_5_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000571b_5_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000516b_4_3",
+      "group_id": "g_f63c9cf40907ef36",
+      "image": "mcnet/extracted/test/test/craft/images/s0000516b_4_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000516b_4_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000533b_2_0",
+      "group_id": "g_1e37085319b37a19",
+      "image": "mcnet/extracted/training/training/s0000533b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000533b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000515b_0_4",
+      "group_id": "g_4149a076d8a2fc22",
+      "image": "mcnet/extracted/test/test/craft/images/s0000515b_0_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000515b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000546b_1_4",
+      "group_id": "g_eecc8ddc15fc3826",
+      "image": "mcnet/extracted/training/training/s0000546b_1_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000546b_1_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000541b_2_0",
+      "group_id": "g_3a85775924341f2c",
+      "image": "mcnet/extracted/validation/validation/s0000541b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000541b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000579b_0_0",
+      "group_id": "g_eba6588f9b03f0e2",
+      "image": "mcnet/extracted/training/training/s0000579b_0_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000579b_0_0.jpg",
+      "assigned_split": "training"
+    }
+  ],
+  "pilot_train": [
+    {
+      "id": "training/s0000595b_2_3",
+      "group_id": "g_53a54c36f8ccd068",
+      "image": "mcnet/extracted/training/training/s0000595b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000595b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000571b_5_1",
+      "group_id": "g_5573e098e80f85f1",
+      "image": "mcnet/extracted/training/training/s0000571b_5_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000571b_5_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000516b_4_3",
+      "group_id": "g_f63c9cf40907ef36",
+      "image": "mcnet/extracted/test/test/craft/images/s0000516b_4_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000516b_4_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000533b_2_0",
+      "group_id": "g_1e37085319b37a19",
+      "image": "mcnet/extracted/training/training/s0000533b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000533b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000515b_0_4",
+      "group_id": "g_4149a076d8a2fc22",
+      "image": "mcnet/extracted/test/test/craft/images/s0000515b_0_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000515b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000546b_1_4",
+      "group_id": "g_eecc8ddc15fc3826",
+      "image": "mcnet/extracted/training/training/s0000546b_1_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000546b_1_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000541b_2_0",
+      "group_id": "g_3a85775924341f2c",
+      "image": "mcnet/extracted/validation/validation/s0000541b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000541b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000579b_0_0",
+      "group_id": "g_eba6588f9b03f0e2",
+      "image": "mcnet/extracted/training/training/s0000579b_0_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000579b_0_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000573b_1_0",
+      "group_id": "g_53e2451d53a06bc6",
+      "image": "mcnet/extracted/test/test/craft/images/s0000573b_1_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000573b_1_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000581b_2_3",
+      "group_id": "g_2e4f2e65357a78fa",
+      "image": "mcnet/extracted/training/training/s0000581b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000581b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000507b_3_3",
+      "group_id": "g_48b5f9b7b22f8d83",
+      "image": "mcnet/extracted/validation/validation/s0000507b_3_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000507b_3_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000576b_5_1",
+      "group_id": "g_d933cd06c5c53fc3",
+      "image": "mcnet/extracted/test/test/craft/images/s0000576b_5_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000576b_5_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000539b_5_2",
+      "group_id": "g_07ea606b28367493",
+      "image": "mcnet/extracted/test/test/craft/images/s0000539b_5_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000539b_5_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000617b_1_1",
+      "group_id": "g_a12ffe6b76e14369",
+      "image": "mcnet/extracted/training/training/s0000617b_1_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000617b_1_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000587b_3_1",
+      "group_id": "g_9376f28af10c452b",
+      "image": "mcnet/extracted/test/test/craft/images/s0000587b_3_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000587b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000586b_3_1",
+      "group_id": "g_af017630bb37d12e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000586b_3_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000586b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000534b_2_0",
+      "group_id": "g_a93e0222718f53df",
+      "image": "mcnet/extracted/training/training/s0000534b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000534b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000618b_9_4",
+      "group_id": "g_a92f5db821c02db3",
+      "image": "mcnet/extracted/training/training/s0000618b_9_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000618b_9_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000565b_2_4",
+      "group_id": "g_a7bdbb4c3c7eaa59",
+      "image": "mcnet/extracted/test/test/craft/images/s0000565b_2_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000565b_2_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000591b_2_1",
+      "group_id": "g_12c109587183312b",
+      "image": "mcnet/extracted/training/training/s0000591b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000591b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000543b_0_4",
+      "group_id": "g_447d44d223aa5cc0",
+      "image": "mcnet/extracted/validation/validation/s0000543b_0_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000543b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000583b_5_4",
+      "group_id": "g_6744ee25a5632fb0",
+      "image": "mcnet/extracted/training/training/s0000583b_5_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000583b_5_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000551b_2_4",
+      "group_id": "g_d2256efd88418e96",
+      "image": "mcnet/extracted/training/training/s0000551b_2_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000551b_2_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000528b_7_4",
+      "group_id": "g_4d052149b567b3ff",
+      "image": "mcnet/extracted/training/training/s0000528b_7_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000528b_7_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000525b_1_3",
+      "group_id": "g_19d4988fb87066af",
+      "image": "mcnet/extracted/validation/validation/s0000525b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000525b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000544b_2_3",
+      "group_id": "g_0e0039676000c76e",
+      "image": "mcnet/extracted/training/training/s0000544b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000544b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "image": "mcnet/extracted/test/test/craft/images/s0000512b_0_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000512b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000601b_2_4",
+      "group_id": "g_b0e8d0fe1d0c9ad7",
+      "image": "mcnet/extracted/training/training/s0000601b_2_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000601b_2_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000529b_0_4",
+      "group_id": "g_8ca20d82dfefa244",
+      "image": "mcnet/extracted/training/training/s0000529b_0_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000529b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000593b_5_3",
+      "group_id": "g_bcc2bca83eba7f28",
+      "image": "mcnet/extracted/training/training/s0000593b_5_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000593b_5_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000569b_17_0",
+      "group_id": "g_5e10f40c5285e7b7",
+      "image": "mcnet/extracted/validation/validation/s0000569b_17_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000569b_17_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000510b_2_2",
+      "group_id": "g_b11689142b3a7e76",
+      "image": "mcnet/extracted/test/test/craft/images/s0000510b_2_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000510b_2_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000511b_0_1",
+      "group_id": "g_accd433f6ee9158a",
+      "image": "mcnet/extracted/test/test/craft/images/s0000511b_0_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000511b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000531b_1_1",
+      "group_id": "g_fa937bb12465a6bd",
+      "image": "mcnet/extracted/test/test/craft/images/s0000531b_1_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000531b_1_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000532b_2_1",
+      "group_id": "g_2e16036794483f8e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000532b_2_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000532b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000570b_5_3",
+      "group_id": "g_4e755226e650e8d3",
+      "image": "mcnet/extracted/training/training/s0000570b_5_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000570b_5_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000548b_0_1",
+      "group_id": "g_09c1f75dfb5e96a7",
+      "image": "mcnet/extracted/training/training/s0000548b_0_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000548b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000523b_1_4",
+      "group_id": "g_78fbaaae5cc786f1",
+      "image": "mcnet/extracted/validation/validation/s0000523b_1_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000523b_1_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000624b_7_3",
+      "group_id": "g_62087d9047a83ba6",
+      "image": "mcnet/extracted/test/test/craft/images/s0000624b_7_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000624b_7_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000611b_2_2",
+      "group_id": "g_4914805d5037eeb8",
+      "image": "mcnet/extracted/training/training/s0000611b_2_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000611b_2_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000552b_0_1",
+      "group_id": "g_0e27fd239a7bd169",
+      "image": "mcnet/extracted/validation/validation/s0000552b_0_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000552b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000518b_2_0",
+      "group_id": "g_ebe66273726189f3",
+      "image": "mcnet/extracted/training/training/s0000518b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000518b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000520b_2_0",
+      "group_id": "g_ae7766d1c7277fa0",
+      "image": "mcnet/extracted/validation/validation/s0000520b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000520b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000590b_2_0",
+      "group_id": "g_54e439722fd893ea",
+      "image": "mcnet/extracted/training/training/s0000590b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000590b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000588b_3_1",
+      "group_id": "g_d53f91499c992a9b",
+      "image": "mcnet/extracted/training/training/s0000588b_3_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000588b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000595b_0_1",
+      "group_id": "g_53a54c36f8ccd068",
+      "image": "mcnet/extracted/training/training/s0000595b_0_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000595b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000571b_0_1",
+      "group_id": "g_5573e098e80f85f1",
+      "image": "mcnet/extracted/training/training/s0000571b_0_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000571b_0_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000516b_3_1",
+      "group_id": "g_f63c9cf40907ef36",
+      "image": "mcnet/extracted/test/test/craft/images/s0000516b_3_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000516b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000533b_2_3",
+      "group_id": "g_1e37085319b37a19",
+      "image": "mcnet/extracted/training/training/s0000533b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000533b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000515b_0_0",
+      "group_id": "g_4149a076d8a2fc22",
+      "image": "mcnet/extracted/test/test/craft/images/s0000515b_0_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000515b_0_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000546b_1_3",
+      "group_id": "g_eecc8ddc15fc3826",
+      "image": "mcnet/extracted/training/training/s0000546b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000546b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000541b_3_4",
+      "group_id": "g_3a85775924341f2c",
+      "image": "mcnet/extracted/validation/validation/s0000541b_3_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000541b_3_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000579b_0_2",
+      "group_id": "g_eba6588f9b03f0e2",
+      "image": "mcnet/extracted/training/training/s0000579b_0_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000579b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000573b_1_2",
+      "group_id": "g_53e2451d53a06bc6",
+      "image": "mcnet/extracted/test/test/craft/images/s0000573b_1_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000573b_1_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000581b_2_4",
+      "group_id": "g_2e4f2e65357a78fa",
+      "image": "mcnet/extracted/training/training/s0000581b_2_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000581b_2_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000507b_1_3",
+      "group_id": "g_48b5f9b7b22f8d83",
+      "image": "mcnet/extracted/validation/validation/s0000507b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000507b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000576b_10_4",
+      "group_id": "g_d933cd06c5c53fc3",
+      "image": "mcnet/extracted/test/test/craft/images/s0000576b_10_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000576b_10_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000539b_6_4",
+      "group_id": "g_07ea606b28367493",
+      "image": "mcnet/extracted/test/test/craft/images/s0000539b_6_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000539b_6_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000617b_2_2",
+      "group_id": "g_a12ffe6b76e14369",
+      "image": "mcnet/extracted/training/training/s0000617b_2_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000617b_2_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000587b_2_1",
+      "group_id": "g_9376f28af10c452b",
+      "image": "mcnet/extracted/test/test/craft/images/s0000587b_2_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000587b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000586b_7_0",
+      "group_id": "g_af017630bb37d12e",
+      "image": "mcnet/extracted/validation/validation/s0000586b_7_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000586b_7_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000534b_0_2",
+      "group_id": "g_a93e0222718f53df",
+      "image": "mcnet/extracted/training/training/s0000534b_0_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000534b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000618b_10_0",
+      "group_id": "g_a92f5db821c02db3",
+      "image": "mcnet/extracted/training/training/s0000618b_10_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000618b_10_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000565b_5_1",
+      "group_id": "g_a7bdbb4c3c7eaa59",
+      "image": "mcnet/extracted/training/training/s0000565b_5_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000565b_5_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000591b_2_0",
+      "group_id": "g_12c109587183312b",
+      "image": "mcnet/extracted/training/training/s0000591b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000591b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000543b_1_3",
+      "group_id": "g_447d44d223aa5cc0",
+      "image": "mcnet/extracted/validation/validation/s0000543b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000543b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000583b_3_1",
+      "group_id": "g_6744ee25a5632fb0",
+      "image": "mcnet/extracted/training/training/s0000583b_3_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000583b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000551b_1_3",
+      "group_id": "g_d2256efd88418e96",
+      "image": "mcnet/extracted/training/training/s0000551b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000551b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000528b_5_0",
+      "group_id": "g_4d052149b567b3ff",
+      "image": "mcnet/extracted/training/training/s0000528b_5_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000528b_5_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000525b_1_0",
+      "group_id": "g_19d4988fb87066af",
+      "image": "mcnet/extracted/validation/validation/s0000525b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000525b_1_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000545b_5_2",
+      "group_id": "g_0e0039676000c76e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000545b_5_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000545b_5_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000512b_0_3",
+      "group_id": "g_1323702b97307572",
+      "image": "mcnet/extracted/test/test/craft/images/s0000512b_0_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000512b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000601b_2_1",
+      "group_id": "g_b0e8d0fe1d0c9ad7",
+      "image": "mcnet/extracted/training/training/s0000601b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000601b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000529b_0_3",
+      "group_id": "g_8ca20d82dfefa244",
+      "image": "mcnet/extracted/training/training/s0000529b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000529b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000593b_0_3",
+      "group_id": "g_bcc2bca83eba7f28",
+      "image": "mcnet/extracted/training/training/s0000593b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000593b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000569b_15_3",
+      "group_id": "g_5e10f40c5285e7b7",
+      "image": "mcnet/extracted/validation/validation/s0000569b_15_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000569b_15_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000510b_2_3",
+      "group_id": "g_b11689142b3a7e76",
+      "image": "mcnet/extracted/test/test/craft/images/s0000510b_2_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000510b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000511b_0_2",
+      "group_id": "g_accd433f6ee9158a",
+      "image": "mcnet/extracted/test/test/craft/images/s0000511b_0_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000511b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000531b_1_3",
+      "group_id": "g_fa937bb12465a6bd",
+      "image": "mcnet/extracted/test/test/craft/images/s0000531b_1_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000531b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000532b_2_2",
+      "group_id": "g_2e16036794483f8e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000532b_2_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000532b_2_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000570b_4_1",
+      "group_id": "g_4e755226e650e8d3",
+      "image": "mcnet/extracted/training/training/s0000570b_4_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000570b_4_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000548b_0_2",
+      "group_id": "g_09c1f75dfb5e96a7",
+      "image": "mcnet/extracted/training/training/s0000548b_0_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000548b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000523b_2_3",
+      "group_id": "g_78fbaaae5cc786f1",
+      "image": "mcnet/extracted/validation/validation/s0000523b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000523b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000530b_2_1",
+      "group_id": "g_62087d9047a83ba6",
+      "image": "mcnet/extracted/training/training/s0000530b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000530b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000611b_19_1",
+      "group_id": "g_4914805d5037eeb8",
+      "image": "mcnet/extracted/validation/validation/s0000611b_19_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000611b_19_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000552b_3_1",
+      "group_id": "g_0e27fd239a7bd169",
+      "image": "mcnet/extracted/training/training/s0000552b_3_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000552b_3_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000518b_1_2",
+      "group_id": "g_ebe66273726189f3",
+      "image": "mcnet/extracted/test/test/craft/images/s0000518b_1_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000518b_1_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000520b_0_4",
+      "group_id": "g_ae7766d1c7277fa0",
+      "image": "mcnet/extracted/validation/validation/s0000520b_0_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000520b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000590b_1_2",
+      "group_id": "g_54e439722fd893ea",
+      "image": "mcnet/extracted/training/training/s0000590b_1_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000590b_1_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000588b_0_3",
+      "group_id": "g_d53f91499c992a9b",
+      "image": "mcnet/extracted/training/training/s0000588b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000588b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000595b_1_0",
+      "group_id": "g_53a54c36f8ccd068",
+      "image": "mcnet/extracted/training/training/s0000595b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000595b_1_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000571b_8_4",
+      "group_id": "g_5573e098e80f85f1",
+      "image": "mcnet/extracted/training/training/s0000571b_8_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000571b_8_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000516b_2_4",
+      "group_id": "g_f63c9cf40907ef36",
+      "image": "mcnet/extracted/test/test/craft/images/s0000516b_2_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000516b_2_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000533b_1_2",
+      "group_id": "g_1e37085319b37a19",
+      "image": "mcnet/extracted/training/training/s0000533b_1_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000533b_1_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000515b_1_3",
+      "group_id": "g_4149a076d8a2fc22",
+      "image": "mcnet/extracted/test/test/craft/images/s0000515b_1_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000515b_1_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000546b_9_4",
+      "group_id": "g_eecc8ddc15fc3826",
+      "image": "mcnet/extracted/training/training/s0000546b_9_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000546b_9_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000541b_4_0",
+      "group_id": "g_3a85775924341f2c",
+      "image": "mcnet/extracted/validation/validation/s0000541b_4_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000541b_4_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000579b_1_1",
+      "group_id": "g_eba6588f9b03f0e2",
+      "image": "mcnet/extracted/training/training/s0000579b_1_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000579b_1_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000573b_1_4",
+      "group_id": "g_53e2451d53a06bc6",
+      "image": "mcnet/extracted/test/test/craft/images/s0000573b_1_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000573b_1_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000581b_3_3",
+      "group_id": "g_2e4f2e65357a78fa",
+      "image": "mcnet/extracted/training/training/s0000581b_3_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000581b_3_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000507b_2_2",
+      "group_id": "g_48b5f9b7b22f8d83",
+      "image": "mcnet/extracted/validation/validation/s0000507b_2_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000507b_2_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000578b_4_2",
+      "group_id": "g_d933cd06c5c53fc3",
+      "image": "mcnet/extracted/training/training/s0000578b_4_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000578b_4_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000539b_8_4",
+      "group_id": "g_07ea606b28367493",
+      "image": "mcnet/extracted/training/training/s0000539b_8_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000539b_8_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000617b_0_4",
+      "group_id": "g_a12ffe6b76e14369",
+      "image": "mcnet/extracted/training/training/s0000617b_0_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000617b_0_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000587b_2_0",
+      "group_id": "g_9376f28af10c452b",
+      "image": "mcnet/extracted/test/test/craft/images/s0000587b_2_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000587b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000586b_2_0",
+      "group_id": "g_af017630bb37d12e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000586b_2_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000586b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000534b_0_3",
+      "group_id": "g_a93e0222718f53df",
+      "image": "mcnet/extracted/training/training/s0000534b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000534b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000618b_5_0",
+      "group_id": "g_a92f5db821c02db3",
+      "image": "mcnet/extracted/training/training/s0000618b_5_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000618b_5_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000565b_4_4",
+      "group_id": "g_a7bdbb4c3c7eaa59",
+      "image": "mcnet/extracted/test/test/craft/images/s0000565b_4_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000565b_4_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000591b_1_0",
+      "group_id": "g_12c109587183312b",
+      "image": "mcnet/extracted/training/training/s0000591b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000591b_1_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000543b_12_0",
+      "group_id": "g_447d44d223aa5cc0",
+      "image": "mcnet/extracted/training/training/s0000543b_12_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000543b_12_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000583b_3_4",
+      "group_id": "g_6744ee25a5632fb0",
+      "image": "mcnet/extracted/training/training/s0000583b_3_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000583b_3_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000551b_1_0",
+      "group_id": "g_d2256efd88418e96",
+      "image": "mcnet/extracted/training/training/s0000551b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000551b_1_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000528b_8_4",
+      "group_id": "g_4d052149b567b3ff",
+      "image": "mcnet/extracted/training/training/s0000528b_8_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000528b_8_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000525b_2_1",
+      "group_id": "g_19d4988fb87066af",
+      "image": "mcnet/extracted/validation/validation/s0000525b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000525b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000544b_9_3",
+      "group_id": "g_0e0039676000c76e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000544b_9_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000544b_9_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000601b_0_2",
+      "group_id": "g_b0e8d0fe1d0c9ad7",
+      "image": "mcnet/extracted/training/training/s0000601b_0_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000601b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000529b_2_1",
+      "group_id": "g_8ca20d82dfefa244",
+      "image": "mcnet/extracted/training/training/s0000529b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000529b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000593b_4_3",
+      "group_id": "g_bcc2bca83eba7f28",
+      "image": "mcnet/extracted/training/training/s0000593b_4_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000593b_4_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000569b_5_3",
+      "group_id": "g_5e10f40c5285e7b7",
+      "image": "mcnet/extracted/test/test/craft/images/s0000569b_5_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000569b_5_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000510b_2_1",
+      "group_id": "g_b11689142b3a7e76",
+      "image": "mcnet/extracted/test/test/craft/images/s0000510b_2_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000510b_2_1.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000511b_0_3",
+      "group_id": "g_accd433f6ee9158a",
+      "image": "mcnet/extracted/test/test/craft/images/s0000511b_0_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000511b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000532b_2_3",
+      "group_id": "g_2e16036794483f8e",
+      "image": "mcnet/extracted/test/test/craft/images/s0000532b_2_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000532b_2_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000570b_2_0",
+      "group_id": "g_4e755226e650e8d3",
+      "image": "mcnet/extracted/training/training/s0000570b_2_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000570b_2_0.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000548b_0_3",
+      "group_id": "g_09c1f75dfb5e96a7",
+      "image": "mcnet/extracted/training/training/s0000548b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000548b_0_3.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "validation/s0000523b_0_2",
+      "group_id": "g_78fbaaae5cc786f1",
+      "image": "mcnet/extracted/validation/validation/s0000523b_0_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000523b_0_2.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "artificial_test/s0000624b_7_4",
+      "group_id": "g_62087d9047a83ba6",
+      "image": "mcnet/extracted/test/test/craft/images/s0000624b_7_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000624b_7_4.jpg",
+      "assigned_split": "training"
+    },
+    {
+      "id": "training/s0000611b_4_0",
+      "group_id": "g_4914805d5037eeb8",
+      "image": "mcnet/extracted/training/training/s0000611b_4_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000611b_4_0.jpg",
+      "assigned_split": "training"
+    }
+  ],
+  "pilot_validation": [
+    {
+      "id": "training/s0000547b_5_4",
+      "group_id": "g_beb908c6e6b1df5e",
+      "image": "mcnet/extracted/training/training/s0000547b_5_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000547b_5_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000522b_3_4",
+      "group_id": "g_d622e4a31128bab9",
+      "image": "mcnet/extracted/validation/validation/s0000522b_3_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000522b_3_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000608b_14_2",
+      "group_id": "g_acc43bb2d81eaf26",
+      "image": "mcnet/extracted/validation/validation/s0000608b_14_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000608b_14_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000572b_5_4",
+      "group_id": "g_cde1fb830c1c5a1d",
+      "image": "mcnet/extracted/training/training/s0000572b_5_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000572b_5_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000559b_2_3",
+      "group_id": "g_8dccbe58bb0a09da",
+      "image": "mcnet/extracted/test/test/craft/images/s0000559b_2_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000559b_2_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000596b_1_0",
+      "group_id": "g_58645e2bc562f589",
+      "image": "mcnet/extracted/test/test/craft/images/s0000596b_1_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000596b_1_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000553b_5_0",
+      "group_id": "g_8b176b693ad06720",
+      "image": "mcnet/extracted/training/training/s0000553b_5_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000553b_5_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000592b_7_4",
+      "group_id": "g_5d90457e15ef852a",
+      "image": "mcnet/extracted/training/training/s0000592b_7_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000592b_7_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000521b_1_3",
+      "group_id": "g_4c9904919793e06c",
+      "image": "mcnet/extracted/validation/validation/s0000521b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000521b_1_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000599b_5_1",
+      "group_id": "g_22c5eb95bb91d0e4",
+      "image": "mcnet/extracted/training/training/s0000599b_5_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000599b_5_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000557b_0_0",
+      "group_id": "g_5d08ff90d77f6438",
+      "image": "mcnet/extracted/training/training/s0000557b_0_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000557b_0_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000505b_4_3",
+      "group_id": "g_372091ff544dae75",
+      "image": "mcnet/extracted/validation/validation/s0000505b_4_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000505b_4_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000566b_10_1",
+      "group_id": "g_50d80e0dfae24e17",
+      "image": "mcnet/extracted/training/training/s0000566b_10_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000566b_10_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000582b_3_0",
+      "group_id": "g_f849dade755e1cb1",
+      "image": "mcnet/extracted/training/training/s0000582b_3_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000582b_3_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000519b_0_1",
+      "group_id": "g_0e20dcbbb280e7e5",
+      "image": "mcnet/extracted/test/test/craft/images/s0000519b_0_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000519b_0_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000547b_8_4",
+      "group_id": "g_beb908c6e6b1df5e",
+      "image": "mcnet/extracted/training/training/s0000547b_8_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000547b_8_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000522b_2_1",
+      "group_id": "g_d622e4a31128bab9",
+      "image": "mcnet/extracted/validation/validation/s0000522b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000522b_2_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000608b_2_2",
+      "group_id": "g_acc43bb2d81eaf26",
+      "image": "mcnet/extracted/validation/validation/s0000608b_2_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000608b_2_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000572b_2_3",
+      "group_id": "g_cde1fb830c1c5a1d",
+      "image": "mcnet/extracted/training/training/s0000572b_2_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000572b_2_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000559b_0_3",
+      "group_id": "g_8dccbe58bb0a09da",
+      "image": "mcnet/extracted/test/test/craft/images/s0000559b_0_3.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000559b_0_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000596b_4_1",
+      "group_id": "g_58645e2bc562f589",
+      "image": "mcnet/extracted/test/test/craft/images/s0000596b_4_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000596b_4_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000553b_8_1",
+      "group_id": "g_8b176b693ad06720",
+      "image": "mcnet/extracted/test/test/craft/images/s0000553b_8_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000553b_8_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000592b_1_4",
+      "group_id": "g_5d90457e15ef852a",
+      "image": "mcnet/extracted/test/test/craft/images/s0000592b_1_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000592b_1_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000521b_5_0",
+      "group_id": "g_4c9904919793e06c",
+      "image": "mcnet/extracted/validation/validation/s0000521b_5_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000521b_5_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000599b_0_4",
+      "group_id": "g_22c5eb95bb91d0e4",
+      "image": "mcnet/extracted/training/training/s0000599b_0_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000599b_0_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000557b_1_0",
+      "group_id": "g_5d08ff90d77f6438",
+      "image": "mcnet/extracted/validation/validation/s0000557b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000557b_1_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000505b_4_0",
+      "group_id": "g_372091ff544dae75",
+      "image": "mcnet/extracted/validation/validation/s0000505b_4_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000505b_4_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000566b_3_1",
+      "group_id": "g_50d80e0dfae24e17",
+      "image": "mcnet/extracted/test/test/craft/images/s0000566b_3_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000566b_3_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000582b_3_2",
+      "group_id": "g_f849dade755e1cb1",
+      "image": "mcnet/extracted/training/training/s0000582b_3_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000582b_3_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000519b_2_4",
+      "group_id": "g_0e20dcbbb280e7e5",
+      "image": "mcnet/extracted/test/test/craft/images/s0000519b_2_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000519b_2_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000547b_3_0",
+      "group_id": "g_beb908c6e6b1df5e",
+      "image": "mcnet/extracted/training/training/s0000547b_3_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000547b_3_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000522b_1_1",
+      "group_id": "g_d622e4a31128bab9",
+      "image": "mcnet/extracted/validation/validation/s0000522b_1_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000522b_1_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000608b_2_4",
+      "group_id": "g_acc43bb2d81eaf26",
+      "image": "mcnet/extracted/validation/validation/s0000608b_2_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000608b_2_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000572b_4_1",
+      "group_id": "g_cde1fb830c1c5a1d",
+      "image": "mcnet/extracted/training/training/s0000572b_4_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000572b_4_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000559b_2_2",
+      "group_id": "g_8dccbe58bb0a09da",
+      "image": "mcnet/extracted/test/test/craft/images/s0000559b_2_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000559b_2_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000596b_4_0",
+      "group_id": "g_58645e2bc562f589",
+      "image": "mcnet/extracted/test/test/craft/images/s0000596b_4_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000596b_4_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000553b_6_4",
+      "group_id": "g_8b176b693ad06720",
+      "image": "mcnet/extracted/test/test/craft/images/s0000553b_6_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000553b_6_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000592b_3_0",
+      "group_id": "g_5d90457e15ef852a",
+      "image": "mcnet/extracted/training/training/s0000592b_3_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000592b_3_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000521b_4_1",
+      "group_id": "g_4c9904919793e06c",
+      "image": "mcnet/extracted/validation/validation/s0000521b_4_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000521b_4_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000599b_5_3",
+      "group_id": "g_22c5eb95bb91d0e4",
+      "image": "mcnet/extracted/training/training/s0000599b_5_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000599b_5_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000557b_3_3",
+      "group_id": "g_5d08ff90d77f6438",
+      "image": "mcnet/extracted/validation/validation/s0000557b_3_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000557b_3_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000505b_3_2",
+      "group_id": "g_372091ff544dae75",
+      "image": "mcnet/extracted/validation/validation/s0000505b_3_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000505b_3_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000566b_1_1",
+      "group_id": "g_50d80e0dfae24e17",
+      "image": "mcnet/extracted/test/test/craft/images/s0000566b_1_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000566b_1_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000582b_1_3",
+      "group_id": "g_f849dade755e1cb1",
+      "image": "mcnet/extracted/training/training/s0000582b_1_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000582b_1_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000519b_1_0",
+      "group_id": "g_0e20dcbbb280e7e5",
+      "image": "mcnet/extracted/test/test/craft/images/s0000519b_1_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000519b_1_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000547b_9_0",
+      "group_id": "g_beb908c6e6b1df5e",
+      "image": "mcnet/extracted/training/training/s0000547b_9_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000547b_9_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000522b_0_3",
+      "group_id": "g_d622e4a31128bab9",
+      "image": "mcnet/extracted/validation/validation/s0000522b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000522b_0_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000608b_15_0",
+      "group_id": "g_acc43bb2d81eaf26",
+      "image": "mcnet/extracted/training/training/s0000608b_15_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000608b_15_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000572b_2_4",
+      "group_id": "g_cde1fb830c1c5a1d",
+      "image": "mcnet/extracted/training/training/s0000572b_2_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000572b_2_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000559b_3_2",
+      "group_id": "g_8dccbe58bb0a09da",
+      "image": "mcnet/extracted/test/test/craft/images/s0000559b_3_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000559b_3_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000596b_4_2",
+      "group_id": "g_58645e2bc562f589",
+      "image": "mcnet/extracted/test/test/craft/images/s0000596b_4_2.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000596b_4_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000553b_9_0",
+      "group_id": "g_8b176b693ad06720",
+      "image": "mcnet/extracted/test/test/craft/images/s0000553b_9_0.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000553b_9_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000592b_4_1",
+      "group_id": "g_5d90457e15ef852a",
+      "image": "mcnet/extracted/test/test/craft/images/s0000592b_4_1.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000592b_4_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000521b_0_1",
+      "group_id": "g_4c9904919793e06c",
+      "image": "mcnet/extracted/validation/validation/s0000521b_0_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000521b_0_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000599b_5_0",
+      "group_id": "g_22c5eb95bb91d0e4",
+      "image": "mcnet/extracted/training/training/s0000599b_5_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000599b_5_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000557b_1_2",
+      "group_id": "g_5d08ff90d77f6438",
+      "image": "mcnet/extracted/validation/validation/s0000557b_1_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000557b_1_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000505b_0_3",
+      "group_id": "g_372091ff544dae75",
+      "image": "mcnet/extracted/validation/validation/s0000505b_0_3.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000505b_0_3.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000566b_8_4",
+      "group_id": "g_50d80e0dfae24e17",
+      "image": "mcnet/extracted/training/training/s0000566b_8_4.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000566b_8_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000582b_4_2",
+      "group_id": "g_f849dade755e1cb1",
+      "image": "mcnet/extracted/training/training/s0000582b_4_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000582b_4_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "artificial_test/s0000519b_0_4",
+      "group_id": "g_0e20dcbbb280e7e5",
+      "image": "mcnet/extracted/test/test/craft/images/s0000519b_0_4.png",
+      "mask": "mcnet/extracted/test/test/craft/annotations/s0000519b_0_4.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000547b_3_2",
+      "group_id": "g_beb908c6e6b1df5e",
+      "image": "mcnet/extracted/training/training/s0000547b_3_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000547b_3_2.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000522b_1_0",
+      "group_id": "g_d622e4a31128bab9",
+      "image": "mcnet/extracted/validation/validation/s0000522b_1_0.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000522b_1_0.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "validation/s0000608b_2_1",
+      "group_id": "g_acc43bb2d81eaf26",
+      "image": "mcnet/extracted/validation/validation/s0000608b_2_1.png",
+      "mask": "mcnet/extracted/annotations/annotations/validation/s0000608b_2_1.jpg",
+      "assigned_split": "validation"
+    },
+    {
+      "id": "training/s0000572b_4_2",
+      "group_id": "g_cde1fb830c1c5a1d",
+      "image": "mcnet/extracted/training/training/s0000572b_4_2.png",
+      "mask": "mcnet/extracted/annotations/annotations/training/s0000572b_4_2.jpg",
+      "assigned_split": "validation"
+    }
+  ]
+}
