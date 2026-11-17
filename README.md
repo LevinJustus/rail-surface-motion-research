@@ -2,9 +2,9 @@
 
 **基于轻量化深度学习与运动补偿的钢轨表面缺陷实时检测方法研究**
 
-本仓库保存钢轨表面缺陷分割研究的原创代码、冻结配置、数据来源与划分、实验协议和公开结果摘要。在这个项目中主要进行研究钢轨表面缺陷分割，以及运动信息如何帮助提高连续观测的稳定性。已实现数据审计、分割模型训练与评价、受控运动输入生成，接下来将验证运动先验配准和可靠多帧融合。当前开发版本 v0.2.0。
+本仓库保存钢轨表面缺陷分割研究的原创代码、冻结配置、数据来源与划分、实验协议和公开结果摘要。在这个项目中主要进行研究钢轨表面缺陷分割，以及运动信息如何帮助提高连续观测的稳定性。已实现数据审计、分割模型训练与评价、受控运动输入生成、单帧阈值诊断和平移配准比较，接下来将检验可靠多帧融合。当前开发版本 v0.3.0。
 
-当前已完成小型U-Net与MobileNetV2–DeepLabv3+的三种子对照，并构建了受控运动序列。运动先验辅助配准、可靠多帧融合、最终测试和实时性仍在后续研究范围内。
+当前已完成小型U-Net与MobileNetV2–DeepLabv3+的三种子对照，并构建了受控运动序列。平移配准已完成受控验证，运动先验未见额外精度收益；可靠多帧融合、最终测试和实时性仍待验证。
 
 ## 已有结果
 
@@ -19,17 +19,31 @@
 
 受控序列使用45个训练来源代理组和15个验证来源代理组，各选一幅原图，12种固定条件共720条序列、6480帧。几何、标签、模拟里程及输入隔离通过核查；保留600个空前景帧、48条全空序列与180条里程缺测。它们是60幅源图的关联派生输入，尚无序列分割或融合成绩，详见[序列方法](docs/step12_sequence_protocol.md)及[实际验收](docs/step12_sequence_results.md)。
 
+## 本版本新增验证
+
+我检查了两模型×三种子×best/last的12个检查点，原阈值0.5下4800条逐图计数与历史完全一致。U-Net best的验证诊断选点IoU为0.4757±0.0156（原0.5为0.4524±0.0364）；这是同验证集选阈值的乐观诊断，不是新算法或测试增益。详见[13A报告](docs/step13a_validation_results.md)与[数字曲线](results/validation_diagnostics/)。
+
+我还完成180条受控验证序列、1440相邻对的三种平移配准比较：
+
+| 方法 | 有效覆盖率 | 有效估计平均网格EPE/px | 不可用或网格EPE>2px |
+|---|---:|---:|---:|
+| 直接模拟里程 | 94.79% | 0.550044 | 10.42% |
+| 纯视觉NCC | 100% | 0.172131 | 0% |
+| 运动先验约束NCC | 100% | 0.172131 | 0% |
+
+两种NCC逐对位移完全一致，当前没有验证先验的额外收益；1440对来自15个关联来源代理组。纯平移未补偿旋转，零主失败也不表示完全对齐。独立NumPy核验全部几何及预选24对NCC通过。共享相关图开销不能用于声称先验加速；还没有检测融合、真实视频或板端成绩。详见[13B协议](docs/step13b_registration_protocol.md)、[结果](docs/step13b_registration_results.md)和[汇总CSV](results/registration/validation_aggregate_metrics.csv)。
+
 ## 研究进度
 
 - [公开进度与下一步](docs/PROGRESS.md)
 - [版本变更](CHANGELOG.md)与[公开材料范围](docs/PUBLICATION_POLICY.md)
 
-下一步会分析验证集中的误检、漏检、概率与阈值，再开展使用同一分割器的配准和融合消融。每次版本更新都附变更记录和验证情况。
+下一步会使用同一分割器开展可靠性融合及消融，保留阈值调整单帧参照，并先冻结协议。每次版本更新都附变更记录和验证情况。
 
 ## 目录与运行
 
 ```text
-matlab/          分割模型、训练、评价与受控输入生成
+matlab/          分割模型、训练、评价与受控输入生成、阈值诊断与配准
 tools/           数据获取、审计、配置准备与研究结果比较
 configs/         冻结模型、训练和运动序列配置
 data/manifests/  数据来源、版本、文件与标签审计
@@ -69,3 +83,22 @@ generate_controlled_sequences(DATA_ROOT, ...
 ## 开发与版本
 
 按功能和实验阶段维护版本，使用提交记录、CHANGELOG和固定配置追踪变化。结果有改善或退化都如实记录。当前仓库提供研究实现与复现说明，论文正文及源稿不在仓库中发布。原创代码许可证尚待确定，第三方材料遵循各自授权。
+
+配准复现入口（先完成第12项生成；DATA_ROOT与生成运行名按实际指定）：
+
+```matlab
+inputRoot=fullfile(pwd,'runs','step12_NEW_UNIQUE_RUN','algorithm_inputs');
+cfgPath=fullfile(pwd,'configs','registration_translation_v1.json');
+run_registration_inputs(inputRoot,cfgPath,'contract','registration_contract_NEW');
+% 先审查契约，再按冻结参数执行validation。
+run_registration_inputs(inputRoot,cfgPath,'validation','registration_validation_NEW');
+```
+
+算法结束后，用NumPy/Pillow单独评价，几何目录仅传给此评价步骤：
+
+```text
+python tools/evaluate_registration.py --run runs/registration_contract_NEW --sequences runs/step12_NEW_UNIQUE_RUN
+python tools/evaluate_registration.py --run runs/registration_validation_NEW --sequences runs/step12_NEW_UNIQUE_RUN
+```
+
+不可根据验证结果回调本版参数后再将同一结果称为独立测试。每个运行和evaluation目录必须使用新名称，失败产物保留。

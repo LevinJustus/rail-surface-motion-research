@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_version": "0.2.0",
+  "release_version": "0.3.0",
   "scope": "Clean allowlisted public export, not the canonical Git history or a new experiment.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
@@ -13,7 +13,7 @@
       "src_sha256": null,
       "derivation": "public byte-preservation policy, independent of canonical history/evidence rules",
       "path": ".gitattributes",
-      "public_sha256": "d18bfb7278bece4fb778ebc695db63d89c693c88274a2febd59b806f47e0f094"
+      "public_sha256": "12d57a023bb8f4207467ba6a9950e5b1361232f65962f116cae2d5239425d43a"
     },
     {
       "src_relpath": null,
@@ -24,17 +24,17 @@
     },
     {
       "src_relpath": "docs/public_CHANGELOG.md",
-      "src_sha256": "b226c72b325898dd0ff16dd917c45234dd337a761b24c10ff3b9b5dc2bd91f60",
+      "src_sha256": "ee464ce4932d3669356d1428f61ca00d9f7744811d2d6f50eef19ddb1262b4cf",
       "derivation": "byte-identical allowlisted source",
       "path": "CHANGELOG.md",
-      "public_sha256": "b226c72b325898dd0ff16dd917c45234dd337a761b24c10ff3b9b5dc2bd91f60"
+      "public_sha256": "ee464ce4932d3669356d1428f61ca00d9f7744811d2d6f50eef19ddb1262b4cf"
     },
     {
       "src_relpath": "docs/github_readme.md",
-      "src_sha256": "5fe6b2d8c665da175d7107cc70ce7019d77110b6318db69d589f51f589f16ec6",
+      "src_sha256": "5ded26dc5830a8a194b2b75a60aedff74c598a6d1f3f77929054c34315db4635",
       "derivation": "byte-identical allowlisted source",
       "path": "README.md",
-      "public_sha256": "5fe6b2d8c665da175d7107cc70ce7019d77110b6318db69d589f51f589f16ec6"
+      "public_sha256": "5ded26dc5830a8a194b2b75a60aedff74c598a6d1f3f77929054c34315db4635"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -45,10 +45,10 @@
     },
     {
       "src_relpath": "PUBLIC_VERSION",
-      "src_sha256": "c58a749f70f5e1ba5394ebcdbfcfa02fa938c4a173d8e41e6c476a7c8b2acddd",
+      "src_sha256": "c3e6947edad6581d229209ce319ce4498a03f3ed0846b74bb647247a749c1e46",
       "derivation": "release version rendered from --version; no experiment rerun",
       "path": "VERSION",
-      "public_sha256": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+      "public_sha256": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0"
     },
     {
       "src_relpath": "configs/baseline.json",
@@ -91,6 +91,20 @@
       "derivation": "byte-identical allowlisted source",
       "path": "configs/motion_sequences_v2.sha256",
       "public_sha256": "20f4e6612bdceb705e743c655f55371085d14b1117e6b93710d3d64df6d51c7c"
+    },
+    {
+      "src_relpath": "configs/registration_translation_v1.json",
+      "src_sha256": "043fc3d61c1909be4f4ec608ca8cd4168b4c08d75b751ad362aece62a907cf34",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/registration_translation_v1.json",
+      "public_sha256": "043fc3d61c1909be4f4ec608ca8cd4168b4c08d75b751ad362aece62a907cf34"
+    },
+    {
+      "src_relpath": "configs/registration_translation_v1.sha256",
+      "src_sha256": "08e1b4905986ceb78c10518dfa3cff7702afb02086d478748af52e042ca23f0f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/registration_translation_v1.sha256",
+      "public_sha256": "08e1b4905986ceb78c10518dfa3cff7702afb02086d478748af52e042ca23f0f"
     },
     {
       "src_relpath": "configs/training_stage1_v1.json",
@@ -283,10 +297,10 @@
     },
     {
       "src_relpath": "docs/public_PROGRESS.md",
-      "src_sha256": "804b22437f3c3145d1dd6871014a8334287b6678538489e965e7e2efb1c103dc",
+      "src_sha256": "803bdc408f8ab92fe9d071bb227f755078bc53b1d2e9c161d6be323865e259d2",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PROGRESS.md",
-      "public_sha256": "804b22437f3c3145d1dd6871014a8334287b6678538489e965e7e2efb1c103dc"
+      "public_sha256": "803bdc408f8ab92fe9d071bb227f755078bc53b1d2e9c161d6be323865e259d2"
     },
     {
       "src_relpath": "docs/PUBLICATION_POLICY.md",
@@ -374,6 +388,38 @@
       "removed_unpublished_link_count": 0,
       "path": "docs/step12_sequence_results.md",
       "public_sha256": "5431d84db1b267245445703427856a037d810b71771f7ca0ed5fe48cc9a1edda"
+    },
+    {
+      "src_relpath": "docs/step13a_validation_protocol.md",
+      "src_sha256": "2bee67324a91438707776b695e84cd8e10335be71ad7edb66aa7a16d093213f3",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13a_validation_protocol.md",
+      "public_sha256": "7229bc8426ce3b520c5a8e297d992b14e06e042152fdc2cab13c9772c43f1ae6"
+    },
+    {
+      "src_relpath": "docs/step13a_validation_results.md",
+      "src_sha256": "388d8cb8fd414766049cd0be795c31928af23b79c9fea279ab56e55eef930c16",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 5,
+      "path": "docs/step13a_validation_results.md",
+      "public_sha256": "884f9f4f13012ec20af9cdcfff2083aeede2288b2fbaf68e3f0bf630e2947011"
+    },
+    {
+      "src_relpath": "docs/step13b_registration_protocol.md",
+      "src_sha256": "9411c84baa9f6828083e2227fbbccb9a5deb4cd005af2ce1de380448b765d9e2",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13b_registration_protocol.md",
+      "public_sha256": "709435a3053acacbb888c7cca2a94558a11e7aec517ba8dc2771f8c79e374eb0"
+    },
+    {
+      "src_relpath": "docs/step13b_registration_results.md",
+      "src_sha256": "074a4da07ac72a6f42a7e48f2aa050be79fed3fb009f9a7cb4e8edd1691f7e4d",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13b_registration_results.md",
+      "public_sha256": "93b7c032064f70ff3de739e4a2310e284f4c85565642a3fa24b6894a6b883728"
     },
     {
       "src_relpath": "matlab/benchmark_training_batches.m",
@@ -559,6 +605,13 @@
       "public_sha256": "b19b7d9c673d8e5ed26169f40dae1c9edc082fb4baaee40149c97a5e62b148fc"
     },
     {
+      "src_relpath": "matlab/plot_registration_results.m",
+      "src_sha256": "44b0d661caf4b52686c5b67bb479c522ff2449cdfc2a864b588ec69c678ee754",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_registration_results.m",
+      "public_sha256": "44b0d661caf4b52686c5b67bb479c522ff2449cdfc2a864b588ec69c678ee754"
+    },
+    {
       "src_relpath": "matlab/plot_repeat_summary.m",
       "src_sha256": "1516194ec1a1af24c8d9167f28c9d2d7482e66d0ff756c8b4eaff8b15288ca93",
       "derivation": "byte-identical allowlisted source",
@@ -571,6 +624,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/plot_smoke_run.m",
       "public_sha256": "5db194422e037cb6e5a4fc203ff0c638e3f241b7fa5d8dcfe0dd43b62e79b692"
+    },
+    {
+      "src_relpath": "matlab/plot_validation_diagnostics.m",
+      "src_sha256": "fbc5a9494c454dbf446c8e9e086d61e696b0b16cde304e66715fea60bafaa821",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/plot_validation_diagnostics.m",
+      "public_sha256": "fbc5a9494c454dbf446c8e9e086d61e696b0b16cde304e66715fea60bafaa821"
     },
     {
       "src_relpath": "matlab/probe_lightweight_dependencies.m",
@@ -587,11 +647,39 @@
       "public_sha256": "67e3b8712772700c170441fb91683f4c7bf079a0b95b7b37438426538cdd05e9"
     },
     {
+      "src_relpath": "matlab/register_motion_pair.m",
+      "src_sha256": "5e3df5492cc478d087a4699ed11bc3454680f5e4e4ed2cae5a6a1471eb6b289c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/register_motion_pair.m",
+      "public_sha256": "5e3df5492cc478d087a4699ed11bc3454680f5e4e4ed2cae5a6a1471eb6b289c"
+    },
+    {
+      "src_relpath": "matlab/run_registration_inputs.m",
+      "src_sha256": "cb5df2b099fea55dd24f69186c7b8fd21ab2644667895eead37a1d145162a684",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/run_registration_inputs.m",
+      "public_sha256": "cb5df2b099fea55dd24f69186c7b8fd21ab2644667895eead37a1d145162a684"
+    },
+    {
+      "src_relpath": "matlab/run_validation_diagnostics.m",
+      "src_sha256": "c172d7f8ec5ba57473a9661cf50d193351f69705df41ed8291055bd62d2c81da",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/run_validation_diagnostics.m",
+      "public_sha256": "c172d7f8ec5ba57473a9661cf50d193351f69705df41ed8291055bd62d2c81da"
+    },
+    {
       "src_relpath": "matlab/segmentation_train_step.m",
       "src_sha256": "4c895aea88163921c31eaa255001bcb46ec76e63fe9a934229f88b69c377a1ff",
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/segmentation_train_step.m",
       "public_sha256": "4c895aea88163921c31eaa255001bcb46ec76e63fe9a934229f88b69c377a1ff"
+    },
+    {
+      "src_relpath": "matlab/threshold_confusion_counts.m",
+      "src_sha256": "081d8b1a5dc31f1ce92761c751a81b6e73a3cbe6c19545b08e3b95c62b7c85e2",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/threshold_confusion_counts.m",
+      "public_sha256": "081d8b1a5dc31f1ce92761c751a81b6e73a3cbe6c19545b08e3b95c62b7c85e2"
     },
     {
       "src_relpath": "matlab/train_full_baseline.m",
@@ -659,11 +747,123 @@
       "public_sha256": "ff8d9fb06546da700d3554776d0ccbbc9ef02501e044a8b7ac4ba67c27c5f7ac"
     },
     {
+      "src_relpath": "runs/registration_contract_v1_01/evaluation/aggregate_metrics.csv",
+      "src_sha256": "50c05a15bc4f73ddf7de7bdd15e8c8afdc4d0f27ed61f7cc14b0ffdd05637e00",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/registration/contract_aggregate_metrics.csv",
+      "public_sha256": "50c05a15bc4f73ddf7de7bdd15e8c8afdc4d0f27ed61f7cc14b0ffdd05637e00"
+    },
+    {
+      "src_relpath": "runs/registration_validation_v1_01/evaluation/aggregate_metrics.csv",
+      "src_sha256": "548adae812093ce4358a70a0e2e7aef6a800b6a7ada6f21a850981542b5b88d8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/registration/validation_aggregate_metrics.csv",
+      "public_sha256": "548adae812093ce4358a70a0e2e7aef6a800b6a7ada6f21a850981542b5b88d8"
+    },
+    {
       "src_relpath": "docs/evidence/step11/comparison/statistics.csv",
       "src_sha256": "d0b773e76e801606ec93b75d9dc84ff6265f508aabfa857a74f103aef6cb948c",
       "derivation": "byte-identical allowlisted source",
       "path": "results/statistics.csv",
       "public_sha256": "d0b773e76e801606ec93b75d9dc84ff6265f508aabfa857a74f103aef6cb948c"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/checkpoint_overview.csv",
+      "src_sha256": "2c1198efd8967e9679e9cb17cb2fec8684cbde199e0879d769b2c369a24e38d2",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/checkpoint_overview.csv",
+      "public_sha256": "2c1198efd8967e9679e9cb17cb2fec8684cbde199e0879d769b2c369a24e38d2"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261114_best_validation/threshold_curve.csv",
+      "src_sha256": "5f372f357a691d5dea6e6195d1d2a3266d0d9d9bcc0330e19a6b3f2b9391fba6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261114_best_validation_threshold_curve.csv",
+      "public_sha256": "5f372f357a691d5dea6e6195d1d2a3266d0d9d9bcc0330e19a6b3f2b9391fba6"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261114_last/threshold_curve.csv",
+      "src_sha256": "0dd709f7a040ad8d27cc86c0194c7d31a1dd74a1bc7540a681b345e5d50fdd16",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261114_last_threshold_curve.csv",
+      "public_sha256": "0dd709f7a040ad8d27cc86c0194c7d31a1dd74a1bc7540a681b345e5d50fdd16"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261115_best_validation/threshold_curve.csv",
+      "src_sha256": "ec7a41a135726614a11bb91d52f1af5f6299db30aea0fe9f0bb0b2bcf3d1db78",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261115_best_validation_threshold_curve.csv",
+      "public_sha256": "ec7a41a135726614a11bb91d52f1af5f6299db30aea0fe9f0bb0b2bcf3d1db78"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261115_last/threshold_curve.csv",
+      "src_sha256": "88a3f856cce4349b037bd242d9adecca66c712b0a61b226ab6ff5ae8eb417eae",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261115_last_threshold_curve.csv",
+      "public_sha256": "88a3f856cce4349b037bd242d9adecca66c712b0a61b226ab6ff5ae8eb417eae"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261116_best_validation/threshold_curve.csv",
+      "src_sha256": "ea24c9c2fc6509e87ccf97d282708057d393abc1938db00608df090e11abf52f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261116_best_validation_threshold_curve.csv",
+      "public_sha256": "ea24c9c2fc6509e87ccf97d282708057d393abc1938db00608df090e11abf52f"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/mobilenet_deeplab_20261116_last/threshold_curve.csv",
+      "src_sha256": "9ea96fce4febdadacc488c3acf84eb0018a003af8dfbe4bae63b2d668024cfdc",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/mobilenet_deeplab_20261116_last_threshold_curve.csv",
+      "public_sha256": "9ea96fce4febdadacc488c3acf84eb0018a003af8dfbe4bae63b2d668024cfdc"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261114_best_validation/threshold_curve.csv",
+      "src_sha256": "f6ff05f1d0e373f6da46b387427601d9c8998f9889aacd1cd834b2a9bd162711",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261114_best_validation_threshold_curve.csv",
+      "public_sha256": "f6ff05f1d0e373f6da46b387427601d9c8998f9889aacd1cd834b2a9bd162711"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261114_last/threshold_curve.csv",
+      "src_sha256": "e899c4aaeb3d6d728ae8dad8e8013b19fc9f0b33e834aa60443de52866494a16",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261114_last_threshold_curve.csv",
+      "public_sha256": "e899c4aaeb3d6d728ae8dad8e8013b19fc9f0b33e834aa60443de52866494a16"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261115_best_validation/threshold_curve.csv",
+      "src_sha256": "5be58619e9244a0743631eb2e66455630df2f440a949b9dcc8d44debf218e36e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261115_best_validation_threshold_curve.csv",
+      "public_sha256": "5be58619e9244a0743631eb2e66455630df2f440a949b9dcc8d44debf218e36e"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261115_last/threshold_curve.csv",
+      "src_sha256": "05fdb807353edf6a615945ff4ac3db13a3af38fb509fdb399c834adeaf2abf0b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261115_last_threshold_curve.csv",
+      "public_sha256": "05fdb807353edf6a615945ff4ac3db13a3af38fb509fdb399c834adeaf2abf0b"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261116_best_validation/threshold_curve.csv",
+      "src_sha256": "eb5a6631f42cdd573a0b00c7c6937fb68ed83fca8e8c8beae68242f17e77f1e4",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261116_best_validation_threshold_curve.csv",
+      "public_sha256": "eb5a6631f42cdd573a0b00c7c6937fb68ed83fca8e8c8beae68242f17e77f1e4"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/small_unet_20261116_last/threshold_curve.csv",
+      "src_sha256": "ea37221fa8aff61addc5aed5b64d6657d73c2d16b747d997c77550d3adbe061b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/small_unet_20261116_last_threshold_curve.csv",
+      "public_sha256": "ea37221fa8aff61addc5aed5b64d6657d73c2d16b747d997c77550d3adbe061b"
+    },
+    {
+      "src_relpath": "runs/validation_diagnostics_v1_02/three_seed_statistics.csv",
+      "src_sha256": "c10a643c09d2049591ffc4e6c6e1689abb7befa1bffbec14d1d4a04ef2d70a71",
+      "derivation": "byte-identical allowlisted source",
+      "path": "results/validation_diagnostics/three_seed_statistics.csv",
+      "public_sha256": "c10a643c09d2049591ffc4e6c6e1689abb7befa1bffbec14d1d4a04ef2d70a71"
     },
     {
       "src_relpath": "tools/audit_full_run.py",
@@ -701,6 +901,13 @@
       "public_sha256": "55b0a40b61834d465289429f5b35dc3202e0dbd4cb1ef19064946320bf98651e"
     },
     {
+      "src_relpath": "tools/audit_validation_diagnostics.py",
+      "src_sha256": "0fa327b47c943ddee4467cad9199f13785000895231e9dfd76a0f9702343da6e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_validation_diagnostics.py",
+      "public_sha256": "0fa327b47c943ddee4467cad9199f13785000895231e9dfd76a0f9702343da6e"
+    },
+    {
       "src_relpath": "tools/compare_mature_results.py",
       "src_sha256": "400e2a51870218b4cfdf794b4495825614ffbaaf6436adb61d9008aa662e7468",
       "derivation": "byte-identical allowlisted source",
@@ -713,6 +920,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/create_source_archive.py",
       "public_sha256": "452b8273dcd684c647b2bf96b59866d19a0bd47da8cca7cc42305b2ab454dba2"
+    },
+    {
+      "src_relpath": "tools/evaluate_registration.py",
+      "src_sha256": "b046e42eb51673e9d1fd5f80bbb096207454da65114792608b80a5c0049d42cd",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/evaluate_registration.py",
+      "public_sha256": "b046e42eb51673e9d1fd5f80bbb096207454da65114792608b80a5c0049d42cd"
     },
     {
       "src_relpath": "tools/fetch_mcnet.py",

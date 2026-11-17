@@ -5,4 +5,4 @@
 # Hash-bound configurations/data must retain exact published bytes at checkout.
 configs/** -text
 data/** -text
-results/*.csv -text
+results/** -text
