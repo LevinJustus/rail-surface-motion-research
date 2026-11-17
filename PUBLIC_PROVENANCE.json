@@ -31,10 +31,10 @@
     },
     {
       "src_relpath": "docs/github_readme.md",
-      "src_sha256": "5ded26dc5830a8a194b2b75a60aedff74c598a6d1f3f77929054c34315db4635",
+      "src_sha256": "e1c4274f090c987533d6bb777c0f61e114b3919634d9adacafc175551f3cf71f",
       "derivation": "byte-identical allowlisted source",
       "path": "README.md",
-      "public_sha256": "5ded26dc5830a8a194b2b75a60aedff74c598a6d1f3f77929054c34315db4635"
+      "public_sha256": "e1c4274f090c987533d6bb777c0f61e114b3919634d9adacafc175551f3cf71f"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
