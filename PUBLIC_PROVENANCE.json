@@ -24,10 +24,10 @@
     },
     {
       "src_relpath": "docs/public_CHANGELOG.md",
-      "src_sha256": "ee464ce4932d3669356d1428f61ca00d9f7744811d2d6f50eef19ddb1262b4cf",
+      "src_sha256": "e718da0d46bf95fe6154ca83e3c4cf7c65ff5110fe968494bf06e43f2f53daa0",
       "derivation": "byte-identical allowlisted source",
       "path": "CHANGELOG.md",
-      "public_sha256": "ee464ce4932d3669356d1428f61ca00d9f7744811d2d6f50eef19ddb1262b4cf"
+      "public_sha256": "e718da0d46bf95fe6154ca83e3c4cf7c65ff5110fe968494bf06e43f2f53daa0"
     },
     {
       "src_relpath": "docs/github_readme.md",
@@ -297,17 +297,17 @@
     },
     {
       "src_relpath": "docs/public_PROGRESS.md",
-      "src_sha256": "803bdc408f8ab92fe9d071bb227f755078bc53b1d2e9c161d6be323865e259d2",
+      "src_sha256": "e4ce6db7fc6915dc85406e70e99d98f8b067745e84db8b8b5f8a803fc42e12b5",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PROGRESS.md",
-      "public_sha256": "803bdc408f8ab92fe9d071bb227f755078bc53b1d2e9c161d6be323865e259d2"
+      "public_sha256": "e4ce6db7fc6915dc85406e70e99d98f8b067745e84db8b8b5f8a803fc42e12b5"
     },
     {
       "src_relpath": "docs/PUBLICATION_POLICY.md",
-      "src_sha256": "355978d2c6144aba6e00a9e3dbc1c855bb66ee11ccfa754add330d04f43f124f",
+      "src_sha256": "f4df445d3b50da460f7d0a44ee622f12346341ea4cb32810c0989a4e5a38c2a7",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PUBLICATION_POLICY.md",
-      "public_sha256": "355978d2c6144aba6e00a9e3dbc1c855bb66ee11ccfa754add330d04f43f124f"
+      "public_sha256": "f4df445d3b50da460f7d0a44ee622f12346341ea4cb32810c0989a4e5a38c2a7"
     },
     {
       "src_relpath": "docs/baseline_preparation.md",
@@ -355,7 +355,7 @@
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
       "removed_unpublished_link_count": 6,
       "path": "docs/step10_full_results.md",
-      "public_sha256": "5db4697fd5d96212d5ada9dfb5ec909168ebca0cf335e0634bb75a41ada7b5c2"
+      "public_sha256": "333baa405f5e448b00e72cb5143da818f2fa613758a1dd7e77a13c78cabca67a"
     },
     {
       "src_relpath": "docs/step11_execution_plan.md",
@@ -399,27 +399,27 @@
     },
     {
       "src_relpath": "docs/step13a_validation_results.md",
-      "src_sha256": "388d8cb8fd414766049cd0be795c31928af23b79c9fea279ab56e55eef930c16",
+      "src_sha256": "4e5f639c3e6a71386fa7ac042158decc694ff31de6c045e9d7533c365741bb1e",
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
       "removed_unpublished_link_count": 5,
       "path": "docs/step13a_validation_results.md",
-      "public_sha256": "884f9f4f13012ec20af9cdcfff2083aeede2288b2fbaf68e3f0bf630e2947011"
+      "public_sha256": "a73522bc190b11af4f506378481dfbc311a0e785fda500b07d2eebfd779065ac"
     },
     {
       "src_relpath": "docs/step13b_registration_protocol.md",
-      "src_sha256": "9411c84baa9f6828083e2227fbbccb9a5deb4cd005af2ce1de380448b765d9e2",
+      "src_sha256": "c438021f8fd900edca064a0b92910dc891deaf53b178d2d059d67c2aa3fdfeba",
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13b_registration_protocol.md",
-      "public_sha256": "709435a3053acacbb888c7cca2a94558a11e7aec517ba8dc2771f8c79e374eb0"
+      "public_sha256": "ce76e97c8978a0f45ea21830c01d624fcaf2515343551256580b4acc6f236c04"
     },
     {
       "src_relpath": "docs/step13b_registration_results.md",
-      "src_sha256": "074a4da07ac72a6f42a7e48f2aa050be79fed3fb009f9a7cb4e8edd1691f7e4d",
+      "src_sha256": "e1bad51b06233c14f925f8c99bd0c0ce7e1bfe37e28665190cb7916ba37af3e9",
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13b_registration_results.md",
-      "public_sha256": "93b7c032064f70ff3de739e4a2310e284f4c85565642a3fa24b6894a6b883728"
+      "public_sha256": "0125a92b9fe1dc7443b991b6f8635d14e0d7b8152b528c90814fd6898315437c"
     },
     {
       "src_relpath": "matlab/benchmark_training_batches.m",
