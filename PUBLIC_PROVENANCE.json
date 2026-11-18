@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_version": "0.3.0",
+  "release_version": "0.4.0",
   "scope": "Clean allowlisted public export, not the canonical Git history or a new experiment.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
@@ -11,9 +11,9 @@
     {
       "src_relpath": null,
       "src_sha256": null,
-      "derivation": "public byte-preservation policy, independent of canonical history/evidence rules",
+      "derivation": "public byte-preservation policy for all released blobs; prevents clean-clone line-ending drift",
       "path": ".gitattributes",
-      "public_sha256": "12d57a023bb8f4207467ba6a9950e5b1361232f65962f116cae2d5239425d43a"
+      "public_sha256": "76766ad1b86b5178c24f098d0cfecee2e4a6448d62519eeaa0c9060ba4ea8e8c"
     },
     {
       "src_relpath": null,
@@ -23,18 +23,25 @@
       "public_sha256": "4b2eeba081d9e9a951ac549f20b03c5aab6db61abe9f7b9f000089f03ab04e33"
     },
     {
+      "src_relpath": "docs/public_AGENTS.md",
+      "src_sha256": "34fe86a70a030d321be0344f0718f6ceb1afb3dd775346650b7e4718886b1b64",
+      "derivation": "byte-identical allowlisted source",
+      "path": "AGENTS.md",
+      "public_sha256": "34fe86a70a030d321be0344f0718f6ceb1afb3dd775346650b7e4718886b1b64"
+    },
+    {
       "src_relpath": "docs/public_CHANGELOG.md",
-      "src_sha256": "e718da0d46bf95fe6154ca83e3c4cf7c65ff5110fe968494bf06e43f2f53daa0",
+      "src_sha256": "e33ae32973beaba131ff5109b55b81390a4c79d398625a023074d06aa020167b",
       "derivation": "byte-identical allowlisted source",
       "path": "CHANGELOG.md",
-      "public_sha256": "e718da0d46bf95fe6154ca83e3c4cf7c65ff5110fe968494bf06e43f2f53daa0"
+      "public_sha256": "e33ae32973beaba131ff5109b55b81390a4c79d398625a023074d06aa020167b"
     },
     {
       "src_relpath": "docs/github_readme.md",
-      "src_sha256": "e1c4274f090c987533d6bb777c0f61e114b3919634d9adacafc175551f3cf71f",
+      "src_sha256": "af7042736c6d3696d4867aa039af5fb1cf499b4e73f6fb4ede12516906a11b4a",
       "derivation": "byte-identical allowlisted source",
       "path": "README.md",
-      "public_sha256": "e1c4274f090c987533d6bb777c0f61e114b3919634d9adacafc175551f3cf71f"
+      "public_sha256": "af7042736c6d3696d4867aa039af5fb1cf499b4e73f6fb4ede12516906a11b4a"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -45,10 +52,24 @@
     },
     {
       "src_relpath": "PUBLIC_VERSION",
-      "src_sha256": "c3e6947edad6581d229209ce319ce4498a03f3ed0846b74bb647247a749c1e46",
+      "src_sha256": "be36d0066e8b6749a88a1c6bf1ce96482157ec618cb7f2aab162d3efae41f4d9",
       "derivation": "release version rendered from --version; no experiment rerun",
       "path": "VERSION",
-      "public_sha256": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0"
+      "public_sha256": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_v2.json",
+      "src_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/algorithm_design_v2.json",
+      "public_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_v2.sha256",
+      "src_sha256": "2f1a21b0708c25a7045108358afbd149fded9e34201c04d49072430cbe7ff98e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/algorithm_design_v2.sha256",
+      "public_sha256": "2f1a21b0708c25a7045108358afbd149fded9e34201c04d49072430cbe7ff98e"
     },
     {
       "src_relpath": "configs/baseline.json",
@@ -56,6 +77,48 @@
       "derivation": "byte-identical allowlisted source",
       "path": "configs/baseline.json",
       "public_sha256": "ca73c0e387b33e5486d883495039c6ca40d148522d3b257ff970eb02d5e4bf57"
+    },
+    {
+      "src_relpath": "configs/fusion_ablation_v1.json",
+      "src_sha256": "82e4badd60122876c9aca97d05b36cfe443a38caa55fd95f1ccb4a47b8bb3994",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_ablation_v1.json",
+      "public_sha256": "82e4badd60122876c9aca97d05b36cfe443a38caa55fd95f1ccb4a47b8bb3994"
+    },
+    {
+      "src_relpath": "configs/fusion_ablation_v1.sha256",
+      "src_sha256": "01f4c279d399dd82188adb7b61c5bbc79835ee0de7229b46ca183eeb8966f33c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_ablation_v1.sha256",
+      "public_sha256": "01f4c279d399dd82188adb7b61c5bbc79835ee0de7229b46ca183eeb8966f33c"
+    },
+    {
+      "src_relpath": "configs/fusion_calibration_v1.json",
+      "src_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_calibration_v1.json",
+      "public_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6"
+    },
+    {
+      "src_relpath": "configs/fusion_calibration_v1.sha256",
+      "src_sha256": "acad08af1a7a8cbb907bec55faa871af0db6222f7d96b00691643c64149107ef",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_calibration_v1.sha256",
+      "public_sha256": "acad08af1a7a8cbb907bec55faa871af0db6222f7d96b00691643c64149107ef"
+    },
+    {
+      "src_relpath": "configs/fusion_protocol_v1.json",
+      "src_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_protocol_v1.json",
+      "public_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1"
+    },
+    {
+      "src_relpath": "configs/fusion_protocol_v1.sha256",
+      "src_sha256": "d2d81eb5a31cf63fa6e44f0a123728a5021975de7328f83cf7d710e67b897fdf",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/fusion_protocol_v1.sha256",
+      "public_sha256": "d2d81eb5a31cf63fa6e44f0a123728a5021975de7328f83cf7d710e67b897fdf"
     },
     {
       "src_relpath": "configs/mobilenet_deeplab_scratch_v1.json",
@@ -297,17 +360,41 @@
     },
     {
       "src_relpath": "docs/public_PROGRESS.md",
-      "src_sha256": "e4ce6db7fc6915dc85406e70e99d98f8b067745e84db8b8b5f8a803fc42e12b5",
+      "src_sha256": "afda025183f9ae8941ada6339586641f9a9c106228fbfc0ee8e002c31657447a",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PROGRESS.md",
-      "public_sha256": "e4ce6db7fc6915dc85406e70e99d98f8b067745e84db8b8b5f8a803fc42e12b5"
+      "public_sha256": "afda025183f9ae8941ada6339586641f9a9c106228fbfc0ee8e002c31657447a"
     },
     {
       "src_relpath": "docs/PUBLICATION_POLICY.md",
-      "src_sha256": "f4df445d3b50da460f7d0a44ee622f12346341ea4cb32810c0989a4e5a38c2a7",
+      "src_sha256": "9cf551d06d5b8283db50961604b09ea628809dc0533ff54c010bf40a715de403",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PUBLICATION_POLICY.md",
-      "public_sha256": "f4df445d3b50da460f7d0a44ee622f12346341ea4cb32810c0989a4e5a38c2a7"
+      "public_sha256": "9cf551d06d5b8283db50961604b09ea628809dc0533ff54c010bf40a715de403"
+    },
+    {
+      "src_relpath": "docs/START_HERE.md",
+      "src_sha256": "74796cb853bcd3f481f8b6c2deef582226471a9c5e5c2dca36280c6468492cab",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/START_HERE.md",
+      "public_sha256": "3cc18a7d1090112c5d5376485663bc8391f5968d8cce12f233bf2b14d2ec789b"
+    },
+    {
+      "src_relpath": "docs/algorithm_design_v2.md",
+      "src_sha256": "4616484fafa52ed0c626096e5496491e4b73b25154c86bc8c1e666f59b5881a0",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/algorithm_design_v2.md",
+      "public_sha256": "e0cda1e97c6bfbf62a2559b47a40516d8eef89d863c21f0ce4d93cfcfa95dade"
+    },
+    {
+      "src_relpath": "docs/algorithm_v2_minimal_results.md",
+      "src_sha256": "06b9839969a08f62ae203160f430ffda0a75606120ca6f769dc1d0a100de7b22",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/algorithm_v2_minimal_results.md",
+      "public_sha256": "9c59648a8be92296f821054cc2eb1cfdfc166a818bc44ae8335c917d89cef703"
     },
     {
       "src_relpath": "docs/baseline_preparation.md",
@@ -316,6 +403,251 @@
       "removed_unpublished_link_count": 0,
       "path": "docs/baseline_preparation.md",
       "public_sha256": "c231149502332a7fc928404827c8a610b6ecd255a0217558a2624391f7474d50"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/contracts.json",
+      "src_sha256": "a17320758c4993e2b4db7dfd8d1d9078b176f924f9cd36e37eb8d34189d702f7",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/contracts.json",
+      "public_sha256": "a17320758c4993e2b4db7dfd8d1d9078b176f924f9cd36e37eb8d34189d702f7"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
+      "src_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
+      "public_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/controlled_examples_summary.json",
+      "src_sha256": "aa109d7c6bc09920de169694ecaeea37ef2d730d5604b3497e1e3acefc7fc79d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/controlled_examples_summary.json",
+      "public_sha256": "aa109d7c6bc09920de169694ecaeea37ef2d730d5604b3497e1e3acefc7fc79d"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/independent_audit.json",
+      "src_sha256": "df5e05ae69e64ff3a94ef2dc0fca2c89b0a7207d8c9542346910906245701759",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/independent_audit.json",
+      "public_sha256": "df5e05ae69e64ff3a94ef2dc0fca2c89b0a7207d8c9542346910906245701759"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/source_manifest.json",
+      "src_sha256": "b3009c4070a222378cb8bde652b91de91a02f67c0fb8851b2f0886b370e3b375",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/source_manifest.json",
+      "public_sha256": "b3009c4070a222378cb8bde652b91de91a02f67c0fb8851b2f0886b370e3b375"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/v2_artificial_examples.svg",
+      "src_sha256": "0fb7c8575fce7789df0512f7f9ee928d956e895ddca6ebf043b53b36966794eb",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/v2_artificial_examples.svg",
+      "public_sha256": "0fb7c8575fce7789df0512f7f9ee928d956e895ddca6ebf043b53b36966794eb"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c1/literature_matrix.csv",
+      "src_sha256": "0dcaf0e20683838e1d9e5ae67d1c47b700c2db95236db2167b7f235e40d06f4f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c1/literature_matrix.csv",
+      "public_sha256": "0dcaf0e20683838e1d9e5ae67d1c47b700c2db95236db2167b7f235e40d06f4f"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c2/expected_input_manifest.json",
+      "src_sha256": "37a56450602dfbed2b423460af9073282582bca6b24ac71a4a637ac729086c7c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c2/expected_input_manifest.json",
+      "public_sha256": "37a56450602dfbed2b423460af9073282582bca6b24ac71a4a637ac729086c7c"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c2/sequence_selection.json",
+      "src_sha256": "eb0ef2a05a5464603b588caa89d1f2d549cd46eb692415c305f059094de84842",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c2/sequence_selection.json",
+      "public_sha256": "eb0ef2a05a5464603b588caa89d1f2d549cd46eb692415c305f059094de84842"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/acceptance.json",
+      "src_sha256": "62793207f2026ea885b3a019cf57ee55bd95c89beaf6b789909f8e0a21dbb591",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/acceptance.json",
+      "public_sha256": "62793207f2026ea885b3a019cf57ee55bd95c89beaf6b789909f8e0a21dbb591"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/analytic_contracts.json",
+      "src_sha256": "48ac8bce0222bc7161f0f18b9c8f98e1abbad8608c39db8064df19350c5d2cab",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/analytic_contracts.json",
+      "public_sha256": "48ac8bce0222bc7161f0f18b9c8f98e1abbad8608c39db8064df19350c5d2cab"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/constant_control_summary.json",
+      "src_sha256": "1db2ca371ab5d3af72a954c9b9288fbff29bbae0b920c1a7c36d9226b4802561",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/constant_control_summary.json",
+      "public_sha256": "1db2ca371ab5d3af72a954c9b9288fbff29bbae0b920c1a7c36d9226b4802561"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/contract_checklist.json",
+      "src_sha256": "5cc96f72f9e36afbfbf9c21d1e24e90ebc3e99e6db057420738f251b19c8887b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/contract_checklist.json",
+      "public_sha256": "5cc96f72f9e36afbfbf9c21d1e24e90ebc3e99e6db057420738f251b19c8887b"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/independent_audit.json",
+      "src_sha256": "3f6eae6f06e740dcf4b6614956c8fdc51067d79f13e0861cb831538ccbd59ebb",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/independent_audit.json",
+      "public_sha256": "3f6eae6f06e740dcf4b6614956c8fdc51067d79f13e0861cb831538ccbd59ebb"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/pipeline_summary.json",
+      "src_sha256": "0811ba2104e1f03633b421877d8304643570f128fe44888db7fa84aaa94a86f7",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/pipeline_summary.json",
+      "public_sha256": "0811ba2104e1f03633b421877d8304643570f128fe44888db7fa84aaa94a86f7"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/source_manifest.json",
+      "src_sha256": "a71ffac267dae599f660b1a786b8a6fc7418013535c8b7b6e822075494047de8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/source_manifest.json",
+      "public_sha256": "a71ffac267dae599f660b1a786b8a6fc7418013535c8b7b6e822075494047de8"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/thresholds_seed20261114.json",
+      "src_sha256": "349e70a24809963b00161471bd70d0416d3b87cf448166c549fbb7fd9594ffc5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/thresholds_seed20261114.json",
+      "public_sha256": "349e70a24809963b00161471bd70d0416d3b87cf448166c549fbb7fd9594ffc5"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c3/training_threshold_curves.csv",
+      "src_sha256": "ec01944266bc201bfeb62359ddba55228f8f57a10f7b6a93e0ece3166b5cc7ad",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c3/training_threshold_curves.csv",
+      "public_sha256": "ec01944266bc201bfeb62359ddba55228f8f57a10f7b6a93e0ece3166b5cc7ad"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/acceptance.json",
+      "src_sha256": "3579f439746b1e7ddc43f880d63185688017970d34e8955234059ccd9612409f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/acceptance.json",
+      "public_sha256": "3579f439746b1e7ddc43f880d63185688017970d34e8955234059ccd9612409f"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/component_summary.csv",
+      "src_sha256": "e5fd36ec8b69700c4ac57db36d3dc43ea3bfdfab9a0a750c3f45fb21c3ae95ff",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/component_summary.csv",
+      "public_sha256": "e5fd36ec8b69700c4ac57db36d3dc43ea3bfdfab9a0a750c3f45fb21c3ae95ff"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/current_validation_rule_check.json",
+      "src_sha256": "8a0cf0b54ca8f80175cf2f6e5423beb1e672fcd7ae3524c377ed33a2e25c58d9",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/current_validation_rule_check.json",
+      "public_sha256": "8a0cf0b54ca8f80175cf2f6e5423beb1e672fcd7ae3524c377ed33a2e25c58d9"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/fusion_validation_summary.svg",
+      "src_sha256": "fe2f388cbb7ec85fdb47d89bd97db9dfd0e561fbdab268717ef1f1a084aca1c8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/fusion_validation_summary.svg",
+      "public_sha256": "fe2f388cbb7ec85fdb47d89bd97db9dfd0e561fbdab268717ef1f1a084aca1c8"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/independent_validation_audits.json",
+      "src_sha256": "dfbc31dd9c85feac91d943a376d816db6593047b82fcf3f5b7c246b02504c601",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/independent_validation_audits.json",
+      "public_sha256": "dfbc31dd9c85feac91d943a376d816db6593047b82fcf3f5b7c246b02504c601"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/method_summary.csv",
+      "src_sha256": "1c5604176c29fe1829f800f2317e548a4a574d9ee8eacd4026688f2afb7e0bf6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/method_summary.csv",
+      "public_sha256": "1c5604176c29fe1829f800f2317e548a4a574d9ee8eacd4026688f2afb7e0bf6"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/paired_contrasts.csv",
+      "src_sha256": "e5a7600052bc1daa9ec406519937765dfdc519ecfd0d4228ddc8f5b1aee39104",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/paired_contrasts.csv",
+      "public_sha256": "e5a7600052bc1daa9ec406519937765dfdc519ecfd0d4228ddc8f5b1aee39104"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/per_condition_summary.csv",
+      "src_sha256": "29fbfeea50f895c52bd2a51cb9beb7267a30237c7f9ba9d009bdea87b48ab497",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/per_condition_summary.csv",
+      "public_sha256": "29fbfeea50f895c52bd2a51cb9beb7267a30237c7f9ba9d009bdea87b48ab497"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/per_seed_summary.csv",
+      "src_sha256": "93856ffaba5f6bac848f58dd273c00e941b2616d7fdb8af6237915eee47a3995",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/per_seed_summary.csv",
+      "public_sha256": "93856ffaba5f6bac848f58dd273c00e941b2616d7fdb8af6237915eee47a3995"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/per_source_metrics.csv",
+      "src_sha256": "72a34e3a097cf710936067bc7df73dac8b3247a1392f561bc46e940c77321261",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/per_source_metrics.csv",
+      "public_sha256": "72a34e3a097cf710936067bc7df73dac8b3247a1392f561bc46e940c77321261"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/source_statistics_audit.json",
+      "src_sha256": "c110127a3968609100fd761dd63ff08e4e32f65e11921df8d02fc35169e7eb4d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/source_statistics_audit.json",
+      "public_sha256": "c110127a3968609100fd761dd63ff08e4e32f65e11921df8d02fc35169e7eb4d"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/summary.json",
+      "src_sha256": "2e57ceef064b164aebcfaa76311301a1c05865cb700df04ac58fb716571a82db",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/summary.json",
+      "public_sha256": "2e57ceef064b164aebcfaa76311301a1c05865cb700df04ac58fb716571a82db"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/threshold_choices_check.csv",
+      "src_sha256": "e5bfe695b75f4d555b282eb07e36b495c62fb988e00eb93d13659d944f5e6014",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/threshold_choices_check.csv",
+      "public_sha256": "e5bfe695b75f4d555b282eb07e36b495c62fb988e00eb93d13659d944f5e6014"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/threshold_comparison_fix.json",
+      "src_sha256": "e9f9c0ac4f88ff98d22ac329ab34a5c7cfe181343f5f065036d3463cb702f0fb",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/threshold_comparison_fix.json",
+      "public_sha256": "e9f9c0ac4f88ff98d22ac329ab34a5c7cfe181343f5f065036d3463cb702f0fb"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/threshold_precision_audit.json",
+      "src_sha256": "38d500bc0d96d55cac0684cff545d4f32d48a4c1849682893bee9f9eb976b695",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/threshold_precision_audit.json",
+      "public_sha256": "38d500bc0d96d55cac0684cff545d4f32d48a4c1849682893bee9f9eb976b695"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/training_curves_float64.csv",
+      "src_sha256": "40a2833e990ddb4e8385b3ba5bf689e1f37b52cea77b1dc29789b2d7cb747031",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/training_curves_float64.csv",
+      "public_sha256": "40a2833e990ddb4e8385b3ba5bf689e1f37b52cea77b1dc29789b2d7cb747031"
+    },
+    {
+      "src_relpath": "docs/evidence/step13c4/validation_pipeline_summaries.json",
+      "src_sha256": "67a52af3a543d91e42d12d95b554772e5cb96398f3f89d0bb1533c547526afe3",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/step13c4/validation_pipeline_summaries.json",
+      "public_sha256": "67a52af3a543d91e42d12d95b554772e5cb96398f3f89d0bb1533c547526afe3"
     },
     {
       "src_relpath": "docs/experiment_protocol.md",
@@ -422,6 +754,96 @@
       "public_sha256": "0125a92b9fe1dc7443b991b6f8635d14e0d7b8152b528c90814fd6898315437c"
     },
     {
+      "src_relpath": "docs/step13c1_literature_results.md",
+      "src_sha256": "c090511c341c7f1bcce886b63f03292d1317afd1e9bdf817b8a01fbfc288bb56",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13c1_literature_results.md",
+      "public_sha256": "6514bf93a4cb1d123ca4986d51ed3d4df39680c633cf3861a498cea30411a736"
+    },
+    {
+      "src_relpath": "docs/step13c2_fusion_protocol.md",
+      "src_sha256": "4670f41ca74aec019589578ac0fb2dbdbccebeff97ed1cf4f4bf254459907046",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 1,
+      "path": "docs/step13c2_fusion_protocol.md",
+      "public_sha256": "f88ef6c5e2f592e593651cc6f0f0a85d64cc71079315302a5200ff5b4bffb1cc"
+    },
+    {
+      "src_relpath": "docs/step13c3_implementation_results.md",
+      "src_sha256": "2c259907b0244c644ad6ac824dd44c37cd7ded419df008cab02cf54d8ba9270f",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13c3_implementation_results.md",
+      "public_sha256": "b578c7a7fd3e0c95e46d375b2237de0c26c920c4f62075d483d2cb9d91acb79c"
+    },
+    {
+      "src_relpath": "docs/step13c4_validation_results.md",
+      "src_sha256": "02eeace06035118faadc8d35f9d4d3c9ed804d2604c9617abb51ba71bfbdd9ba",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 1,
+      "path": "docs/step13c4_validation_results.md",
+      "public_sha256": "a903102a0e63af7fce9611e134aed1b03878d5a2ebd3c03e485ba34de20f4fdc"
+    },
+    {
+      "src_relpath": "docs/step13c5_execution_plan.md",
+      "src_sha256": "af919a5a340cd0c32b11baf17f8f327a426431523dbc3fb9d739fd5a08b12205",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13c5_execution_plan.md",
+      "public_sha256": "7aff5bc47d4fee47a620615da52fd9883875fdbeb81ea0acd7d24f1e55c8c7c7"
+    },
+    {
+      "src_relpath": "docs/step13c5_reproduction.md",
+      "src_sha256": "ff17e708f3d359aaba69b19a3bfa547cc1da0d176df6a1fe30ea0e016cb97e12",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/step13c5_reproduction.md",
+      "public_sha256": "12bf54fef64abf1fbb5a3e3a9a6a3795ef10e8db4683c243c8cf4bdc37e8c7d7"
+    },
+    {
+      "src_relpath": "matlab/ablation_frame.m",
+      "src_sha256": "14c554c6835bcde2f124bc9f2cb1f2b57961e627d920057f04a6178bd290e205",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_frame.m",
+      "public_sha256": "14c554c6835bcde2f124bc9f2cb1f2b57961e627d920057f04a6178bd290e205"
+    },
+    {
+      "src_relpath": "matlab/ablation_history_context.m",
+      "src_sha256": "63106719e520ec5cc5d4ae49bc9f0dc13143ebbae9c86cf4fe4d1daf0fe1aa6f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_history_context.m",
+      "public_sha256": "63106719e520ec5cc5d4ae49bc9f0dc13143ebbae9c86cf4fe4d1daf0fe1aa6f"
+    },
+    {
+      "src_relpath": "matlab/ablation_observation_variants.m",
+      "src_sha256": "3e1b6e05376ec4dc09d6cf1aa79d06825abcd673c1c24f473ff6cdf793487043",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_observation_variants.m",
+      "public_sha256": "3e1b6e05376ec4dc09d6cf1aa79d06825abcd673c1c24f473ff6cdf793487043"
+    },
+    {
+      "src_relpath": "matlab/ablation_pressure_edge.m",
+      "src_sha256": "cc7f6650b94f1902919c064025a746d12406dcadcf07a4d0755df18223a9741d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_pressure_edge.m",
+      "public_sha256": "cc7f6650b94f1902919c064025a746d12406dcadcf07a4d0755df18223a9741d"
+    },
+    {
+      "src_relpath": "matlab/ablation_quality_factors.m",
+      "src_sha256": "84662c1a535feb3cd1187f33e3b6dfd2b1d7a84ed037b13b4f63da085adcacfe",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_quality_factors.m",
+      "public_sha256": "84662c1a535feb3cd1187f33e3b6dfd2b1d7a84ed037b13b4f63da085adcacfe"
+    },
+    {
+      "src_relpath": "matlab/ablation_recurrent_step.m",
+      "src_sha256": "e737324d85ad943416623089481fd6977094954807a61508e9086ace6aaa5855",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/ablation_recurrent_step.m",
+      "public_sha256": "e737324d85ad943416623089481fd6977094954807a61508e9086ace6aaa5855"
+    },
+    {
       "src_relpath": "matlab/benchmark_training_batches.m",
       "src_sha256": "bc0214878e06d454f47a402a4136135448bf5aca1abd63e58611bfc2413f7326",
       "derivation": "byte-identical allowlisted source",
@@ -457,6 +879,13 @@
       "public_sha256": "2fcd3e896094408d3aec4eb0e34267fd9840e98b364fcec13d29e06de324ec65"
     },
     {
+      "src_relpath": "matlab/check_ablation_synthetic.m",
+      "src_sha256": "26823b3f8a3783b5bb207e74a2aa4a19a08fabceb1b9016f843e65325d0cfac8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_ablation_synthetic.m",
+      "public_sha256": "26823b3f8a3783b5bb207e74a2aa4a19a08fabceb1b9016f843e65325d0cfac8"
+    },
+    {
       "src_relpath": "matlab/check_baseline_environment.m",
       "src_sha256": "7821ccad21b8a868b165a86f22a0ed916d1948f5d992a8ba3237d6038c549d3a",
       "derivation": "byte-identical allowlisted source",
@@ -486,6 +915,13 @@
       "public_sha256": "9edbb5a4f9f97f8c6c9a3e87796372fa71b86b94c5d6a223aeccfa53d949bd93"
     },
     {
+      "src_relpath": "matlab/check_motion_fusion_contracts.m",
+      "src_sha256": "fb4200b7f10303732a8edf765a65e6f528964b536395d4dd61e5ad1dc2ccd760",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_motion_fusion_contracts.m",
+      "public_sha256": "fb4200b7f10303732a8edf765a65e6f528964b536395d4dd61e5ad1dc2ccd760"
+    },
+    {
       "src_relpath": "matlab/check_pilot_evaluation.m",
       "src_sha256": "799870ca219b24093b93b2832d1296aa878ff8c7e887fe82037da841983eec25",
       "derivation": "byte-identical allowlisted source",
@@ -507,6 +943,34 @@
       "public_sha256": "015f0f34edef80ec0e11a12c63266ebab04e475cf07d78dff6e2a3d552ea1e3c"
     },
     {
+      "src_relpath": "matlab/check_v2_compensation.m",
+      "src_sha256": "ea914cab83b3c08194974956e49dbdcac3087e60a24e7f9310fffadc09ca31de",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/check_v2_compensation.m",
+      "public_sha256": "ea914cab83b3c08194974956e49dbdcac3087e60a24e7f9310fffadc09ca31de"
+    },
+    {
+      "src_relpath": "matlab/evaluate_ablation_counts.m",
+      "src_sha256": "e5ef7e08dbe852b5677f5cadd31a922f230ff1ed604f73ce00d28ed10eafc89f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/evaluate_ablation_counts.m",
+      "public_sha256": "e5ef7e08dbe852b5677f5cadd31a922f230ff1ed604f73ce00d28ed10eafc89f"
+    },
+    {
+      "src_relpath": "matlab/evaluate_fusion_frozen_counts.m",
+      "src_sha256": "239b1055337e33e7b9495c59e0aa36f8ad2d0b35732896763001dcd2ad90012c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/evaluate_fusion_frozen_counts.m",
+      "public_sha256": "239b1055337e33e7b9495c59e0aa36f8ad2d0b35732896763001dcd2ad90012c"
+    },
+    {
+      "src_relpath": "matlab/evaluate_fusion_training_counts.m",
+      "src_sha256": "83b30ee5b8f40094c79a9772764084bd38008d14a9632a1c2ac6364291ea4e83",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/evaluate_fusion_training_counts.m",
+      "public_sha256": "83b30ee5b8f40094c79a9772764084bd38008d14a9632a1c2ac6364291ea4e83"
+    },
+    {
       "src_relpath": "matlab/evaluate_pilot.m",
       "src_sha256": "9faca7b6cb18c1b65f0a7e8386155b0b825418ee06ee75f4392809e1f5e0b07a",
       "derivation": "byte-identical allowlisted source",
@@ -526,6 +990,20 @@
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/file_sha256.m",
       "public_sha256": "8c8078d442ece3a8e916f9843d8778afe48cf2997d4f5956ec215421f8824121"
+    },
+    {
+      "src_relpath": "matlab/fuse_motion_window.m",
+      "src_sha256": "cc4ff7bf7f5945e3c712839b9fd5696a1e6aeca197421f909c652a15059f8b16",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/fuse_motion_window.m",
+      "public_sha256": "cc4ff7bf7f5945e3c712839b9fd5696a1e6aeca197421f909c652a15059f8b16"
+    },
+    {
+      "src_relpath": "matlab/fusion_binary_counts.m",
+      "src_sha256": "d4417742f4fcaadfa178fb3d01c38ca16a4ec48694d70238c72e77536ae3470e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/fusion_binary_counts.m",
+      "public_sha256": "d4417742f4fcaadfa178fb3d01c38ca16a4ec48694d70238c72e77536ae3470e"
     },
     {
       "src_relpath": "matlab/generate_controlled_sequences.m",
@@ -568,6 +1046,34 @@
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/masked_segmentation_loss.m",
       "public_sha256": "e47bb12303ae074b33302f596f9556b1e6bb1fc81d921849140da4c74cdb7fca"
+    },
+    {
+      "src_relpath": "matlab/motion_confidence.m",
+      "src_sha256": "deb0557aa85cd58db42fd3ada1f7cd576a2cd1af78652c14a87b7806f9bf87c6",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/motion_confidence.m",
+      "public_sha256": "deb0557aa85cd58db42fd3ada1f7cd576a2cd1af78652c14a87b7806f9bf87c6"
+    },
+    {
+      "src_relpath": "matlab/motion_fusion_step.m",
+      "src_sha256": "9ef718d88e7242c2234185cb3faadf26c9cc604a719015b35c0fbf406dcee1f5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/motion_fusion_step.m",
+      "public_sha256": "9ef718d88e7242c2234185cb3faadf26c9cc604a719015b35c0fbf406dcee1f5"
+    },
+    {
+      "src_relpath": "matlab/motion_gray.m",
+      "src_sha256": "9805672f65b9f0b3b2605364a5b4429be68e4050477873f9cebac510c8094cea",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/motion_gray.m",
+      "public_sha256": "9805672f65b9f0b3b2605364a5b4429be68e4050477873f9cebac510c8094cea"
+    },
+    {
+      "src_relpath": "matlab/motion_history_gate.m",
+      "src_sha256": "c807c4d0fd50691ff8d0ced0071e3a2cf24c420e8b9ce4cc1050b9337c30f3d5",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/motion_history_gate.m",
+      "public_sha256": "c807c4d0fd50691ff8d0ced0071e3a2cf24c420e8b9ce4cc1050b9337c30f3d5"
     },
     {
       "src_relpath": "matlab/network_parameter_sha256.m",
@@ -640,6 +1146,13 @@
       "public_sha256": "e9629deb4487c4e52066e88635d5047fa7391c1dd25fd6385edeec4659161b44"
     },
     {
+      "src_relpath": "matlab/read_fusion_calibration.m",
+      "src_sha256": "9f8f93ff10cb8b8b05e074568c6bbf0c4bd88d3b36c158ff70ed4f7702edbab4",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/read_fusion_calibration.m",
+      "public_sha256": "9f8f93ff10cb8b8b05e074568c6bbf0c4bd88d3b36c158ff70ed4f7702edbab4"
+    },
+    {
       "src_relpath": "matlab/read_segmentation_sample.m",
       "src_sha256": "67e3b8712772700c170441fb91683f4c7bf079a0b95b7b37438426538cdd05e9",
       "derivation": "byte-identical allowlisted source",
@@ -647,11 +1160,39 @@
       "public_sha256": "67e3b8712772700c170441fb91683f4c7bf079a0b95b7b37438426538cdd05e9"
     },
     {
+      "src_relpath": "matlab/register_fusion_pair.m",
+      "src_sha256": "70484f5e7e3f15b9cb5d320b415756f8e3ecbca10fed3cb348da8511ff60df08",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/register_fusion_pair.m",
+      "public_sha256": "70484f5e7e3f15b9cb5d320b415756f8e3ecbca10fed3cb348da8511ff60df08"
+    },
+    {
       "src_relpath": "matlab/register_motion_pair.m",
       "src_sha256": "5e3df5492cc478d087a4699ed11bc3454680f5e4e4ed2cae5a6a1471eb6b289c",
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/register_motion_pair.m",
       "public_sha256": "5e3df5492cc478d087a4699ed11bc3454680f5e4e4ed2cae5a6a1471eb6b289c"
+    },
+    {
+      "src_relpath": "matlab/run_ablation_inputs.m",
+      "src_sha256": "9f9021bdebda2421af3e622d6bfb89a08438a7642e189b3c132d5f041cf5ff21",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/run_ablation_inputs.m",
+      "public_sha256": "9f9021bdebda2421af3e622d6bfb89a08438a7642e189b3c132d5f041cf5ff21"
+    },
+    {
+      "src_relpath": "matlab/run_fusion_frozen_inference.m",
+      "src_sha256": "a67d66efa1889c05a023c0a65d14cfa1b712b9b2961634557ffd047159751c15",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/run_fusion_frozen_inference.m",
+      "public_sha256": "a67d66efa1889c05a023c0a65d14cfa1b712b9b2961634557ffd047159751c15"
+    },
+    {
+      "src_relpath": "matlab/run_fusion_training_contract.m",
+      "src_sha256": "52ff3a20234648e937a1b624a59d4c7d8328554900d16738dd924a2780b5daff",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/run_fusion_training_contract.m",
+      "public_sha256": "52ff3a20234648e937a1b624a59d4c7d8328554900d16738dd924a2780b5daff"
     },
     {
       "src_relpath": "matlab/run_registration_inputs.m",
@@ -719,11 +1260,74 @@
       "public_sha256": "dfbc5c4ae7d7d37724e3030382cfa0d6289596dc010f52c3dbb814c48b18dce2"
     },
     {
+      "src_relpath": "matlab/v2_compensation_step.m",
+      "src_sha256": "e133d59c7deced3cc9e8bf088f87512f5635ba0e4bdc0d3a926fe542b907b443",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_compensation_step.m",
+      "public_sha256": "e133d59c7deced3cc9e8bf088f87512f5635ba0e4bdc0d3a926fe542b907b443"
+    },
+    {
+      "src_relpath": "matlab/v2_compose_motion.m",
+      "src_sha256": "1cef68b4052917994b6941146923165a332bc2674ff9415b1a8e3b8ebd3a0f34",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_compose_motion.m",
+      "public_sha256": "1cef68b4052917994b6941146923165a332bc2674ff9415b1a8e3b8ebd3a0f34"
+    },
+    {
+      "src_relpath": "matlab/v2_fuse_window.m",
+      "src_sha256": "c51085858ff85561bd54bf670ce0b039ebd49f33663fe113e483dfadb331138d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_fuse_window.m",
+      "public_sha256": "c51085858ff85561bd54bf670ce0b039ebd49f33663fe113e483dfadb331138d"
+    },
+    {
+      "src_relpath": "matlab/v2_history_evidence.m",
+      "src_sha256": "8613e02005f092a101a85761f8d5234c3534db8968b8688109fffc1a2a6a7351",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_history_evidence.m",
+      "public_sha256": "8613e02005f092a101a85761f8d5234c3534db8968b8688109fffc1a2a6a7351"
+    },
+    {
+      "src_relpath": "matlab/v2_motion_weights.m",
+      "src_sha256": "f46b4b919f9440b06f58d519452b323bebbc74088dd60543fd8e107b8eafa01d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_motion_weights.m",
+      "public_sha256": "f46b4b919f9440b06f58d519452b323bebbc74088dd60543fd8e107b8eafa01d"
+    },
+    {
+      "src_relpath": "matlab/v2_select_motion.m",
+      "src_sha256": "ec0457d0cb5051d7bf21df74371c86bb5808af71b997fefded075058cd144799",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/v2_select_motion.m",
+      "public_sha256": "ec0457d0cb5051d7bf21df74371c86bb5808af71b997fefded075058cd144799"
+    },
+    {
       "src_relpath": "matlab/verify_mature_preflight_checkpoint.m",
       "src_sha256": "9f9f80d2c02e398bfe3944f578209db53210b5f7f39bd4ccfef9347029ff6529",
       "derivation": "byte-identical allowlisted source",
       "path": "matlab/verify_mature_preflight_checkpoint.m",
       "public_sha256": "9f9f80d2c02e398bfe3944f578209db53210b5f7f39bd4ccfef9347029ff6529"
+    },
+    {
+      "src_relpath": "matlab/warp_motion_history.m",
+      "src_sha256": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7",
+      "derivation": "byte-identical allowlisted source",
+      "path": "matlab/warp_motion_history.m",
+      "public_sha256": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7"
+    },
+    {
+      "src_relpath": "requirements-fusion-statistics.txt",
+      "src_sha256": "d085b8e414b57d7d8767f6e49564732a63eebf103859697298e77d8eab6853cb",
+      "derivation": "byte-identical allowlisted source",
+      "path": "requirements-fusion-statistics.txt",
+      "public_sha256": "d085b8e414b57d7d8767f6e49564732a63eebf103859697298e77d8eab6853cb"
+    },
+    {
+      "src_relpath": "requirements-v2.txt",
+      "src_sha256": "9aca1e7a973a63ea22280857ee5b95f72477308b9aec484e928a41a6d6c54541",
+      "derivation": "byte-identical allowlisted source",
+      "path": "requirements-v2.txt",
+      "public_sha256": "9aca1e7a973a63ea22280857ee5b95f72477308b9aec484e928a41a6d6c54541"
     },
     {
       "src_relpath": "docs/evidence/step11/comparison/paired_delta_statistics.csv",
@@ -866,11 +1470,53 @@
       "public_sha256": "c10a643c09d2049591ffc4e6c6e1689abb7befa1bffbec14d1d4a04ef2d70a71"
     },
     {
+      "src_relpath": "tools/audit_ablation_statistics.py",
+      "src_sha256": "db4de2b61528f14afebf20c336d736ba0b43adce856a911393346ee541cf7057",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_ablation_statistics.py",
+      "public_sha256": "db4de2b61528f14afebf20c336d736ba0b43adce856a911393346ee541cf7057"
+    },
+    {
       "src_relpath": "tools/audit_full_run.py",
       "src_sha256": "d366d8b2feaf7f3faaac9e74443064220e9feab1a6b2ffd5d4db7fc63bf74ec8",
       "derivation": "byte-identical allowlisted source",
       "path": "tools/audit_full_run.py",
       "public_sha256": "d366d8b2feaf7f3faaac9e74443064220e9feab1a6b2ffd5d4db7fc63bf74ec8"
+    },
+    {
+      "src_relpath": "tools/audit_fusion_ablation.py",
+      "src_sha256": "14812e25977fddc5c7db35e0bd4081d6d1a8666b3734277421863d4be6c8f2f0",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_fusion_ablation.py",
+      "public_sha256": "14812e25977fddc5c7db35e0bd4081d6d1a8666b3734277421863d4be6c8f2f0"
+    },
+    {
+      "src_relpath": "tools/audit_fusion_frozen.py",
+      "src_sha256": "848c68e6bed80156c17ee2193639a67a6acce0cfff7aca3c2de98e710cbaad06",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_fusion_frozen.py",
+      "public_sha256": "848c68e6bed80156c17ee2193639a67a6acce0cfff7aca3c2de98e710cbaad06"
+    },
+    {
+      "src_relpath": "tools/audit_fusion_source_statistics.py",
+      "src_sha256": "ae7dcfc3814ce52ed573a3d32978793d9b63c414621a89b2ce650509073738c9",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_fusion_source_statistics.py",
+      "public_sha256": "ae7dcfc3814ce52ed573a3d32978793d9b63c414621a89b2ce650509073738c9"
+    },
+    {
+      "src_relpath": "tools/audit_fusion_threshold_precision.py",
+      "src_sha256": "3163ae477e6abc3b93587fd43c479270f366d4b745b831d6cf5ef83ebbe6777b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_fusion_threshold_precision.py",
+      "public_sha256": "3163ae477e6abc3b93587fd43c479270f366d4b745b831d6cf5ef83ebbe6777b"
+    },
+    {
+      "src_relpath": "tools/audit_fusion_training.py",
+      "src_sha256": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_fusion_training.py",
+      "public_sha256": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1"
     },
     {
       "src_relpath": "tools/audit_mature_comparison.py",
@@ -899,6 +1545,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/audit_sequence_replay.py",
       "public_sha256": "55b0a40b61834d465289429f5b35dc3202e0dbd4cb1ef19064946320bf98651e"
+    },
+    {
+      "src_relpath": "tools/audit_v2_minimal.py",
+      "src_sha256": "b94bc857b7e3c02eff95854080d2cebba6e05051df1d28323ab423f891937d4b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/audit_v2_minimal.py",
+      "public_sha256": "b94bc857b7e3c02eff95854080d2cebba6e05051df1d28323ab423f891937d4b"
     },
     {
       "src_relpath": "tools/audit_validation_diagnostics.py",
@@ -943,6 +1596,34 @@
       "public_sha256": "cadbba4c0df64f96a5125334d133931ea584c3ded99bfbff4af9d3f6ccc9205b"
     },
     {
+      "src_relpath": "tools/freeze_fusion_calibration.py",
+      "src_sha256": "1d19371c263072a99c6cb44a24e04028bee813e6a3c4215c09b47e289d065151",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/freeze_fusion_calibration.py",
+      "public_sha256": "1d19371c263072a99c6cb44a24e04028bee813e6a3c4215c09b47e289d065151"
+    },
+    {
+      "src_relpath": "tools/plot_fusion_ablation.py",
+      "src_sha256": "589ae9f1dbbdf22449e94b5e2cbbc6f4bb56b172094b8033bc3abc260fdc942b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/plot_fusion_ablation.py",
+      "public_sha256": "589ae9f1dbbdf22449e94b5e2cbbc6f4bb56b172094b8033bc3abc260fdc942b"
+    },
+    {
+      "src_relpath": "tools/plot_fusion_validation.py",
+      "src_sha256": "afbe85d52216d177db9effc4c802482e63431dd466e9457c2116bf22232507a1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/plot_fusion_validation.py",
+      "public_sha256": "afbe85d52216d177db9effc4c802482e63431dd466e9457c2116bf22232507a1"
+    },
+    {
+      "src_relpath": "tools/plot_v2_artificial_examples.py",
+      "src_sha256": "52547ad48e3c57224ea4c755203c6ca1f6b50d06a469dad40702ef6441b53464",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/plot_v2_artificial_examples.py",
+      "public_sha256": "52547ad48e3c57224ea4c755203c6ca1f6b50d06a469dad40702ef6441b53464"
+    },
+    {
       "src_relpath": "tools/prepare_stage1_plan.py",
       "src_sha256": "9029a6bfa3e0fd0a49622a545ac8f2b549840127a46b64a43cd20e2714a0b3bc",
       "derivation": "byte-identical allowlisted source",
@@ -976,6 +1657,27 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/revise_step12_config_v2.py",
       "public_sha256": "e2d673dae4322cd52da0a2cdf320b65c3c4bc7c8902cd54f475d1b60bf668468"
+    },
+    {
+      "src_relpath": "tools/summarize_ablation_registration.py",
+      "src_sha256": "5bacb6a7d0d79c8ee10431179305517ef9fb54283050bfa92fdb954903403cc3",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/summarize_ablation_registration.py",
+      "public_sha256": "5bacb6a7d0d79c8ee10431179305517ef9fb54283050bfa92fdb954903403cc3"
+    },
+    {
+      "src_relpath": "tools/summarize_fusion_ablation.py",
+      "src_sha256": "5fcf7fb907ac38035afa0ec8449010d18521ed5e5d6f5986d8b703dc607e027b",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/summarize_fusion_ablation.py",
+      "public_sha256": "5fcf7fb907ac38035afa0ec8449010d18521ed5e5d6f5986d8b703dc607e027b"
+    },
+    {
+      "src_relpath": "tools/summarize_fusion_validation.py",
+      "src_sha256": "f512f526165ee66ba79ee5a0ac0cde07afdd7bfde3fd90f3a366592efab2b667",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/summarize_fusion_validation.py",
+      "public_sha256": "f512f526165ee66ba79ee5a0ac0cde07afdd7bfde3fd90f3a366592efab2b667"
     }
   ],
   "self_hash_policy": "This generated provenance file is hashed by the outer manifest; it does not recursively list itself.",

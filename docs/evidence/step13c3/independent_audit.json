@@ -1,0 +1,155 @@
+{
+  "status": "PASS_13C3_TRAINING_IMPLEMENTATION_AUDIT",
+  "contracts_passed": 22,
+  "checks": [
+    {
+      "id": "integer_translation_xy_sign",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "subpixel_bilinear_and_closed_domain_edges",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "two_hop_composition_once_only_and_intermediate_coverage",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "zero_motion_and_reverse",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "first_frame_and_partial_full_window",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "partial_and_all_out_of_view",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "unavailable_visual_edge",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "missing_or_out_of_range_odometry",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "forward_results_match_frozen_13b_core",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "entropy_endpoints_and_half",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "equal_probability_no_drift",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "zero_gate_exact_current_fallback",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "future_rgb_and_motion_perturbation_prefix_invariance",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "sequence_reset_and_timestamp_gap_reset",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "nonincreasing_timestamp_fails",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "raw_and_fused_probability_cache_separation",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "inverted_history_finite_bounded",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "no_source_profile_or_gt_algorithm_fields",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "binary_float32_roundtrip_and_count_identities",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "bounded_recursive_excludes_window_external_state",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "training_calibration_excludes_validation_gt",
+      "status": "PASS",
+      "scope": "training metadata membership, validation-ID rejection and actual mask access ledger"
+    },
+    {
+      "id": "region_metrics_empty_and_split_merge_cases",
+      "status": "PASS",
+      "scope": [
+        "empty",
+        "no_GT_two_false_components",
+        "merge_8_connectivity",
+        "fragment_under_coverage_and_IoU_threshold"
+      ]
+    }
+  ],
+  "seed": 20261114,
+  "training_sources": 3,
+  "training_sequences": 36,
+  "raw_probability_files_verified": 324,
+  "fused_probability_files_verified": 2592,
+  "primary_count_identities_verified": 2592,
+  "MATLAB_primary_and_transition_rows_exactly_reproduced": 2592,
+  "independent_fusion_outputs_recomputed": 2592,
+  "maximum_independent_probability_error": 0.0,
+  "numerically_different_float32_pixels": 0,
+  "probability_tolerance": 2e-06,
+  "ncc_pairs_recomputed_both_directions": 24,
+  "maximum_independent_ncc_error": 3.241851231905457e-13,
+  "ncc_tolerance": 2e-07,
+  "edge_quality_max_error": 0.0,
+  "observed_factor_max_error": 1.1102230246251565e-16,
+  "constant_value": 0.9597680584784836,
+  "constant_paths": 516,
+  "constant_recomputed_error": 2.220446049250313e-16,
+  "training_mask_files_verified": 324,
+  "validation_or_heldout_payloads_opened": 0,
+  "accurate_geometry_payloads_opened": 0,
+  "optimizer_updates": 0,
+  "model_forward_calls_by_python": 0,
+  "calibration_scope": "first seed, three in-sample training sources, not validation benefit",
+  "runtime_versions": {
+    "python": "3.7.0",
+    "numpy": "1.15.1",
+    "scipy": "1.1.0",
+    "Pillow": "5.2.0"
+  },
+  "prediction_manifest_sha256": "243cc0e562ce2edb3e2a23bbb9a824ea9bf5bbddb58ef9af3a0da127f2a4012c",
+  "wall_seconds": 76.27783500000001,
+  "scope": "Implementation acceptance only; H1/H2/H3 performance not evaluated on validation"
+}

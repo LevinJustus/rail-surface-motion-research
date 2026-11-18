@@ -1,0 +1,113 @@
+{
+  "status": "PASS_20_MATLAB_ANALYTIC_CONTRACTS",
+  "checks": [
+    {
+      "id": "integer_translation_xy_sign",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "subpixel_bilinear_and_closed_domain_edges",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "two_hop_composition_once_only_and_intermediate_coverage",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "zero_motion_and_reverse",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "first_frame_and_partial_full_window",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "partial_and_all_out_of_view",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "unavailable_visual_edge",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "missing_or_out_of_range_odometry",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "forward_results_match_frozen_13b_core",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "entropy_endpoints_and_half",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "equal_probability_no_drift",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "zero_gate_exact_current_fallback",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "future_rgb_and_motion_perturbation_prefix_invariance",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "sequence_reset_and_timestamp_gap_reset",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "nonincreasing_timestamp_fails",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "raw_and_fused_probability_cache_separation",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "inverted_history_finite_bounded",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "no_source_profile_or_gt_algorithm_fields",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "binary_float32_roundtrip_and_count_identities",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    },
+    {
+      "id": "bounded_recursive_excludes_window_external_state",
+      "status": "PASS",
+      "scope": "synthetic analytic contract, not accuracy result"
+    }
+  ],
+  "wall_seconds": 7.4259205,
+  "synthetic_only": true,
+  "real_images_opened": 0,
+  "model_forward_calls": 0,
+  "remaining_python_contracts": [
+    "training_calibration_excludes_validation_gt",
+    "region_metrics_empty_and_split_merge_cases"
+  ]
+}

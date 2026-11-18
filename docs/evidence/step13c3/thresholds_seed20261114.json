@@ -1,0 +1,65 @@
+{
+  "status": "FROZEN_TRAINING_IN_SAMPLE_REFERENCE",
+  "seed": 20261114,
+  "choices": [
+    {
+      "method": "S",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32609845637708434,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "U",
+      "seed": 20261114,
+      "threshold": 0.45,
+      "training_source_macro_IoU": 0.3506893208964894,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "V",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32714887154372646,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "P",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32714887154372646,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GV",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269530880357572,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GVP",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269813720186309,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GC",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269479273856521,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "R",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32692215930059,
+      "scope": "training-in-sample threshold reference only"
+    }
+  ],
+  "protocol_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+  "prediction_manifest_sha256": "243cc0e562ce2edb3e2a23bbb9a824ea9bf5bbddb58ef9af3a0da127f2a4012c",
+  "second_and_third_seed_calibration": "pending C4; not selected here"
+}

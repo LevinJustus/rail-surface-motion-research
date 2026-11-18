@@ -1,0 +1,22 @@
+{
+  "status": "PASS_13C4_RECORDED",
+  "created_utc": "2026-11-18T10:10:05.521141+00:00",
+  "completed_before": 17,
+  "completed_after": 18,
+  "only_new_completion": "13C4",
+  "next": "13C5",
+  "additional_training_forward_calls": 648,
+  "validation_forward_calls": 4860,
+  "optimizer_updates": 0,
+  "heldout_payloads_opened": 0,
+  "accurate_geometry_payloads_opened": 0,
+  "validation_count_rows_exactly_reproduced": 77760,
+  "primary_method_frames": 34560,
+  "sources": 15,
+  "seeds": 3,
+  "bootstrap_replicates": 10000,
+  "github_writes": false,
+  "paper_or_word_changed": false,
+  "automations_resumed": false,
+  "new_repository_created": false
+}

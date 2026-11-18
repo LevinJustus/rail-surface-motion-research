@@ -1,0 +1,29 @@
+{
+  "status": "EVALUATION_PRECISION_CORRECTION_AFTER_LABELS_SEEN",
+  "created_utc": "2026-11-18T10:03:36.808224+00:00",
+  "affected_case": {
+    "seed": 20261116,
+    "sequence_id": "seq0567",
+    "frame": 5,
+    "method": "V",
+    "threshold_kind": "training_calibrated",
+    "threshold": 0.7,
+    "float32_threshold_value": 0.699999988079071,
+    "MATLAB_FP_to_TN": 337,
+    "old_NumPy_FP_to_TN": 338
+  },
+  "correction": "Promote stored float32 probabilities to float64; compare to unchanged float64 threshold, including region masks",
+  "primary_0_5_comparison_changed": false,
+  "thresholds_modified": false,
+  "model_or_inference_modified": false,
+  "C3_historical_helper_modified": false,
+  "old_auditor_sha256": "b0c2ed627ed638404ebb5504d89f9ccbaa2d2127ec9a93d1a09db65b3f4bffb4",
+  "new_auditor_sha256": "848c68e6bed80156c17ee2193639a67a6acce0cfff7aca3c2de98e710cbaad06",
+  "retained_runs": [
+    "fusion_validation_audit_seed20261114_v1_01",
+    "fusion_validation_audit_seed20261115_v1_01",
+    "fusion_validation_audit_seed20261116_v1_01"
+  ],
+  "calibration_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6",
+  "precision_recheck": "runs/fusion_threshold_precision_audit_v1_01/audit.json"
+}

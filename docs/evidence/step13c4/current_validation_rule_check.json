@@ -1,0 +1,12 @@
+{
+  "H1": {
+    "current_validation_rule_supported": false
+  },
+  "H2": {
+    "current_validation_rule_supported": false
+  },
+  "H3": {
+    "current_validation_rule_supported": false
+  },
+  "scope": "C4 descriptive rule check only; C5 ablations and C6 conclusions remain pending; not novelty or final-test proof"
+}

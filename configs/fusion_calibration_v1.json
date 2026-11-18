@@ -1,0 +1,225 @@
+{
+  "status": "FROZEN_THREE_SEED_TRAINING_CALIBRATION",
+  "created_utc": "2026-11-18T09:26:40.692210+00:00",
+  "protocol_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+  "constant": 0.9597680584784836,
+  "constant_record_sha256": "7dac3c23c2e3639acf282b67c6a8ba0ac5df26515d30b1a2d67d401a35fc67df",
+  "choices": [
+    {
+      "method": "S",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32609845637708434,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "U",
+      "seed": 20261114,
+      "threshold": 0.45,
+      "training_source_macro_IoU": 0.3506893208964894,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "V",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32714887154372646,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "P",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32714887154372646,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GV",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269530880357572,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GVP",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269813720186309,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "GC",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.3269479273856521,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "method": "R",
+      "seed": 20261114,
+      "threshold": 0.3,
+      "training_source_macro_IoU": 0.32692215930059,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "S",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.32376716020333224,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "U",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.3413924700817043,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "V",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.3256006086856223,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "P",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.3256006086856223,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "GV",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.32541824204117864,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "GVP",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.32542811990980075,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "GC",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.32539855095275677,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261115,
+      "method": "R",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.32473010293981125,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "S",
+      "threshold": 0.75,
+      "training_source_macro_IoU": 0.2938755030390066,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "U",
+      "threshold": 0.8,
+      "training_source_macro_IoU": 0.3189256288337395,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "V",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.2937944248212666,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "P",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.2937944248212666,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "GV",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.29390568465610445,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "GVP",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.2940455636243127,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "GC",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.29399438963632646,
+      "scope": "training-in-sample threshold reference only"
+    },
+    {
+      "seed": 20261116,
+      "method": "R",
+      "threshold": 0.7,
+      "training_source_macro_IoU": 0.29379916869608513,
+      "scope": "training-in-sample threshold reference only"
+    }
+  ],
+  "input_records": [
+    {
+      "path": "runs/fusion_training_independent_audit_v1_03/thresholds_seed20261114.json",
+      "sha256": "349e70a24809963b00161471bd70d0416d3b87cf448166c549fbb7fd9594ffc5",
+      "audit_sha256": "3f6eae6f06e740dcf4b6614956c8fdc51067d79f13e0861cb831538ccbd59ebb"
+    },
+    {
+      "path": "runs/fusion_calibration_audit_seed20261115_v1_01/thresholds_seed20261115.json",
+      "sha256": "f5568ed1063194a40d3a573c89c1c7f7598ba3371d2ae7935aaf194b176a89de",
+      "audit_sha256": "29b39706d748809421fdf528b1edacb80456e5a67654d35fb5b1cb52db741476"
+    },
+    {
+      "path": "runs/fusion_calibration_audit_seed20261116_v1_01/thresholds_seed20261116.json",
+      "sha256": "bc7b21f8e51594c8841697f04ed1712de3df53eceb14ffb4d4f072d456ce7076",
+      "audit_sha256": "3171c1a536a3cd0d1d99e2a4e7dfc3720e0042a089fb21f82b930e189246cca8"
+    }
+  ],
+  "source_groups": 3,
+  "training_sequences": 36,
+  "formal_validation_payloads_opened_before_freeze": 0,
+  "threshold_rule": "19-point training source macro IoU, frames 2-9; tie nearest .5 then higher threshold",
+  "validation_threshold_selection_allowed": false,
+  "algorithm_parameter_search_budget": 0,
+  "inference_sources_sha256": {
+    "matlab/run_fusion_frozen_inference.m": "2b157af6c7c2839ce4b0fa74604db5f95382a75ab61bd7c1fc1378b8b9ef8515",
+    "matlab/evaluate_fusion_frozen_counts.m": "248a39ba3ca9e648479782bd62ff31b3582dd90b10048bb10ebce92712d6902e",
+    "tools/audit_fusion_frozen.py": "b0c2ed627ed638404ebb5504d89f9ccbaa2d2127ec9a93d1a09db65b3f4bffb4",
+    "tools/summarize_fusion_validation.py": "f512f526165ee66ba79ee5a0ac0cde07afdd7bfde3fd90f3a366592efab2b667",
+    "tools/freeze_fusion_calibration.py": "1d19371c263072a99c6cb44a24e04028bee813e6a3c4215c09b47e289d065151"
+  },
+  "immutable_core_sha256": {
+    "matlab/motion_gray.m": "9805672f65b9f0b3b2605364a5b4429be68e4050477873f9cebac510c8094cea",
+    "matlab/register_fusion_pair.m": "70484f5e7e3f15b9cb5d320b415756f8e3ecbca10fed3cb348da8511ff60df08",
+    "matlab/warp_motion_history.m": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7",
+    "matlab/motion_confidence.m": "deb0557aa85cd58db42fd3ada1f7cd576a2cd1af78652c14a87b7806f9bf87c6",
+    "matlab/motion_history_gate.m": "c807c4d0fd50691ff8d0ced0071e3a2cf24c420e8b9ce4cc1050b9337c30f3d5",
+    "matlab/fuse_motion_window.m": "cc4ff7bf7f5945e3c712839b9fd5696a1e6aeca197421f909c652a15059f8b16",
+    "matlab/motion_fusion_step.m": "9ef718d88e7242c2234185cb3faadf26c9cc604a719015b35c0fbf406dcee1f5",
+    "matlab/fusion_binary_counts.m": "d4417742f4fcaadfa178fb3d01c38ca16a4ec48694d70238c72e77536ae3470e",
+    "matlab/check_motion_fusion_contracts.m": "fb4200b7f10303732a8edf765a65e6f528964b536395d4dd61e5ad1dc2ccd760",
+    "matlab/run_fusion_training_contract.m": "52ff3a20234648e937a1b624a59d4c7d8328554900d16738dd924a2780b5daff",
+    "matlab/evaluate_fusion_training_counts.m": "83b30ee5b8f40094c79a9772764084bd38008d14a9632a1c2ac6364291ea4e83",
+    "tools/audit_fusion_training.py": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1",
+    "configs/fusion_protocol_v1.json": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+    "configs/fusion_protocol_v1.sha256": "d2d81eb5a31cf63fa6e44f0a123728a5021975de7328f83cf7d710e67b897fdf",
+    "docs/step13c2_fusion_protocol.md": "4670f41ca74aec019589578ac0fb2dbdbccebeff97ed1cf4f4bf254459907046"
+  },
+  "scope": "Training-in-sample calibration only; not validation or test performance"
+}

@@ -1,0 +1,10 @@
+example,method,TP,FP,FN,IoU,predicted_positive_pixels
+recover_near_threshold,single,0,0,200,0,0
+recover_near_threshold,single_motion_fixed,200,0,0,1,200
+recover_near_threshold,v2,200,0,0,1,200
+ambiguous_wrong_single_motion,single,200,0,0,1,200
+ambiguous_wrong_single_motion,single_motion_fixed,0,0,200,0,0
+ambiguous_wrong_single_motion,v2,200,0,0,1,200
+confident_current_false_positive_failure,single,200,200,0,0.5,400
+confident_current_false_positive_failure,single_motion_fixed,200,0,0,1,200
+confident_current_false_positive_failure,v2,200,200,0,0.5,400

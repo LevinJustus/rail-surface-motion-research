@@ -1,0 +1,7 @@
+# Optional Python audit/plot tools for the MATLAB v2 prototype.
+# Actual historical E2 audit: Python3.7/NumPy1.15.1/SciPy1.1/Pillow5.2;
+# the compatible modern ranges below are not a clean-install acceptance claim.
+numpy>=1.22
+scipy>=1.8
+Pillow>=9
+matplotlib>=3.5

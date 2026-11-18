@@ -1,8 +1,3 @@
-* text=auto
-*.m text eol=lf
-*.py text eol=lf
-*.md text eol=lf
-# Hash-bound configurations/data must retain exact published bytes at checkout.
-configs/** -text
-data/** -text
-results/** -text
+# Preserve released bytes, including source-snapshot hashes, on every platform.
+# Mixing historical CRLF blobs with text/eol conversion makes a new clone dirty.
+* -text

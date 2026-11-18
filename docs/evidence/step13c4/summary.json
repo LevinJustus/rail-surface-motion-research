@@ -1,0 +1,50 @@
+{
+  "status": "PASS_13C4_PAIRED_SOURCE_SUMMARIES",
+  "sources": 15,
+  "seeds": [
+    20261114,
+    20261115,
+    20261116
+  ],
+  "methods": [
+    "S",
+    "U",
+    "V",
+    "P",
+    "GV",
+    "GVP",
+    "GC",
+    "R"
+  ],
+  "conditions": 12,
+  "full_frame_count_rows": 77760,
+  "primary_threshold_method_frames": 34560,
+  "optimizer_updates": 0,
+  "heldout_payloads_opened": 0,
+  "bootstrap_generator": "PCG64",
+  "bootstrap_seed": 20261118,
+  "bootstrap_replicates": 10000,
+  "bootstrap_indices_sha256": "3a3649a14b3d8c5544d2753d98730ed4717938a4ac7238ea08a731e5b2f09a07",
+  "bootstrap_source_order": [
+    "artificial_test/s0000519b_0_0",
+    "artificial_test/s0000553b_6_0",
+    "artificial_test/s0000559b_0_0",
+    "artificial_test/s0000566b_0_4",
+    "artificial_test/s0000582b_0_2",
+    "artificial_test/s0000592b_1_2",
+    "artificial_test/s0000596b_1_0",
+    "training/s0000547b_0_0",
+    "training/s0000557b_0_0",
+    "training/s0000572b_0_0",
+    "training/s0000599b_0_0",
+    "training/s0000608b_15_0",
+    "validation/s0000505b_0_0",
+    "validation/s0000521b_0_0",
+    "validation/s0000522b_0_0"
+  ],
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "background_only_sources": 1,
+  "calibration_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6",
+  "wall_seconds": 2.2388798000174575
+}

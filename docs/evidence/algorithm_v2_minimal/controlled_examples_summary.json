@@ -1,0 +1,86 @@
+{
+  "scope": "artificial probability/known-motion examples only, not rail dataset or trained accuracy",
+  "rows": [
+    {
+      "example": "recover_near_threshold",
+      "method": "single",
+      "TP": 0,
+      "FP": 0,
+      "FN": 200,
+      "IoU": 0,
+      "predicted_positive_pixels": 0
+    },
+    {
+      "example": "recover_near_threshold",
+      "method": "single_motion_fixed",
+      "TP": 200,
+      "FP": 0,
+      "FN": 0,
+      "IoU": 1,
+      "predicted_positive_pixels": 200
+    },
+    {
+      "example": "recover_near_threshold",
+      "method": "v2",
+      "TP": 200,
+      "FP": 0,
+      "FN": 0,
+      "IoU": 1,
+      "predicted_positive_pixels": 200
+    },
+    {
+      "example": "ambiguous_wrong_single_motion",
+      "method": "single",
+      "TP": 200,
+      "FP": 0,
+      "FN": 0,
+      "IoU": 1,
+      "predicted_positive_pixels": 200
+    },
+    {
+      "example": "ambiguous_wrong_single_motion",
+      "method": "single_motion_fixed",
+      "TP": 0,
+      "FP": 0,
+      "FN": 200,
+      "IoU": 0,
+      "predicted_positive_pixels": 0
+    },
+    {
+      "example": "ambiguous_wrong_single_motion",
+      "method": "v2",
+      "TP": 200,
+      "FP": 0,
+      "FN": 0,
+      "IoU": 1,
+      "predicted_positive_pixels": 200
+    },
+    {
+      "example": "confident_current_false_positive_failure",
+      "method": "single",
+      "TP": 200,
+      "FP": 200,
+      "FN": 0,
+      "IoU": 0.5,
+      "predicted_positive_pixels": 400
+    },
+    {
+      "example": "confident_current_false_positive_failure",
+      "method": "single_motion_fixed",
+      "TP": 200,
+      "FP": 0,
+      "FN": 0,
+      "IoU": 1,
+      "predicted_positive_pixels": 200
+    },
+    {
+      "example": "confident_current_false_positive_failure",
+      "method": "v2",
+      "TP": 200,
+      "FP": 200,
+      "FN": 0,
+      "IoU": 0.5,
+      "predicted_positive_pixels": 400
+    }
+  ]
+}

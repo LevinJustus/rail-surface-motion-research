@@ -1,0 +1,64 @@
+{
+  "status": "PASS_V2_MINIMAL_IMPLEMENTATION_CONTRACTS",
+  "contract_count": 18,
+  "contracts": [
+    "motion_sign_and_normalization",
+    "missing_observation_visual_fallback",
+    "conflicting_observation_attenuation",
+    "weak_texture_and_boundary_rejection",
+    "diffuse_mass_not_renormalized",
+    "composed_path_mass_product",
+    "omitted_mass_increases_risk",
+    "risk_decomposition_and_unknown_value_bound",
+    "intermediate_view_coverage",
+    "unavailable_history_fallback",
+    "first_frame_identity",
+    "convex_range_and_update_bound",
+    "default_strong_protection_is_inactive",
+    "explicit_protection_guard_with_contract_only_parameter_copy",
+    "severe_current_miss_not_recovered",
+    "RGB_NCC_stream_sign_missing_and_bounded_raw_state",
+    "explicit_sequence_reset",
+    "nonincreasing_timestamp_rejection"
+  ],
+  "risk_decomposition_max_error": 3.0531133177191805E-16,
+  "three_frame_update_bound": 0.10108844328543889,
+  "config_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d",
+  "source_files": [
+    {
+      "path": "matlab/v2_select_motion.m",
+      "sha256": "ec0457d0cb5051d7bf21df74371c86bb5808af71b997fefded075058cd144799"
+    },
+    {
+      "path": "matlab/v2_motion_weights.m",
+      "sha256": "f46b4b919f9440b06f58d519452b323bebbc74088dd60543fd8e107b8eafa01d"
+    },
+    {
+      "path": "matlab/v2_compose_motion.m",
+      "sha256": "1cef68b4052917994b6941146923165a332bc2674ff9415b1a8e3b8ebd3a0f34"
+    },
+    {
+      "path": "matlab/v2_history_evidence.m",
+      "sha256": "8613e02005f092a101a85761f8d5234c3534db8968b8688109fffc1a2a6a7351"
+    },
+    {
+      "path": "matlab/v2_fuse_window.m",
+      "sha256": "c51085858ff85561bd54bf670ce0b039ebd49f33663fe113e483dfadb331138d"
+    },
+    {
+      "path": "matlab/v2_compensation_step.m",
+      "sha256": "e133d59c7deced3cc9e8bf088f87512f5635ba0e4bdc0d3a926fe542b907b443"
+    },
+    {
+      "path": "matlab/check_v2_compensation.m",
+      "sha256": "ea914cab83b3c08194974956e49dbdcac3087e60a24e7f9310fffadc09ca31de"
+    }
+  ],
+  "matlab_version": "24.2.0.2712019 (R2024b)",
+  "threads": 4,
+  "wall_seconds": 1.7638167,
+  "real_dataset_payloads_opened": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "scope": "minimum core/analytic contracts and three artificial examples; novelty, rail accuracy and full real-time efficiency not validated"
+}

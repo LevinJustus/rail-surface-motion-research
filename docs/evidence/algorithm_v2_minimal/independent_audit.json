@@ -1,0 +1,15 @@
+{
+  "status": "PASS_V2_INDEPENDENT_ARTIFICIAL_AUDIT",
+  "RGB_frames_reconstructed": 4,
+  "artificial_examples": 3,
+  "count_rows": 9,
+  "maximum_motion_weight_error": 3.6600192107202744e-34,
+  "maximum_probability_error": 0.0,
+  "three_frame_update_bound": 0.1010884432854389,
+  "real_dataset_payloads_opened": 0,
+  "model_forward_calls": 0,
+  "optimizer_updates": 0,
+  "wall_seconds": 0.2622692,
+  "scope": "independent artificial/mechanism checks only; no rail accuracy, novelty or real-time validation",
+  "numpy_version": "1.15.1"
+}

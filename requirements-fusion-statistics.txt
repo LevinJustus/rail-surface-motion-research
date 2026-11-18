@@ -1,0 +1,3 @@
+# Source-paired bootstrap/statistics only; Python >=3.8.
+# PCG64 and numpy.quantile(method="linear") are required.
+numpy>=1.22

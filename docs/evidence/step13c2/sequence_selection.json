@@ -1,0 +1,1946 @@
+[
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0061",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0062",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0063",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0064",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0065",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0066",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0067",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0068",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0069",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0070",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0071",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0072",
+    "source_id": "artificial_test/s0000512b_0_1",
+    "group_id": "g_1323702b97307572",
+    "assigned_split": "training",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0373",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0374",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0375",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0376",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0377",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0378",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0379",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0380",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0381",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0382",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0383",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0384",
+    "source_id": "artificial_test/s0000511b_0_0",
+    "group_id": "g_accd433f6ee9158a",
+    "assigned_split": "training",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0421",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0422",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0423",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0424",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0425",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0426",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0427",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0428",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0429",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0430",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0431",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "contract_and_calibration",
+    "sequence_id": "seq0432",
+    "source_id": "artificial_test/s0000510b_1_0",
+    "group_id": "g_b11689142b3a7e76",
+    "assigned_split": "training",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0541",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0542",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0543",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0544",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0545",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0546",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0547",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0548",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0549",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0550",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0551",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0552",
+    "source_id": "artificial_test/s0000519b_0_0",
+    "group_id": "g_0e20dcbbb280e7e5",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0553",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0554",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0555",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0556",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0557",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0558",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0559",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0560",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0561",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0562",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0563",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0564",
+    "source_id": "training/s0000599b_0_0",
+    "group_id": "g_22c5eb95bb91d0e4",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0565",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0566",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0567",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0568",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0569",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0570",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0571",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0572",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0573",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0574",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0575",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0576",
+    "source_id": "validation/s0000505b_0_0",
+    "group_id": "g_372091ff544dae75",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0577",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0578",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0579",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0580",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0581",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0582",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0583",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0584",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0585",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0586",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0587",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0588",
+    "source_id": "validation/s0000521b_0_0",
+    "group_id": "g_4c9904919793e06c",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0589",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0590",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0591",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0592",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0593",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0594",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0595",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0596",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0597",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0598",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0599",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0600",
+    "source_id": "artificial_test/s0000566b_0_4",
+    "group_id": "g_50d80e0dfae24e17",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0601",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0602",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0603",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0604",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0605",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0606",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0607",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0608",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0609",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0610",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0611",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0612",
+    "source_id": "artificial_test/s0000596b_1_0",
+    "group_id": "g_58645e2bc562f589",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0613",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0614",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0615",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0616",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0617",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0618",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0619",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0620",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0621",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0622",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0623",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0624",
+    "source_id": "training/s0000557b_0_0",
+    "group_id": "g_5d08ff90d77f6438",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0625",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0626",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0627",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0628",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0629",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0630",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0631",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0632",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0633",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0634",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0635",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0636",
+    "source_id": "artificial_test/s0000592b_1_2",
+    "group_id": "g_5d90457e15ef852a",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0637",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0638",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0639",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0640",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0641",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0642",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0643",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0644",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0645",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0646",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0647",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0648",
+    "source_id": "artificial_test/s0000553b_6_0",
+    "group_id": "g_8b176b693ad06720",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0649",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0650",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0651",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0652",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0653",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0654",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0655",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0656",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0657",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0658",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0659",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0660",
+    "source_id": "artificial_test/s0000559b_0_0",
+    "group_id": "g_8dccbe58bb0a09da",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0661",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0662",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0663",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0664",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0665",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0666",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0667",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0668",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0669",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0670",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0671",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0672",
+    "source_id": "training/s0000608b_15_0",
+    "group_id": "g_acc43bb2d81eaf26",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0673",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0674",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0675",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0676",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0677",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0678",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0679",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0680",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0681",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0682",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0683",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0684",
+    "source_id": "training/s0000547b_0_0",
+    "group_id": "g_beb908c6e6b1df5e",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0685",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0686",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0687",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0688",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0689",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0690",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0691",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0692",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0693",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0694",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0695",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0696",
+    "source_id": "training/s0000572b_0_0",
+    "group_id": "g_cde1fb830c1c5a1d",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0697",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0698",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0699",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0700",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0701",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0702",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0703",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0704",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0705",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0706",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0707",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0708",
+    "source_id": "validation/s0000522b_0_0",
+    "group_id": "g_d622e4a31128bab9",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0709",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "clean",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0710",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "variable_speed",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0711",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "geometric_jitter",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0712",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "blur_1px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0713",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "blur_3px",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0714",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "persistent_light",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0715",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "odom_scale_plus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0716",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "odom_scale_minus5",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0717",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "odom_quantization",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0718",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "stop_reverse",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0719",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "odom_dropout",
+    "frame_count": 9
+  },
+  {
+    "mode": "validation",
+    "sequence_id": "seq0720",
+    "source_id": "artificial_test/s0000582b_0_2",
+    "group_id": "g_f849dade755e1cb1",
+    "assigned_split": "validation",
+    "profile": "combined",
+    "frame_count": 9
+  }
+]

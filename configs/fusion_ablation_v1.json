@@ -1,0 +1,588 @@
+{
+  "status": "FROZEN_C5_EXECUTION_NOT_RUN",
+  "created_utc": "2026-11-18T11:03:24.122108+00:00",
+  "scientific_plan_source": "configs/fusion_protocol_v1.json",
+  "scientific_plan_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+  "calibration": "configs/fusion_calibration_v1.json",
+  "calibration_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6",
+  "C4_labels_already_seen": true,
+  "parameter_search_budget": 0,
+  "arms": [
+    {
+      "scenario": "bias_m6",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m6",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_m2",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p2",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "bias_p6",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_1",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "alternating_3",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "S",
+      "parent_method": "S",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "U",
+      "parent_method": "U",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "V",
+      "parent_method": "V",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "P",
+      "parent_method": "P",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "all_missing",
+      "method": "R",
+      "parent_method": "R",
+      "family": "observation_stress"
+    },
+    {
+      "scenario": "window_1",
+      "method": "S",
+      "parent_method": "S",
+      "family": "window"
+    },
+    {
+      "scenario": "window_1",
+      "method": "V",
+      "parent_method": "V",
+      "family": "window"
+    },
+    {
+      "scenario": "window_1",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "window"
+    },
+    {
+      "scenario": "window_1",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "window"
+    },
+    {
+      "scenario": "window_5",
+      "method": "S",
+      "parent_method": "S",
+      "family": "window"
+    },
+    {
+      "scenario": "window_5",
+      "method": "V",
+      "parent_method": "V",
+      "family": "window"
+    },
+    {
+      "scenario": "window_5",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "window"
+    },
+    {
+      "scenario": "window_5",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "window"
+    },
+    {
+      "scenario": "remove_photo",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "gate_ablation"
+    },
+    {
+      "scenario": "remove_confidence",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "gate_ablation"
+    },
+    {
+      "scenario": "remove_cycle",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "gate_ablation"
+    },
+    {
+      "scenario": "remove_peak_margin",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "gate_ablation"
+    },
+    {
+      "scenario": "prior_alignment",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "alignment_interaction"
+    },
+    {
+      "scenario": "unbounded",
+      "method": "R",
+      "parent_method": "R",
+      "family": "state_length"
+    },
+    {
+      "scenario": "pollution",
+      "method": "S",
+      "parent_method": "S",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "U",
+      "parent_method": "U",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "V",
+      "parent_method": "V",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "P",
+      "parent_method": "P",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "GV",
+      "parent_method": "GV",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "GVP",
+      "parent_method": "GVP",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "GC",
+      "parent_method": "GC",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "R",
+      "parent_method": "R",
+      "family": "history_pollution"
+    },
+    {
+      "scenario": "pollution",
+      "method": "R_unbounded",
+      "parent_method": "R",
+      "family": "history_pollution"
+    }
+  ],
+  "prescribed_c2_extension": {
+    "window_sensitivity": [
+      1,
+      5
+    ],
+    "window_methods": [
+      "S",
+      "V",
+      "GV",
+      "GVP"
+    ],
+    "gv_ablation_remove_one": [
+      "photo",
+      "confidence",
+      "cycle",
+      "peak_margin"
+    ],
+    "gvp_alignment_interaction": "prior_ncc",
+    "recursive_ablation": "unbounded_within_sequence_against_bounded_R",
+    "observed_bias_px_per_frame": [
+      -6,
+      -2,
+      2,
+      6
+    ],
+    "observed_alternating_absolute_amplitude_px": [
+      1,
+      3
+    ],
+    "all_odometry_unavailable_variant": true,
+    "observation_variants_total": 7,
+    "keep_original_missing": true,
+    "refit_threshold_or_constant_under_stress": false,
+    "pollution": {
+      "frame_one_based": 3,
+      "probability_transform": "1-p",
+      "same_corrupted_raw_probability_for_all_methods_including_S": true,
+      "subsequent_raw_probabilities": "unchanged",
+      "evaluate_following_frames_one_based": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rgb_and_registration": "unchanged",
+      "scope": "fault injection only"
+    }
+  },
+  "training_contract_seed": 20261114,
+  "training_sequences": 36,
+  "validation_seeds": [
+    20261114,
+    20261115,
+    20261116
+  ],
+  "validation_sequences": 180,
+  "logical_outputs_per_frame": 79,
+  "training_logical_outputs": 25596,
+  "validation_logical_outputs": 383940,
+  "thresholds": [
+    "primary_0.5",
+    "unchanged_C4_parent_method_training_threshold"
+  ],
+  "validation_evaluation_rows": 767880,
+  "alias_policy": "Content-hash equality or prescribed input-independent identity, references remain SHA checked",
+  "store_policy": "Unique float32 little-endian column-major payloads by SHA; all logical rows in JSONL",
+  "additional_network_forward_calls": 0,
+  "RGB_and_masks_modified": false,
+  "accurate_geometry_allowed": false,
+  "gate_removal": "Only named factor becomes 1; availability, boundary rejection and valid coverage retained",
+  "prior_alignment": "Change sampling shifts to original prior-NCC only; visual quality and observed-factor definitions unchanged",
+  "unbounded_state": "Double internal state retained within nine-frame sequence; single output only, reset at each sequence",
+  "pollution": "single(1-double(raw_P3)) shared by every method; compare frames4-9 to own clean counterfactual",
+  "stress": "Only available absolute observed odometry perturbed; preserve original missing flags; no refitting",
+  "original_RGB_profiles": "All 12 frozen profiles; no new RGB severity after C4 results",
+  "evaluation": "Stored float32 promoted to float64 against unchanged float64 threshold; all current pixels",
+  "primary_frames": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "pollution_frames": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sample_audit": "First lexicographic source, all12 profiles, frames2 and6, all79 arms, every seed",
+  "stats": "Reuse C4 15-source paired PCG64/20261118/10000 index table; descriptive unadjusted intervals",
+  "component_metrics": "C4 baseline component metrics retained; C5 focuses on pixel counts and history contamination",
+  "heldout_payloads_allowed": false,
+  "real_video_claim_allowed": false,
+  "github_write_allowed": false
+}

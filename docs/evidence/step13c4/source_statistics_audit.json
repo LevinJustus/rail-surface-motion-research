@@ -1,0 +1,17 @@
+{
+  "status": "PASS_C4_INDEPENDENT_SOURCE_STATISTICS",
+  "primary_method_frame_rows_reaggregated": 34560,
+  "source_metric_rows_checked": 360,
+  "paired_metric_contrasts_checked": 24,
+  "bootstrap_replicates": 10000,
+  "source_count": 15,
+  "seed_count": 3,
+  "maximum_source_metric_error": 0.0,
+  "maximum_interval_error": 6.938893903907228e-18,
+  "bootstrap_indices_exact_match": true,
+  "bootstrap_indices_sha256": "3a3649a14b3d8c5544d2753d98730ed4717938a4ac7238ea08a731e5b2f09a07",
+  "images_or_labels_opened": 0,
+  "heldout_payloads_opened": 0,
+  "numpy_version": "2.3.5",
+  "wall_seconds": 0.9425440000195522
+}

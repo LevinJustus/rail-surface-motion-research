@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_PRESERVED",
+  "new_source_files": 12,
+  "sha256": {
+    "matlab/motion_gray.m": "9805672f65b9f0b3b2605364a5b4429be68e4050477873f9cebac510c8094cea",
+    "matlab/register_fusion_pair.m": "70484f5e7e3f15b9cb5d320b415756f8e3ecbca10fed3cb348da8511ff60df08",
+    "matlab/warp_motion_history.m": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7",
+    "matlab/motion_confidence.m": "deb0557aa85cd58db42fd3ada1f7cd576a2cd1af78652c14a87b7806f9bf87c6",
+    "matlab/motion_history_gate.m": "c807c4d0fd50691ff8d0ced0071e3a2cf24c420e8b9ce4cc1050b9337c30f3d5",
+    "matlab/fuse_motion_window.m": "cc4ff7bf7f5945e3c712839b9fd5696a1e6aeca197421f909c652a15059f8b16",
+    "matlab/motion_fusion_step.m": "9ef718d88e7242c2234185cb3faadf26c9cc604a719015b35c0fbf406dcee1f5",
+    "matlab/fusion_binary_counts.m": "d4417742f4fcaadfa178fb3d01c38ca16a4ec48694d70238c72e77536ae3470e",
+    "matlab/check_motion_fusion_contracts.m": "fb4200b7f10303732a8edf765a65e6f528964b536395d4dd61e5ad1dc2ccd760",
+    "matlab/run_fusion_training_contract.m": "52ff3a20234648e937a1b624a59d4c7d8328554900d16738dd924a2780b5daff",
+    "matlab/evaluate_fusion_training_counts.m": "83b30ee5b8f40094c79a9772764084bd38008d14a9632a1c2ac6364291ea4e83",
+    "tools/audit_fusion_training.py": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1",
+    "configs/fusion_protocol_v1.json": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+    "configs/fusion_protocol_v1.sha256": "d2d81eb5a31cf63fa6e44f0a123728a5021975de7328f83cf7d710e67b897fdf",
+    "docs/step13c2_fusion_protocol.md": "4670f41ca74aec019589578ac0fb2dbdbccebeff97ed1cf4f4bf254459907046"
+  },
+  "scope": "Local implementation source snapshot; not a GitHub publication"
+}

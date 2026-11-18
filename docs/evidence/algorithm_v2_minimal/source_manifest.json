@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_PRESERVED",
+  "sha256": {
+    "matlab/v2_select_motion.m": "ec0457d0cb5051d7bf21df74371c86bb5808af71b997fefded075058cd144799",
+    "matlab/v2_motion_weights.m": "f46b4b919f9440b06f58d519452b323bebbc74088dd60543fd8e107b8eafa01d",
+    "matlab/v2_compose_motion.m": "1cef68b4052917994b6941146923165a332bc2674ff9415b1a8e3b8ebd3a0f34",
+    "matlab/v2_history_evidence.m": "8613e02005f092a101a85761f8d5234c3534db8968b8688109fffc1a2a6a7351",
+    "matlab/v2_fuse_window.m": "c51085858ff85561bd54bf670ce0b039ebd49f33663fe113e483dfadb331138d",
+    "matlab/v2_compensation_step.m": "e133d59c7deced3cc9e8bf088f87512f5635ba0e4bdc0d3a926fe542b907b443",
+    "matlab/check_v2_compensation.m": "ea914cab83b3c08194974956e49dbdcac3087e60a24e7f9310fffadc09ca31de",
+    "tools/audit_v2_minimal.py": "b94bc857b7e3c02eff95854080d2cebba6e05051df1d28323ab423f891937d4b",
+    "tools/plot_v2_artificial_examples.py": "52547ad48e3c57224ea4c755203c6ca1f6b50d06a469dad40702ef6441b53464",
+    "matlab/motion_gray.m": "9805672f65b9f0b3b2605364a5b4429be68e4050477873f9cebac510c8094cea",
+    "matlab/warp_motion_history.m": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7",
+    "matlab/file_sha256.m": "8c8078d442ece3a8e916f9843d8778afe48cf2997d4f5956ec215421f8824121",
+    "tools/audit_fusion_training.py": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1"
+  },
+  "configuration_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d",
+  "scope": "minimum implementation, not a final standalone algorithm release"
+}

@@ -1,0 +1,8 @@
+{
+  "value": 0.9597680584784836,
+  "eligible_training_paths": 516,
+  "total_training_paths": 540,
+  "fit_labels_opened": 0,
+  "shared_across_seeds": true,
+  "constant_record_sha256": "7dac3c23c2e3639acf282b67c6a8ba0ac5df26515d30b1a2d67d401a35fc67df"
+}

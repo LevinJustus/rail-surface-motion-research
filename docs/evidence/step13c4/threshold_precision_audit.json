@@ -1,0 +1,18 @@
+{
+  "status": "PASS_FROZEN_THRESHOLD_CHOICES_UNCHANGED",
+  "choices_checked": 24,
+  "choices_unchanged": 24,
+  "training_curve_rows_checked": 456,
+  "legacy_curve_rows_with_count_changes": 41,
+  "maximum_legacy_count_difference": 30,
+  "maximum_legacy_source_macro_IoU_difference": 2.9387312732997994e-06,
+  "comparison": "float32 stored values promoted to float64 compared with unchanged float64 thresholds",
+  "calibration_sha256": "66a21cb635398bf953a1b7e1b2256a7cf20a1f05ca08330ed4d087b47c5aa9a6",
+  "thresholds_modified": false,
+  "validation_or_test_masks_opened": 0,
+  "network_forward_calls": 0,
+  "optimizer_updates": 0,
+  "post_validation_numerical_audit": true,
+  "numpy_version": "2.3.5",
+  "wall_seconds": 73.21078159997705
+}
