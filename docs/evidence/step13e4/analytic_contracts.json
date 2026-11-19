@@ -1,0 +1,16 @@
+{
+  "status": "PASS_E4_ANALYTIC_CONTRACTS",
+  "contracts": [
+    "first_frame_identity",
+    "severe_miss_can_cross_threshold",
+    "old_v2_bound_preserved",
+    "stable_wrong_history_can_create_false_positives",
+    "missing_motion_identity",
+    "out_of_view_identity",
+    "unchanged_strong_current_protection",
+    "discarded_mass_penalty_not_removed",
+    "candidate_variance_not_removed"
+  ],
+  "contract_count": 9,
+  "old_core_unchanged": true
+}

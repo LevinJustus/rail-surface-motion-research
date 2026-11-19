@@ -1,0 +1,97 @@
+{
+  "status": "PASS_V3_BOUNDED_PROTOTYPE_BATCH",
+  "sequences": 12,
+  "sources": 3,
+  "frames": 108,
+  "primary_frames": 96,
+  "method_frames": 1404,
+  "new_probability_outputs": 540,
+  "feedback_available_edges": 84,
+  "feedback_changed_edges": 0,
+  "uniform_changed_edges": 0,
+  "motion": {
+    "base": 0.25233933888595916,
+    "feedback": 0.25233933888595916,
+    "uniform": 0.25233933888595916
+  },
+  "paired_changes": {
+    "feedback_conservative": {
+      "FN_to_TP": 0,
+      "FP_to_TN": 0,
+      "TP_to_FN": 0,
+      "TN_to_FP": 0
+    },
+    "feedback_strong": {
+      "FN_to_TP": 0,
+      "FP_to_TN": 0,
+      "TP_to_FN": 0,
+      "TN_to_FP": 0
+    },
+    "roi_vs_uniform": {
+      "FN_to_TP": 0,
+      "FP_to_TN": 0,
+      "TP_to_FN": 0,
+      "TN_to_FP": 0
+    }
+  },
+  "historical_opportunity": {
+    "S": {
+      "opportunities": 26284,
+      "recovered": 0
+    },
+    "MAP_integer": {
+      "opportunities": 26284,
+      "recovered": 12868
+    },
+    "DECAY05_integer": {
+      "opportunities": 26284,
+      "recovered": 5381
+    },
+    "V_subpixel": {
+      "opportunities": 26284,
+      "recovered": 12726
+    },
+    "GV_subpixel": {
+      "opportunities": 26284,
+      "recovered": 10631
+    },
+    "V2": {
+      "opportunities": 26284,
+      "recovered": 2650
+    },
+    "V2_visual": {
+      "opportunities": 26284,
+      "recovered": 2566
+    },
+    "V2_no_conflict": {
+      "opportunities": 26284,
+      "recovered": 6083
+    },
+    "B_base_conservative": {
+      "opportunities": 26284,
+      "recovered": 3754
+    },
+    "C_feedback_conservative": {
+      "opportunities": 26284,
+      "recovered": 3754
+    },
+    "E_base_strong": {
+      "opportunities": 26284,
+      "recovered": 12717
+    },
+    "D_feedback_strong": {
+      "opportunities": 26284,
+      "recovered": 12717
+    },
+    "F_uniform_strong": {
+      "opportunities": 26284,
+      "recovered": 12717
+    }
+  },
+  "old_control_count_rows_exact": 864,
+  "network_forward_calls": 0,
+  "optimizer_updates": 0,
+  "validation_and_test_payloads_opened": 0,
+  "evaluation_wall_seconds": 5.581181299999999,
+  "scope": "development only, 3 training-source proxies; correlated same-image sequences; no final-test, real-video, novelty or full-system-FPS proof"
+}

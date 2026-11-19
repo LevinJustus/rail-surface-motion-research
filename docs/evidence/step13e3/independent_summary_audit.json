@@ -1,0 +1,23 @@
+{
+  "status": "PASS_E3_SCALAR_AND_ORACLE_OPERATOR_CHECKS",
+  "source_rows": 21,
+  "count_rows": 756,
+  "oracle_operator_contracts": [
+    "translation_sign_matches_warp",
+    "quarter_turn_and_nearest_mask",
+    "intermediate_out_of_view_rejection"
+  ],
+  "opportunity_fraction": 0.038337446542861975,
+  "opportunity_recovered_fraction": 0.10082179272561254,
+  "opportunity_below_bound_fraction": 0.7151499010805052,
+  "candidate_within_1px_fraction": 0.943074189033775,
+  "candidate_within_2px_fraction": 0.994605354720073,
+  "opportunity_candidate_within_1px_fraction": 0.8979936472196534,
+  "opportunity_risk_component_fractions": {
+    "variance": 0.013784795139346552,
+    "conflict": 0.4678096722864705,
+    "unknown": 0.5184055325741826
+  },
+  "wall_seconds": 0.08654600000000001,
+  "scope": "descriptive training-source diagnostic; component sizes do not establish causal benefit of removing a term"
+}

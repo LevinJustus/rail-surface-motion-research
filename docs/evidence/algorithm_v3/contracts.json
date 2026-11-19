@@ -1,0 +1,38 @@
+{
+  "status": "PASS_V3_CONTRACTS",
+  "contract_count": 11,
+  "contracts": [
+    "forward_sign_and_valid_support",
+    "intermediate_view_rejected",
+    "strong_correction_and_conservative_reference",
+    "wrong_history_false_positive_negative_case",
+    "image_motion_sign_and_subpixel_peak",
+    "separated_modes_not_neighbouring_pixels",
+    "historical_roi_image_check_can_disambiguate",
+    "no_persistent_evidence_falls_back",
+    "current_prediction_excluded_from_motion_feedback",
+    "raw_cache_and_convex_probability_range",
+    "nonincreasing_timestamp_rejected"
+  ],
+  "analytic_motion_feedback_scores": [
+    {
+      "xy": [
+        -6.0,
+        0.0
+      ],
+      "base_score": 0.995,
+      "local_score": 0.6593116798737461,
+      "selection_score": 1.0609311679873745
+    },
+    {
+      "xy": [
+        6.0,
+        0.0
+      ],
+      "base_score": 0.99,
+      "local_score": 1.0,
+      "selection_score": 1.09
+    }
+  ],
+  "scope": "synthetic mechanism checks, not rail performance"
+}

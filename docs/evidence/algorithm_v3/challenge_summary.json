@@ -1,0 +1,18 @@
+{
+  "status": "PASS_V3_ARTIFICIAL_CHALLENGE_EXECUTED",
+  "sequences": 9,
+  "frames": 27,
+  "seeds": [
+    20261119,
+    20261120,
+    20261121
+  ],
+  "feedback_changed_sequences": 9,
+  "motion": {
+    "base": 16.00215206858099,
+    "feedback": 12.005700597949062,
+    "uniform": 9.336815342838463
+  },
+  "wall_seconds": 1.8608486000000002,
+  "scope": "engineered artificial mechanism stress cases; manufactured probabilities; not independent rail accuracy or trained-model evidence"
+}

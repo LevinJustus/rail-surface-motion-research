@@ -1,0 +1,32 @@
+{
+  "status": "PASS_E4_SINGLE_FACTOR_DIAGNOSTIC",
+  "sequences": 12,
+  "sources": 3,
+  "frames": 108,
+  "primary_frames": 96,
+  "count_rows": 864,
+  "independently_rebuilt_outputs": 108,
+  "maximum_float32_error": 0.0,
+  "mask_files": 108,
+  "geometry_files": 12,
+  "oracle_opportunity": 26284,
+  "v2_recovered": 2650,
+  "no_conflict_recovered": 6083,
+  "protected_pixels": 1033,
+  "maximum_absolute_update": 0.4653629906133563,
+  "pixels_exceeding_old_bound": 125364,
+  "changes_relative_to_v2": {
+    "FN_to_TP": 3494,
+    "FP_to_TN": 7537,
+    "TP_to_FN": 2740,
+    "TN_to_FP": 8919
+  },
+  "network_forward_calls": 0,
+  "optimizer_updates": 0,
+  "validation_and_heldout_payloads_opened": 0,
+  "old_core_unchanged": true,
+  "predictions_sha256": "31bfaffdc7bbfd06ec1db5c59446f89e6db9d8420883a60cd1d67fde679bdc3f",
+  "plan_sha256": "7d13f3a3a0b3ca4e6f5011069afe5aee4801d319fe73972edb471c2542f6f5a4",
+  "wall_seconds": 17.5905044,
+  "scope": "12 correlated synthetic training-source sequences from 3 source proxies; not real video or final test"
+}

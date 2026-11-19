@@ -1,0 +1,174 @@
+{
+  "version": "E3-diagnostic-v1",
+  "date_local": "2026-11-19",
+  "created_utc": "2026-11-19T06:22:28.934205+00:00",
+  "seed": 20261114,
+  "scope": "three training-source proxy groups / four original profiles; not real video or independent final evaluation",
+  "design_config": "configs/algorithm_design_v2.json",
+  "design_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d",
+  "protocol_config": "configs/fusion_protocol_v1.json",
+  "protocol_sha256": "20fd3a8839131d294d64053d2b9cde0b4adf6ef837482f2d4604cb22d37cb6c1",
+  "base_run": "fusion_training_v1_02",
+  "base_manifest_sha256": "243cc0e562ce2edb3e2a23bbb9a824ea9bf5bbddb58ef9af3a0da127f2a4012c",
+  "checkpoint": {
+    "seed": 20261114,
+    "checkpoint_relative": "runs/full_stage2_v2_01/seeds/seed_20261114/checkpoints/best_validation.mat",
+    "checkpoint_sha256": "bbda514acc9f2870cc30ecdee9c7ef9ff9b2bd6b20ac6297e40b953f0d270f88",
+    "network_parameter_sha256": "4e68c7961c1d80e5cd47891fa622bc7dc4b9c50824ea664abd50a85b4758c63a",
+    "epoch": 8,
+    "update": 1400
+  },
+  "selection": [
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0061",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0063",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0065",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0072",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0373",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0375",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0377",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0384",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0421",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0423",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0425",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0432",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    }
+  ],
+  "threshold": 0.5,
+  "primary_frames": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "window_frames": 3,
+  "methods": [
+    "S",
+    "MAP_integer",
+    "DECAY05_integer",
+    "V_subpixel",
+    "GV_subpixel",
+    "V2",
+    "V2_visual"
+  ],
+  "simple_decay": 0.5,
+  "additional_network_forward_calls": 0,
+  "optimizer_updates": 0,
+  "opportunity": "current FN and at least one oracle-visible historical prediction>=.5 on historically positive GT",
+  "geometry_sampling": "bilinear probability, nearest historical mask, all intermediate views valid; evaluation only",
+  "candidate_sampling_error_thresholds_px": [
+    1,
+    2
+  ],
+  "low_mass_diagnostic": 0.1,
+  "low_gate_diagnostic": 0.01,
+  "current_probability_bins": [
+    0,
+    0.1,
+    0.3,
+    0.3989115567145611,
+    0.5
+  ],
+  "diagnostic_only": true,
+  "parameters_refitted": false,
+  "validation_and_heldout_payloads_allowed": false,
+  "note": "Source/schema and prior development evidence already known; selection precedes new opportunity/count analysis. No feedback or new fusion variant."
+}

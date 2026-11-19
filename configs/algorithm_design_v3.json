@@ -1,0 +1,20 @@
+{
+  "version": "v3-feedback-prototype-1",
+  "date_local": "2026-11-19",
+  "status": "experimental prototype; not a validated final method",
+  "module": "python/rail_motion_v3.py",
+  "parameters": {
+    "max_shift": 20, "maximum_hypotheses": 5, "peak_separation": 4,
+    "minimum_ncc": 0.2, "visual_temperature": 0.02, "feedback_weight": 0.1,
+    "history_threshold": 0.5, "minimum_roi_pixels": 16, "roi_dilation": 2,
+    "ring_dilation": 8, "risk_sigma": 0.25, "strong_current": 0.7, "decision": 0.5
+  },
+  "scope": "one-pass causal feedback; three raw-probability frames; optional observed odometry; fixed segmentation network",
+  "feedback": "two past raw probabilities form persistent ROI using the prior BASE motion; current segmentation excluded; local intensity and gradient correspondence rerank separated subpixel motion peaks",
+  "strong_fusion": "equal-weight arrived raw observations after selected-path alignment; invalid histories retain current probability; unchanged strong-current foreground protection",
+  "counterfactuals": ["B base conservative", "C feedback conservative", "E base strong", "D feedback strong", "F uniform-image-check strong"],
+  "controls": "B/C share conservative fusion; D/E/F share strong fusion and candidate set; ROI and uniform checks have the same full-array implementation and activation frames",
+  "default_selection": "one predefined parameter set, no threshold or lambda search",
+  "evidence_limit": "3 source proxies / 12 existing training-source sequences; synthetic contracts are not real-rail accuracy; no final-test or real-time claim",
+  "independent_algorithm_repository_created": false
+}

@@ -1,0 +1,6 @@
+# Core prototype; historical audit additionally needs Pillow.
+numpy>=1.15
+scipy>=1.1
+Pillow>=5.2
+# Optional aggregate result plots:
+matplotlib>=2.2

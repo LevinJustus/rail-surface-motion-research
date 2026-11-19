@@ -1,0 +1,342 @@
+{
+  "version": "E4-conflict-only-v1",
+  "date_local": "2026-11-19",
+  "created_utc": "2026-11-19T08:42:17.095984+00:00",
+  "authorization": "User confirmed the proposed single-factor ablation; no feedback, retraining, parameter tuning or publication.",
+  "base_prediction_run": "v2_screening_prediction_v1_01",
+  "design_config": "configs/algorithm_design_v2.json",
+  "design_sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d",
+  "seed": 20261114,
+  "checkpoint": {
+    "seed": 20261114,
+    "checkpoint_relative": "runs/full_stage2_v2_01/seeds/seed_20261114/checkpoints/best_validation.mat",
+    "checkpoint_sha256": "bbda514acc9f2870cc30ecdee9c7ef9ff9b2bd6b20ac6297e40b953f0d270f88",
+    "network_parameter_sha256": "4e68c7961c1d80e5cd47891fa622bc7dc4b9c50824ea664abd50a85b4758c63a",
+    "epoch": 8,
+    "update": 1400
+  },
+  "selection": [
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0061",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0063",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0065",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0072",
+      "source_id": "artificial_test/s0000512b_0_1",
+      "group_id": "g_1323702b97307572",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0373",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0375",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0377",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0384",
+      "source_id": "artificial_test/s0000511b_0_0",
+      "group_id": "g_accd433f6ee9158a",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0421",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "clean",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0423",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "geometric_jitter",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0425",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "blur_3px",
+      "frame_count": 9
+    },
+    {
+      "mode": "contract_and_calibration",
+      "sequence_id": "seq0432",
+      "source_id": "artificial_test/s0000510b_1_0",
+      "group_id": "g_b11689142b3a7e76",
+      "assigned_split": "training",
+      "profile": "combined",
+      "frame_count": 9
+    }
+  ],
+  "threshold": 0.5,
+  "primary_frames": [
+    2,
+    9
+  ],
+  "methods": [
+    "S",
+    "MAP_integer",
+    "DECAY05_integer",
+    "V_subpixel",
+    "GV_subpixel",
+    "V2",
+    "V2_visual",
+    "V2_no_conflict"
+  ],
+  "risk_change": "q*variance + unknown; omit only q*(historical_mean-current)^2",
+  "unchanged": [
+    "candidate sets and weights",
+    "unknown mass",
+    "risk_sigma",
+    "window",
+    "current-foreground protection",
+    "threshold",
+    "raw cache",
+    "source selection"
+  ],
+  "decision": "Compare source and pooled IoU, correction/new-error counts, opportunity recovery; no significance claim from 3 sources. Do not select or tune with validation/test.",
+  "frozen_files": [
+    {
+      "path": "matlab/v2_select_motion.m",
+      "sha256": "ec0457d0cb5051d7bf21df74371c86bb5808af71b997fefded075058cd144799"
+    },
+    {
+      "path": "matlab/v2_motion_weights.m",
+      "sha256": "f46b4b919f9440b06f58d519452b323bebbc74088dd60543fd8e107b8eafa01d"
+    },
+    {
+      "path": "matlab/v2_compose_motion.m",
+      "sha256": "1cef68b4052917994b6941146923165a332bc2674ff9415b1a8e3b8ebd3a0f34"
+    },
+    {
+      "path": "matlab/v2_history_evidence.m",
+      "sha256": "8613e02005f092a101a85761f8d5234c3534db8968b8688109fffc1a2a6a7351"
+    },
+    {
+      "path": "matlab/v2_fuse_window.m",
+      "sha256": "c51085858ff85561bd54bf670ce0b039ebd49f33663fe113e483dfadb331138d"
+    },
+    {
+      "path": "matlab/v2_compensation_step.m",
+      "sha256": "e133d59c7deced3cc9e8bf088f87512f5635ba0e4bdc0d3a926fe542b907b443"
+    },
+    {
+      "path": "tools/prepare_v2_conflict_ablation.py",
+      "sha256": "ec0128c5570f318541dd3847a4e5698293121072c3807c98dc12b5ff8bf335a3"
+    },
+    {
+      "path": "tools/evaluate_v2_conflict_ablation.py",
+      "sha256": "40a9d09c9b09bb71de073b5b872f27c88fdf5c8ebc12ccb4e83daf8886e6ddee"
+    },
+    {
+      "path": "matlab/v2_no_conflict_fuse_window.m",
+      "sha256": "e234666e5d46000467487a4978eaec460e2ea2470c977ce16b8336ace01f4633"
+    },
+    {
+      "path": "matlab/check_v2_conflict_ablation.m",
+      "sha256": "67517312fe42818ffaf3c148c49dd2e60aae6c380e13aaa9c24b1580da4f7080"
+    },
+    {
+      "path": "matlab/run_v2_conflict_ablation.m",
+      "sha256": "f101c37b02407d24956602b99b87f585251f70eb52f24adeb47c5bd7605a1d56"
+    },
+    {
+      "path": "matlab/count_v2_conflict_ablation.m",
+      "sha256": "47b420b983e9c5974030f1893b1fb86eeb22b6bb1491a388c933216bf9ccdacb"
+    },
+    {
+      "path": "matlab/warp_motion_history.m",
+      "sha256": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7"
+    },
+    {
+      "path": "matlab/fusion_binary_counts.m",
+      "sha256": "d4417742f4fcaadfa178fb3d01c38ca16a4ec48694d70238c72e77536ae3470e"
+    },
+    {
+      "path": "configs/algorithm_design_v2.json",
+      "sha256": "5113c09b25b2adf6ae211d7bd37cc0a69871864b5957b36cb414df52e0fdf53d"
+    },
+    {
+      "path": "configs/v2_screening_v1.json",
+      "sha256": "4a900159116500cc20e34380e603ecf4fe8fc4cce92c292e0a8198a8e758e729"
+    },
+    {
+      "path": "tools/evaluate_v2_screening.py",
+      "sha256": "21a9bb1f20d5384dea63625b8a0942afca2a6f3332c5bdbb19fdfa6584b3856f"
+    },
+    {
+      "path": "tools/audit_v2_minimal.py",
+      "sha256": "b94bc857b7e3c02eff95854080d2cebba6e05051df1d28323ab423f891937d4b"
+    },
+    {
+      "path": "tools/audit_fusion_training.py",
+      "sha256": "1b8f1c29d816e35d9d6f39ac5527e5efee94724892684b9bcf87abbc088ed8f1"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/predictions.json",
+      "sha256": "361f681837c7c9cced45f9b964656bed3e9b6ec24b8afcb9e7523bc29bb77871"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/frozen_plan.json",
+      "sha256": "4a900159116500cc20e34380e603ecf4fe8fc4cce92c292e0a8198a8e758e729"
+    },
+    {
+      "path": "runs/v2_screening_evaluation_v1_01/per_frame_counts.csv",
+      "sha256": "391d7f907f9c67c21563d6d240725d0a1f0c69cbe4af1fd0425f00b6aa07348a"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0061.mat",
+      "sha256": "7738f737b489d3370c1c61b00fc0ed2a21978544382e17e64d2a0563b4d07e7a"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0061.json",
+      "sha256": "eaf92725543af1b47faa0ccdc38b8c96f3036bdc04aff2bc6ada3132b2661899"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0063.mat",
+      "sha256": "adf362a88ea73d3265c4a7180b864cc0ef4933e74a0d5f3bbe9246bca5454a0d"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0063.json",
+      "sha256": "073ac47d0738a5eb621cdee25252ae199c372d9fa75ca089f969343285a45c8b"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0065.mat",
+      "sha256": "e6fa9c48c7288d275bb70027cbb49230bfd02564ac7608ae3d7d63fe0ee884df"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0065.json",
+      "sha256": "3742c079832f8b71c89cc04a7b19dbe473bb8772476d1e2e87ef88c176442d07"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0072.mat",
+      "sha256": "190f9cb095dab77dcc740c0e5b17536944f4245de8f9540bfd23200f87331484"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0072.json",
+      "sha256": "701fcf6fba9356524140df1d7fcfad7eaa3042b0138f159ce3836c26c0b950ff"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0373.mat",
+      "sha256": "a67f3d1f646826391d0e0fbc865c8a3b930e69c85524bc614b70f97e4eab67fa"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0373.json",
+      "sha256": "8b8e6cc2bca1134f727a3b992a47bde150e7c2652b066fb432f8ebc91f7173df"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0375.mat",
+      "sha256": "1ffeb17227b90fdebb918976aeefd2f46a6038737f7d5730a92296f10b32a6d3"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0375.json",
+      "sha256": "8f8342587253fdd33492bfb48be2dbd5409220a705ab42ffd212f4b7226c390c"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0377.mat",
+      "sha256": "3b4e390bb70b82ee73b4f89755ac0d88e7efb9da6f6fed1c38b8fcd465491879"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0377.json",
+      "sha256": "e2b490b2a1902572a4da52985d22a3427940d9e6e805ab53eaf11f5456dfc642"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0384.mat",
+      "sha256": "afa5836361de2179eaff8fde702df95136c53aed08b8ea8057ee6f673cd769b9"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0384.json",
+      "sha256": "3647ed456b02657ccae12ebf906a8d7c37cf9e6b5822784773b8313205023e49"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0421.mat",
+      "sha256": "b631f84db48f945ba2819601307b383660a662f5b7418558bc3caed5981bef3c"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0421.json",
+      "sha256": "5d93876448bd3b111e189d63c05f44734771ee16ca79769d7f3a63202a3b93fb"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0423.mat",
+      "sha256": "bf725ce82f8760d787be2008ce2a0351f86384ce7a5f40617b55009a19a68d8a"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0423.json",
+      "sha256": "59e96a777035c99eaf0c65e768968d5b694d07864997e345b27b6be27c8ae55c"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0425.mat",
+      "sha256": "80af78a388aed46939575bfb6dfd4177af05e5a5b1b0cd8fd8482d67de65d694"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0425.json",
+      "sha256": "42eb9f482ea610489ecfbf4ee5d43af6c68be49ccd3e87d732e11a6435427ff4"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0432.mat",
+      "sha256": "a1862016b878277e8ad6befd29b33e3054307b6960ddbda2ea361de9fa6df134"
+    },
+    {
+      "path": "runs/v2_screening_prediction_v1_01/registration/seq0432.json",
+      "sha256": "963156e35b37d5a68bcad530f36d0bbdbf8cacd1aa9f4b515f471c456effe128"
+    }
+  ],
+  "scope": "12 correlated synthetic training-source sequences from 3 source proxies; not real video or final test"
+}
