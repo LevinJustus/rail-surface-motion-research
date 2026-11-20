@@ -2,6 +2,8 @@
 
 本页介绍Python运动反馈示例、原始概率接入和MATLAB分割训练。方法与对照关系见[v3实验报告](algorithm_v3_prototype_results.md)。
 
+条件式历史纠错的运行入口、人工检查与开发批次结果见[对齐与门控实验](algorithm_conditional_gate_study.md)。
+
 ## 安装与运行示例
 
 ```bash

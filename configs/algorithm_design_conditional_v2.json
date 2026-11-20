@@ -1,0 +1,7 @@
+{
+  "version": "conditional-history-correction-v2",
+  "parent_config": "algorithm_design_conditional_v1.json",
+  "parent_sha256": "1cbaf3b0db196e696db1d6ac2605a705cdc5a513f3546c36d6f1da96d03b6d1c",
+  "minimum_ring_deviations": 1.0,
+  "rule": "Keep a v1 strong correction only if both aligned historical pixel intensities are at least one local ring standard deviation from their respective ring means in the same direction; use the shared historical valid view and the v1 ring (21x21 minus 9x9). Otherwise use the v3 B conservative value."
+}

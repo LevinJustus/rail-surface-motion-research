@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_version": "0.5.1",
+  "release_version": "0.6.0",
   "scope": "Clean allowlisted public export, not the canonical Git history or a new experiment.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
@@ -31,17 +31,17 @@
     },
     {
       "src_relpath": "docs/public_CHANGELOG.md",
-      "src_sha256": "913fd996d27dc81fcdb7260758b6d07f24e72209cab91d280ab5e0e7bbc1d75b",
+      "src_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b",
       "derivation": "byte-identical allowlisted source",
       "path": "CHANGELOG.md",
-      "public_sha256": "913fd996d27dc81fcdb7260758b6d07f24e72209cab91d280ab5e0e7bbc1d75b"
+      "public_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b"
     },
     {
       "src_relpath": "docs/github_readme.md",
-      "src_sha256": "bab635599f97b7ec695e7a1c72b6247833f2670474fa75574d3a83b685fe717e",
+      "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
       "derivation": "byte-identical allowlisted source",
       "path": "README.md",
-      "public_sha256": "bab635599f97b7ec695e7a1c72b6247833f2670474fa75574d3a83b685fe717e"
+      "public_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -52,10 +52,31 @@
     },
     {
       "src_relpath": "PUBLIC_VERSION",
-      "src_sha256": "88fff28edccdea7916214e5182585bda12e988b6b697fa37563d84d3eda8d2c7",
+      "src_sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
       "derivation": "release version rendered from --version; no experiment rerun",
       "path": "VERSION",
-      "public_sha256": "aba951626c8690ce493cbc8f018205bb468003f61fbf00fd3d3c71cebabc0177"
+      "public_sha256": "97a5d6e540a6120d09c39ddb667e0e8e2bac7fcc2ffef813b82e08fd60365bce"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_conditional_v1.json",
+      "src_sha256": "1cbaf3b0db196e696db1d6ac2605a705cdc5a513f3546c36d6f1da96d03b6d1c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/algorithm_design_conditional_v1.json",
+      "public_sha256": "1cbaf3b0db196e696db1d6ac2605a705cdc5a513f3546c36d6f1da96d03b6d1c"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_conditional_v2.json",
+      "src_sha256": "30772677c566b026882c1ae3f5ad9d4c3e0674104cf6bce305aed0a7371ac1d8",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/algorithm_design_conditional_v2.json",
+      "public_sha256": "30772677c566b026882c1ae3f5ad9d4c3e0674104cf6bce305aed0a7371ac1d8"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_conditional_v3.json",
+      "src_sha256": "6456decb3b7d915101507d0e42a784eed80036c47aa830bf7cea2f75a6e6da0d",
+      "derivation": "byte-identical allowlisted source",
+      "path": "configs/algorithm_design_conditional_v3.json",
+      "public_sha256": "6456decb3b7d915101507d0e42a784eed80036c47aa830bf7cea2f75a6e6da0d"
     },
     {
       "src_relpath": "configs/algorithm_design_v2.json",
@@ -395,10 +416,10 @@
     },
     {
       "src_relpath": "docs/public_PROGRESS.md",
-      "src_sha256": "6ac50dbe554e4726e611db88acd656fb64a8e2828a55ccea87788a18e23bcb28",
+      "src_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/PROGRESS.md",
-      "public_sha256": "6ac50dbe554e4726e611db88acd656fb64a8e2828a55ccea87788a18e23bcb28"
+      "public_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92"
     },
     {
       "src_relpath": "docs/PUBLICATION_POLICY.md",
@@ -409,11 +430,19 @@
     },
     {
       "src_relpath": "docs/START_HERE.md",
-      "src_sha256": "f19cf0d0a844a7b4d3173f756913af6e82e42a7a3528554bd44a7c5b155352fd",
+      "src_sha256": "8f7f9ddb3d4e9f84b90c9b52e71d857c6f48a550e682d7376714b633fe512889",
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
       "removed_unpublished_link_count": 0,
       "path": "docs/START_HERE.md",
-      "public_sha256": "8f674d921a5a028a6df41127e6e71934c1cd2e657edd180a30a5a0a73939f65e"
+      "public_sha256": "177d0cb27c2738f3f560d33d6f44f9921ccd811c41d64f04bfa52972ce3f7b8a"
+    },
+    {
+      "src_relpath": "docs/algorithm_conditional_gate_study.md",
+      "src_sha256": "99236d4e5dae217493b8c49db088c2c236a538e022d9eb95605599fde9d9bd56",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/algorithm_conditional_gate_study.md",
+      "public_sha256": "5903db344bb1fc58f73d630c9451048ca7c31be0c00848b5ddbfec88e4c62906"
     },
     {
       "src_relpath": "docs/algorithm_design_v2.md",
@@ -1648,11 +1677,39 @@
       "public_sha256": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7"
     },
     {
+      "src_relpath": "python/rail_motion_conditional.py",
+      "src_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797",
+      "derivation": "byte-identical allowlisted source",
+      "path": "python/rail_motion_conditional.py",
+      "public_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797"
+    },
+    {
+      "src_relpath": "python/rail_motion_conditional_v2.py",
+      "src_sha256": "d09152fd528b36acb3c525e0d8e9e4c6cabbf0eea1538cb86a13d157c6ecf50e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "python/rail_motion_conditional_v2.py",
+      "public_sha256": "d09152fd528b36acb3c525e0d8e9e4c6cabbf0eea1538cb86a13d157c6ecf50e"
+    },
+    {
+      "src_relpath": "python/rail_motion_conditional_v3.py",
+      "src_sha256": "a75800fd9939e0dfbb2e072f6e31b36c94a60c054294b018fcfa7d0263807281",
+      "derivation": "byte-identical allowlisted source",
+      "path": "python/rail_motion_conditional_v3.py",
+      "public_sha256": "a75800fd9939e0dfbb2e072f6e31b36c94a60c054294b018fcfa7d0263807281"
+    },
+    {
       "src_relpath": "python/rail_motion_v3.py",
       "src_sha256": "1b2f5deef1336f41c3b9303bccc54bc8a9e89a23035554f1c36725f8d46a7856",
       "derivation": "byte-identical allowlisted source",
       "path": "python/rail_motion_v3.py",
       "public_sha256": "1b2f5deef1336f41c3b9303bccc54bc8a9e89a23035554f1c36725f8d46a7856"
+    },
+    {
+      "src_relpath": "requirements-conditional.txt",
+      "src_sha256": "6a240edc97097b2825795330d9a3efa26220c28b6ffcbe374dc4909f51085b0e",
+      "derivation": "byte-identical allowlisted source",
+      "path": "requirements-conditional.txt",
+      "public_sha256": "6a240edc97097b2825795330d9a3efa26220c28b6ffcbe374dc4909f51085b0e"
     },
     {
       "src_relpath": "requirements-fusion-statistics.txt",
@@ -1907,6 +1964,27 @@
       "public_sha256": "0fa327b47c943ddee4467cad9199f13785000895231e9dfd76a0f9702343da6e"
     },
     {
+      "src_relpath": "tools/check_conditional_fusion.py",
+      "src_sha256": "40cd9cdebb45a6bd3c5a0b71bebd0b892aece7382fb692ab47974e80e36af01f",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/check_conditional_fusion.py",
+      "public_sha256": "40cd9cdebb45a6bd3c5a0b71bebd0b892aece7382fb692ab47974e80e36af01f"
+    },
+    {
+      "src_relpath": "tools/check_conditional_v2.py",
+      "src_sha256": "168cf3da1ca6878737c1259463661a5b799e1a137673897af434f28aad9f67b0",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/check_conditional_v2.py",
+      "public_sha256": "168cf3da1ca6878737c1259463661a5b799e1a137673897af434f28aad9f67b0"
+    },
+    {
+      "src_relpath": "tools/check_conditional_v3.py",
+      "src_sha256": "5b39b5e9a908ad6697f9eea7bdedbdf307e1355b6e0a749acbdf20c4d9835018",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/check_conditional_v3.py",
+      "public_sha256": "5b39b5e9a908ad6697f9eea7bdedbdf307e1355b6e0a749acbdf20c4d9835018"
+    },
+    {
       "src_relpath": "tools/compare_mature_results.py",
       "src_sha256": "400e2a51870218b4cfdf794b4495825614ffbaaf6436adb61d9008aa662e7468",
       "derivation": "byte-identical allowlisted source",
@@ -1919,6 +1997,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/create_source_archive.py",
       "public_sha256": "452b8273dcd684c647b2bf96b59866d19a0bd47da8cca7cc42305b2ab454dba2"
+    },
+    {
+      "src_relpath": "tools/diagnose_conditional_alignment.py",
+      "src_sha256": "6e882043942dbc29f6174bceec4222ab243f350967568d7ff08239f6d9fd6e78",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/diagnose_conditional_alignment.py",
+      "public_sha256": "6e882043942dbc29f6174bceec4222ab243f350967568d7ff08239f6d9fd6e78"
     },
     {
       "src_relpath": "tools/evaluate_registration.py",
@@ -2052,6 +2137,20 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/revise_step12_config_v2.py",
       "public_sha256": "e2d673dae4322cd52da0a2cdf320b65c3c4bc7c8902cd54f475d1b60bf668468"
+    },
+    {
+      "src_relpath": "tools/run_conditional_v2_pilot.py",
+      "src_sha256": "668f26e4a62ca6f47aa9ac8a3500be50eba068f31c46c3b30ed233002d5b64de",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/run_conditional_v2_pilot.py",
+      "public_sha256": "668f26e4a62ca6f47aa9ac8a3500be50eba068f31c46c3b30ed233002d5b64de"
+    },
+    {
+      "src_relpath": "tools/run_conditional_v3_ablation.py",
+      "src_sha256": "fe417590877b62e6111faf6b1671cbd774e22601f320f18c58b5f3afe88694b1",
+      "derivation": "byte-identical allowlisted source",
+      "path": "tools/run_conditional_v3_ablation.py",
+      "public_sha256": "fe417590877b62e6111faf6b1671cbd774e22601f320f18c58b5f3afe88694b1"
     },
     {
       "src_relpath": "tools/run_v3_feedback_batch.py",
