@@ -1,13 +1,10 @@
 # 单帧基线协议 v0.1
 
-复现说明：本文保留研究数值和原始SHA；未分发的运行记录链接已省略。当前文档整理不代表重新运行实验。 本文来源文件SHA-256：`83eeb7429cb6309b24233cbdc538f44ea5119e0e244bd4f8b8f14b0747e78b46`。
-
-
 工作题目：基于轻量化深度学习与运动补偿的钢轨表面缺陷实时检测方法研究。
 
 本版只准备数据、实现基线构造与输入检查，没有训练、精度或实时结果。
 
-阶段更新：上句说明本版协议建立时的范围。第08项工程链路通过但最终全背景，见[试训结果](step08_smoke_results.md)；第09项已有[小规模验证结果](step09_pilot_results.md)，存在后期前景扩大与回退。完整基线、最终测试与实时性尚未完成。
+本页为单帧基线的初始协议。实际结果见[试训](step08_smoke_results.md)、[小规模验证](step09_pilot_results.md)、[完整基线](step10_full_results.md)与[成熟模型对照](step11_mature_results.md)。
 
 ## 基线
 
@@ -50,3 +47,7 @@
 - [MathWorks DeepLabv3+](https://www.mathworks.com/help/vision/ref/deeplabv3plus.html)
 - [MCnet作者加载代码，仅参考输入约定，未复制](https://github.com/zdfcvsn/MCnet/blob/master/code/dataloaders/rail.py)
 - [NaDiNet作者论文](https://arxiv.org/html/2306.15442v1)
+
+---
+
+[项目主页](../README.md) · [研究进展](PROGRESS.md)

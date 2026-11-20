@@ -1,94 +1,102 @@
-# 接续开发与复现入口
+# 快速开始
 
-复现说明：本文保留研究数值和原始SHA；未分发的运行记录链接已省略。当前文档整理不代表重新运行实验。 本文来源文件SHA-256：`100094b2a506f13abc0fbb7e4f447d12063c39bb6fdf666ac26769a1d08bfcef`。
+本页介绍Python运动反馈示例、原始概率接入和MATLAB分割训练。方法与对照关系见[v3实验报告](algorithm_v3_prototype_results.md)。
 
+## 安装与运行示例
 
-版本：v0.5.0。E3诊断、E4单因素消融及v3完整反馈原型已运行。先读[v3结果与失败边界](algorithm_v3_prototype_results.md)，当前待解决的是困难场景候选覆盖和真实连续数据，不能把旧“下一13E3”当作当前任务。
-
-## 直接运行v3原型
-
-从仓库根目录，使用已具备NumPy/SciPy/Pillow的Python环境（依赖范围见requirements-v3.txt）：
-
-```text
-python tools/run_v3_feedback_batch.py --contracts-only --out runs/v3_contracts_NEW
-python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_NEW
-```
-
-第一条预期11项针对性检查通过，第二条运行9条人工挑战。都不需要MATLAB、真实数据或权重；人工概率不代表真实分割性能。生产接口为`python/rail_motion_v3.py`中的`MotionFeedback.step`，接入代码见v3报告。真实来源批次仍需要原本机未公开的图像/概率缓存，不据演示通过声称复现了真实检测实验。
-
-## 当前算法与训练的关系
-
-| 组成 | 当前状态 | 是否需要训练 |
-|---|---|---|
-| 小型U-Net分割器 | 已有三种子研究结果，权重只留本机 | 需要训练；同机接续优先复用已有检查点 |
-| v2运动候选、补偿、风险与融合 | 六个MATLAB核心、18项解析契约完成 | 固定公式，无需额外训练；参数与效果需开发验证 |
-| 学习型光流/配准网络 | 当前未采用 | 若未来另行采用，训练/预训练另立方案 |
-
-标准运动补偿本身不是已确认的新颖性。本项目的具体候选为把多位移歧义、候选截断和视野未知质量传递到像素级缺陷更新风险。v1未证明先验具有额外收益；v2也还没有真实数据上的有效性结论。
-
-先读[算法设计](algorithm_design_v2.md)、[最小实现成果及失败](algorithm_v2_minimal_results.md)和[当前进度](PROGRESS.md)。早期C1—C4报告保留当时的方案/结果，不能覆盖本页接续顺序。
-
-## 从干净克隆运行不依赖数据的演示
-
-```text
-git clone --branch v0.5.0 https://github.com/LevinJustus/rail-surface-motion-research.git
+```bash
+git clone https://github.com/LevinJustus/rail-surface-motion-research.git
 cd rail-surface-motion-research
+python -m pip install -r requirements-v3.txt
+python tools/run_v3_feedback_batch.py --contracts-only --out runs/v3_contracts_demo
+python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 ```
 
-MATLAB R2024b及Image Processing Toolbox用于本演示；真实网络训练还需要Deep Learning及相关工具箱。使用新的输出ID，入口拒绝覆盖：
+Python依赖为NumPy、SciPy、Pillow，绘图使用Matplotlib。历史运行环境及版本见相应实验报告。
+
+| 示例 | 内容 | 主要输出 |
+|---|---|---|
+| 行为检查 | 位移方向、越界、运动反馈、缓存与概率范围等11项检查 | `contracts.json` |
+| 人工场景 | 3个固定种子下的重复纹理、严重漏检和稳定错误历史，共9条序列 | `metrics.csv`、`motion_metrics.csv`、`summary.json` |
+
+人工场景用于观察机制行为，输入概率由脚本构造。每次使用新的输出目录名；生成结果统一写入`runs/`。
+
+## 接入分割概率
+
+在仓库根目录使用：
+
+```python
+import sys
+sys.path.insert(0, 'python')
+from rail_motion_v3 import MotionFeedback
+
+stream = MotionFeedback()
+outputs, diagnostic = stream.step(
+    rgb_uint8, raw_probability, timestamp_s=0.0
+)
+probability = outputs['D_feedback_strong']
+```
+
+- `rgb_uint8`：形状为256×256×3的uint8图像。
+- `raw_probability`：与图像对齐的256×256缺陷概率，取值在[0,1]。
+- `timestamp_s`：递增时间戳；新序列创建新的`MotionFeedback`实例。
+- `odometry_px`：可选的累计观测位移，单位为图像像素。使用实际编码器时先完成物理位移到图像位移的标定。
+
+接口返回五个实验分支：
+
+| 输出键 | 运动选择 | 融合 |
+|---|---|---|
+| `B_base_conservative` | 基础候选 | 保守 |
+| `C_feedback_conservative` | 历史ROI反馈 | 保守 |
+| `E_base_strong` | 基础候选 | 强纠错 |
+| `D_feedback_strong` | 历史ROI反馈 | 强纠错 |
+| `F_uniform_strong` | 均匀区域图像核验 | 强纠错 |
+
+`diagnostic`包含候选位移、局部评分和实际选择。比较C/B、D/E可分别观察相同融合下的反馈作用，D/F用于比较ROI与均匀核验。
+
+## MATLAB示例
+
+v2示例使用MATLAB R2024b和Image Processing Toolbox：
 
 ```matlab
 addpath('matlab');
-check_v2_compensation('runs/v2_contracts_NEW');
+check_v2_compensation('runs/v2_contracts_demo');
 ```
 
-该命令生成自己的随机纹理和人工概率，不下载数据、不加载权重、不训练网络。预期18项契约通过；输出contracts.json、synthetic_stream.mat、controlled_examples.mat/CSV。人工案例含当前高置信误报无法纠正的失败，不是轨面数据成绩。
+输出包括18项解析检查、合成图像流和人工概率案例。Python复核与绘图入口：
 
-可选Python独立复核/绘图：
-
-```text
-python tools/audit_v2_minimal.py --run-id v2_contracts_NEW --out runs/v2_audit_NEW
-python tools/plot_v2_artificial_examples.py --run runs/v2_contracts_NEW --out runs/v2_plots_NEW
+```bash
+python tools/audit_v2_minimal.py --run-id v2_contracts_demo --out runs/v2_audit_demo
+python tools/plot_v2_artificial_examples.py --run runs/v2_contracts_demo --out runs/v2_plots_demo
 ```
 
-依赖范围见requirements-v2.txt，实际历史验收环境见结果报告。现代依赖范围不是已经完成全新安装验收的声明。所有演示输出只写入被忽略的runs目录。
+依赖见`requirements-v2.txt`，公式与接口见[v2设计](algorithm_design_v2.md)。
 
-## 接入已有网络概率
+## 训练分割基线
+
+先按[数据与复现](PUBLICATION_POLICY.md)获取MCnet数据，并核对固定分区。训练使用MATLAB R2024b及Deep Learning、Image Processing和Computer Vision工具箱。
 
 ```matlab
-cfg = jsondecode(fileread('configs/algorithm_design_v2.json'));
-state = [];
-observation = struct('timestamp_s',0,'odometry_px',0, ...
-                     'odometry_available',false);
-[outputProbability,state,diagnostic] = v2_compensation_step( ...
-    rgb_uint8_256x256x3, raw_probability_256x256, observation, state, cfg);
-```
-
-RGB和概率由调用方提供；时间戳递增，不同序列传空state。没有编码器时可设观测不可用，仍可运行视觉分支。模拟里程不得写成真实编码器实测。
-
-## 继续真实数据研究需要什么
-
-同一台电脑的新会话应先定位现有规范研究目录、数据根目录、已有U-Net检查点及C3/C4概率缓存。不要仅为接续会话重新下载/训练；也不要将私人绝对路径写回公开文件。不同电脑或新工作树未必有这些未提交文件。
-
-新电脑至少需要MATLAB/工具箱、从作者入口独立获取的MCnet数据，以及自行训练或通过私人渠道取得且核验身份的检查点。公开仓库没有原始数据和权重，因此GitHub链接本身不能直接恢复历史训练状态。
-
-数据入口为[MCnet作者仓库](https://github.com/zdfcvsn/MCnet)，版本与校验记录见data/manifests。下载器把本机新元数据写入runs/download_metadata等忽略目录，不覆盖冻结记录。数据根目录结构以data/splits/conservative_group_v1.json的相对image/mask路径为准，不按原作者文件夹名重新随机划分。
-
-确有必要从头训练时，先核验基线环境和固定分区，再按[完整单帧报告](step10_full_results.md)执行：
-
-```matlab
+addpath('matlab');
 train_full_baseline(DATA_ROOT, ...
-    'configs/training_stage2_full_v2.json','full_baseline_NEW');
+    'configs/training_stage2_full_v2.json', 'full_baseline_demo');
 ```
 
-这是原三种子完整训练，**不属于默认下一步初筛**。正式训练入口要求清洁的Git工作树，检查点和原始图像保持本机忽略；实际成本取决于本机设备，未指定固定时长。
+`DATA_ROOT`为数据根目录，运行目录使用新的名称。正式训练入口记录Git提交并检查工作树状态；运行前提交自己的代码修改。完整设置、模型保存和评价口径见[单帧基线报告](step10_full_results.md)。已有检查点可直接用于概率推理与融合实验。
 
-## 已有结果与尚未具备的复现条件
+## 复现实验
 
-v1的C3/C4和中止的C5入口包含原本机运行依赖，例如固定检查点位置、概率缓存、C3源快照和生成序列目录。这些runs材料不随GitHub分发。其协议/安全汇总公开，但单凭克隆不能声称重新执行了整个历史矩阵；需要先验证本机材料，或另版本准备可移植入口。
+| 任务 | 文档 |
+|---|---|
+| 模型与训练对照 | [单帧基线](step10_full_results.md)、[成熟结构比较](step11_mature_results.md) |
+| 生成受控运动序列 | [序列生成协议](step12_sequence_protocol.md) |
+| 配准比较 | [配准协议](step13b_registration_protocol.md)、[结果](step13b_registration_results.md) |
+| 概率融合与对照 | [融合协议](step13c2_fusion_protocol.md)、[开发验证](step13c4_validation_results.md) |
+| v2风险诊断与消融 | [有界诊断](step13e3_training_diagnostic_results.md)、[冲突项消融](step13e4_conflict_ablation_results.md) |
+| v3运动反馈 | [原型与人工挑战](algorithm_v3_prototype_results.md) |
 
-v2/v3最小契约与人工演示不依赖这些历史运行。E3、E4与v3真实来源批次已完成，驱动器公开，但复现仍需要原本机概率/图像/几何缓存。对照保留单帧、简单衰减、同整数运动、原亚像素强参照与反馈开关；开发实验未访问保留测试。
+历史批次驱动器按协议读取图像、原始概率、运动记录和评价标签。准备对应缓存后可运行相同对照；自定义输入可优先通过`MotionFeedback.step`接入。输入格式与来源见[数据与复现](PUBLICATION_POLICY.md)。
 
-## 接续时应交付什么
+---
 
-先确认已有材料，复用v3定位的候选遗漏与错误历史反例，提出下一机制的最小实现和公平对照；不要重新执行已完成诊断或将零收益改写成成功。代码改动和后续发布按当次授权推进，论文始终单独本地保留。
+[项目主页](../README.md) · [研究进展](PROGRESS.md)

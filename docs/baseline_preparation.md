@@ -1,11 +1,8 @@
-# 单帧基线准备与源码保存
-
-复现说明：本文保留研究数值和原始SHA；未分发的运行记录链接已省略。当前文档整理不代表重新运行实验。 本文来源文件SHA-256：`780f4c6fb3ffd8a47c8adee7f5f2d454a0429a5c35d07f80be58592f65e97277`。
-
+# 数据与基线准备
 
 日期：2026年11月14日。
 
-本页保留基线准备阶段的验收状态；后续实际训练见[第08项结果](step08_smoke_results.md)和[第09项结果](step09_pilot_results.md)。前向通过、训练链路通过及小规模验证分别记录；第08项全背景与第09项后期回退均保留，不把工程验收当成检测有效。
+本页介绍数据审查、固定分区与分割基线准备。训练结果见[小样本检查](step08_smoke_results.md)、[小规模训练](step09_pilot_results.md)和[完整基线](step10_full_results.md)。
 
 工作题目：**《基于轻量化深度学习与运动补偿的钢轨表面缺陷实时检测方法研究》**。
 
@@ -60,10 +57,14 @@ JPEG标签约0.94%的解码像素不严格等于0/255。源码显式使用灰度
 
 本机MATLAB报告约31.4 GiB物理内存，当前可用MATLAB GPU数量为0。CPU已完成检查；完整训练成本需要后续小规模训练实测，不能从参数量推出实时FPS。
 
-接口来源：[MathWorks U-Net](https://www.mathworks.com/help/vision/ref/unet.html)、[DeepLabv3+](https://www.mathworks.com/help/vision/ref/deeplabv3plus.html)。没有复制MATLAB内部实现或作者模型代码，相关软件和支持包不随源码提供。
+接口来源：[MathWorks U-Net](https://www.mathworks.com/help/vision/ref/unet.html)、[DeepLabv3+](https://www.mathworks.com/help/vision/ref/deeplabv3plus.html)。网络构造使用MATLAB公共API，相关依赖随对应环境安装。
 
 ## 版本与公开状态
 
-每次运行保存源码、数据与划分版本、配置、种子和环境。原始数据及第三方权重与源码分离，来源和哈希随源码保留。当前仅建立本地Git版本与源码快照，未创建或上传GitHub仓库；原创代码许可证和署名在发布前确定。
+运行记录包含源码、数据分区、配置、种子和环境。模型训练与评价入口见[快速开始](START_HERE.md)，数据来源和使用方法见[数据与复现](PUBLICATION_POLICY.md)。
 
-**下一项：在冻结名单上做第一轮小规模单帧训练，检查损失、概率图和验证指标，暂不加入运动补偿。**
+训练链路、小规模实验和完整基线分别见[试训](step08_smoke_results.md)、[小规模训练](step09_pilot_results.md)与[完整基线](step10_full_results.md)。
+
+---
+
+[项目主页](../README.md) · [研究进展](PROGRESS.md)
