@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_version": "0.6.1",
-  "scope": "Public source and experiment evidence with documentation refinements.",
+  "release_version": "0.7.0",
+  "scope": "Public research source and aggregate real-video development evidence.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
   "new_model_results": false,
@@ -32,16 +32,16 @@
     {
       "src_relpath": "docs/public_CHANGELOG.md",
       "src_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b",
-      "derivation": "Documentation refined for v0.6.1.",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
       "path": "CHANGELOG.md",
-      "public_sha256": "f11d75d757273f86fb3c823aa3732e6107e2c5fc32da8cdacfea87aaa62abc4c"
+      "public_sha256": "63b9cda367666349246b3ba94a232fab117bbc6f6403f38feb4dabb310a149f1"
     },
     {
       "src_relpath": "docs/github_readme.md",
       "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
-      "derivation": "Documentation refined for v0.6.1.",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
       "path": "README.md",
-      "public_sha256": "93ddf19244a179fe726004015052c5404f7567883d5903f05e5870e4095277fd"
+      "public_sha256": "6ed1f07b9fb886ffb9c712247d3f08a0e6cde3d6f26202b649a04d2f51658ed8"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -53,9 +53,9 @@
     {
       "src_relpath": "PUBLIC_VERSION",
       "src_sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
-      "derivation": "Documentation refined for v0.6.1.",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
       "path": "VERSION",
-      "public_sha256": "87b241b275c591694846560e9879f50c9da3150f854efdabd782c539772f3033"
+      "public_sha256": "967d9afb101346667166f2e76e81910bc190488d7d41d50ca0072e9d92f00e32"
     },
     {
       "src_relpath": "configs/algorithm_design_conditional_v1.json",
@@ -424,9 +424,9 @@
     {
       "src_relpath": "docs/public_PROGRESS.md",
       "src_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92",
-      "derivation": "byte-identical allowlisted source",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
       "path": "docs/PROGRESS.md",
-      "public_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92"
+      "public_sha256": "e5f23c35e741b5bbd3af4efc057340d5e4c873af10039a9024f942be24022737"
     },
     {
       "src_relpath": "docs/PUBLICATION_POLICY.md",
@@ -608,6 +608,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "docs/evidence/algorithm_v3/v3_feedback_summary.svg",
       "public_sha256": "684b00e4ee04331a2cde457fc2e395904989ac6a52173c90cfc972b209dbf021"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "docs/evidence/real_video_development/aggregate_continuous.csv",
+      "public_sha256": "a24f1ee36b67c920531a1055c18a045a4b23bc98c5440c18c993df7ca31dbad3",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
     },
     {
       "src_relpath": "docs/evidence/step13c1/literature_matrix.csv",
@@ -966,6 +973,13 @@
       "removed_unpublished_link_count": 0,
       "path": "docs/experiment_protocol.md",
       "public_sha256": "bbea40a05d2fe737f0fff7c3ca722e89a1763bdca835f880692d763007269c9d"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "docs/real_video_development.md",
+      "public_sha256": "10af8fb662b944cee20ea95162238bb36d1ffba15aa08c0def68233fdc5030c6",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
     },
     {
       "src_relpath": "docs/stage1_training_plan.md",
@@ -2137,6 +2151,41 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/prepare_v2_screening.py",
       "public_sha256": "15c331bbf4199b0d994b5b44637fdfac7fdb017c589fe0b2ab891c6ea9adae8e"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/REPRODUCE.md",
+      "public_sha256": "8cf8bf98e9022a27ebc699668f5d9360f8bb57849e5d1eed5bdba94276ba8bed",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/analyze_continuous.py",
+      "public_sha256": "3cbd02ed27b9eb0584640f6dc6ee5d2b3ca1e77ed881c237e8b63f03dbe6728d",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/audit_continuous.py",
+      "public_sha256": "124dae667e7ced07b7a21f3c1507c6abcb6ad549498096a889db9c34718ff740",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/infer_continuous.m",
+      "public_sha256": "bb655666ad7c04b432e292838ae0749a68a8d52a1e45103462bee37f98fd5690",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/protocol.template.json",
+      "public_sha256": "1a0b94490bebaaf2df53abb3dd8285e6cf832eb79366e1706279162f03b10cfd",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
     },
     {
       "src_relpath": "tools/revise_step12_config_v2.py",

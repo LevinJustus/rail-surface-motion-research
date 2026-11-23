@@ -6,7 +6,7 @@
 
 在 12 条由静态钢轨图像派生的开发序列中，放宽局部画质门槛找回了部分漏检，同时也增加了误报。这个观察给下一轮实验提供了一个具体问题：哪些历史证据足以支持纠错？[条件式纠错实验](docs/algorithm_conditional_gate_study.md)
 
-[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.6.1](CHANGELOG.md)
+[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.7.0](CHANGELOG.md)
 
 ## 项目特点
 
@@ -69,6 +69,10 @@ python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 
 [图表来源与绘图源码](docs/FIGURES.md)
 
+## 真实视频开发验证
+
+在三个实拍片段上，固定 MobileNetV2–DeepLabv3+ 的逐帧概率，比较单帧、基础配准融合和条件纠错。条件分支在基础融合上新增 78,414 个前景像素观测。一个片段隔帧处理后，89 条相邻边中有 13 条因触及搜索边界而回退。视频用于研究响应和回退行为，缺陷检出率需要带确认标注的独立数据。[连续视频对照](docs/real_video_development.md)
+
 ## 项目结构
 
 ```text
@@ -85,7 +89,7 @@ results/         基线比较、阈值诊断与配准结果
 
 近期重点是钢轨适用性：验证实际采集尺度下的分割输出、连续轨面中的配准与误报，并在确认的表面缺陷视频上检验历史纠错。后续围绕候选覆盖和可靠历史证据开展方法改进。
 
-当前实验以静态图像及其受控派生序列为主；真实连续采集、完整处理效率和端侧部署是接下来的验证任务。路线与报告索引见[研究进展](docs/PROGRESS.md)。
+已完成静态图像、受控运动序列和未标注实拍片段的开发对照。下一阶段将评价带确认标签的连续采集、完整处理效率与端侧部署。路线与报告索引见[研究进展](docs/PROGRESS.md)。
 
 ## 数据与使用
 

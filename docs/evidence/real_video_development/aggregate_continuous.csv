@@ -1,0 +1,31 @@
+clip,scope,stride,model,method,target_frames,target_pixels,tested_edges,rejected_edges,boundary_edges,fallback_targets,initial_resets,foreground,added_vs_single,removed_vs_single,foreground_fraction,conditional_added_vs_B,conditional_removed_vs_B,conditional_written_pixels,conditional_changed_probability_pixels,eligible_two_edge_targets,trigger_targets,added_targets_vs_B
+clip_A,full_group,1,DeepLabV3+,single,180,11796480,179,0,0,0,1,698755,0,0,0.05923419528537326,,,,,,,
+clip_A,full_group,1,DeepLabV3+,B,180,11796480,179,0,0,0,1,570342,38696,167109,0.048348490397135416,,,,,,,
+clip_A,full_group,1,DeepLabV3+,conditional_v3,180,11796480,179,0,0,0,1,585322,53676,167109,0.049618360731336804,14980,0,22833,22833,178,175,173
+clip_A,full_group,1,Small U-Net,single,180,11796480,179,0,0,0,1,11737419,0,0,0.9949933369954427,,,,,,,
+clip_A,full_group,1,Small U-Net,B,180,11796480,179,0,0,0,1,11737592,1683,1510,0.9950080023871528,,,,,,,
+clip_B,full_group,1,DeepLabV3+,single,180,11796480,179,0,0,0,1,1532743,0,0,0.12993223402235243,,,,,,,
+clip_B,full_group,1,DeepLabV3+,B,180,11796480,179,0,0,0,1,1419091,83937,197589,0.12029783460828992,,,,,,,
+clip_B,full_group,1,DeepLabV3+,conditional_v3,180,11796480,179,0,0,0,1,1447475,112321,197589,0.12270397610134548,28384,0,41933,41933,178,178,177
+clip_B,full_group,1,Small U-Net,single,180,11796480,179,0,0,0,1,11659324,0,0,0.9883731418185764,,,,,,,
+clip_B,full_group,1,Small U-Net,B,180,11796480,179,0,0,0,1,11664534,12283,7073,0.9888147989908854,,,,,,,
+clip_C,full_group,1,DeepLabV3+,single,180,11796480,179,0,0,0,1,2938510,0,0,0.24910057915581596,,,,,,,
+clip_C,full_group,1,DeepLabV3+,B,180,11796480,179,0,0,0,1,2922627,117667,133550,0.24775416056315105,,,,,,,
+clip_C,full_group,1,DeepLabV3+,conditional_v3,180,11796480,179,0,0,0,1,2957677,152717,133550,0.25072538587782117,35050,0,56047,56047,178,178,178
+clip_C,full_group,1,Small U-Net,single,180,11796480,179,0,0,0,1,9624718,0,0,0.8158974541558159,,,,,,,
+clip_C,full_group,1,Small U-Net,B,180,11796480,179,0,0,0,1,9625939,19001,17780,0.8160009596082899,,,,,,,
+clip_C,full_group,2,DeepLabV3+,single,90,5898240,89,13,13,13,1,1479654,0,0,0.2508636474609375,,,,,,,
+clip_C,full_group,2,DeepLabV3+,B,90,5898240,89,13,13,13,1,1475042,43782,48394,0.2500817192925347,,,,,,,
+clip_C,full_group,2,DeepLabV3+,conditional_v3,90,5898240,89,13,13,13,1,1489635,58375,48394,0.25255584716796875,14593,0,22397,22397,72,72,72
+clip_C,full_group,2,Small U-Net,single,90,5898240,89,13,13,13,1,4812548,0,0,0.8159294976128473,,,,,,,
+clip_C,full_group,2,Small U-Net,B,90,5898240,89,13,13,13,1,4812544,7726,7730,0.8159288194444444,,,,,,,
+clip_C,matched_even_targets,1,DeepLabV3+,single,90,5898240,89,0,0,0,1,1479654,0,0,0.2508636474609375,,,,,,,
+clip_C,matched_even_targets,1,DeepLabV3+,B,90,5898240,89,0,0,0,1,1470158,57630,67126,0.24925367567274306,,,,,,,
+clip_C,matched_even_targets,1,DeepLabV3+,conditional_v3,90,5898240,89,0,0,0,1,1486108,73580,67126,0.25195787217881943,15950,0,26202,26202,89,89,89
+clip_C,matched_even_targets,1,Small U-Net,single,90,5898240,89,0,0,0,1,4812548,0,0,0.8159294976128473,,,,,,,
+clip_C,matched_even_targets,1,Small U-Net,B,90,5898240,89,0,0,0,1,4813260,9603,8891,0.8160502115885416,,,,,,,
+clip_C,matched_even_targets,2,DeepLabV3+,single,90,5898240,89,13,13,13,1,1479654,0,0,0.2508636474609375,,,,,,,
+clip_C,matched_even_targets,2,DeepLabV3+,B,90,5898240,89,13,13,13,1,1475042,43782,48394,0.2500817192925347,,,,,,,
+clip_C,matched_even_targets,2,DeepLabV3+,conditional_v3,90,5898240,89,13,13,13,1,1489635,58375,48394,0.25255584716796875,14593,0,22397,22397,72,72,72
+clip_C,matched_even_targets,2,Small U-Net,single,90,5898240,89,13,13,13,1,4812548,0,0,0.8159294976128473,,,,,,,
+clip_C,matched_even_targets,2,Small U-Net,B,90,5898240,89,13,13,13,1,4812544,7726,7730,0.8159288194444444,,,,,,,

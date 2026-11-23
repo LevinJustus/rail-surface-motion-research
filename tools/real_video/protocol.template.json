@@ -1,0 +1,18 @@
+{
+  "clips": ["replace_source_A","replace_source_B","replace_source_C"],
+  "clip_aliases": ["clip_A","clip_B","clip_C"],
+  "native_frames_zero_based": [0,179],
+  "strides": [[1],[1],[1,2]],
+  "threshold": 0.5,
+  "source_roi_xywh": [800,380,320,320],
+  "checkpoint_sha256": "c961c15e45a73a48f4f4199b953edcc8a68df031342b51ed89fbe411cc67991b",
+  "seed": 20261114,
+  "role": "unlabeled_real_video_development",
+  "conditional_cfg_sha256": "6456decb3b7d915101507d0e42a784eed80036c47aa830bf7cea2f75a6e6da0d",
+  "source_hashes": {
+    "rail_motion_v3.py": "1b2f5deef1336f41c3b9303bccc54bc8a9e89a23035554f1c36725f8d46a7856",
+    "rail_motion_conditional.py": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797",
+    "rail_motion_conditional_v2.py": "d09152fd528b36acb3c525e0d8e9e4c6cabbf0eea1538cb86a13d157c6ecf50e",
+    "rail_motion_conditional_v3.py": "a75800fd9939e0dfbb2e072f6e31b36c94a60c054294b018fcfa7d0263807281"
+  }
+}
