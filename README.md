@@ -2,11 +2,13 @@
 
 **钢轨表面缺陷检测 · 运动补偿 · 多帧融合**
 
+**当前开发版本 v0.7.1**
+
 本项目面向移动采集条件下的钢轨表面缺陷检测，研究轻量化分割、帧间配准与历史缺陷证据的协同使用。项目提供MATLAB分割基线与训练流程，以及可接入逐帧概率的Python运动反馈原型。
 
 在 12 条由静态钢轨图像派生的开发序列中，放宽局部画质门槛找回了部分漏检，同时也增加了误报。这个观察给下一轮实验提供了一个具体问题：哪些历史证据足以支持纠错？[条件式纠错实验](docs/algorithm_conditional_gate_study.md)
 
-[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.7.1](CHANGELOG.md)
+[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录](CHANGELOG.md)
 
 ## 项目特点
 

@@ -39,9 +39,9 @@
     {
       "src_relpath": "docs/github_readme.md",
       "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
-      "derivation": "Documentation and figure references for v0.7.1.",
+      "derivation": "Public homepage displays the current development version below the project subtitle.",
       "path": "README.md",
-      "public_sha256": "ff0bd4dfd5dea1670a0bbb235ddd87710ca965bfcf0552b56163faeb01682f9a"
+      "public_sha256": "88c1759a6b10c693971eee88fffa8f4d593aa6766d1b12e1db9614e3ea0d5ac7"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
