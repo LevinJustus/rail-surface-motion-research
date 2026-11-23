@@ -6,7 +6,7 @@
 
 在 12 条由静态钢轨图像派生的开发序列中，放宽局部画质门槛找回了部分漏检，同时也增加了误报。这个观察给下一轮实验提供了一个具体问题：哪些历史证据足以支持纠错？[条件式纠错实验](docs/algorithm_conditional_gate_study.md)
 
-[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.7.0](CHANGELOG.md)
+[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.7.1](CHANGELOG.md)
 
 ## 项目特点
 

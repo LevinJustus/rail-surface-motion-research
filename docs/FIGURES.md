@@ -10,4 +10,8 @@
 | [E3 历史纠错诊断](evidence/step13e3/v2_screening_summary.svg) | [固定检查点与钢轨来源开发序列](step13e3_training_diagnostic_results.md) | [plot_v2_screening.py](../tools/plot_v2_screening.py) |
 | [E4 冲突项消融](evidence/step13e4/v2_conflict_ablation_summary.svg) | [保留和移除冲突门控的对照](step13e4_conflict_ablation_results.md) | [plot_v2_conflict_ablation.py](../tools/plot_v2_conflict_ablation.py) |
 
+## 实拍输入示例
+
+[片段 B 第 167 帧](evidence/real_video_development/clip_B_f000167_rail_head.png)和[片段 C 第 174 帧](evidence/real_video_development/clip_C_f000174_rail_head.png)直接取自实拍视频开发实验的模型输入。裁剪、缩放和帧编号见[采集条件与输入示例](real_video_development.md#采集条件与输入示例)。
+
 各报告列明输入范围、指标和可用的结果文件。运行方式见[快速开始](START_HERE.md)。

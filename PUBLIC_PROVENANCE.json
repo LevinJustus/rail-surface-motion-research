@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_version": "0.7.0",
-  "scope": "Public research source and aggregate real-video development evidence.",
+  "release_version": "0.7.1",
+  "scope": "Public research results and two real-video input crops.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
   "new_model_results": false,
@@ -32,16 +32,16 @@
     {
       "src_relpath": "docs/public_CHANGELOG.md",
       "src_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
+      "derivation": "Documentation and figure references for v0.7.1.",
       "path": "CHANGELOG.md",
-      "public_sha256": "63b9cda367666349246b3ba94a232fab117bbc6f6403f38feb4dabb310a149f1"
+      "public_sha256": "584d29150d18f11f9faea4889c376634d48a97e8d9d3021e0b126702e6429b14"
     },
     {
       "src_relpath": "docs/github_readme.md",
       "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
+      "derivation": "Documentation and figure references for v0.7.1.",
       "path": "README.md",
-      "public_sha256": "6ed1f07b9fb886ffb9c712247d3f08a0e6cde3d6f26202b649a04d2f51658ed8"
+      "public_sha256": "ff0bd4dfd5dea1670a0bbb235ddd87710ca965bfcf0552b56163faeb01682f9a"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -53,9 +53,9 @@
     {
       "src_relpath": "PUBLIC_VERSION",
       "src_sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
+      "derivation": "Documentation and figure references for v0.7.1.",
       "path": "VERSION",
-      "public_sha256": "967d9afb101346667166f2e76e81910bc190488d7d41d50ca0072e9d92f00e32"
+      "public_sha256": "902311c7bb38fa1658ff403def6158ee7378fe9d6e2e284fa1c38735c31bd30b"
     },
     {
       "src_relpath": "configs/algorithm_design_conditional_v1.json",
@@ -418,8 +418,8 @@
       "src_relpath": null,
       "src_sha256": null,
       "path": "docs/FIGURES.md",
-      "public_sha256": "32347294c9a090813390f066816f223071c92eeeb5cc52e4cdbfe6d0be05efd2",
-      "derivation": "Documentation refined for v0.6.1."
+      "public_sha256": "6745c58e54fb408612081f74ce42171cc03c2e7d3234f353c85cc983debdfcac",
+      "derivation": "Documentation and figure references for v0.7.1."
     },
     {
       "src_relpath": "docs/public_PROGRESS.md",
@@ -615,6 +615,20 @@
       "path": "docs/evidence/real_video_development/aggregate_continuous.csv",
       "public_sha256": "a24f1ee36b67c920531a1055c18a045a4b23bc98c5440c18c993df7ca31dbad3",
       "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "path": "docs/evidence/real_video_development/clip_B_f000167_rail_head.png",
+      "src_relpath": null,
+      "src_sha256": "36e6e603c3d6a8fe033913b753b9742e8af442e62e5239a248095a5f21b57a68",
+      "public_sha256": "454a044273e62fa8e9adba37d3e2b14406a67e7df055137bf1d9718fef8e85a1",
+      "derivation": "Verified real-video model-input crop; removed PNG modification timestamp without changing pixels."
+    },
+    {
+      "path": "docs/evidence/real_video_development/clip_C_f000174_rail_head.png",
+      "src_relpath": null,
+      "src_sha256": "40fa605c5f7258df3997ddb74d3e1b937dfdea8cfafe668df1841762efbb2dba",
+      "public_sha256": "9a22c13620ee5cb0152643faaa54ade0e4e010e335b5d912cc5f41e122ec28b6",
+      "derivation": "Verified real-video model-input crop; removed PNG modification timestamp without changing pixels."
     },
     {
       "src_relpath": "docs/evidence/step13c1/literature_matrix.csv",
@@ -978,8 +992,8 @@
       "src_relpath": null,
       "src_sha256": null,
       "path": "docs/real_video_development.md",
-      "public_sha256": "10af8fb662b944cee20ea95162238bb36d1ffba15aa08c0def68233fdc5030c6",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+      "public_sha256": "b5ed39feec78f7b3137ba57136fb6e6734d134670d1055c333fada7bf3c4b0bb",
+      "derivation": "Documentation and figure references for v0.7.1."
     },
     {
       "src_relpath": "docs/stage1_training_plan.md",
