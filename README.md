@@ -4,9 +4,9 @@
 
 本项目面向移动采集条件下的钢轨表面缺陷检测，研究轻量化分割、帧间配准与历史缺陷证据的协同使用。项目提供MATLAB分割基线与训练流程，以及可接入逐帧概率的Python运动反馈原型。
 
-当前开发版本 v0.6.0。本版本关注何时应让历史帧纠正当前判断。在 12 条由钢轨图像生成的开发序列中，放开局部画质门槛恢复了部分漏检，也引入了更多误报。项目将条件纠错保留为实验分支，供后续真实轨面验证。[方法、结果与复现](docs/algorithm_conditional_gate_study.md)
+在 12 条由静态钢轨图像派生的开发序列中，放宽局部画质门槛找回了部分漏检，同时也增加了误报。这个观察给下一轮实验提供了一个具体问题：哪些历史证据足以支持纠错？[条件式纠错实验](docs/algorithm_conditional_gate_study.md)
 
-[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录](CHANGELOG.md)
+[快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录 v0.6.1](CHANGELOG.md)
 
 ## 项目特点
 
@@ -50,7 +50,7 @@ python tools/run_v3_feedback_batch.py --contracts-only --out runs/v3_contracts_d
 python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 ```
 
-示例会生成自己的输入和结果，输出写入`runs/`。更换输出目录名即可保留多次运行记录。接入视频概率、MATLAB训练与数据准备见[快速开始](docs/START_HERE.md)。
+人工场景脚本构造测试输入并保存结果，输出写入`runs/`。更换输出目录名即可保留多次运行记录。接入视频概率、MATLAB训练与数据准备见[快速开始](docs/START_HERE.md)。
 
 ## 实验结果
 
@@ -66,6 +66,8 @@ python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 运动反馈实验使用3个钢轨图像来源派生的12条序列，比较单帧、简单衰减、亚像素参照及反馈开关。在这批序列中，v3反馈没有改变运动选择，尚未产生检测增益。人工重复纹理场景既出现成功消歧，也暴露了候选遗漏与误选。详细数据见[v3实验报告](docs/algorithm_v3_prototype_results.md)。
 
 ![运动反馈实验概览](docs/evidence/algorithm_v3/v3_feedback_summary.svg)
+
+[图表来源与绘图源码](docs/FIGURES.md)
 
 ## 项目结构
 

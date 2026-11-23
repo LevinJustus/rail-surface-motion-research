@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_version": "0.6.0",
-  "scope": "Clean allowlisted public export, not the canonical Git history or a new experiment.",
+  "release_version": "0.6.1",
+  "scope": "Public source and experiment evidence with documentation refinements.",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
   "new_model_results": false,
@@ -25,23 +25,23 @@
     {
       "src_relpath": "docs/public_AGENTS.md",
       "src_sha256": "e6cbaa469aa99e9d485004613abf8fb43327f220c1e77a7dcd1925995fc74a1e",
-      "derivation": "byte-identical allowlisted source",
+      "derivation": "Documentation refined for v0.6.1.",
       "path": "AGENTS.md",
-      "public_sha256": "e6cbaa469aa99e9d485004613abf8fb43327f220c1e77a7dcd1925995fc74a1e"
+      "public_sha256": "0f571b2e44937a5b19da2eceefd24a45bdfbc7a520fdfd83cf849b15bba4f528"
     },
     {
       "src_relpath": "docs/public_CHANGELOG.md",
       "src_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b",
-      "derivation": "byte-identical allowlisted source",
+      "derivation": "Documentation refined for v0.6.1.",
       "path": "CHANGELOG.md",
-      "public_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b"
+      "public_sha256": "f11d75d757273f86fb3c823aa3732e6107e2c5fc32da8cdacfea87aaa62abc4c"
     },
     {
       "src_relpath": "docs/github_readme.md",
       "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
-      "derivation": "byte-identical allowlisted source",
+      "derivation": "Documentation refined for v0.6.1.",
       "path": "README.md",
-      "public_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021"
+      "public_sha256": "93ddf19244a179fe726004015052c5404f7567883d5903f05e5870e4095277fd"
     },
     {
       "src_relpath": "THIRD_PARTY_NOTICES.md",
@@ -53,9 +53,9 @@
     {
       "src_relpath": "PUBLIC_VERSION",
       "src_sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
-      "derivation": "release version rendered from --version; no experiment rerun",
+      "derivation": "Documentation refined for v0.6.1.",
       "path": "VERSION",
-      "public_sha256": "97a5d6e540a6120d09c39ddb667e0e8e2bac7fcc2ffef813b82e08fd60365bce"
+      "public_sha256": "87b241b275c591694846560e9879f50c9da3150f854efdabd782c539772f3033"
     },
     {
       "src_relpath": "configs/algorithm_design_conditional_v1.json",
@@ -415,6 +415,13 @@
       "public_sha256": "7aa4df0e1dccf642b45f6c08b623b248c2c534be1ae02f1686e9bebf6d4cfc33"
     },
     {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "docs/FIGURES.md",
+      "public_sha256": "32347294c9a090813390f066816f223071c92eeeb5cc52e4cdbfe6d0be05efd2",
+      "derivation": "Documentation refined for v0.6.1."
+    },
+    {
       "src_relpath": "docs/public_PROGRESS.md",
       "src_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92",
       "derivation": "byte-identical allowlisted source",
@@ -447,10 +454,10 @@
     {
       "src_relpath": "docs/algorithm_design_v2.md",
       "src_sha256": "3da339bcc801dd9ca011d9e3c16794311c1f1ee048efd452f47565fcac9295b0",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/algorithm_design_v2.md",
-      "public_sha256": "c1dbe351aff3e1af487da43ef71fb52f5e5c53545f7f0394ca616bf3ed198c22"
+      "public_sha256": "a207533988e664f28751b0f6eb03b4279d5abc85ae8f248f21724e348bf69c70"
     },
     {
       "src_relpath": "docs/algorithm_v2_minimal_results.md",
@@ -463,10 +470,10 @@
     {
       "src_relpath": "docs/algorithm_v3_prototype_results.md",
       "src_sha256": "e7cea6b1fab054815829b3b82a1c598ef6bf31923a43f4eb93750f85fb0de9de",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/algorithm_v3_prototype_results.md",
-      "public_sha256": "e5a162ce351b68b4102c4efbd68fec059d62d3e3f4eca46743f78cf60e241de4"
+      "public_sha256": "29e9d1d2efef25c4716999137d3712689a0f439d67804c95b2f1188b36da969f"
     },
     {
       "src_relpath": "docs/baseline_preparation.md",
@@ -963,10 +970,10 @@
     {
       "src_relpath": "docs/stage1_training_plan.md",
       "src_sha256": "a2ce72fbb98cc2324ac8678875903b8c2b9936290037678ab2e81633e0432f64",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/stage1_training_plan.md",
-      "public_sha256": "41ea5b21ddd9e346bc77bc6334392c1524a3ebc0fc4c15d9766d06cf7feb80de"
+      "public_sha256": "3c2a3083bcfedc44ee197fb5e31668d00f2264fd66df6ca5f92c87ea4d1acfb7"
     },
     {
       "src_relpath": "docs/step08_smoke_results.md",
@@ -987,10 +994,10 @@
     {
       "src_relpath": "docs/step10_full_results.md",
       "src_sha256": "213aba89bdda00a0c0637dacdba100c873157f655ef8d9530170dfede81ac5d2",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 6,
       "path": "docs/step10_full_results.md",
-      "public_sha256": "da307b7fbea3725ca4803483d4f7406fdb1aca1c14fa1b5b2e51fb5803fc617c"
+      "public_sha256": "ae873031be9d73e8e64d215cd4ecb55676b64ea78a72a97c4e7173e19223e76a"
     },
     {
       "src_relpath": "docs/step11_execution_plan.md",
@@ -1003,26 +1010,26 @@
     {
       "src_relpath": "docs/step11_mature_results.md",
       "src_sha256": "4c5439c02e07682d5fd56ac6b15cd45775b0b5f5bf3f10364d7a306bc770f4e4",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 10,
       "path": "docs/step11_mature_results.md",
-      "public_sha256": "fe1616abb7c99f62c1461ece76bdc13a57bfb16f7e12c46a26912c36571f7cd3"
+      "public_sha256": "151dbb245ada1e7a85a9c6603dbd0c43355064dd8ee440391ec0cc8281cd176f"
     },
     {
       "src_relpath": "docs/step12_sequence_protocol.md",
       "src_sha256": "7a68b2b4a1628ddc083827a8735a118547e569125f3368e3932069c752453cf1",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step12_sequence_protocol.md",
-      "public_sha256": "d710fd85da9ec7267be6dcfa63831b72f818afbb573fdac59c15ac34c7c22ed3"
+      "public_sha256": "96cd07af6acafa93d3f70e02c34f2eacccf9626ecb01cf421f469c43f906529b"
     },
     {
       "src_relpath": "docs/step12_sequence_results.md",
       "src_sha256": "324c82740cdcb7c7a8c4faac9a8a77daac8dda11b1d6084ff7a486940dd1ee2c",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step12_sequence_results.md",
-      "public_sha256": "8a041dfbec3ac8928408939706283796f8f81a174d4c6f8fda75b516f338e4ee"
+      "public_sha256": "e76c3e5930b4a023e630b61eb7adc0a064c54f3645ae346097ab14cfcfac95ac"
     },
     {
       "src_relpath": "docs/step13a_validation_protocol.md",
@@ -1035,66 +1042,66 @@
     {
       "src_relpath": "docs/step13a_validation_results.md",
       "src_sha256": "24b4b0e80b6784ef68c0c56f8b883541f1a0b35df4dac752ed731fb86d1ac685",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 5,
       "path": "docs/step13a_validation_results.md",
-      "public_sha256": "0a7a1a3f0f44ade0f2cd97fd1397b5e0cdd9f4dc91e27b458c8cc25809e55217"
+      "public_sha256": "d6bf94c278a641c479f9e6926c0616df06f82c4ec3c213115208904d42c354aa"
     },
     {
       "src_relpath": "docs/step13b_registration_protocol.md",
       "src_sha256": "5f40ab38d42795a50c944ab2ea3ba5caf9b11d7095e86d5966c7ef4e00f3ae3c",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13b_registration_protocol.md",
-      "public_sha256": "33c8f4e79d311660e14770ca02961d30dca51eb2a3fb49392571fbdf37631822"
+      "public_sha256": "4b56f72f4e926d7549c65770b6e39774adc0f75eb29ec65f8885f2121126a070"
     },
     {
       "src_relpath": "docs/step13b_registration_results.md",
       "src_sha256": "081e207601a42ea46bb1650d5c5b282df08759c68845d2b4e47415be5aea529e",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13b_registration_results.md",
-      "public_sha256": "b50c1499c716d5b7ba420b7d383641368a2ce69ff601b90eb2146f0ef66f9e2a"
+      "public_sha256": "42b3c1649e84b74994b060552638e7cebd57cdf8579c7baa1e0d5f271a27ce53"
     },
     {
       "src_relpath": "docs/step13c1_literature_results.md",
       "src_sha256": "84aa71f4fade4f0c47313bb85f2c54b6068c094c6e5a1cf5963c851d34a31faf",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13c1_literature_results.md",
-      "public_sha256": "04fa219d95bdf1661cbe02d30570ca4340f3523177c5c596b931918194ac41ff"
+      "public_sha256": "862ca1dffb41f61f0a0501f8c50734eb745f24950570597af71216d756a4c85c"
     },
     {
       "src_relpath": "docs/step13c2_fusion_protocol.md",
       "src_sha256": "0412b7781feda9a2ed393de2217a7450bd1f1c52afbd72899e86956b942f0652",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 1,
       "path": "docs/step13c2_fusion_protocol.md",
-      "public_sha256": "cd61bdc9d734c87e6092feec4cf01359e13054bc7897139516b778a045bb6f8a"
+      "public_sha256": "a49317be81b8e1cd8746559a4559acd92769d12a2c362a2eed1da06fb9468cc9"
     },
     {
       "src_relpath": "docs/step13c3_implementation_results.md",
       "src_sha256": "0a9064b8bbc4a15b954c9d047fc8e9cbef5231ba44627473bd82641158726f31",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13c3_implementation_results.md",
-      "public_sha256": "f19fdb08be11810c53cbc336d2cf444d6ac434273f40ef6e1dd0a6aa2b55c5cc"
+      "public_sha256": "f10b58c370c4660f83ca6f147c134a8e026f00dcaf5142cd7adc231041bbbe40"
     },
     {
       "src_relpath": "docs/step13c4_validation_results.md",
       "src_sha256": "c52845ac6774db506cee9ae2364cb280c2dd8252f5da1cb23913f3bdd1a132c3",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 1,
       "path": "docs/step13c4_validation_results.md",
-      "public_sha256": "979ece37d2218a329eaf2cf42c778ba94f0dda945d59b22572380812de607fb0"
+      "public_sha256": "0bccc5051eaf8bab81f080ab1a1f178a7b6eefd5c1ddf9a152313557ab4c77be"
     },
     {
       "src_relpath": "docs/step13c5_execution_plan.md",
       "src_sha256": "136e8925579250b9b740c7cdc13670618cc23406bf9c1c2d372df35a50b68c19",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "derivation": "Documentation refined for v0.6.1.",
       "removed_unpublished_link_count": 0,
       "path": "docs/step13c5_execution_plan.md",
-      "public_sha256": "b60976230c5bea4041b0e01fec91a63056a8f9dfc8a0ea20527a6427e4cd2e8c"
+      "public_sha256": "3687db52b703f41b74dfacdf9b2e973abf7a89308942387ad20e3cc37b170fe9"
     },
     {
       "src_relpath": "docs/step13c5_reproduction.md",

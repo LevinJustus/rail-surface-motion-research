@@ -38,7 +38,7 @@
 - 全量run：`runs/step12_full_v2_01/`；生成状态PASS，独立审查状态`PASS`。
 - 配置：`configs/motion_sequences_v2.json`，SHA `33fe958c3f68e6a415679ead76853b8991a1758a7c7b312fdbfae8f06271b172`。
 - 源名单：`data/splits/step12_sources_v1.json`，SHA `2819fd7af8557e715d6d0a730638350f8afa88e452351d5e97d71cf00060b44f`。
-- 实际生成MATLAB源码SHA：`532b747e894ade84ed86182c50858d2e430b89bf2f4fd7d8095dc4fc23d6d0d8`；运行保存原字节快照，不以启动时Git HEAD冒充包含所有未提交新文件。
+- 实际生成MATLAB源码SHA：`532b747e894ade84ed86182c50858d2e430b89bf2f4fd7d8095dc4fc23d6d0d8`；运行保存原字节快照，运行快照记录实际使用的文件版本。
 - 实际环境：MATLAB `24.2.0.2712019 (R2024b)`；Git HEAD `e40c7c9dc4c1329ce45b7306a3d8e2a9ae434e5f`，启动工作树状态及ver清单另有记录。
 - 全量有效载荷14400文件，raw digest `119e5c5f074d28465d0477bea040fa1cb4531dadff227ecc9da1dcac330a5ccb`。完整逐文件原始SHA记录在运行的`evaluation_only/payload_manifest.json`。
 - 原始摘要、源读取记录、序列索引、逐序列边界检查、环境/源码快照及本地图片哈希见`docs/evidence/step12/full/artifact_manifest.json`；独立审查源报告见`runs/step12_independent_review/full_v2_review.json`，SHA `eb738abc47932b28a6e1fdd1446772431768d16911b99505bcedb6f1f561c314`。
