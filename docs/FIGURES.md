@@ -9,6 +9,8 @@
 | [受控融合验证](evidence/step13c4/fusion_validation_summary.svg) | [验证汇总与来源配对区间](step13c4_validation_results.md) | [plot_fusion_validation.py](../tools/plot_fusion_validation.py) |
 | [E3 历史纠错诊断](evidence/step13e3/v2_screening_summary.svg) | [固定检查点与钢轨来源开发序列](step13e3_training_diagnostic_results.md) | [plot_v2_screening.py](../tools/plot_v2_screening.py) |
 | [E4 冲突项消融](evidence/step13e4/v2_conflict_ablation_summary.svg) | [保留和移除冲突门控的对照](step13e4_conflict_ablation_results.md) | [plot_v2_conflict_ablation.py](../tools/plot_v2_conflict_ablation.py) |
+| [准确对齐配对区间](evidence/heldout_exact_alignment/oracle_alignment_effect.svg) | [保留来源准确几何对齐](heldout_exact_alignment_results.md) | [plot_oracle_alignment.py](../tools/plot_oracle_alignment.py) |
+| [退化条件分层](evidence/heldout_exact_alignment/oracle_by_degradation.svg) | [准确对齐分条件结果](heldout_exact_alignment_results.md) | [plot_oracle_alignment.py](../tools/plot_oracle_alignment.py) |
 
 ## 实拍输入示例
 

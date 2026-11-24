@@ -1,0 +1,14 @@
+{
+  "version": "conditional-history-correction-v4",
+  "status": "single-factor candidate pending controlled and labeled real-video evaluation",
+  "parent_config": "algorithm_design_conditional_v3.json",
+  "parent_config_sha256": "6456decb3b7d915101507d0e42a784eed80036c47aa830bf7cea2f75a6e6da0d",
+  "parent_module_sha256": "a75800fd9939e0dfbb2e072f6e31b36c94a60c054294b018fcfa7d0263807281",
+  "current_seed_window": 5,
+  "current_seed_threshold": 0.50,
+  "current_seed_boundary": "intersect the centered 5x5 square with the current image; out-of-frame pixels cannot provide a seed",
+  "current_seed_input": "current raw float32 probability map consumed by conditional v3",
+  "intervention": "keep conditional v3 strong_correction only if current_local_seed is true; otherwise restore v3 B conservative probability at that pixel",
+  "decision_threshold": 0.50,
+  "parameter_search": false
+}

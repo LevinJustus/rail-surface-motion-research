@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_version": "0.7.1",
-  "scope": "Public research results and two real-video input crops.",
+  "release_version": "0.8.0",
+  "scope": "保留来源评价、采样间隔分析、准确几何对齐消融及条件 v4 实现。",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
   "new_model_results": false,
@@ -30,32 +30,11 @@
       "public_sha256": "0f571b2e44937a5b19da2eceefd24a45bdfbc7a520fdfd83cf849b15bba4f528"
     },
     {
-      "src_relpath": "docs/public_CHANGELOG.md",
-      "src_sha256": "5a8b1a84283a0879bd9ac8bed4a0098367ffb49091a5ebf3ca49c06392b99f2b",
-      "derivation": "Documentation and figure references for v0.7.1.",
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
       "path": "CHANGELOG.md",
-      "public_sha256": "584d29150d18f11f9faea4889c376634d48a97e8d9d3021e0b126702e6429b14"
-    },
-    {
-      "src_relpath": "docs/github_readme.md",
-      "src_sha256": "ddaa7544f38b1249febf61923cff1ecf078bdd029ff6dc16eea4a9807f364021",
-      "derivation": "Public homepage displays the current development version below the project subtitle.",
-      "path": "README.md",
-      "public_sha256": "88c1759a6b10c693971eee88fffa8f4d593aa6766d1b12e1db9614e3ea0d5ac7"
-    },
-    {
-      "src_relpath": "THIRD_PARTY_NOTICES.md",
-      "src_sha256": "a2c0692107a2ec8998bd3c7c3abcdf538adf54176e68fd89faf6a187d60ccb6b",
-      "derivation": "short public third-party notice replacing local pre-publication workflow text",
-      "path": "THIRD_PARTY_NOTICES.md",
-      "public_sha256": "d6d25525e78a296f53295dda2615496160676314abce3dc18896af4774eea536"
-    },
-    {
-      "src_relpath": "PUBLIC_VERSION",
-      "src_sha256": "5abd7a182a0506289898b6e7dcb5409e562681058f7f06ed5a184b05ce4bdd2f",
-      "derivation": "Documentation and figure references for v0.7.1.",
-      "path": "VERSION",
-      "public_sha256": "902311c7bb38fa1658ff403def6158ee7378fe9d6e2e284fa1c38735c31bd30b"
+      "public_sha256": "88aea7093a12913f213024bac48cf6469f9fc6818d573e4cf2518af541d4bd09"
     },
     {
       "src_relpath": "configs/algorithm_design_conditional_v1.json",
@@ -77,6 +56,13 @@
       "derivation": "byte-identical allowlisted source",
       "path": "configs/algorithm_design_conditional_v3.json",
       "public_sha256": "6456decb3b7d915101507d0e42a784eed80036c47aa830bf7cea2f75a6e6da0d"
+    },
+    {
+      "src_relpath": "configs/algorithm_design_conditional_v4.json",
+      "src_sha256": "6e653734d79a71f110a1a9c94decf9dd59151ba408c99f770b9312fc2980472e",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "configs/algorithm_design_conditional_v4.json",
+      "public_sha256": "6e653734d79a71f110a1a9c94decf9dd59151ba408c99f770b9312fc2980472e"
     },
     {
       "src_relpath": "configs/algorithm_design_v2.json",
@@ -415,35 +401,6 @@
       "public_sha256": "7aa4df0e1dccf642b45f6c08b623b248c2c534be1ae02f1686e9bebf6d4cfc33"
     },
     {
-      "src_relpath": null,
-      "src_sha256": null,
-      "path": "docs/FIGURES.md",
-      "public_sha256": "6745c58e54fb408612081f74ce42171cc03c2e7d3234f353c85cc983debdfcac",
-      "derivation": "Documentation and figure references for v0.7.1."
-    },
-    {
-      "src_relpath": "docs/public_PROGRESS.md",
-      "src_sha256": "8eded960b6f94665da3a008a61641c2dbe00398799d4eeeab8150916716eef92",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0.",
-      "path": "docs/PROGRESS.md",
-      "public_sha256": "e5f23c35e741b5bbd3af4efc057340d5e4c873af10039a9024f942be24022737"
-    },
-    {
-      "src_relpath": "docs/PUBLICATION_POLICY.md",
-      "src_sha256": "a777c0d97101cdd1f1b4174d2e0a3d57b64ec4941f773419d3f1ce71bc60a81a",
-      "derivation": "byte-identical allowlisted source",
-      "path": "docs/PUBLICATION_POLICY.md",
-      "public_sha256": "a777c0d97101cdd1f1b4174d2e0a3d57b64ec4941f773419d3f1ce71bc60a81a"
-    },
-    {
-      "src_relpath": "docs/START_HERE.md",
-      "src_sha256": "8f7f9ddb3d4e9f84b90c9b52e71d857c6f48a550e682d7376714b633fe512889",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
-      "removed_unpublished_link_count": 0,
-      "path": "docs/START_HERE.md",
-      "public_sha256": "177d0cb27c2738f3f560d33d6f44f9921ccd811c41d64f04bfa52972ce3f7b8a"
-    },
-    {
       "src_relpath": "docs/algorithm_conditional_gate_study.md",
       "src_sha256": "99236d4e5dae217493b8c49db088c2c236a538e022d9eb95605599fde9d9bd56",
       "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
@@ -491,18 +448,18 @@
       "public_sha256": "a17320758c4993e2b4db7dfd8d1d9078b176f924f9cd36e37eb8d34189d702f7"
     },
     {
-      "src_relpath": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
-      "src_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c",
-      "derivation": "byte-identical allowlisted source",
-      "path": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
-      "public_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c"
-    },
-    {
       "src_relpath": "docs/evidence/algorithm_v2_minimal/controlled_examples_summary.json",
       "src_sha256": "aa109d7c6bc09920de169694ecaeea37ef2d730d5604b3497e1e3acefc7fc79d",
       "derivation": "byte-identical allowlisted source",
       "path": "docs/evidence/algorithm_v2_minimal/controlled_examples_summary.json",
       "public_sha256": "aa109d7c6bc09920de169694ecaeea37ef2d730d5604b3497e1e3acefc7fc79d"
+    },
+    {
+      "src_relpath": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
+      "src_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/evidence/algorithm_v2_minimal/controlled_examples.csv",
+      "public_sha256": "02d0c3b8becff3a49b60d6b90f8d2436283549a51f1f9695ef9e5a31431b0c1c"
     },
     {
       "src_relpath": "docs/evidence/algorithm_v2_minimal/independent_audit.json",
@@ -610,6 +567,69 @@
       "public_sha256": "684b00e4ee04331a2cde457fc2e395904989ac6a52173c90cfc972b209dbf021"
     },
     {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/aggregate_history_coverage.csv",
+      "src_sha256": "a200856502a3a0462323f45813e9f9a2a53ae62a8b5f3fc7d34fc05f04336765",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/aggregate_history_coverage.csv",
+      "public_sha256": "a200856502a3a0462323f45813e9f9a2a53ae62a8b5f3fc7d34fc05f04336765"
+    },
+    {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/aggregate_history_opportunity.csv",
+      "src_sha256": "1e9c0437529ca6a7ad1d832de1b8c82b4bb0a25114ee1b427d1b5759a63a1cdc",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/aggregate_history_opportunity.csv",
+      "public_sha256": "1e9c0437529ca6a7ad1d832de1b8c82b4bb0a25114ee1b427d1b5759a63a1cdc"
+    },
+    {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/aggregate_metrics.csv",
+      "src_sha256": "8a9041958b33a4a2850d706039bc31f8006fd95d63e45633e1214ab0e810bcb6",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/aggregate_metrics.csv",
+      "public_sha256": "8a9041958b33a4a2850d706039bc31f8006fd95d63e45633e1214ab0e810bcb6"
+    },
+    {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/aggregate_paired.csv",
+      "src_sha256": "ce609f4fb9048c7c14d4f683225ad68716723d60858073fbdb7ef23f94aba535",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/aggregate_paired.csv",
+      "public_sha256": "ce609f4fb9048c7c14d4f683225ad68716723d60858073fbdb7ef23f94aba535"
+    },
+    {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/oracle_alignment_effect.svg",
+      "src_sha256": "987f6372810d91e3ebf1708bf8c26897f9f00c41224146ca72ebd5f0c59c0f01",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/oracle_alignment_effect.svg",
+      "public_sha256": "987f6372810d91e3ebf1708bf8c26897f9f00c41224146ca72ebd5f0c59c0f01"
+    },
+    {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/oracle_by_degradation.svg",
+      "src_sha256": "fb2293802b8e20af121f37183cbe6626f9f8a6ba135bece0a638d588baf1fa10",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_exact_alignment/oracle_by_degradation.svg",
+      "public_sha256": "fb2293802b8e20af121f37183cbe6626f9f8a6ba135bece0a638d588baf1fa10"
+    },
+    {
+      "src_relpath": "heldout_motion_validation_20261124/metric_summary.csv",
+      "src_sha256": "4756e354d86c9d6c9a4029097a895480549a5b17df8eaf31931ba4bf7b8f3fa0",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_motion/metric_summary.csv",
+      "public_sha256": "4756e354d86c9d6c9a4029097a895480549a5b17df8eaf31931ba4bf7b8f3fa0"
+    },
+    {
+      "src_relpath": "heldout_motion_validation_20261124/paired_bootstrap.csv",
+      "src_sha256": "e920ca3026ebb66521099ea457247db17144581f93a6979be263b361e3867594",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_motion/paired_bootstrap.csv",
+      "public_sha256": "e920ca3026ebb66521099ea457247db17144581f93a6979be263b361e3867594"
+    },
+    {
+      "src_relpath": "heldout_motion_validation_20261124/timing_summary.csv",
+      "src_sha256": "7db881d51f3fa9629f69adffcdd771dbe000642f901142fd79bb6c5c4ce01875",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/heldout_motion/timing_summary.csv",
+      "public_sha256": "7db881d51f3fa9629f69adffcdd771dbe000642f901142fd79bb6c5c4ce01875"
+    },
+    {
       "src_relpath": null,
       "src_sha256": null,
       "path": "docs/evidence/real_video_development/aggregate_continuous.csv",
@@ -629,6 +649,27 @@
       "src_sha256": "40fa605c5f7258df3997ddb74d3e1b937dfdea8cfafe668df1841762efbb2dba",
       "public_sha256": "9a22c13620ee5cb0152643faaa54ade0e4e010e335b5d912cc5f41e122ec28b6",
       "derivation": "Verified real-video model-input crop; removed PNG modification timestamp without changing pixels."
+    },
+    {
+      "src_relpath": "sampling_interval_validation_20261124/control_detection_paired_ci.csv",
+      "src_sha256": "a3e8cd90525209ddbda7d9c704e6e0939e84cacb3a642d1a30fcb5963681379a",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/sampling_interval/control_detection_paired_ci.csv",
+      "public_sha256": "a3e8cd90525209ddbda7d9c704e6e0939e84cacb3a642d1a30fcb5963681379a"
+    },
+    {
+      "src_relpath": "sampling_interval_validation_20261124/geometry_summary.csv",
+      "src_sha256": "864b45c8b7048881f2175c743e6680dda68053a6dcb8608d001c2d755843ad80",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/sampling_interval/geometry_summary.csv",
+      "public_sha256": "864b45c8b7048881f2175c743e6680dda68053a6dcb8608d001c2d755843ad80"
+    },
+    {
+      "src_relpath": "sampling_interval_validation_20261124/real_sampling_summary.csv",
+      "src_sha256": "355d8e3301a8a88a0385a5fed100fbcfdbebb5957234a4de01c79b48dbfa9b8e",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/evidence/sampling_interval/real_sampling_summary.csv",
+      "public_sha256": "355d8e3301a8a88a0385a5fed100fbcfdbebb5957234a4de01c79b48dbfa9b8e"
     },
     {
       "src_relpath": "docs/evidence/step13c1/literature_matrix.csv",
@@ -991,6 +1032,41 @@
     {
       "src_relpath": null,
       "src_sha256": null,
+      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "path": "docs/FIGURES.md",
+      "public_sha256": "2648b4472334807259685e633fdf6e653cb28ca7309452e39de065aac9785388"
+    },
+    {
+      "src_relpath": "docs/heldout_exact_alignment_results.md",
+      "src_sha256": "b1351a01c9570880f5122478986b03635b589dffa17d20e9b0aa40ca49bdd4a9",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/heldout_exact_alignment_results.md",
+      "public_sha256": "b1351a01c9570880f5122478986b03635b589dffa17d20e9b0aa40ca49bdd4a9"
+    },
+    {
+      "src_relpath": "docs/heldout_motion_sampling_results.md",
+      "src_sha256": "ea03b7adccb0ae61a1161e2b38f79cd87d15fd1ad606fe3ad08e1bb2fecc4ed9",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "docs/heldout_motion_sampling_results.md",
+      "public_sha256": "ea03b7adccb0ae61a1161e2b38f79cd87d15fd1ad606fe3ad08e1bb2fecc4ed9"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "path": "docs/PROGRESS.md",
+      "public_sha256": "b30d69519e56d89f29f80157bebcb01024596501115d594f8024e0bec874506c"
+    },
+    {
+      "src_relpath": "docs/PUBLICATION_POLICY.md",
+      "src_sha256": "a777c0d97101cdd1f1b4174d2e0a3d57b64ec4941f773419d3f1ce71bc60a81a",
+      "derivation": "byte-identical allowlisted source",
+      "path": "docs/PUBLICATION_POLICY.md",
+      "public_sha256": "a777c0d97101cdd1f1b4174d2e0a3d57b64ec4941f773419d3f1ce71bc60a81a"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
       "path": "docs/real_video_development.md",
       "public_sha256": "b5ed39feec78f7b3137ba57136fb6e6734d134670d1055c333fada7bf3c4b0bb",
       "derivation": "Documentation and figure references for v0.7.1."
@@ -1002,6 +1078,14 @@
       "removed_unpublished_link_count": 0,
       "path": "docs/stage1_training_plan.md",
       "public_sha256": "3c2a3083bcfedc44ee197fb5e31668d00f2264fd66df6ca5f92c87ea4d1acfb7"
+    },
+    {
+      "src_relpath": "docs/START_HERE.md",
+      "src_sha256": "8f7f9ddb3d4e9f84b90c9b52e71d857c6f48a550e682d7376714b633fe512889",
+      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
+      "removed_unpublished_link_count": 0,
+      "path": "docs/START_HERE.md",
+      "public_sha256": "177d0cb27c2738f3f560d33d6f44f9921ccd811c41d64f04bfa52972ce3f7b8a"
     },
     {
       "src_relpath": "docs/step08_smoke_results.md",
@@ -1712,13 +1796,6 @@
       "public_sha256": "caf3ce47e5859c147eda45b78ec96f405d89bb3dd333b4ca84997b32153546f7"
     },
     {
-      "src_relpath": "python/rail_motion_conditional.py",
-      "src_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797",
-      "derivation": "byte-identical allowlisted source",
-      "path": "python/rail_motion_conditional.py",
-      "public_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797"
-    },
-    {
       "src_relpath": "python/rail_motion_conditional_v2.py",
       "src_sha256": "d09152fd528b36acb3c525e0d8e9e4c6cabbf0eea1538cb86a13d157c6ecf50e",
       "derivation": "byte-identical allowlisted source",
@@ -1733,11 +1810,32 @@
       "public_sha256": "a75800fd9939e0dfbb2e072f6e31b36c94a60c054294b018fcfa7d0263807281"
     },
     {
+      "src_relpath": "python/rail_motion_conditional_v4.py",
+      "src_sha256": "97ab603d5d0ece483662c33e73b0aa58ef74c335176fee51577289b96a68d4b3",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "python/rail_motion_conditional_v4.py",
+      "public_sha256": "97ab603d5d0ece483662c33e73b0aa58ef74c335176fee51577289b96a68d4b3"
+    },
+    {
+      "src_relpath": "python/rail_motion_conditional.py",
+      "src_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797",
+      "derivation": "byte-identical allowlisted source",
+      "path": "python/rail_motion_conditional.py",
+      "public_sha256": "5f02f6d98304819d21d7a8382fea7265ab2c5af45a1bd9c21a5efe0dbc844797"
+    },
+    {
       "src_relpath": "python/rail_motion_v3.py",
       "src_sha256": "1b2f5deef1336f41c3b9303bccc54bc8a9e89a23035554f1c36725f8d46a7856",
       "derivation": "byte-identical allowlisted source",
       "path": "python/rail_motion_v3.py",
       "public_sha256": "1b2f5deef1336f41c3b9303bccc54bc8a9e89a23035554f1c36725f8d46a7856"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "path": "README.md",
+      "public_sha256": "1a099e8b259077a25ef01d89bb1e18d7e6cbeba6492b1b50d65567a197f51761"
     },
     {
       "src_relpath": "requirements-conditional.txt",
@@ -1908,6 +2006,13 @@
       "public_sha256": "c10a643c09d2049591ffc4e6c6e1689abb7befa1bffbec14d1d4a04ef2d70a71"
     },
     {
+      "src_relpath": "THIRD_PARTY_NOTICES.md",
+      "src_sha256": "a2c0692107a2ec8998bd3c7c3abcdf538adf54176e68fd89faf6a187d60ccb6b",
+      "derivation": "short public third-party notice replacing local pre-publication workflow text",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "public_sha256": "d6d25525e78a296f53295dda2615496160676314abce3dc18896af4774eea536"
+    },
+    {
       "src_relpath": "tools/audit_ablation_statistics.py",
       "src_sha256": "db4de2b61528f14afebf20c336d736ba0b43adce856a911393346ee541cf7057",
       "derivation": "byte-identical allowlisted source",
@@ -2020,6 +2125,13 @@
       "public_sha256": "5b39b5e9a908ad6697f9eea7bdedbdf307e1355b6e0a749acbdf20c4d9835018"
     },
     {
+      "src_relpath": "tools/check_conditional_v4.py",
+      "src_sha256": "5d2960d81cb1c746ababac5422843c28c88d2624c9837051affe4613f8771df5",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "tools/check_conditional_v4.py",
+      "public_sha256": "5d2960d81cb1c746ababac5422843c28c88d2624c9837051affe4613f8771df5"
+    },
+    {
       "src_relpath": "tools/compare_mature_results.py",
       "src_sha256": "400e2a51870218b4cfdf794b4495825614ffbaaf6436adb61d9008aa662e7468",
       "derivation": "byte-identical allowlisted source",
@@ -2097,6 +2209,13 @@
       "public_sha256": "afbe85d52216d177db9effc4c802482e63431dd466e9457c2116bf22232507a1"
     },
     {
+      "src_relpath": "heldout_exact_alignment_20261124/publication_candidate/plot_oracle.py",
+      "src_sha256": "b59d7db88f09ab7b961c0d22c8a324d40b76966a91d6937be4107970ed02ee19",
+      "derivation": "经公开范围核查的原字节文件。",
+      "path": "tools/plot_oracle_alignment.py",
+      "public_sha256": "b59d7db88f09ab7b961c0d22c8a324d40b76966a91d6937be4107970ed02ee19"
+    },
+    {
       "src_relpath": "tools/plot_v2_artificial_examples.py",
       "src_sha256": "52547ad48e3c57224ea4c755203c6ca1f6b50d06a469dad40702ef6441b53464",
       "derivation": "byte-identical allowlisted source",
@@ -2169,13 +2288,6 @@
     {
       "src_relpath": null,
       "src_sha256": null,
-      "path": "tools/real_video/REPRODUCE.md",
-      "public_sha256": "8cf8bf98e9022a27ebc699668f5d9360f8bb57849e5d1eed5bdba94276ba8bed",
-      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
-    },
-    {
-      "src_relpath": null,
-      "src_sha256": null,
       "path": "tools/real_video/analyze_continuous.py",
       "public_sha256": "3cbd02ed27b9eb0584640f6dc6ee5d2b3ca1e77ed881c237e8b63f03dbe6728d",
       "derivation": "Public aggregate or documented reproduction material for v0.7.0."
@@ -2199,6 +2311,13 @@
       "src_sha256": null,
       "path": "tools/real_video/protocol.template.json",
       "public_sha256": "1a0b94490bebaaf2df53abb3dd8285e6cf832eb79366e1706279162f03b10cfd",
+      "derivation": "Public aggregate or documented reproduction material for v0.7.0."
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "path": "tools/real_video/REPRODUCE.md",
+      "public_sha256": "8cf8bf98e9022a27ebc699668f5d9360f8bb57849e5d1eed5bdba94276ba8bed",
       "derivation": "Public aggregate or documented reproduction material for v0.7.0."
     },
     {
@@ -2263,9 +2382,16 @@
       "derivation": "byte-identical allowlisted source",
       "path": "tools/summarize_v2_screening.py",
       "public_sha256": "1d3dc4f024dc50194009b6af7e4ba87afaf98840c69a89d0276550d96d30a61a"
+    },
+    {
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "path": "VERSION",
+      "public_sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef"
     }
   ],
   "self_hash_policy": "This generated provenance file is hashed by the outer manifest; it does not recursively list itself.",
   "compatibility_scope": "Three public-copy GPU-query guards are environment logging only, with exact diffs; no model run was performed.",
-  "reproduction_scope": "Formal recipes and controlled generation resolve without old logs. Optional stage1 certificates are regenerated locally; historical plan/comparison tools may require omitted local evidence."
+  "reproduction_scope": "历史实验保留原复现口径；准确对齐统计图可由公开聚合 CSV 和绘图脚本独立生成，底层实验所需源数据、冻结概率与几何按数据许可在本地准备。"
 }
