@@ -9,6 +9,6 @@ providers. Obtain them from the author sources and follow their terms. Dataset
 access does not grant a redistribution licence. Raw data, pretrained weights,
 generated image panels and model binaries are not distributed in this snapshot.
 
-This public research snapshot does not invent an author, institution, publication
-acceptance or code licence. Original-code permissions are governed by an explicit
-repository licence if one is supplied; public visibility alone grants no such licence.
+Original project code and accompanying documentation are available under the
+[MIT License](LICENSE). Third-party data, annotations, weights and software
+remain subject to their respective terms.

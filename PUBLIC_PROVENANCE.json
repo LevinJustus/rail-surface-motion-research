@@ -1,13 +1,27 @@
 {
   "schema_version": 1,
-  "release_version": "0.8.0",
-  "scope": "保留来源评价、采样间隔分析、准确几何对齐消融及条件 v4 实现。",
+  "release_version": "1.0.0",
+  "scope": "统一 S/U/A/B/v4 对照入口、运行指南和 MIT 开源许可。实验结果与算法核心沿用 v0.8.0。",
   "canonical_originals_unchanged": true,
   "historical_raw_evidence": "Retained locally; omitted from public export.",
   "new_model_results": false,
   "local_git_history_uploaded": false,
   "publication_boundary": "Research code/configurations/protocols/results only; manuscripts, manuscript sources, bibliography, Word/PDF and manuscript builders remain local and are excluded.",
   "files": [
+    {
+      "src_relpath": "LICENSE",
+      "src_sha256": "5839f862f3e2140326ec53d7a9ce414f03e83bbf5e6b80216db88c45a224d77e",
+      "derivation": "项目自有源码及配套文档的 MIT 许可。",
+      "path": "LICENSE",
+      "public_sha256": "5839f862f3e2140326ec53d7a9ce414f03e83bbf5e6b80216db88c45a224d77e"
+    },
+    {
+      "src_relpath": "tools/run_fusion_comparison.py",
+      "src_sha256": "81166da574a84fd16400bf70a22d4ba50bfb0ad2f4e0aa36fc4e732b23cda7bc",
+      "derivation": "统一运行入口，复用原保留来源比较的五组算法。",
+      "path": "tools/run_fusion_comparison.py",
+      "public_sha256": "81166da574a84fd16400bf70a22d4ba50bfb0ad2f4e0aa36fc4e732b23cda7bc"
+    },
     {
       "src_relpath": null,
       "src_sha256": null,
@@ -32,9 +46,9 @@
     {
       "src_relpath": null,
       "src_sha256": null,
-      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "derivation": "记录 1.0.0 运行入口与许可。",
       "path": "CHANGELOG.md",
-      "public_sha256": "88aea7093a12913f213024bac48cf6469f9fc6818d573e4cf2518af541d4bd09"
+      "public_sha256": "2a0295cb74e9a0fe5f75689df56bfff5e8c63af8c5ba80f51ec5fd537b168ce3"
     },
     {
       "src_relpath": "configs/algorithm_design_conditional_v1.json",
@@ -1080,12 +1094,11 @@
       "public_sha256": "3c2a3083bcfedc44ee197fb5e31668d00f2264fd66df6ca5f92c87ea4d1acfb7"
     },
     {
-      "src_relpath": "docs/START_HERE.md",
-      "src_sha256": "8f7f9ddb3d4e9f84b90c9b52e71d857c6f48a550e682d7376714b633fe512889",
-      "derivation": "public Markdown links/version presentation only; original numerical results/SHA literals retained",
-      "removed_unpublished_link_count": 0,
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "沿用公开运行指南，补充主对照的接口和已验收环境。",
       "path": "docs/START_HERE.md",
-      "public_sha256": "177d0cb27c2738f3f560d33d6f44f9921ccd811c41d64f04bfa52972ce3f7b8a"
+      "public_sha256": "37913fbb21b594e0dfc3db4c32935b0354c2c57682ffc8387bfec07280855b5f"
     },
     {
       "src_relpath": "docs/step08_smoke_results.md",
@@ -1833,9 +1846,9 @@
     {
       "src_relpath": null,
       "src_sha256": null,
-      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "derivation": "沿用公开项目主页，突出主对照入口、实验结果和研究计划。",
       "path": "README.md",
-      "public_sha256": "1a099e8b259077a25ef01d89bb1e18d7e6cbeba6492b1b50d65567a197f51761"
+      "public_sha256": "ee0b07d0c82153a5894f4dd800d0d3ac8a945214de205fe96c71d647d44e606f"
     },
     {
       "src_relpath": "requirements-conditional.txt",
@@ -2006,11 +2019,11 @@
       "public_sha256": "c10a643c09d2049591ffc4e6c6e1689abb7befa1bffbec14d1d4a04ef2d70a71"
     },
     {
-      "src_relpath": "THIRD_PARTY_NOTICES.md",
-      "src_sha256": "a2c0692107a2ec8998bd3c7c3abcdf538adf54176e68fd89faf6a187d60ccb6b",
-      "derivation": "short public third-party notice replacing local pre-publication workflow text",
+      "src_relpath": null,
+      "src_sha256": null,
+      "derivation": "明确自有代码许可及第三方材料适用条款。",
       "path": "THIRD_PARTY_NOTICES.md",
-      "public_sha256": "d6d25525e78a296f53295dda2615496160676314abce3dc18896af4774eea536"
+      "public_sha256": "77e88fe55cb9a6bb147a1ce76507bdb4836e759a55589c4d1494f6cc2f66c1f9"
     },
     {
       "src_relpath": "tools/audit_ablation_statistics.py",
@@ -2386,9 +2399,9 @@
     {
       "src_relpath": null,
       "src_sha256": null,
-      "derivation": "延续现有公开文档，新增本轮实验结论和版本导航。",
+      "derivation": "首个稳定运行接口版本。",
       "path": "VERSION",
-      "public_sha256": "a66780da23103beaf12432b418508966b31a2a3a787f9468a5b6cdaa8667c1ef"
+      "public_sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
     }
   ],
   "self_hash_policy": "This generated provenance file is hashed by the outer manifest; it does not recursively list itself.",

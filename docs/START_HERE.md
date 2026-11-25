@@ -1,5 +1,31 @@
 # 快速开始
 
+## 论文主对照 S / U / A / B / v4
+
+以下命令在仓库根目录运行。人工示例自带三帧输入，可验证入口及输出格式。
+
+v1.0.0 在 Windows 的独立 Python 3.12 虚拟环境中验收，使用 NumPy 2.5.5、SciPy 1.18.1 和 Pillow 13.0.0。
+
+```bash
+python -m pip install -r requirements-conditional.txt
+python tools/run_fusion_comparison.py --demo --output runs/fusion_demo.npz
+python tools/run_fusion_comparison.py --input clip.npz --output runs/clip_fusion.npz
+```
+
+`clip.npz` 包含时间顺序排列的 `rgb`（形状 `T×256×256×3`，uint8）和 `raw_probability`（形状 `T×256×256`，原始前景概率，浮点数且在 [0, 1]）。RGB 与概率需逐帧对齐。每次调用处理一个连续片段，新片段应单独运行。该入口从分割概率开始运行，前端训练和推理见本页后续说明。
+
+| 输出键 | 对照设置 |
+| --- | --- |
+| `S` | 单帧原始概率 |
+| `U` | 零位移等权融合 |
+| `A` | 视觉亚像素位移对齐及等权融合 |
+| `B` | 相同估计位移下的保守融合 |
+| `v4` | 相同估计位移下的条件纠错与当前局部种子 |
+
+五组输出均为 `T×256×256` 的 float32 概率图。使用 `probability >= threshold` 得到掩膜，`threshold` 固定为 0.50。`displacement_xy[t]` 为上一帧到第 t 帧的估计位移（单位像素，顺序为 dx、dy），首帧与配准拒绝处为 NaN。拒绝时，A、B、v4 回到 S，U 仍按零位移定义计算。该入口复用保留来源对照的三帧窗口和融合实现，结果汇总见[保留来源评价](heldout_motion_sampling_results.md)。
+
+## 运动反馈原型
+
 本页介绍Python运动反馈示例、原始概率接入和MATLAB分割训练。方法与对照关系见[v3实验报告](algorithm_v3_prototype_results.md)。
 
 条件式历史纠错的运行入口、人工检查与开发批次结果见[对齐与门控实验](algorithm_conditional_gate_study.md)。

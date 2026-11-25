@@ -2,11 +2,11 @@
 
 **钢轨表面缺陷检测 · 运动补偿 · 多帧融合**
 
-**当前开发版本 v0.8.0**
+**v1.0.0 · 钢轨运动补偿研究工具**
 
 本项目面向移动采集条件下的钢轨表面缺陷检测，研究轻量化分割、帧间配准与历史缺陷证据的协同使用。项目提供MATLAB分割基线与训练流程，以及可接入逐帧概率的Python运动反馈原型。
 
-v0.8.0 完成保留来源对照、采样间隔分析和准确几何对齐消融。视觉配准降低了受控位移误差，但检测收益随分割前端和来源而异；在原采样间隔下，准确几何相对估计位移的额外 IoU 收益很小。[保留来源与采样实验](docs/heldout_motion_sampling_results.md) · [准确几何对齐消融](docs/heldout_exact_alignment_results.md)
+v1.0.0 提供论文主对照 S / U / A / B / v4 的统一入口。输入连续轨面 RGB 帧和分割前景概率，可获得五组概率图、统一判别阈值和逐帧估计位移。公开实验覆盖受控几何、来源级检测差异和采样间隔。[保留来源与采样实验](docs/heldout_motion_sampling_results.md) · [准确几何对齐消融](docs/heldout_exact_alignment_results.md)
 
 [快速开始](docs/START_HERE.md) · [方法与实验](docs/algorithm_v3_prototype_results.md) · [研究进展](docs/PROGRESS.md) · [更新记录](CHANGELOG.md)
 
@@ -40,9 +40,18 @@ v3采用三帧因果窗口。历史缺陷区域引导图像核验，运动估计
 
 ## 快速开始
 
+使用 Python 3.12 运行 **S / U / A / B / v4**。安装依赖后可直接运行内置示例，或提供自己的连续 RGB 帧和前端概率。输入数组、输出键与保留来源报告见[主对照运行指南](docs/START_HERE.md#论文主对照-s--u--a--b--v4)。
+
 ```bash
 git clone https://github.com/LevinJustus/rail-surface-motion-research.git
 cd rail-surface-motion-research
+python -m pip install -r requirements-conditional.txt
+python tools/run_fusion_comparison.py --demo --output runs/fusion_demo.npz
+```
+
+下方为历史运动反馈原型的运行方式。
+
+```bash
 python -m pip install -r requirements-v3.txt
 
 # 运行算法行为检查
@@ -65,7 +74,7 @@ python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 
 完整设置和best/last结果见[单帧基线](docs/step10_full_results.md)与[模型对照](docs/step11_mature_results.md)。
 
-运动反馈实验使用3个钢轨图像来源派生的12条序列，比较单帧、简单衰减、亚像素参照及反馈开关。在这批序列中，v3反馈没有改变运动选择，尚未产生检测增益。人工重复纹理场景既出现成功消歧，也暴露了候选遗漏与误选。详细数据见[v3实验报告](docs/algorithm_v3_prototype_results.md)。
+保留来源评价覆盖44个来源代理组和132条受控序列。组合退化下，视觉配准将平均端点误差由约8.32像素降至0.55像素。DeepLab的对齐等权在自然与人工来源组中的前景IoU分别较单帧提高0.351和0.700个百分点。历史反馈原型另在重复纹理和短时漏检场景下比较运动选择与融合行为，逐分支结果见[v3实验报告](docs/algorithm_v3_prototype_results.md)。
 
 ![运动反馈实验概览](docs/evidence/algorithm_v3/v3_feedback_summary.svg)
 
@@ -73,7 +82,7 @@ python tools/run_v3_feedback_challenge.py --out runs/v3_challenge_demo
 
 ## 真实视频开发验证
 
-在三个实拍片段上，固定 MobileNetV2–DeepLabv3+ 的逐帧概率，比较单帧、基础配准融合和条件纠错。条件分支在基础融合上新增 78,414 个前景像素观测。一个片段隔帧处理后，89 条相邻边中有 13 条因触及搜索边界而回退。视频用于研究响应和回退行为，缺陷检出率需要带确认标注的独立数据。[连续视频对照](docs/real_video_development.md)
+实拍开发验证使用三个片段和固定的 MobileNetV2–DeepLabv3+ 概率，比较单帧、基础配准融合和条件纠错。一个片段隔帧处理时，89条相邻边中有13条触及搜索边界并回退至单帧。实验记录了真实移动画面中的预测响应和回退行为。[连续视频对照](docs/real_video_development.md)
 
 ## 项目结构
 
@@ -89,10 +98,10 @@ results/         基线比较、阈值诊断与配准结果
 
 ## 研究路线
 
-近期重点是钢轨适用性：验证实际采集尺度下的分割输出、连续轨面中的配准与误报，并在确认的表面缺陷视频上检验历史纠错。后续围绕候选覆盖和可靠历史证据开展方法改进。
-
-已完成静态图像、受控运动序列和未标注实拍片段的开发对照。下一阶段将评价带确认标签的连续采集、完整处理效率与端侧部署。路线与报告索引见[研究进展](docs/PROGRESS.md)。
+下一阶段采用带确认标签的独立连续轨段，以相同误报负担下的缺陷事件召回比较单帧、零位移等权和对齐等权。路线与报告索引见[研究进展](docs/PROGRESS.md)。
 
 ## 数据与使用
 
-数据来源、固定分区和各类实验所需输入见[数据与复现](docs/PUBLICATION_POLICY.md)。第三方材料归属见[THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md)。欢迎围绕使用问题、算法实现和钢轨视频实验提交Issue或Pull Request。
+[MIT 许可证](LICENSE)适用于本项目自行编写的代码和配套文档。第三方数据、标注、权重与软件适用其各自条款，详见[第三方材料声明](THIRD_PARTY_NOTICES.md)。
+
+数据来源、固定分区和各类实验所需输入见[数据与复现](docs/PUBLICATION_POLICY.md)。欢迎围绕使用问题、算法实现和钢轨视频实验提交 Issue 或 Pull Request。
